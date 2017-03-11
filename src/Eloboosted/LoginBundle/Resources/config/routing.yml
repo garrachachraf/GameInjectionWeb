@@ -1,0 +1,12 @@
+eloboosted_login_homepage:
+    path:     /
+    defaults: { _controller: EloboostedLoginBundle:Default:index }
+check_logins:
+    path:     /checklogin
+    defaults: { _controller: EloboostedLoginBundle:Default:index }
+adminpage:
+    path:     /admin
+    defaults: { _controller: EloboostedGameinjectionBundle:Default:index }
+userpage:
+    path:     /user
+    defaults: { _controller: EloboostedGameinjectionBundle:Default:index }

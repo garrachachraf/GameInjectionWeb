@@ -1,0 +1,15 @@
+eloboosted_frontoffice:
+    resource: "@EloboostedFrontofficeBundle/Resources/config/routing.yml"
+    prefix:   /
+
+eloboosted_login:
+    resource: "@EloboostedLoginBundle/Resources/config/routing.yml"
+    prefix:   /login
+
+eloboosted_gameinjection:
+    resource: "@EloboostedGameinjectionBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation

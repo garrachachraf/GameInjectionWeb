@@ -1,0 +1,3 @@
+eloboosted_frontoffice_homepage:
+    path:     /
+    defaults: { _controller: EloboostedFrontofficeBundle:Default:index }

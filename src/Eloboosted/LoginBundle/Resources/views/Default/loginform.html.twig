@@ -1,0 +1,48 @@
+{# src/LoginBundle/Resources/views/Default/loginform.html.twig #}
+{% extends 'EloboostedFrontofficeBundle:Default:Layout.html.twig' %}
+{% block head %}
+    {{ parent() }}
+    {% endblock %}
+{% block main %}
+<form  method="post">
+    <section class="hero hero-panel" style="background-image: url('{{ asset('img/cover/cover-login.jpg')}}');">
+        <div class="hero-bg"></div>
+        <div class="container relative">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 pull-none margin-auto">
+                    <div class="panel panel-default panel-login">
+                        <div class="panel-heading">
+                            <h3 class="panel-title"><i class="fa fa-user"></i> Sign In to Gameforest</h3>
+                        </div>
+                        <div class="panel-body">
+
+                            <div class="separator"><span>GI</span></div>
+
+                                <div class="form-group input-icon-left">
+                                    <i class="fa fa-user"></i>
+                                    <input type="text" class="form-control" name="login_username" id="login_username" placeholder="Username">
+                                </div>
+                                <div class="form-group input-icon-left">
+                                    <i class="fa fa-lock"></i>
+                                    <input type="password" class="form-control" name="login_password" id="login_password" placeholder="Password">
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+
+                                <div class="form-actions">
+                                    <div class="checkbox checkbox-primary">
+                                        <input type="checkbox" id="checkbox">
+                                        <label for="checkbox">Remember me</label>
+                                    </div>
+                                </div>
+
+                        </div>
+                        <div class="panel-footer">
+                            Don't have Gameforest account? <a href="register.html">Sign Up Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</form>
+{% endblock %}
