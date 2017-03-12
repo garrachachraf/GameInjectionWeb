@@ -19,6 +19,7 @@ class AppKernel extends Kernel
             new Eloboosted\GameinjectionBundle\EloboostedGameinjectionBundle(),
             new Eloboosted\LoginBundle\EloboostedLoginBundle(),
             new Eloboosted\FrontofficeBundle\EloboostedFrontofficeBundle(),
+            new Eloboosted\BackofficeBundle\EloboostedBackofficeBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

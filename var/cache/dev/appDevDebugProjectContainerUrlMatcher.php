@@ -105,15 +105,27 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
 
         }
 
-        if (0 === strpos($pathinfo, '/add')) {
-            // eloboosted_frontoffice_homepage
-            if ($pathinfo === '/addTournament') {
-                return array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\TournamentController::addAction',  '_route' => 'eloboosted_frontoffice_homepage',);
+        if (0 === strpos($pathinfo, '/ad')) {
+            // eloboosted_backoffice_homepage
+            if (rtrim($pathinfo, '/') === '/admin') {
+                if (substr($pathinfo, -1) !== '/') {
+                    return $this->redirect($pathinfo.'/', 'eloboosted_backoffice_homepage');
+                }
+
+                return array (  '_controller' => 'Eloboosted\\BackofficeBundle\\Controller\\DefaultController::indexAction',  '_route' => 'eloboosted_backoffice_homepage',);
             }
 
-            // AddProduct_page
-            if ($pathinfo === '/addProd') {
-                return array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\ProductsController::AddProductAction',  '_route' => 'AddProduct_page',);
+            if (0 === strpos($pathinfo, '/add')) {
+                // eloboosted_frontoffice_homepage
+                if ($pathinfo === '/addTournament') {
+                    return array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\TournamentController::addAction',  '_route' => 'eloboosted_frontoffice_homepage',);
+                }
+
+                // AddProduct_page
+                if ($pathinfo === '/addProd') {
+                    return array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\ProductsController::AddProductAction',  '_route' => 'AddProduct_page',);
+                }
+
             }
 
         }

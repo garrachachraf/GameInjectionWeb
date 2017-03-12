@@ -429,7 +429,7 @@ class Compte  implements UserInterface
     function getImage()
     {
         $images= base64_encode(stream_get_contents($this->image));
-        return $images;
+        return "data:image/png;base64,".$images;
     }
 
     /**

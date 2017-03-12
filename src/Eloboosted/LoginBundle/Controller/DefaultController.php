@@ -23,7 +23,7 @@ class DefaultController extends Controller
 
             $this->container->get('security.token_storage')->setToken($token);
             if ($user->getAdmin()==1){
-                return $this->redirectToRoute("adminpage");
+                return $this->redirectToRoute("eloboosted_backoffice_homepage");
             }
             else{
                 return $this->redirectToRoute("userpage");
