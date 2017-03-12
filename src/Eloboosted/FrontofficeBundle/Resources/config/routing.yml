@@ -1,3 +1,6 @@
 eloboosted_frontoffice_homepage:
-    path:     /
-    defaults: { _controller: EloboostedFrontofficeBundle:Default:index }
+    path:     /addTournament
+    defaults: { _controller: EloboostedFrontofficeBundle:Tournament:add }
+AddProduct_page:
+    path:     /addProd
+    defaults: { _controller: EloboostedFrontofficeBundle:Products:AddProduct }

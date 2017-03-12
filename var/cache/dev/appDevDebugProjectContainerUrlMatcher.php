@@ -105,13 +105,17 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
 
         }
 
-        // eloboosted_frontoffice_homepage
-        if (rtrim($pathinfo, '/') === '') {
-            if (substr($pathinfo, -1) !== '/') {
-                return $this->redirect($pathinfo.'/', 'eloboosted_frontoffice_homepage');
+        if (0 === strpos($pathinfo, '/add')) {
+            // eloboosted_frontoffice_homepage
+            if ($pathinfo === '/addTournament') {
+                return array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\TournamentController::addAction',  '_route' => 'eloboosted_frontoffice_homepage',);
             }
 
-            return array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\DefaultController::indexAction',  '_route' => 'eloboosted_frontoffice_homepage',);
+            // AddProduct_page
+            if ($pathinfo === '/addProd') {
+                return array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\ProductsController::AddProductAction',  '_route' => 'AddProduct_page',);
+            }
+
         }
 
         if (0 === strpos($pathinfo, '/login')) {

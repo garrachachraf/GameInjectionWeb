@@ -428,7 +428,8 @@ class Compte  implements UserInterface
      */
     function getImage()
     {
-        return $this->image;
+        $images= base64_encode(stream_get_contents($this->image));
+        return $images;
     }
 
     /**

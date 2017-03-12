@@ -2,6 +2,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="{{ asset('plugins/jquery/jquery-3.1.0.min.js') }}"></script>
+    <script src="{{ asset('plugins/bootstrap/js/jquery-2.1.1.min.js') }}"></script>
+    <script src="{{ asset('plugins/bootstrap/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('plugins/bootstrap/js/moment-with-locales.js') }}"></script>
+    <script src="{{ asset('plugins/bootstrap/js/bootstrap-datetimepicker.js') }}"></script>
+    <script src="{{ asset('plugins/bootstrap/js/prettify-1.0.min.js') }}"></script>
+
+    <script src="{{ asset('js/core.min.js') }}"></script>
+    <link href="{{ asset('plugins/bootstrap/css/base.css') }}" rel="stylesheet">
+    <link href="{{ asset('plugins/bootstrap/css/bootstrap-datetimepicker.css') }}" rel="stylesheet">
+    <link href="{{ asset('plugins/bootstrap/css/font-awesome.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('plugins/bootstrap/css/prettify-1.0.css') }}" rel="stylesheet">
+
     {% block head %}
         <!-- META -->
         <meta charset="utf-8">
@@ -18,7 +31,7 @@
         <!-- CORE CSS -->
         <link href="{{ asset('plugins/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
         <link href="{{ asset('plugins/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet">
-        <link href='{{ asset('http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700') }}' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
 
         <!-- PLUGINS -->
         <link href="{{ asset('plugins/animate/animate.min.css') }}" rel="stylesheet">
@@ -278,9 +291,9 @@
     <!-- /#wrapper -->
 
     <!-- footer -->
-
+{% block footer %}
     <footer>
-        {% block footer %}
+
             <div class="container">
                 <div class="widget row">
                     <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
@@ -332,14 +345,14 @@
                     &copy; 2016 Gameforest. All rights reserved.
                 </div>
             </div>
-        {% endblock %}
+
     </footer>
     <!-- /.footer -->
 
     <!-- Javascript -->
-    <script src="{{ asset('plugins/jquery/jquery-3.1.0.min.js') }}"></script>
-    <script src="{{ asset('plugins/bootstrap/js/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('js/core.min.js') }}"></script>
+
 {% endblock %}
+{% endblock %}
+
 </body>
 </html>

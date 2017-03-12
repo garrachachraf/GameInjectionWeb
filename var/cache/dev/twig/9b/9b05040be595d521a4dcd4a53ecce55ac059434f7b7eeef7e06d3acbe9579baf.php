@@ -15,11 +15,11 @@ class __TwigTemplate_69a93b5fcb09290589008fcf52ad646078fe4b2760f16604751c00509b4
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_3ba698cf1aecc1c1215cee6cfb4c0cee3cac9e90ad0154e7ae7da0ac07829e2a = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_3ba698cf1aecc1c1215cee6cfb4c0cee3cac9e90ad0154e7ae7da0ac07829e2a->enter($__internal_3ba698cf1aecc1c1215cee6cfb4c0cee3cac9e90ad0154e7ae7da0ac07829e2a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EloboostedLoginBundle:Default:index.html.twig"));
+        $__internal_0eb3881864ae9016512877df59a6bcae342aed8cb1b0337a13b335220d640e7d = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_0eb3881864ae9016512877df59a6bcae342aed8cb1b0337a13b335220d640e7d->enter($__internal_0eb3881864ae9016512877df59a6bcae342aed8cb1b0337a13b335220d640e7d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EloboostedLoginBundle:Default:index.html.twig"));
 
-        $__internal_89f8a4aec981257b5098f56f0f36b7d14784a75aa202bfb7e0d2aa3b93b94411 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_89f8a4aec981257b5098f56f0f36b7d14784a75aa202bfb7e0d2aa3b93b94411->enter($__internal_89f8a4aec981257b5098f56f0f36b7d14784a75aa202bfb7e0d2aa3b93b94411_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EloboostedLoginBundle:Default:index.html.twig"));
+        $__internal_d20209829fa0fceca93aa372c39e0e7dcb9fa57cf837522d7bb8d713e6af3821 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_d20209829fa0fceca93aa372c39e0e7dcb9fa57cf837522d7bb8d713e6af3821->enter($__internal_d20209829fa0fceca93aa372c39e0e7dcb9fa57cf837522d7bb8d713e6af3821_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EloboostedLoginBundle:Default:index.html.twig"));
 
         // line 1
         if (((isset($context["user"]) ? $context["user"] : $this->getContext($context, "user")) == null)) {
@@ -35,10 +35,10 @@ class __TwigTemplate_69a93b5fcb09290589008fcf52ad646078fe4b2760f16604751c00509b4
 ";
         }
         
-        $__internal_3ba698cf1aecc1c1215cee6cfb4c0cee3cac9e90ad0154e7ae7da0ac07829e2a->leave($__internal_3ba698cf1aecc1c1215cee6cfb4c0cee3cac9e90ad0154e7ae7da0ac07829e2a_prof);
+        $__internal_0eb3881864ae9016512877df59a6bcae342aed8cb1b0337a13b335220d640e7d->leave($__internal_0eb3881864ae9016512877df59a6bcae342aed8cb1b0337a13b335220d640e7d_prof);
 
         
-        $__internal_89f8a4aec981257b5098f56f0f36b7d14784a75aa202bfb7e0d2aa3b93b94411->leave($__internal_89f8a4aec981257b5098f56f0f36b7d14784a75aa202bfb7e0d2aa3b93b94411_prof);
+        $__internal_d20209829fa0fceca93aa372c39e0e7dcb9fa57cf837522d7bb8d713e6af3821->leave($__internal_d20209829fa0fceca93aa372c39e0e7dcb9fa57cf837522d7bb8d713e6af3821_prof);
 
     }
 
@@ -72,6 +72,6 @@ class __TwigTemplate_69a93b5fcb09290589008fcf52ad646078fe4b2760f16604751c00509b4
 
 {% else %}
     <h1>{{ user.pseudo }}</h1>
-{% endif %}", "EloboostedLoginBundle:Default:index.html.twig", "/Library/WebServer/Documents/sprintweb/src/Eloboosted/LoginBundle/Resources/views/Default/index.html.twig");
+{% endif %}", "EloboostedLoginBundle:Default:index.html.twig", "/Library/WebServer/Documents/sprintweb3/src/Eloboosted/LoginBundle/Resources/views/Default/index.html.twig");
     }
 }
