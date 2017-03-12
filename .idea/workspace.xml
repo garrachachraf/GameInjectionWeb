@@ -1,74 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d73e6a33-b9cb-404e-b7d4-77be369b3955" name="Default" comment="add tournament controller + products controller">
+    <list default="true" id="d73e6a33-b9cb-404e-b7d4-77be369b3955" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AppKernel.php" afterPath="$PROJECT_DIR$/app/AppKernel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/routing.yml" afterPath="$PROJECT_DIR$/app/config/routing.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/security.yml" afterPath="$PROJECT_DIR$/app/config/security.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Eloboosted/GameinjectionBundle/Entity/Compte.php" afterPath="$PROJECT_DIR$/src/Eloboosted/GameinjectionBundle/Entity/Compte.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Eloboosted/GameinjectionBundle/Resources/views/Default/index.html.twig" afterPath="$PROJECT_DIR$/src/Eloboosted/GameinjectionBundle/Resources/views/Default/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Eloboosted/LoginBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/Eloboosted/LoginBundle/Controller/DefaultController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.php" afterPath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.php.meta" afterPath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.php.meta" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.xml" afterPath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainerCompiler.log" afterPath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainerCompiler.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainerUrlGenerator.php" afterPath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainerUrlGenerator.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainerUrlGenerator.php.meta" afterPath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainerUrlGenerator.php.meta" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainerUrlMatcher.php" afterPath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainerUrlMatcher.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainerUrlMatcher.php.meta" afterPath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainerUrlMatcher.php.meta" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/classes.php" afterPath="$PROJECT_DIR$/var/cache/dev/classes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/classes.php.meta" afterPath="$PROJECT_DIR$/var/cache/dev/classes.php.meta" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/index.csv" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/index.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/02/02a341218b390080f20f6122a640a05641e3f31a6ef97940de0efd5185b385f0.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/02/02a341218b390080f20f6122a640a05641e3f31a6ef97940de0efd5185b385f0.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/03/03485990cbf6b9350a1aff14792d05d459231578c61a8941007d3122252c7cbc.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/03/03485990cbf6b9350a1aff14792d05d459231578c61a8941007d3122252c7cbc.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/07/07f8cde302f547574927f50717392ef7e966980489a10a5a39fcb6373f5c5562.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/07/07f8cde302f547574927f50717392ef7e966980489a10a5a39fcb6373f5c5562.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/09/0960a2af4eab80affcbb2dacdf8d7345cb65aeb22a04411f986d37031a66d70f.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/09/0960a2af4eab80affcbb2dacdf8d7345cb65aeb22a04411f986d37031a66d70f.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/17/17522c969acf8feff0522218f79a8cfa63845baabb5c692ef31ca94bc84f311e.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/17/17522c969acf8feff0522218f79a8cfa63845baabb5c692ef31ca94bc84f311e.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/28/282e32b3b23d0576965b9d2ca4d964778bfd129c16f34527b0bf390bb013f431.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/28/282e32b3b23d0576965b9d2ca4d964778bfd129c16f34527b0bf390bb013f431.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/2e/2e683bb95ada65f60beca0e16b0c46c823a7849884b1252504083c2dee1f58f6.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/2e/2e683bb95ada65f60beca0e16b0c46c823a7849884b1252504083c2dee1f58f6.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/36/36794aee932c506ab32af77ef01fcdb9c5ec1948476b2651f24752b3e7183622.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/36/36794aee932c506ab32af77ef01fcdb9c5ec1948476b2651f24752b3e7183622.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/37/37d55c1304cbb292aef67833a8edd7505e5b224f13e2b56a8203c772239c8b18.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/37/37d55c1304cbb292aef67833a8edd7505e5b224f13e2b56a8203c772239c8b18.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/3d/3d6cf05463a525b7bdc5689571608ab06e178685225db03a051ae36698c5d286.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/3d/3d6cf05463a525b7bdc5689571608ab06e178685225db03a051ae36698c5d286.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/40/40331fa885bc4753fc86925826198dcb3065a3b6de66a2b328258b3ae02aa417.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/40/40331fa885bc4753fc86925826198dcb3065a3b6de66a2b328258b3ae02aa417.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/41/41250bc5b2ef1997dc142708556a8ea2916e0e5e18f5db76a2776bb048fc278e.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/41/41250bc5b2ef1997dc142708556a8ea2916e0e5e18f5db76a2776bb048fc278e.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/42/42f417db92ec6bf3b1305b594bab29b18ad01113b8fe9dadd620fafc08f3a903.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/42/42f417db92ec6bf3b1305b594bab29b18ad01113b8fe9dadd620fafc08f3a903.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/55/552c81e00ee7148f6339909ce84a4aad5483b64e427a365ade7a178e07b80ed9.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/55/552c81e00ee7148f6339909ce84a4aad5483b64e427a365ade7a178e07b80ed9.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/56/56809d24338186cc5bce2063d350f5fa98f3766a3fd8fd7421bb1f16e0077334.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/56/56809d24338186cc5bce2063d350f5fa98f3766a3fd8fd7421bb1f16e0077334.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/56/56c75f41af11303f07e9055ce7cc431388cd4d9042c9c63217d2e635300a013a.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/56/56c75f41af11303f07e9055ce7cc431388cd4d9042c9c63217d2e635300a013a.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/5d/5d0e5566471986b45f8f1bf56df395515f8fda6635491ed6c5f6ecc128515dcd.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/5d/5d0e5566471986b45f8f1bf56df395515f8fda6635491ed6c5f6ecc128515dcd.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/5d/5dcbf33d31d9963e230c629cecea8a85114f8f1f51e3f36036249ccddc22f584.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/5d/5dcbf33d31d9963e230c629cecea8a85114f8f1f51e3f36036249ccddc22f584.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/60/60f6e234c985470c89003f2c0348a1815fee478d857d12d52255568e801e424c.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/60/60f6e234c985470c89003f2c0348a1815fee478d857d12d52255568e801e424c.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/62/62e4226dc61d32fdd2c2c7bd78bde404c656cb8f075dcf6f4e9375b9630e2c4a.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/62/62e4226dc61d32fdd2c2c7bd78bde404c656cb8f075dcf6f4e9375b9630e2c4a.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/63/63e28086b20c2558a3f2b017a391cdb26e6eb6bfe62d811eecdaa5506267136a.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/63/63e28086b20c2558a3f2b017a391cdb26e6eb6bfe62d811eecdaa5506267136a.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/68/6838e5a2cce2d354abb7a79222dab935c34fb06814d7901e34a3e024b3ade939.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/68/6838e5a2cce2d354abb7a79222dab935c34fb06814d7901e34a3e024b3ade939.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/6a/6a808240dcfe6c6e774a9594b7bf69833e8de7c5aa6358e75a7475ce43fbf9fb.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/6a/6a808240dcfe6c6e774a9594b7bf69833e8de7c5aa6358e75a7475ce43fbf9fb.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/7e/7eadba164328f65c6cf4348a2a8c2c097991a0bd6108aff3831b43e26cce3a0c.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/7e/7eadba164328f65c6cf4348a2a8c2c097991a0bd6108aff3831b43e26cce3a0c.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/81/813e65ce37fc361b194936cc8a58f6844200615e4bc7cd4ebdc643ff6d0f57dd.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/81/813e65ce37fc361b194936cc8a58f6844200615e4bc7cd4ebdc643ff6d0f57dd.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/81/8162cad86e77d584183d979ddf2fd78bcec018c94d06f2a40825fe80db1ea5f2.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/81/8162cad86e77d584183d979ddf2fd78bcec018c94d06f2a40825fe80db1ea5f2.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/82/829e5455dcc81655ac8d0f54c34e05489cefdd693b359dce52957e88b5f793a7.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/82/829e5455dcc81655ac8d0f54c34e05489cefdd693b359dce52957e88b5f793a7.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/8c/8c00e96f3713e3ba0ca3f9087167c01cd91f87aeedb745fb4be0d0f18041a241.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/8c/8c00e96f3713e3ba0ca3f9087167c01cd91f87aeedb745fb4be0d0f18041a241.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/9e/9e199b6212bb5472ec0f453f96f55d55cf0f8c70be2599b0d7f859d499f1730d.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/9e/9e199b6212bb5472ec0f453f96f55d55cf0f8c70be2599b0d7f859d499f1730d.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/9e/9e7d6b15f993f86138fd3c0406dd0613056bcfd1e4f998fbc2394441f1b66290.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/9e/9e7d6b15f993f86138fd3c0406dd0613056bcfd1e4f998fbc2394441f1b66290.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/aa/aac3e10d251792e0f39c4ec223511835787a38063cb3ce5d02d16cfdb3d106ad.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/aa/aac3e10d251792e0f39c4ec223511835787a38063cb3ce5d02d16cfdb3d106ad.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/ab/ab30111f74f6ee6c5f18348d3f02e6b47a0f51985741a6e6a19e9f88831d9e7b.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/ab/ab30111f74f6ee6c5f18348d3f02e6b47a0f51985741a6e6a19e9f88831d9e7b.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/ab/abd4ee230e43d308f4eca9d44fee1d8ee6f2a251ff221410f65f6b01b456ff96.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/ab/abd4ee230e43d308f4eca9d44fee1d8ee6f2a251ff221410f65f6b01b456ff96.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/ac/ac35e83b26edb8ca51dcddc0f548534692887ad3592741c8ccdd74e8182be277.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/ac/ac35e83b26edb8ca51dcddc0f548534692887ad3592741c8ccdd74e8182be277.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/ad/ada770edce83cf065bf2bf1854db1190441bd1d2270c218052ee80d4cc9040ee.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/ad/ada770edce83cf065bf2bf1854db1190441bd1d2270c218052ee80d4cc9040ee.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/ae/aeb649c7e87d70a6f1344716588e0d4e44d7df164faa01e7967d54177adbcddb.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/ae/aeb649c7e87d70a6f1344716588e0d4e44d7df164faa01e7967d54177adbcddb.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/b4/b4b8fecb7ebfdf35fd5aac01686ad2291397c695fca75355986f0e71b67df70a.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/b4/b4b8fecb7ebfdf35fd5aac01686ad2291397c695fca75355986f0e71b67df70a.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/b8/b8df520d9295f815b846a38617e7ad0a8fcac90bcb301253e9a3b15e42688907.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/b8/b8df520d9295f815b846a38617e7ad0a8fcac90bcb301253e9a3b15e42688907.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/c3/c3e74c7aef3e1dc3ea8f953722d8e1381568d84589572c2130606f3414c9b56e.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/c3/c3e74c7aef3e1dc3ea8f953722d8e1381568d84589572c2130606f3414c9b56e.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/ca/ca50ce739968ed24a54f687a3d5c8ea13bec23466f2a55009d550053f670ecc5.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/ca/ca50ce739968ed24a54f687a3d5c8ea13bec23466f2a55009d550053f670ecc5.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/d5/d509a0df3524428cd65a078ffd2af5afbbb23e4d7b99e09dbad64da92e3fd387.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/d5/d509a0df3524428cd65a078ffd2af5afbbb23e4d7b99e09dbad64da92e3fd387.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/d7/d797b3698bc966d4ccbd76f454e56e8061dd2f24b20435ee733ba3a4fc5c7735.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/d7/d797b3698bc966d4ccbd76f454e56e8061dd2f24b20435ee733ba3a4fc5c7735.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/da/da1efe81e42c9713521ebb66f010f0b02c58f5a21f7392ddef04b6ce3b926d9c.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/da/da1efe81e42c9713521ebb66f010f0b02c58f5a21f7392ddef04b6ce3b926d9c.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/e4/e43dffbccc7d6bf68eb499362981c9d26427a90802ef1846d6b205ad33d81123.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/e4/e43dffbccc7d6bf68eb499362981c9d26427a90802ef1846d6b205ad33d81123.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/ee/eef00fc652f298509f34295e754a88e8bb725ca14c26adef5fdb1b8cd95a2210.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/ee/eef00fc652f298509f34295e754a88e8bb725ca14c26adef5fdb1b8cd95a2210.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/fb/fb829a33f6ebce4289518ecbc8e6db22db72a309492b766557686b50cd022abb.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/fb/fb829a33f6ebce4289518ecbc8e6db22db72a309492b766557686b50cd022abb.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/fe/feb9675a8589c5e12501f69b79989f89978657ea553508704ec72b1353754d29.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/fe/feb9675a8589c5e12501f69b79989f89978657ea553508704ec72b1353754d29.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/logs/dev.log" afterPath="$PROJECT_DIR$/var/logs/dev.log" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -98,9 +32,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="63" lean-forward="false" selection-start-line="0" selection-start-column="63" selection-end-line="0" selection-end-column="63" />
-              <folding>
-                <element signature="e#12#63#0#Twig" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -589,7 +521,7 @@
       <workItem from="1489250150198" duration="559000" />
       <workItem from="1489250761333" duration="2720000" />
       <workItem from="1489253713152" duration="20238000" />
-      <workItem from="1489284442848" duration="2543000" />
+      <workItem from="1489284442848" duration="3133000" />
     </task>
     <task id="LOCAL-00001" summary="add tournament controller + products controller">
       <created>1489284724008</created>
@@ -598,11 +530,18 @@
       <option name="project" value="LOCAL" />
       <updated>1489284724008</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add admin template">
+      <created>1489316168768</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1489316168768</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26443000" />
+    <option name="totallyTimeSpent" value="27033000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="825" extended-state="6" />
@@ -637,7 +576,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add tournament controller + products controller" />
-    <option name="LAST_COMMIT_MESSAGE" value="add tournament controller + products controller" />
+    <MESSAGE value="add admin template" />
+    <option name="LAST_COMMIT_MESSAGE" value="add admin template" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -892,9 +832,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="63" lean-forward="false" selection-start-line="0" selection-start-column="63" selection-end-line="0" selection-end-column="63" />
-          <folding>
-            <element signature="e#12#63#0#Twig" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
