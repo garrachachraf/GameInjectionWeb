@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d73e6a33-b9cb-404e-b7d4-77be369b3955" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Eloboosted/BackofficeBundle/Resources/views/Default/Layout.html.twig" afterPath="$PROJECT_DIR$/src/Eloboosted/BackofficeBundle/Resources/views/Default/Layout.html.twig" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,7 +18,7 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Compte.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Compte.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Eloboosted/GameinjectionBundle/Entity/Compte.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
@@ -31,17 +32,17 @@
         <entry file="file://$PROJECT_DIR$/src/Eloboosted/BackofficeBundle/Resources/views/Default/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="63" lean-forward="false" selection-start-line="0" selection-start-column="63" selection-end-line="0" selection-end-column="63" />
+              <caret line="0" column="21" lean-forward="false" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Layout.html.twig" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Layout.html.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Eloboosted/BackofficeBundle/Resources/views/Default/Layout.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="51" column="34" lean-forward="false" selection-start-line="51" selection-start-column="34" selection-end-line="51" selection-end-column="34" />
+            <state relative-caret-position="30">
+              <caret line="39" column="39" lean-forward="true" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -84,7 +85,7 @@
       <GitPushTagMode />
     </option>
     <push-targets>
-      <push-target-info repo="$PROJECT_DIR$" source="master" target-remote="origin" target-branch="master2" />
+      <push-target-info repo="$PROJECT_DIR$" source="master" target-remote="origin" target-branch="master" />
     </push-targets>
   </component>
   <component name="IdeDocumentHistory">
@@ -521,7 +522,7 @@
       <workItem from="1489250150198" duration="559000" />
       <workItem from="1489250761333" duration="2720000" />
       <workItem from="1489253713152" duration="20238000" />
-      <workItem from="1489284442848" duration="3133000" />
+      <workItem from="1489284442848" duration="3358000" />
     </task>
     <task id="LOCAL-00001" summary="add tournament controller + products controller">
       <created>1489284724008</created>
@@ -537,11 +538,25 @@
       <option name="project" value="LOCAL" />
       <updated>1489316168768</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add admin template">
+      <created>1489317418544</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1489317418544</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add admin template">
+      <created>1489317612689</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1489317612689</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27033000" />
+    <option name="totallyTimeSpent" value="27258000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="825" extended-state="6" />
@@ -828,26 +843,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Eloboosted/GameinjectionBundle/Entity/Compte.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="431" column="38" lean-forward="false" selection-start-line="431" selection-start-column="38" selection-end-line="431" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Eloboosted/BackofficeBundle/Resources/views/Default/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="63" lean-forward="false" selection-start-line="0" selection-start-column="63" selection-end-line="0" selection-end-column="63" />
+          <caret line="0" column="21" lean-forward="false" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Eloboosted/BackofficeBundle/Resources/views/Default/Layout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="51" column="34" lean-forward="false" selection-start-line="51" selection-start-column="34" selection-end-line="51" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Eloboosted/GameinjectionBundle/Entity/Compte.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="431" column="38" lean-forward="false" selection-start-line="431" selection-start-column="38" selection-end-line="431" selection-end-column="38" />
+        <state relative-caret-position="30">
+          <caret line="39" column="39" lean-forward="true" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
           <folding />
         </state>
       </provider>
