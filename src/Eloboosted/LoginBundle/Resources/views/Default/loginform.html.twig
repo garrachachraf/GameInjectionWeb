@@ -15,7 +15,12 @@
                             <h3 class="panel-title"><i class="fa fa-user"></i> Sign In to Gameforest</h3>
                         </div>
                         <div class="panel-body">
+                            {% if success == 1 %}
+                                <div class="alert alert-danger alert-dismissible">
 
+                                    <strong>Oh snap !</strong> Wrong Username or Password , Please Try again.
+                                </div>
+                                {% endif %}
                             <div class="separator"><span>GI</span></div>
 
                                 <div class="form-group input-icon-left">

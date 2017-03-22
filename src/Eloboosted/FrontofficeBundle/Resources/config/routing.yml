@@ -1,6 +1,29 @@
-eloboosted_frontoffice_homepage:
-    path:     /addTournament
-    defaults: { _controller: EloboostedFrontofficeBundle:Tournament:add }
 AddProduct_page:
     path:     /addProd
     defaults: { _controller: EloboostedFrontofficeBundle:Products:AddProduct }
+frontoffice_index:
+    path:     /
+    defaults: { _controller: EloboostedFrontofficeBundle:Default:index }
+    methods:  GET
+tournoi_index:
+    path:     /Tournaments/{p}
+    defaults:  { _controller:   EloboostedFrontofficeBundle:Tournoi:index , p: 1 }
+tournoi_show:
+    path:     /{id}/showTournament
+    defaults: { _controller: EloboostedFrontofficeBundle:Tournoi:show }
+    methods:  GET
+
+tournoi_new:
+    path:     /newTournament
+    defaults: { _controller: EloboostedFrontofficeBundle:Tournoi:new }
+    methods:  [GET, POST]
+
+tournoi_edit:
+    path:     /{id}/editTournament
+    defaults: { _controller: "EloboostedFrontofficeBundle:Tournoi:edit" }
+    methods:  [GET, POST]
+
+tournoi_delete:
+    path:     /{id}/deleteTournament
+    defaults: { _controller: "EloboostedFrontofficeBundle:Tournoi:delete" }
+    methods:  DELETE

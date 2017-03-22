@@ -55,6 +55,11 @@ class ComposerStaticInit2554ac6f5d571f82debebd2d3d7133d2
         array (
             'Incenteev\\ParameterHandler\\' => 27,
         ),
+        'E' => 
+        array (
+            'Endroid\\QrCode\\' => 15,
+            'Endroid\\Bundle\\QrCodeBundle\\' => 28,
+        ),
         'D' => 
         array (
             'Doctrine\\Instantiator\\' => 22,
@@ -154,6 +159,14 @@ class ComposerStaticInit2554ac6f5d571f82debebd2d3d7133d2
         array (
             0 => __DIR__ . '/..' . '/incenteev/composer-parameter-handler',
         ),
+        'Endroid\\QrCode\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/endroid/qrcode/src',
+        ),
+        'Endroid\\Bundle\\QrCodeBundle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/endroid/qrcode-bundle/src',
+        ),
         'Doctrine\\Instantiator\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/instantiator/src/Doctrine/Instantiator',
@@ -183,6 +196,10 @@ class ComposerStaticInit2554ac6f5d571f82debebd2d3d7133d2
     public static $prefixesPsr0 = array (
         'T' => 
         array (
+            'Twig_Extensions_' => 
+            array (
+                0 => __DIR__ . '/..' . '/twig/extensions/lib',
+            ),
             'Twig_' => 
             array (
                 0 => __DIR__ . '/..' . '/twig/twig/lib',

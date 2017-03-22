@@ -441,7 +441,7 @@ class Compte  implements UserInterface
      */
     function setImage($image)
     {
-        $this->image = $image;
+        $this->image = stream_get_contents($image);
     }
 
     /**

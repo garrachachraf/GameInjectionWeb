@@ -18,6 +18,7 @@ class AppKernel extends Kernel
             new AppBundle\AppBundle(),
             new Eloboosted\GameinjectionBundle\EloboostedGameinjectionBundle(),
             new Eloboosted\LoginBundle\EloboostedLoginBundle(),
+            new Endroid\Bundle\QrCodeBundle\EndroidQrCodeBundle(),
             new Eloboosted\FrontofficeBundle\EloboostedFrontofficeBundle(),
             new Eloboosted\BackofficeBundle\EloboostedBackofficeBundle(),
         ];

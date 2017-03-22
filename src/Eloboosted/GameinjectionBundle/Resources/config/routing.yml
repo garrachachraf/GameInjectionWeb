@@ -1,3 +1,4 @@
+
 eloboosted_gameinjection_homepage:
     path:     /
     defaults: { _controller: EloboostedGameinjectionBundle:Default:index }

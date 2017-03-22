@@ -9,16 +9,17 @@ use Symfony\Component\Security\Core\Authentication\Token\UsernamePasswordToken;
 class DefaultController extends Controller
 {
     public function indexAction(Request $request)
-    {   if ($request->isMethod("POST")){
-        $success = 0 ;
+    {   $success = 0;
+        if ($request->isMethod("POST")){
+        $success = 1 ;
         $em = $this->getDoctrine()->getManager();
         $pseudo = $request->get('login_username');
         $pass  = $request->get('login_password');
         $user = $em->getRepository("EloboostedGameinjectionBundle:Compte")->findOneBy(array('pseudo'=>$pseudo,"motDePasse"=>$pass));
         if ($user != null)
         {
-            $success = 1;
-            $providerKey = 'secured_area'; // your firewall name
+            $success = 2;
+            $providerKey = 'secured_area'; //  firewall name
             $token = new UsernamePasswordToken($user, null, $providerKey, $user->getRoles());
 
             $this->container->get('security.token_storage')->setToken($token);
@@ -33,7 +34,7 @@ class DefaultController extends Controller
 
         }
 
-        return $this->render("EloboostedLoginBundle:Default:loginform.html.twig");
+        return $this->render("EloboostedLoginBundle:Default:loginform.html.twig",array("success"=>$success));
     }
 
     public function checkloginsAction(Request $request)

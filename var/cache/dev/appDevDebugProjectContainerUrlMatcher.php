@@ -115,20 +115,76 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
                 return array (  '_controller' => 'Eloboosted\\BackofficeBundle\\Controller\\DefaultController::indexAction',  '_route' => 'eloboosted_backoffice_homepage',);
             }
 
-            if (0 === strpos($pathinfo, '/add')) {
-                // eloboosted_frontoffice_homepage
-                if ($pathinfo === '/addTournament') {
-                    return array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\TournamentController::addAction',  '_route' => 'eloboosted_frontoffice_homepage',);
-                }
-
-                // AddProduct_page
-                if ($pathinfo === '/addProd') {
-                    return array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\ProductsController::AddProductAction',  '_route' => 'AddProduct_page',);
-                }
-
+            // AddProduct_page
+            if ($pathinfo === '/addProd') {
+                return array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\ProductsController::AddProductAction',  '_route' => 'AddProduct_page',);
             }
 
         }
+
+        // frontoffice_index
+        if (rtrim($pathinfo, '/') === '') {
+            if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                $allow = array_merge($allow, array('GET', 'HEAD'));
+                goto not_frontoffice_index;
+            }
+
+            if (substr($pathinfo, -1) !== '/') {
+                return $this->redirect($pathinfo.'/', 'frontoffice_index');
+            }
+
+            return array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\DefaultController::indexAction',  '_route' => 'frontoffice_index',);
+        }
+        not_frontoffice_index:
+
+        // tournoi_index
+        if (0 === strpos($pathinfo, '/Tournaments') && preg_match('#^/Tournaments(?:/(?P<p>[^/]++))?$#s', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'tournoi_index')), array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\TournoiController::indexAction',  'p' => 1,));
+        }
+
+        // tournoi_show
+        if (preg_match('#^/(?P<id>[^/]++)/showTournament$#s', $pathinfo, $matches)) {
+            if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                $allow = array_merge($allow, array('GET', 'HEAD'));
+                goto not_tournoi_show;
+            }
+
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'tournoi_show')), array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\TournoiController::showAction',));
+        }
+        not_tournoi_show:
+
+        // tournoi_new
+        if ($pathinfo === '/newTournament') {
+            if (!in_array($this->context->getMethod(), array('GET', 'POST', 'HEAD'))) {
+                $allow = array_merge($allow, array('GET', 'POST', 'HEAD'));
+                goto not_tournoi_new;
+            }
+
+            return array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\TournoiController::newAction',  '_route' => 'tournoi_new',);
+        }
+        not_tournoi_new:
+
+        // tournoi_edit
+        if (preg_match('#^/(?P<id>[^/]++)/editTournament$#s', $pathinfo, $matches)) {
+            if (!in_array($this->context->getMethod(), array('GET', 'POST', 'HEAD'))) {
+                $allow = array_merge($allow, array('GET', 'POST', 'HEAD'));
+                goto not_tournoi_edit;
+            }
+
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'tournoi_edit')), array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\TournoiController::editAction',));
+        }
+        not_tournoi_edit:
+
+        // tournoi_delete
+        if (preg_match('#^/(?P<id>[^/]++)/deleteTournament$#s', $pathinfo, $matches)) {
+            if ($this->context->getMethod() != 'DELETE') {
+                $allow[] = 'DELETE';
+                goto not_tournoi_delete;
+            }
+
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'tournoi_delete')), array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\TournoiController::deleteAction',));
+        }
+        not_tournoi_delete:
 
         if (0 === strpos($pathinfo, '/login')) {
             // eloboosted_login_homepage
@@ -157,13 +213,9 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
 
         }
 
-        // eloboosted_gameinjection_homepage
-        if (rtrim($pathinfo, '/') === '') {
-            if (substr($pathinfo, -1) !== '/') {
-                return $this->redirect($pathinfo.'/', 'eloboosted_gameinjection_homepage');
-            }
-
-            return array (  '_controller' => 'Eloboosted\\GameinjectionBundle\\Controller\\DefaultController::indexAction',  '_route' => 'eloboosted_gameinjection_homepage',);
+        // endroid_qrcode
+        if (0 === strpos($pathinfo, '/qrcode') && preg_match('#^/qrcode/(?P<text>[\\w\\W]+)\\.(?P<extension>jpg|png|gif)$#s', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'endroid_qrcode')), array (  '_controller' => 'Endroid\\Bundle\\QrCodeBundle\\Controller\\QrCodeController::generateAction',));
         }
 
         // homepage

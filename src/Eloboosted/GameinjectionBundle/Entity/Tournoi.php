@@ -7,7 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Tournoi
  *
- * @ORM\Table(name="tournoi", indexes={@ORM\Index(name="id_compte", columns={"id_compte_trn"}), @ORM\Index(name="id_compte_2", columns={"id_compte_trn"}), @ORM\Index(name="id_game", columns={"id_game_trn"})})
+ * @ORM\Table(name="tournoi")
  * @ORM\Entity
  */
 class Tournoi
@@ -31,14 +31,14 @@ class Tournoi
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="start_date", type="date", nullable=false)
+     * @ORM\Column(name="start_date", type="datetime", nullable=false)
      */
     private $startDate;
 
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="end_date", type="date", nullable=false)
+     * @ORM\Column(name="end_date", type="datetime", nullable=false)
      */
     private $endDate;
 
@@ -82,7 +82,7 @@ class Tournoi
      *
      * @ORM\Column(name="etat", type="integer", nullable=false)
      */
-    private $etat;
+    private $etat=0;
 
     /**
      * @var string
@@ -102,14 +102,25 @@ class Tournoi
     private $idCompteTrn;
 
     /**
-     * @var \JeuPost
+     * @var \Gamelist
      *
-     * @ORM\ManyToOne(targetEntity="JeuPost")
+     * @ORM\ManyToOne(targetEntity="Gamelist")
      * @ORM\JoinColumns({
-     *   @ORM\JoinColumn(name="id_game_trn", referencedColumnName="id_game")
+     *   @ORM\JoinColumn(name="id_gamelist_trn", referencedColumnName="id_game")
      * })
      */
     private $idGameTrn;
+
+    /**
+     * Tournoi constructor.
+     * @param \DateTime $startDate
+     * @param \DateTime $endDate
+     */
+    public function __construct()
+    {
+        $this->startDate =  new \DateTime();
+        $this->endDate =  new \DateTime();
+    }
 
     /**
      * @return int
@@ -154,7 +165,7 @@ class Tournoi
     /**
      * @param \DateTime $startDate
      */
-    public function setStartDate($startDate)
+    public function setStartDate(\DateTime $startDate)
     {
         $this->startDate = $startDate;
     }
@@ -276,7 +287,12 @@ class Tournoi
      */
     public function getImageTournoi()
     {
-        return $this->imageTournoi;
+        if ($this->imageTournoi != null) {
+
+
+            return base64_encode(@stream_get_contents($this->imageTournoi));
+        }
+
     }
 
     /**
@@ -284,7 +300,11 @@ class Tournoi
      */
     public function setImageTournoi($imageTournoi)
     {
-        $this->imageTournoi = $imageTournoi;
+        if ($imageTournoi != null) {
+
+            $this->imageTournoi = @file_get_contents($imageTournoi);
+        }
+
     }
 
     /**
@@ -304,7 +324,7 @@ class Tournoi
     }
 
     /**
-     * @return \JeuPost
+     * @return \Gamelist
      */
     public function getIdGameTrn()
     {
@@ -312,7 +332,7 @@ class Tournoi
     }
 
     /**
-     * @param \JeuPost $idGameTrn
+     * @param \Gamelist $idGameTrn
      */
     public function setIdGameTrn($idGameTrn)
     {
