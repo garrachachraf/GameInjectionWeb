@@ -40,7 +40,7 @@
         <div class="col-md-3 left_col">
             <div class="left_col scroll-view">
                 <div class="navbar nav_title" style="border: 0;">
-                    <a href="#" class="site_title"><i class="fa fa-paw"></i> <span>Gentelella Alela!</span></a>
+                    <a href="#" class="site_title"><i class="fa fa-paw"></i> <span>GameInjection !</span></a>
                 </div>
 
                 <div class="clearfix"></div>
@@ -72,9 +72,9 @@
                                     <li><a href="#">Dashboard3</a></li>
                                 </ul>
                             </li>
-                            <li><a><i class="fa fa-edit"></i> Forms <span class="fa fa-chevron-down"></span></a>
+                            <li><a><i class="fa fa-edit"></i> Tournaments <span class="fa fa-chevron-down"></span></a>
                                 <ul class="nav child_menu">
-                                    <li><a href="#">General Form</a></li>
+                                    <li><a href="{{ path('eloboosted_backoffice_tournoi') }}">Tournaments List</a></li>
                                     <li><a href="#">Advanced Components</a></li>
                                     <li><a href="#">Form Validation</a></li>
                                     <li><a href="#">Form Wizard</a></li>
@@ -307,7 +307,7 @@
         <!-- /footer content -->
     </div>
 </div>
-{{ asset('') }}
+
 <!-- jQuery -->
 <script src="{{ asset('BOassets/vendors/jquery/dist/jquery.min.js') }}"></script>
 <!-- Bootstrap -->
@@ -348,6 +348,8 @@
 
 <!-- Custom Theme Scripts -->
 <script src="{{ asset('BOassets/build/js/custom.min.js') }}"></script>
+{% block extrascript %}
 
+{% endblock %}
 </body>
 </html>

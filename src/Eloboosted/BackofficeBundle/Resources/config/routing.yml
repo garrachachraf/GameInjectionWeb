@@ -1,3 +1,8 @@
 eloboosted_backoffice_homepage:
     path:     /
     defaults: { _controller: EloboostedBackofficeBundle:Default:index }
+
+eloboosted_backoffice_tournoi:
+    path:     /Tournaments
+    defaults: { _controller: EloboostedBackofficeBundle:Tournoi:index }
+

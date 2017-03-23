@@ -106,13 +106,21 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
         }
 
         if (0 === strpos($pathinfo, '/ad')) {
-            // eloboosted_backoffice_homepage
-            if (rtrim($pathinfo, '/') === '/admin') {
-                if (substr($pathinfo, -1) !== '/') {
-                    return $this->redirect($pathinfo.'/', 'eloboosted_backoffice_homepage');
+            if (0 === strpos($pathinfo, '/admin')) {
+                // eloboosted_backoffice_homepage
+                if (rtrim($pathinfo, '/') === '/admin') {
+                    if (substr($pathinfo, -1) !== '/') {
+                        return $this->redirect($pathinfo.'/', 'eloboosted_backoffice_homepage');
+                    }
+
+                    return array (  '_controller' => 'Eloboosted\\BackofficeBundle\\Controller\\DefaultController::indexAction',  '_route' => 'eloboosted_backoffice_homepage',);
                 }
 
-                return array (  '_controller' => 'Eloboosted\\BackofficeBundle\\Controller\\DefaultController::indexAction',  '_route' => 'eloboosted_backoffice_homepage',);
+                // eloboosted_backoffice_tournoi
+                if ($pathinfo === '/admin/Tournaments') {
+                    return array (  '_controller' => 'Eloboosted\\BackofficeBundle\\Controller\\TournoiController::indexAction',  '_route' => 'eloboosted_backoffice_tournoi',);
+                }
+
             }
 
             // AddProduct_page
