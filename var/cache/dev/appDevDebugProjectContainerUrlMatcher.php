@@ -186,6 +186,16 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
         }
         not_tournoi_delete:
 
+        // trournoi_commentaire_new
+        if (preg_match('#^/(?P<tournoi>[^/]++)/newcommenttr$#s', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'trournoi_commentaire_new')), array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\TournamentsCommentsController::NewAction',));
+        }
+
+        // get_user_img
+        if (0 === strpos($pathinfo, '/image') && preg_match('#^/image/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'get_user_img')), array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\ImagesController::imgAction',));
+        }
+
         if (0 === strpos($pathinfo, '/login')) {
             // eloboosted_login_homepage
             if (rtrim($pathinfo, '/') === '/login') {

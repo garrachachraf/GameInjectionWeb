@@ -58,10 +58,12 @@ class TournoiController extends Controller
     public function showAction(Tournoi $tournoi)
     {
         $deleteForm = $this->createDeleteForm($tournoi);
-
+        $em = $this->getDoctrine()->getManager();
+        $comments = $em->getRepository('EloboostedGameinjectionBundle:CommentaireTournoi')->findBy(array('idTournoiCt'=>$tournoi));
         return $this->render('EloboostedFrontofficeBundle:tournoi:show.html.twig', array(
             'tournoi' => $tournoi,
             'delete_form' => $deleteForm->createView(),
+            'comments'=>$comments,
         ));
     }
 

@@ -50,10 +50,18 @@ class CommentaireTournoi
      *
      * @ORM\ManyToOne(targetEntity="Tournoi")
      * @ORM\JoinColumns({
-     *   @ORM\JoinColumn(name="id_tournoi_ct", referencedColumnName="id_tournoi")
+     *   @ORM\JoinColumn(name="id_tournoi_ct", referencedColumnName="id_tournoi",nullable=false)
      * })
      */
     private $idTournoiCt;
+
+    /**
+     * CommentaireTournoi constructor.
+     */
+    public function __construct()
+    {
+        $this->date = new \DateTime();
+    }
 
     /**
      * @return int

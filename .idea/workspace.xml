@@ -2,189 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d73e6a33-b9cb-404e-b7d4-77be369b3955" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/game/review-widget.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Controller/TournoiController.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/classes.php.meta" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/index.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/00/00b435d0861b4f901003531bb0fff8eb5c1dfb777144a5a8986e1afa1c673a6d.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/01/01589ef68f56723a03fe2fb464b45478a1817f3c034e8388bb37be3b9ba19574.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/02/02a341218b390080f20f6122a640a05641e3f31a6ef97940de0efd5185b385f0.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/03/03485990cbf6b9350a1aff14792d05d459231578c61a8941007d3122252c7cbc.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/07/07f8cde302f547574927f50717392ef7e966980489a10a5a39fcb6373f5c5562.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/09/0960a2af4eab80affcbb2dacdf8d7345cb65aeb22a04411f986d37031a66d70f.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/0a/0a5c53ba4561348afc7a5c2f44cf4ffb11186d67a8bd0ba0f6532823d1a93ffe.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/0d/0d75ee457a609c4801d2846e3c8b60836bb0f34ee7732c628f90b440d410389b.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/10/1049ee0f9db43e746b3631b63eb238b92ad583263ea9a0d7f6ff246e08a0f07e.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/10/1091327e383cdafec38bd2d4824bed7f054ae1a0977d59123f626505b71a78f4.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/14/14f69655487754a404fb6f3079f452d2bb1847d3a43000bb2b66061d6e87ef6c.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/16/1686ed951375663288163e60b5f419697bddf76b26e2ae7bcb117bd7685986c3.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/17/17522c969acf8feff0522218f79a8cfa63845baabb5c692ef31ca94bc84f311e.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/18/1807cbcf9e409b6cc52ac885e041f6f819bb047675ff66e465d92e3aaf45c2f6.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/1e/1e77084fafa7abbd9bcc3f444855017a5d2a57bedd48e060a221b10ec4b4fb5c.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/24/2400b618b489a0af7231a409692b9f4e61c23dd8ccc440d543812d8ca0cbdcd2.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/24/2489c447d360757af50269aeea6d0d03c31d037317667f4d59ba553cd86ad104.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/26/266686d722a800272b6d33e7b312df243480b8438830d893fd95bad72edea606.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/28/282e32b3b23d0576965b9d2ca4d964778bfd129c16f34527b0bf390bb013f431.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/28/28e20234018a2ecfdefb2a3f217621c12885e08edf0dd865724447375fcbb939.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/29/29be6eb949fedcad103cd00d8567f4fd007c5ea44e7bd990942bd1169df1a05e.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/2a/2a119f75dc011fd4d5998539192be69f435fa49d778528d46251edc4304ed6fe.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/2e/2e683bb95ada65f60beca0e16b0c46c823a7849884b1252504083c2dee1f58f6.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/2e/2e97c6454a87e95768b7cbc8020a996b2a38a5862aa0ab260a1d1801cceac4f6.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/35/359ab8a3ceb4be21b1fb24199bd3b3ba25e59f87c771458466fdcdcbddd9ec59.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/36/36794aee932c506ab32af77ef01fcdb9c5ec1948476b2651f24752b3e7183622.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/37/37d55c1304cbb292aef67833a8edd7505e5b224f13e2b56a8203c772239c8b18.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/3a/3abcdf8fc3baca5875f43cdf370921b5766f74d9063d3878da9c5c4b2ece6a35.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/3d/3d6cf05463a525b7bdc5689571608ab06e178685225db03a051ae36698c5d286.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/3f/3fa74174ebc707e529b1371db7ed1ccbd3c5485fb222742e513a6210be4ff29b.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/40/40331fa885bc4753fc86925826198dcb3065a3b6de66a2b328258b3ae02aa417.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/40/40be913f483e8c1e739ca77a449f1a1776e5a992567a9edb24eeb9bd56b0bb8d.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/41/411617d03ff4ba4e5ca81d14aec257a7a8f7b6d3c524e06e222d21d1ad7a9f23.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/41/41250bc5b2ef1997dc142708556a8ea2916e0e5e18f5db76a2776bb048fc278e.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/42/42f417db92ec6bf3b1305b594bab29b18ad01113b8fe9dadd620fafc08f3a903.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/46/4612823942655cfbf49d7fdbbbc3b51cf2aea79589144cc2e4dd9631bf4c60ff.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/4a/4a2535627e29ab5f06ad58e8055f53bdd964d179ea0966ea21478ad17d996a7b.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/4c/4c0c586aaf44ba5a2a5d9e2c1c520c2ff594141e80f881e76c216eb6c7814a5e.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/4c/4ceb6f4bcb400330a6246d15ad3e50f8828575998d8149cb80db494863cd40b4.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/52/52a083bab0d778b4f46e67c7f1492c562170252ca9d75b2f636bdf4066e745ed.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/54/540513827599096cb675b84477fac11080a2b4404f6cda9e07658f0f61c4cdc3.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/55/552c81e00ee7148f6339909ce84a4aad5483b64e427a365ade7a178e07b80ed9.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/55/55f96636c806f3cb10eaf7696dec6a5164201b4d627345d21740f970d3af41be.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/56/56809d24338186cc5bce2063d350f5fa98f3766a3fd8fd7421bb1f16e0077334.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/56/56c75f41af11303f07e9055ce7cc431388cd4d9042c9c63217d2e635300a013a.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/56/56ea010869d64ca479c874bd40a52d7227c42f69d8ac36cd1d4775736f5ee69a.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/57/5716516de0e47d98c2f3efadcd388d3ca075d8b69aa0054bb2a5dd9dae17f593.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/5b/5b91c5dca3f1719b94012c92b8f0a27dd19665b4dba3a683f4ae942b864b1590.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/5d/5d0e5566471986b45f8f1bf56df395515f8fda6635491ed6c5f6ecc128515dcd.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/5d/5d3baf7232c93182066d1a9d132e6ac68047282b60cfb40ae04ced1b6bfb9306.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/5d/5dcbf33d31d9963e230c629cecea8a85114f8f1f51e3f36036249ccddc22f584.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/5e/5e656b2f06859420d47762f24ba11f21ad27473ee286c541870793ae0b7eb24c.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/5f/5fb5100cead625a7eb4d4c43f56f09d8dcd4a95d6d4a9ce2433e62aa95f4b920.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/60/60f6e234c985470c89003f2c0348a1815fee478d857d12d52255568e801e424c.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/62/62e4226dc61d32fdd2c2c7bd78bde404c656cb8f075dcf6f4e9375b9630e2c4a.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/63/63d4137de9f92c7e0ae1a36a6bcb0ce8168a584643016027287b2ea0fd30baf0.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/63/63e28086b20c2558a3f2b017a391cdb26e6eb6bfe62d811eecdaa5506267136a.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/64/64589981b536fd501c4a33d226a27414fbc2dbb06f2bbb842c2cb4688abc5584.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/68/6838e5a2cce2d354abb7a79222dab935c34fb06814d7901e34a3e024b3ade939.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/6a/6a0d8aaa0adc1bedb9409ab366235c318631bb6dd80d109ddb07093ba9421b31.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/6a/6a808240dcfe6c6e774a9594b7bf69833e8de7c5aa6358e75a7475ce43fbf9fb.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/6b/6be2be6a342f169738c7751411ed0a50b605d625b93806c65670708c72ebf199.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/70/70b06493f20ad89ebf3d3956c766dfe20868d477f7e233ed629a4e6e65d6ecb2.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/71/712bd51cb614476d4c9e12dd6338b9a9d8f322dda2943f2c8865cdede84760d6.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/73/73e5ab3a6b228e8c63c5450595bf127417db9c814d348ab95b1c45237fffd186.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/76/763ea410f7cc2606b4928e33996c8fb13c91b2a60b4654d79832b2beba464891.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/7b/7b5cd62b5eb7539a7bc2acea7c04a5cbd38a8db50a18f883a333caeec08cf8f0.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/7c/7ca065f6a911ba320654916ec286ffa7016e3a4a49ffa797e5cb597c315b672d.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/7e/7eadba164328f65c6cf4348a2a8c2c097991a0bd6108aff3831b43e26cce3a0c.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/7f/7fde0592cba5c2da88f8a9aa1e0349781fb05c25e7880013b37a8f71d90f6b88.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/80/802c09303c9e6aeb27c394ba3fa310e268c929210226fe9a9cd121575ea0648b.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/81/813e65ce37fc361b194936cc8a58f6844200615e4bc7cd4ebdc643ff6d0f57dd.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/81/8162cad86e77d584183d979ddf2fd78bcec018c94d06f2a40825fe80db1ea5f2.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/82/829e5455dcc81655ac8d0f54c34e05489cefdd693b359dce52957e88b5f793a7.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/85/8583ba131d0b3754308589c18f440ff2dea4e69c1458b9b577c676d6030697f7.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/87/875dfe1bebc4176ce4e0c27a827d32a4ec3050de73fe1c902876e8de94fbf646.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/88/884f172cd5368dfd15a3a157f5267a43e19faff145a70f47b4b51956b6323baa.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/8c/8c00e96f3713e3ba0ca3f9087167c01cd91f87aeedb745fb4be0d0f18041a241.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/8c/8c31524f0882ad83d2954a49bd28abb2e7682371c2921ebebfec5fc238ac9de4.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/8c/8c64498bb971651db7b04b86b7af20fb78b09c8be3609780aba7e56211f3f6cc.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/8e/8e6cf6236b59eb69cfe5e47a50a72a34d287caf8c9aac53b52b4cb294c5b95a9.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/8f/8f8aeea62e574a9ce31ef7d0fc2a03f96cc0c55df29ff1efeb9d7ff116d85389.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/93/930330680836a6fe44039352612daa343329386d25770658b80271427a394c51.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/93/93fe56682e0148d5e372c638d980aece02f2826415de1f1c3db538ee1e8c3f33.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/95/954cc658af9c0ce524b149bebf868e21a33000a224e217a60c183e541f834bd6.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/95/95f65c0b054e39579ff438ee6b55e5d0408cbd7ee8c30d1a355decb0f93f07f7.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/9b/9b05040be595d521a4dcd4a53ecce55ac059434f7b7eeef7e06d3acbe9579baf.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/9b/9b2b3377feae404db28069dd2367b3eb4d52d73b00fe4fe9b667e8d710d1d63b.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/9c/9c03463f68970efa879d52f1f86160b8ada06b2ac38d484d2a370e79a8514acb.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/9c/9c209efe7a93edd01d0d5515a43a635b301a2bcebea17ebda6270875f566b68d.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/9d/9d26af26919478b4fee7703e6cab2194784ae2c47ee3c2ed999fad8c90c21330.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/9d/9dc04267e1e51e158c8269baea64abd196e5884627faef5f96b5811cb202221b.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/9e/9e199b6212bb5472ec0f453f96f55d55cf0f8c70be2599b0d7f859d499f1730d.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/9e/9e7d6b15f993f86138fd3c0406dd0613056bcfd1e4f998fbc2394441f1b66290.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/a2/a257a1185c326919eabff150c7351c24ec648677ea3dcb38042bbfc3d0abadec.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/a5/a5563af2133d9b4ee29523205ad1b5b43d08fd08289058f550cd787242d3cabe.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/a5/a5aeeaaa78854cb574d829d12f6fa2957b09d99c24266ba0ed8ee72ee5912bb3.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/a7/a7cdcdfa6e1f53d7c12ce95ad6163c0fed45f66afc6e80604137715697ced654.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/a8/a81fb50d96c1069211270dd8f9345992e5f5ba8b69f67a09fc60a377f143e95e.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/a8/a84d56b8caa378f5b0941bc6959268e6d9e0a28baa515d9daa76f936f079dae2.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/aa/aac3e10d251792e0f39c4ec223511835787a38063cb3ce5d02d16cfdb3d106ad.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/ab/ab30111f74f6ee6c5f18348d3f02e6b47a0f51985741a6e6a19e9f88831d9e7b.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/ab/abd4ee230e43d308f4eca9d44fee1d8ee6f2a251ff221410f65f6b01b456ff96.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/ac/ac35e83b26edb8ca51dcddc0f548534692887ad3592741c8ccdd74e8182be277.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/ac/acec0f7e315b540f45dc5c94c68b2f84ee1192042b44f26827b3459b1cb7b248.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/ad/ada770edce83cf065bf2bf1854db1190441bd1d2270c218052ee80d4cc9040ee.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/ae/aeb649c7e87d70a6f1344716588e0d4e44d7df164faa01e7967d54177adbcddb.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/b4/b4b8fecb7ebfdf35fd5aac01686ad2291397c695fca75355986f0e71b67df70a.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/b8/b8df520d9295f815b846a38617e7ad0a8fcac90bcb301253e9a3b15e42688907.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/b8/b8f966f42e25381ec045ccb458f351ae0f90f779037343a4955908548d87b5f4.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/c0/c002b376da78af7859f486eb63211fa02f05fe74a86f54ee3e30db4724a34779.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/c1/c1f84de9bb6092018d5a5cf2ddc447dda1a84efa0c7e1be9adad5348b0905404.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/c3/c3df617fc643d999a7c4397f287584cda36d1472711287e9764a1a2668009733.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/c3/c3e74c7aef3e1dc3ea8f953722d8e1381568d84589572c2130606f3414c9b56e.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/c4/c4423482e58787130dd2fec00bdc87c52ed249c2aedaeaaaf658b1bee1a9848c.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/c5/c54e67472d45efdb095f5322f1a3895f43ed045f80848879a2c56086e3501926.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/c7/c7e6a37475584dcce99bb7bd3aaa40693b96ce13d62951d4e12e130b65d5f9e8.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/ca/ca50ce739968ed24a54f687a3d5c8ea13bec23466f2a55009d550053f670ecc5.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/cb/cb18b60a6841549a8e5b9909e149a769b6064cf829ff9047d8a7b593806b9bc6.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/cb/cb9baeed8143b8e146eca6711f27bef7510b5fc190d88732185bd98aec0bc83c.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/ce/ce23fb2c9c254529a4e13f4a8742708e288601fb9e6bc1f06c6d0bb0f37f6f18.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/ce/cef1c22f21031b0d9b08fcbcf8a0da637c8b2c2cbb325e14211c3dc64c51d8a4.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/cf/cfa06a2ec5d466db72babaf261187f7c46a33d9b0aaa678494895c827bf3c973.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/d0/d09521d8455913fd084f9396f05ee27ea4f272ecd85f2bb8fe44e392a8f208fe.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/d4/d43760e9c1f76815b5485baa2d63b4d2409a8416752c3dedfca0c98da19a6b86.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/d5/d50388430d1d25fb8b800709e0461ea13e51cd29f745a770d7509c6517d6c614.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/d5/d509a0df3524428cd65a078ffd2af5afbbb23e4d7b99e09dbad64da92e3fd387.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/d6/d64f24337510eddfdec02195ac03c351aafe908ceabe2061211e8b321b3c2375.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/d7/d797b3698bc966d4ccbd76f454e56e8061dd2f24b20435ee733ba3a4fc5c7735.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/d7/d7b2c1fac7f82fbd7d1e75c6da7d3358d51d377e21d2398f35c3c1b38256d779.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/da/da1efe81e42c9713521ebb66f010f0b02c58f5a21f7392ddef04b6ce3b926d9c.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/e4/e43dffbccc7d6bf68eb499362981c9d26427a90802ef1846d6b205ad33d81123.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/e6/e6689fa2df0b4c4f78874a4a9bc284b36ba31eb77c00753d661b040de6f0c7a3.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/e7/e72bd147576b832482181aeea6d5499eb073043da7b2a801e1a3193c33e19b0e.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/e7/e794b4660f8acd44ae3996909ecf71b9acdd830782eb1d0d849584b004dba963.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/e8/e833b56f1ca2c6c6e2945be5e593d75492258abf3c7e01a15699756ed3d98ae8.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/ec/ecaee399ceb4a31fa5178499b9627334edc71b87c87ee5c272e6806d52353594.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/ec/ecd9714a00348bfdc612b7343ab67282d2305607cec123bd128259e803dab315.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/ed/ed0599dd4a941f53d3a17c5ade41620f9d087fd78a229652c8669f0af2209284.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/ee/eef00fc652f298509f34295e754a88e8bb725ca14c26adef5fdb1b8cd95a2210.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/f2/f284fd32c0bc821d7eb4035f0729169b5a2f5e1b183dbcc10bf82b3a29980061.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/f5/f5e6bad5bfcb325ba7fe52faefb565e4631567aaa6fa5ffe84f9f7dac5321e74.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/f7/f7d1230689a1bc5ffc4ae1e68b524b5c0062c7f37e592ab28f90dcddeb8deb69.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/f7/f7d1601616837b165258aaba85fa44938b34360dead1e683c070b9374301b9ce.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/f8/f8be7545717c43efb9cf3f89991c288522cb94974a1e6aa00b9a320d9c85a8cb.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/f9/f93010f14a2b981c9878ff1be6a78695ebe041f0e36494c691c7969f50cb08a2.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/fb/fb1240dd39df56e143db852d8b41fc70e8f97c341df1e23014bbe849ca2330b2.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/fb/fb29c70592450b2eeee271989d2bfbe48fba2af1111c54ec07969287c1549f83.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/fb/fb829a33f6ebce4289518ecbc8e6db22db72a309492b766557686b50cd022abb.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/fb/fb9c9374262706bfadb4b153cb44786cf26e493df324a48b566674c75dd935dc.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/fe/feb9675a8589c5e12501f69b79989f89978657ea553508704ec72b1353754d29.php" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Controller/ImagesController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Controller/TournamentsCommentsController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/brudnfEy1f/O/C/kk2eNsXNvqLNJlgjx8Lp" afterPath="$PROJECT_DIR$/var/cache/dev/pools/brudnfEy1f/O/C/kk2eNsXNvqLNJlgjx8Lp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/sessions/dev/sess_1jkgoj16kodg75kvf0qj0h3m95" afterPath="$PROJECT_DIR$/var/sessions/dev/sess_1jkgoj16kodg75kvf0qj0h3m95" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/sessions/dev/sess_m0dedu6698p1pap0lokvsa4mb5" afterPath="$PROJECT_DIR$/var/sessions/dev/sess_m0dedu6698p1pap0lokvsa4mb5" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sprintweb2.iml" afterPath="$PROJECT_DIR$/.idea/sprintweb2.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AppKernel.php" afterPath="$PROJECT_DIR$/app/AppKernel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/routing.yml" afterPath="$PROJECT_DIR$/app/config/routing.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/security.yml" afterPath="$PROJECT_DIR$/app/config/security.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/services.yml" afterPath="$PROJECT_DIR$/app/config/services.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Eloboosted/BackofficeBundle/Resources/views/Default/Layout.html.twig" afterPath="$PROJECT_DIR$/src/Eloboosted/BackofficeBundle/Resources/views/Default/Layout.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Controller/TournoiController.php" afterPath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Controller/TournoiController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Resources/config/routing.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Resources/views/Default/Layout.html.twig" afterPath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Resources/views/Default/Layout.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Eloboosted/GameinjectionBundle/Entity/Compte.php" afterPath="$PROJECT_DIR$/src/Eloboosted/GameinjectionBundle/Entity/Compte.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Eloboosted/GameinjectionBundle/Entity/Tournoi.php" afterPath="$PROJECT_DIR$/src/Eloboosted/GameinjectionBundle/Entity/Tournoi.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Eloboosted/GameinjectionBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/Eloboosted/GameinjectionBundle/Resources/config/routing.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Eloboosted/LoginBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/Eloboosted/LoginBundle/Controller/DefaultController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Eloboosted/LoginBundle/Resources/views/Default/loginform.html.twig" afterPath="$PROJECT_DIR$/src/Eloboosted/LoginBundle/Resources/views/Default/loginform.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Eloboosted/GameinjectionBundle/Entity/CommentaireTournoi.php" afterPath="$PROJECT_DIR$/src/Eloboosted/GameinjectionBundle/Entity/CommentaireTournoi.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations.map" afterPath="$PROJECT_DIR$/var/cache/dev/annotations.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations.php" afterPath="$PROJECT_DIR$/var/cache/dev/annotations.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.php" afterPath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.php.meta" afterPath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.php.meta" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.xml" afterPath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainerCompiler.log" afterPath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainerCompiler.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainerUrlGenerator.php" afterPath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainerUrlGenerator.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainerUrlGenerator.php.meta" afterPath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainerUrlGenerator.php.meta" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainerUrlMatcher.php" afterPath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainerUrlMatcher.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainerUrlMatcher.php.meta" afterPath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainerUrlMatcher.php.meta" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/classes.map" afterPath="$PROJECT_DIR$/var/cache/dev/classes.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/classes.php" afterPath="$PROJECT_DIR$/var/cache/dev/classes.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/brudnfEy1f/+/5/KtszP7xMmjGcXxpXfSie" afterPath="$PROJECT_DIR$/var/cache/dev/pools/brudnfEy1f/+/5/KtszP7xMmjGcXxpXfSie" />
@@ -444,11 +276,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/templates.php" afterPath="$PROJECT_DIR$/var/cache/dev/templates.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/validation.php" afterPath="$PROJECT_DIR$/var/cache/dev/validation.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/logs/dev.log" afterPath="$PROJECT_DIR$/var/logs/dev.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" afterPath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/installed.json" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -467,25 +294,41 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TournoiType.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Form/TournoiType.php">
+      <file leaf-file-name="TournoiController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Controller/TournoiController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" column="14" lean-forward="false" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+            <state relative-caret-position="176">
+              <caret line="65" column="34" lean-forward="false" selection-start-line="65" selection-start-column="34" selection-end-line="65" selection-end-column="34" />
               <folding>
-                <element signature="e#53#102#0#PHP" expanded="true" />
+                <element signature="e#59#109#0#PHP" expanded="true" />
+                <element signature="e#450#489#1#PHP" expanded="true" />
+                <element signature="e#1899#1949#1#PHP" expanded="true" />
+                <element signature="e#2021#2073#0#PHP" expanded="true" />
+                <element signature="e#2836#2850#0#PHP" expanded="true" />
+                <element signature="e#4382#4398#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TournoiController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Controller/TournoiController.php">
+      <file leaf-file-name="ProductsController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Controller/ProductsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state relative-caret-position="165">
+              <caret line="11" column="5" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TournamentsCommentsController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Controller/TournamentsCommentsController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="22" column="42" lean-forward="false" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
               <folding>
-                <element signature="e#59#109#0#PHP" expanded="true" />
+                <element signature="e#59#120#0#PHP" expanded="true" />
+                <element signature="e#834#873#1#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -494,45 +337,74 @@
       <file leaf-file-name="show.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Resources/views/tournoi/show.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="508">
-              <caret line="67" column="77" lean-forward="false" selection-start-line="67" selection-start-column="77" selection-end-line="67" selection-end-column="77" />
+            <state relative-caret-position="539">
+              <caret line="155" column="58" lean-forward="false" selection-start-line="155" selection-start-column="58" selection-end-line="155" selection-end-column="58" />
               <folding>
+                <element signature="e#836#849#0#Twig" expanded="true" />
+                <element signature="e#1572#1584#0#Twig" expanded="true" />
+                <element signature="e#8238#8250#0#Twig" expanded="true" />
+                <element signature="e#9126#9150#0#Twig" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#2;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#2;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#2;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#4;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#2;n#div#0;n#!!top" expanded="true" />
-                <element signature="e#13291#17761#0#HTML" expanded="false" />
-                <marker date="1490144783000" expanded="false" signature="13347:15910" ph="..." />
+                <element signature="e#12900#17370#0#HTML" expanded="false" />
+                <element signature="e#18641#18654#0#Twig" expanded="true" />
+                <element signature="e#18739#18751#0#Twig" expanded="true" />
+                <marker date="1490231109000" expanded="false" signature="12956:15519" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="security.yml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/config/security.yml">
+      <file leaf-file-name="ImagesController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Controller/ImagesController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="68" lean-forward="false" selection-start-line="7" selection-start-column="68" selection-end-line="7" selection-end-column="68" />
+            <state relative-caret-position="210">
+              <caret line="14" column="92" lean-forward="false" selection-start-line="14" selection-start-column="92" selection-end-line="14" selection-end-column="92" />
+              <folding>
+                <element signature="e#59#116#0#PHP" expanded="true" />
+                <element signature="e#397#435#1#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routing.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Resources/config/routing.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="356">
+              <caret line="32" column="12" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MessageFactory.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/symfony/monolog-bundle/SwiftMailer/MessageFactory.php">
+      <file leaf-file-name="Compte.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Eloboosted/GameinjectionBundle/Entity/Compte.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="18" column="20" lean-forward="false" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="20" />
+            <state relative-caret-position="-1564">
+              <caret line="542" column="4" lean-forward="false" selection-start-line="542" selection-start-column="4" selection-end-line="636" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="services.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/services.yml">
+      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Eloboosted/BackofficeBundle/Resources/views/Default/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="41" lean-forward="false" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+            <state relative-caret-position="0">
+              <caret line="0" column="21" lean-forward="false" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Layout.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Eloboosted/BackofficeBundle/Resources/views/Default/Layout.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="51" column="52" lean-forward="false" selection-start-line="51" selection-start-column="52" selection-end-line="51" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -578,6 +450,9 @@
       <find>YAKUZI</find>
       <find>JeuPost</find>
       <find>Jeu</find>
+      <find>comme</find>
+      <find>getid</find>
+      <find>lea</find>
     </findStrings>
     <replaceStrings>
       <replace>getIdTournoi</replace>
@@ -605,6 +480,7 @@
       <command text="s cache:clear" />
       <command text="s doctrine:schema:update --force " />
       <command text="s cache:clear" />
+      <command text="s doctrine:schema:update --force " />
     </commandsHistory>
   </component>
   <component name="Git.Settings">
@@ -637,9 +513,7 @@
         <option value="$PROJECT_DIR$/src/Eloboosted/GameinjectionBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/Eloboosted/GameinjectionBundle/Controller/TournoiController.php" />
         <option value="$PROJECT_DIR$/src/Eloboosted/GameinjectionBundle/Resources/config/routing/tournoi.yml" />
-        <option value="$PROJECT_DIR$/src/Eloboosted/GameinjectionBundle/Entity/Compte.php" />
         <option value="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Resources/views/tournoi/edit.html.twig" />
-        <option value="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Resources/views/Default/Layout.html.twig" />
         <option value="$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Form/Extension/Core/Type/TextType.php" />
         <option value="$PROJECT_DIR$/app/AppKernel.php" />
@@ -650,9 +524,14 @@
         <option value="$PROJECT_DIR$/src/Eloboosted/GameinjectionBundle/Entity/Tournoi.php" />
         <option value="$PROJECT_DIR$/src/Eloboosted/GameinjectionBundle/Resources/config/doctrine/Tournoi.orm.yml" />
         <option value="$PROJECT_DIR$/app/config/services.yml" />
-        <option value="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Controller/TournoiController.php" />
-        <option value="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Resources/views/tournoi/show.html.twig" />
         <option value="$PROJECT_DIR$/app/config/security.yml" />
+        <option value="$PROJECT_DIR$/src/Eloboosted/GameinjectionBundle/Entity/CommentaireTournoi.php" />
+        <option value="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Controller/TournamentsCommentsController.php" />
+        <option value="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Controller/TournoiController.php" />
+        <option value="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Controller/ImagesController.php" />
+        <option value="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Resources/views/tournoi/show.html.twig" />
+        <option value="$PROJECT_DIR$/src/Eloboosted/GameinjectionBundle/Entity/Compte.php" />
       </list>
     </option>
   </component>
@@ -858,7 +737,7 @@
       <workItem from="1489932251785" duration="3197000" />
       <workItem from="1489961505840" duration="15047000" />
       <workItem from="1490136735702" duration="316000" />
-      <workItem from="1490137056074" duration="6387000" />
+      <workItem from="1490137056074" duration="13399000" />
     </task>
     <task id="LOCAL-00001" summary="add tournament controller + products controller">
       <created>1489284724008</created>
@@ -902,11 +781,18 @@
       <option name="project" value="LOCAL" />
       <updated>1489322156608</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add tournament&#10;modifie tournament&#10;show tournament">
+      <created>1490195325693</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1490195325693</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71479000" />
+    <option name="totallyTimeSpent" value="78491000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="829" extended-state="0" />
@@ -944,34 +830,14 @@
     <MESSAGE value="add tournament controller + products controller" />
     <MESSAGE value="add admin template" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="add tournament&#10;modifie tournament&#10;show tournament" />
+    <option name="LAST_COMMIT_MESSAGE" value="add tournament&#10;modifie tournament&#10;show tournament" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/js/core.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Eloboosted/LoginBundle/Resources/views/Default/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Eloboosted/GameinjectionBundle/Entity/TProduit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="35" column="31" lean-forward="false" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Eloboosted/BackofficeBundle/Resources/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -993,24 +859,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Eloboosted/BackofficeBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Eloboosted/GameinjectionBundle/Entity/Listjaime.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Eloboosted/LoginBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="20" column="24" lean-forward="false" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -1049,13 +901,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Controller/ProductsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="5" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Eloboosted/GameinjectionBundle/Controller/TournoiController.php" />
     <entry file="file://$PROJECT_DIR$/src/Eloboosted/GameinjectionBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -1072,31 +917,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Eloboosted/BackofficeBundle/Resources/views/Default/Layout.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-60">
-          <caret line="39" column="39" lean-forward="false" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Eloboosted/BackofficeBundle/Resources/views/Default/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="21" lean-forward="false" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Resources/views/tournoi/edit.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="12" lean-forward="false" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -1152,14 +976,6 @@
     <entry file="file://$PROJECT_DIR$/src/Eloboosted/GameinjectionBundle/Entity/CommentairePost.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Eloboosted/GameinjectionBundle/Entity/CommentaireTournoi.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1507">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -1253,18 +1069,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Eloboosted/GameinjectionBundle/Entity/Compte.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5595">
-          <caret line="431" column="48" lean-forward="false" selection-start-line="430" selection-start-column="8" selection-end-line="431" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/services.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="41" lean-forward="false" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Form/TournoiType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="14" lean-forward="false" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+          <folding>
+            <element signature="e#53#102#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/monolog-bundle/SwiftMailer/MessageFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="18" column="20" lean-forward="false" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="53" lean-forward="false" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Eloboosted/LoginBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="26" lean-forward="false" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Controller/TournamentController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1280,53 +1130,116 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Form/TournoiType.php">
+    <entry file="file://$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Controller/ProductsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="14" lean-forward="false" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
-          <folding>
-            <element signature="e#53#102#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="165">
+          <caret line="11" column="5" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/monolog-bundle/SwiftMailer/MessageFactory.php">
+    <entry file="file://$PROJECT_DIR$/src/Eloboosted/GameinjectionBundle/Entity/CommentaireTournoi.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="18" column="20" lean-forward="false" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="20" />
+        <state relative-caret-position="-930">
+          <caret line="52" column="95" lean-forward="false" selection-start-line="52" selection-start-column="95" selection-end-line="52" selection-end-column="95" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Controller/TournamentsCommentsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="22" column="42" lean-forward="false" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
+          <folding>
+            <element signature="e#59#120#0#PHP" expanded="true" />
+            <element signature="e#834#873#1#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Controller/TournoiController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        <state relative-caret-position="176">
+          <caret line="65" column="34" lean-forward="false" selection-start-line="65" selection-start-column="34" selection-end-line="65" selection-end-column="34" />
           <folding>
             <element signature="e#59#109#0#PHP" expanded="true" />
+            <element signature="e#450#489#1#PHP" expanded="true" />
+            <element signature="e#1899#1949#1#PHP" expanded="true" />
+            <element signature="e#2021#2073#0#PHP" expanded="true" />
+            <element signature="e#2836#2850#0#PHP" expanded="true" />
+            <element signature="e#4382#4398#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Eloboosted/BackofficeBundle/Resources/views/Default/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="21" lean-forward="false" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Eloboosted/BackofficeBundle/Resources/views/Default/Layout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="51" column="52" lean-forward="false" selection-start-line="51" selection-start-column="52" selection-end-line="51" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Eloboosted/BackofficeBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="32" column="12" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Controller/ImagesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="92" lean-forward="false" selection-start-line="14" selection-start-column="92" selection-end-line="14" selection-end-column="92" />
+          <folding>
+            <element signature="e#59#116#0#PHP" expanded="true" />
+            <element signature="e#397#435#1#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Resources/views/tournoi/show.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
-          <caret line="67" column="77" lean-forward="false" selection-start-line="67" selection-start-column="77" selection-end-line="67" selection-end-column="77" />
+        <state relative-caret-position="539">
+          <caret line="155" column="58" lean-forward="false" selection-start-line="155" selection-start-column="58" selection-end-line="155" selection-end-column="58" />
           <folding>
+            <element signature="e#836#849#0#Twig" expanded="true" />
+            <element signature="e#1572#1584#0#Twig" expanded="true" />
+            <element signature="e#8238#8250#0#Twig" expanded="true" />
+            <element signature="e#9126#9150#0#Twig" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#2;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#2;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#2;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#4;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="e#13291#17761#0#HTML" expanded="false" />
-            <marker date="1490144783000" expanded="false" signature="13347:15910" ph="..." />
+            <element signature="e#12900#17370#0#HTML" expanded="false" />
+            <element signature="e#18641#18654#0#Twig" expanded="true" />
+            <element signature="e#18739#18751#0#Twig" expanded="true" />
+            <marker date="1490231109000" expanded="false" signature="12956:15519" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
+    <entry file="file://$PROJECT_DIR$/src/Eloboosted/GameinjectionBundle/Entity/Compte.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="68" lean-forward="false" selection-start-line="7" selection-start-column="68" selection-end-line="7" selection-end-column="68" />
+        <state relative-caret-position="-1564">
+          <caret line="542" column="4" lean-forward="false" selection-start-line="542" selection-start-column="4" selection-end-line="636" selection-end-column="5" />
           <folding />
         </state>
       </provider>

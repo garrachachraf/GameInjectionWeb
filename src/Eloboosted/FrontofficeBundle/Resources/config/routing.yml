@@ -27,3 +27,9 @@ tournoi_delete:
     path:     /{id}/deleteTournament
     defaults: { _controller: "EloboostedFrontofficeBundle:Tournoi:delete" }
     methods:  DELETE
+trournoi_commentaire_new:
+    path:     /{tournoi}/newcommenttr
+    defaults: { _controller: "EloboostedFrontofficeBundle:TournamentsComments:New" }
+get_user_img:
+    path:     /image/{id}
+    defaults: { _controller: EloboostedFrontofficeBundle:Images:img }
