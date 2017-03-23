@@ -1,8 +1,6 @@
 # To get started with security, check out the documentation:
 # http://symfony.com/doc/current/security.html
 security:
-    role_hierarchy:
-        ROLE_ADMIN:         [ROLE_USER]
     providers:
         # in this example, users are stored via Doctrine in the database
         # To see the users at src/AppBundle/DataFixtures/ORM/LoadFixtures.php
@@ -39,7 +37,7 @@ security:
 
             logout:
                 # The route name the user can go to in order to logout
-                path: security_logout
+                path: /security_logout
                 # The name of the route to redirect to after logging out
                 target: homepage
 

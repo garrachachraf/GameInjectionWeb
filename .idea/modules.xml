@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/sprintweb2.iml" filepath="$PROJECT_DIR$/.idea/sprintweb2.iml" />
+      <module fileurl="file://C:/wamp/www/sprintweb/.idea/sprintweb.iml" filepath="C:/wamp/www/sprintweb/.idea/sprintweb.iml" />
     </modules>
   </component>
 </project>

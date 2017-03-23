@@ -196,6 +196,49 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
             return $this->mergeDefaults(array_replace($matches, array('_route' => 'get_user_img')), array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\ImagesController::imgAction',));
         }
 
+        // home
+        if ($pathinfo === '/home') {
+            return array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\DefaultController::indexAction',  '_route' => 'home',);
+        }
+
+        // AddPost
+        if ($pathinfo === '/addPost') {
+            return array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\PostController::addPostAction',  '_route' => 'AddPost',);
+        }
+
+        // showAllPosts
+        if ($pathinfo === '/showAllPosts') {
+            return array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\PostController::showAllPostsAction',  '_route' => 'showAllPosts',);
+        }
+
+        if (0 === strpos($pathinfo, '/re')) {
+            // readPost
+            if ($pathinfo === '/readPost') {
+                return array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\PostController::readPostAction',  '_route' => 'readPost',);
+            }
+
+            // removePost
+            if ($pathinfo === '/removePost') {
+                return array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\PostController::removePostAction',  '_route' => 'removePost',);
+            }
+
+        }
+
+        // like
+        if ($pathinfo === '/like') {
+            return array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\PostController::likeAction',  '_route' => 'like',);
+        }
+
+        // commentaire
+        if (0 === strpos($pathinfo, '/commentaire') && preg_match('#^/commentaire/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'commentaire')), array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\PostController::commentaireAction',));
+        }
+
+        // Addcommentaire
+        if (0 === strpos($pathinfo, '/Addcommentaire') && preg_match('#^/Addcommentaire/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'Addcommentaire')), array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\PostController::AddcommentaireAction',));
+        }
+
         if (0 === strpos($pathinfo, '/login')) {
             // eloboosted_login_homepage
             if (rtrim($pathinfo, '/') === '/login') {
@@ -219,6 +262,11 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
             // userpage
             if ($pathinfo === '/login/user') {
                 return array (  '_controller' => 'Eloboosted\\GameinjectionBundle\\Controller\\DefaultController::indexAction',  '_route' => 'userpage',);
+            }
+
+            // SignOut
+            if ($pathinfo === '/login/SignOut') {
+                return array (  '_controller' => 'Eloboosted\\LoginBundle\\Controller\\DefaultController::SignOutAction',  '_route' => 'SignOut',);
             }
 
         }

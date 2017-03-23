@@ -62,36 +62,6 @@ class Post
      */
     private $idComptePost;
 
-    /**
-     * @var \Doctrine\Common\Collections\Collection
-     *
-     * @ORM\ManyToMany(targetEntity="Compte", inversedBy="idPostRate")
-     * @ORM\JoinTable(name="post_rate",
-     *   joinColumns={
-     *     @ORM\JoinColumn(name="id_post_rate", referencedColumnName="id_post")
-     *   },
-     *   inverseJoinColumns={
-     *     @ORM\JoinColumn(name="id_compte_rate", referencedColumnName="id_compte")
-     *   }
-     * )
-     */
-    private $idCompteRate;
-
-    /**
-     * @var \Doctrine\Common\Collections\Collection
-     *
-     * @ORM\ManyToMany(targetEntity="Compte", mappedBy="idPostRl")
-     */
-    private $idCompteRl;
-
-    /**
-     * Constructor
-     */
-    public function __construct()
-    {
-        $this->idCompteRate = new \Doctrine\Common\Collections\ArrayCollection();
-        $this->idCompteRl = new \Doctrine\Common\Collections\ArrayCollection();
-    }
 
     /**
      * @return int
@@ -189,37 +159,7 @@ class Post
         $this->idComptePost = $idComptePost;
     }
 
-    /**
-     * @return \Doctrine\Common\Collections\Collection
-     */
-    public function getIdCompteRate()
-    {
-        return $this->idCompteRate;
-    }
 
-    /**
-     * @param \Doctrine\Common\Collections\Collection $idCompteRate
-     */
-    public function setIdCompteRate($idCompteRate)
-    {
-        $this->idCompteRate = $idCompteRate;
-    }
-
-    /**
-     * @return \Doctrine\Common\Collections\Collection
-     */
-    public function getIdCompteRl()
-    {
-        return $this->idCompteRl;
-    }
-
-    /**
-     * @param \Doctrine\Common\Collections\Collection $idCompteRl
-     */
-    public function setIdCompteRl($idCompteRl)
-    {
-        $this->idCompteRl = $idCompteRl;
-    }
 
 }
 

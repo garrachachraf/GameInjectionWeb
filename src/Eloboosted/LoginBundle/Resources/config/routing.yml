@@ -10,3 +10,6 @@ adminpage:
 userpage:
     path:     /user
     defaults: { _controller: EloboostedGameinjectionBundle:Default:index }
+SignOut:
+    path:     /SignOut
+    defaults: { _controller: EloboostedLoginBundle:Default:SignOut }

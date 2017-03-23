@@ -21,6 +21,8 @@ class AppKernel extends Kernel
             new Endroid\Bundle\QrCodeBundle\EndroidQrCodeBundle(),
             new Eloboosted\FrontofficeBundle\EloboostedFrontofficeBundle(),
             new Eloboosted\BackofficeBundle\EloboostedBackofficeBundle(),
+            new Nomaya\SocialBundle\NomayaSocialBundle(),
+
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

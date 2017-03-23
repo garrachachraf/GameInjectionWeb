@@ -119,73 +119,10 @@ class Compte  implements UserInterface
      * @ORM\Column(name="admin", type="integer", nullable=false)
      */
     private $admin = '0';
-
-    /**
-     * @var \Doctrine\Common\Collections\Collection
-     *
-     * @ORM\ManyToMany(targetEntity="Compte", inversedBy="idCompte1La")
-     * @ORM\JoinTable(name="list_ami",
-     *   joinColumns={
-     *     @ORM\JoinColumn(name="id_compte_1_la", referencedColumnName="id_compte")
-     *   },
-     *   inverseJoinColumns={
-     *     @ORM\JoinColumn(name="id_compte_2_la", referencedColumnName="id_compte")
-     *   }
-     * )
-     */
-    private $idCompte2La;
-
-    /**
-     * @var \Doctrine\Common\Collections\Collection
-     *
-     * @ORM\ManyToMany(targetEntity="Post", mappedBy="idCompteRate")
-     */
-    private $idPostRate;
-
-    /**
-     * @var \Doctrine\Common\Collections\Collection
-     *
-     * @ORM\ManyToMany(targetEntity="Post", inversedBy="idCompteRl")
-     * @ORM\JoinTable(name="read_later",
-     *   joinColumns={
-     *     @ORM\JoinColumn(name="id_compte_rl", referencedColumnName="id_compte")
-     *   },
-     *   inverseJoinColumns={
-     *     @ORM\JoinColumn(name="id_post_rl", referencedColumnName="id_post")
-     *   }
-     * )
-     */
-    private $idPostRl;
-
-    /**
-     * @var \Doctrine\Common\Collections\Collection
-     *
-     * @ORM\ManyToMany(targetEntity="CathegorieRequest", mappedBy="idCompteRv")
-     */
-    private $idRequest;
-
-    /**
-     * Constructor
-     */
     public
-    /**
-     *
-     */
-    function __construct()
-    {
-        $this->idCompte2La = new \Doctrine\Common\Collections\ArrayCollection();
-        $this->idPostRate = new \Doctrine\Common\Collections\ArrayCollection();
-        $this->idPostRl = new \Doctrine\Common\Collections\ArrayCollection();
-        $this->idRequest = new \Doctrine\Common\Collections\ArrayCollection();
-    }
-
-    /**
-     * @return int
-     */
-    public
-    /**
-     * @return mixed
-     */
+        /**
+         * @return mixed
+         */
     function getIdCompte()
     {
         return $this->idCompte;
@@ -195,9 +132,9 @@ class Compte  implements UserInterface
      * @param int $idCompte
      */
     public
-    /**
-     * @param int $idCompte
-     */
+        /**
+         * @param int $idCompte
+         */
     function setIdCompte($idCompte)
     {
         $this->idCompte = $idCompte;
@@ -207,9 +144,9 @@ class Compte  implements UserInterface
      * @return string
      */
     public
-    /**
-     * @return mixed
-     */
+        /**
+         * @return mixed
+         */
     function getNom()
     {
         return $this->nom;
@@ -219,9 +156,9 @@ class Compte  implements UserInterface
      * @param string $nom
      */
     public
-    /**
-     * @param string $nom
-     */
+        /**
+         * @param string $nom
+         */
     function setNom($nom)
     {
         $this->nom = $nom;
@@ -231,9 +168,9 @@ class Compte  implements UserInterface
      * @return string
      */
     public
-    /**
-     * @return mixed
-     */
+        /**
+         * @return mixed
+         */
     function getPrenom()
     {
         return $this->prenom;
@@ -243,9 +180,9 @@ class Compte  implements UserInterface
      * @param string $prenom
      */
     public
-    /**
-     * @param string $prenom
-     */
+        /**
+         * @param string $prenom
+         */
     function setPrenom($prenom)
     {
         $this->prenom = $prenom;
@@ -255,9 +192,9 @@ class Compte  implements UserInterface
      * @return \DateTime
      */
     public
-    /**
-     * @return mixed
-     */
+        /**
+         * @return mixed
+         */
     function getDateDeNaissance()
     {
         return $this->dateDeNaissance;
@@ -267,9 +204,9 @@ class Compte  implements UserInterface
      * @param \DateTime $dateDeNaissance
      */
     public
-    /**
-     * @param \DateTime $dateDeNaissance
-     */
+        /**
+         * @param \DateTime $dateDeNaissance
+         */
     function setDateDeNaissance($dateDeNaissance)
     {
         $this->dateDeNaissance = $dateDeNaissance;
@@ -279,9 +216,9 @@ class Compte  implements UserInterface
      * @return string
      */
     public
-    /**
-     * @return mixed
-     */
+        /**
+         * @return mixed
+         */
     function getEmail()
     {
         return $this->email;
@@ -291,9 +228,9 @@ class Compte  implements UserInterface
      * @param string $email
      */
     public
-    /**
-     * @param string $email
-     */
+        /**
+         * @param string $email
+         */
     function setEmail($email)
     {
         $this->email = $email;
@@ -303,9 +240,9 @@ class Compte  implements UserInterface
      * @return string
      */
     public
-    /**
-     * @return mixed
-     */
+        /**
+         * @return mixed
+         */
     function getPseudo()
     {
         return $this->pseudo;
@@ -315,9 +252,9 @@ class Compte  implements UserInterface
      * @param string $pseudo
      */
     public
-    /**
-     * @param string $pseudo
-     */
+        /**
+         * @param string $pseudo
+         */
     function setPseudo($pseudo)
     {
         $this->pseudo = $pseudo;
@@ -327,9 +264,9 @@ class Compte  implements UserInterface
      * @return string
      */
     public
-    /**
-     * @return mixed
-     */
+        /**
+         * @return mixed
+         */
     function getMotDePasse()
     {
         return $this->motDePasse;
@@ -339,9 +276,9 @@ class Compte  implements UserInterface
      * @param string $motDePasse
      */
     public
-    /**
-     * @param string $motDePasse
-     */
+        /**
+         * @param string $motDePasse
+         */
     function setMotDePasse($motDePasse)
     {
         $this->motDePasse = $motDePasse;
@@ -351,9 +288,9 @@ class Compte  implements UserInterface
      * @return int
      */
     public
-    /**
-     * @return mixed
-     */
+        /**
+         * @return mixed
+         */
     function getEtat()
     {
         return $this->etat;
@@ -363,9 +300,9 @@ class Compte  implements UserInterface
      * @param int $etat
      */
     public
-    /**
-     * @param int $etat
-     */
+        /**
+         * @param int $etat
+         */
     function setEtat($etat)
     {
         $this->etat = $etat;
@@ -375,9 +312,9 @@ class Compte  implements UserInterface
      * @return int
      */
     public
-    /**
-     * @return mixed
-     */
+        /**
+         * @return mixed
+         */
     function getPoints()
     {
         return $this->points;
@@ -387,9 +324,9 @@ class Compte  implements UserInterface
      * @param int $points
      */
     public
-    /**
-     * @param int $points
-     */
+        /**
+         * @param int $points
+         */
     function setPoints($points)
     {
         $this->points = $points;
@@ -399,9 +336,9 @@ class Compte  implements UserInterface
      * @return int
      */
     public
-    /**
-     * @return mixed
-     */
+        /**
+         * @return mixed
+         */
     function getRank()
     {
         return $this->rank;
@@ -411,9 +348,9 @@ class Compte  implements UserInterface
      * @param int $rank
      */
     public
-    /**
-     * @param int $rank
-     */
+        /**
+         * @param int $rank
+         */
     function setRank($rank)
     {
         $this->rank = $rank;
@@ -423,9 +360,9 @@ class Compte  implements UserInterface
      * @return string
      */
     public
-    /**
-     * @return mixed
-     */
+        /**
+         * @return mixed
+         */
     function getImage()
     {
         $images= base64_encode(stream_get_contents($this->image));
@@ -436,21 +373,21 @@ class Compte  implements UserInterface
      * @param string $image
      */
     public
-    /**
-     * @param string $image
-     */
+        /**
+         * @param string $image
+         */
     function setImage($image)
     {
-        $this->image = stream_get_contents($image);
+        $this->image = $image;
     }
 
     /**
      * @return int
      */
     public
-    /**
-     * @return mixed
-     */
+        /**
+         * @return mixed
+         */
     function getNombreDeSignalisation()
     {
         return $this->nombreDeSignalisation;
@@ -460,9 +397,9 @@ class Compte  implements UserInterface
      * @param int $nombreDeSignalisation
      */
     public
-    /**
-     * @param int $nombreDeSignalisation
-     */
+        /**
+         * @param int $nombreDeSignalisation
+         */
     function setNombreDeSignalisation($nombreDeSignalisation)
     {
         $this->nombreDeSignalisation = $nombreDeSignalisation;
@@ -472,9 +409,9 @@ class Compte  implements UserInterface
      * @return int
      */
     public
-    /**
-     * @return mixed
-     */
+        /**
+         * @return mixed
+         */
     function getArchive()
     {
         return $this->archive;
@@ -484,9 +421,9 @@ class Compte  implements UserInterface
      * @param int $archive
      */
     public
-    /**
-     * @param int $archive
-     */
+        /**
+         * @param int $archive
+         */
     function setArchive($archive)
     {
         $this->archive = $archive;
@@ -496,9 +433,9 @@ class Compte  implements UserInterface
      * @return int
      */
     public
-    /**
-     * @return mixed
-     */
+        /**
+         * @return mixed
+         */
     function getTelNum()
     {
         return $this->telNum;
@@ -508,9 +445,9 @@ class Compte  implements UserInterface
      * @param int $telNum
      */
     public
-    /**
-     * @param int $telNum
-     */
+        /**
+         * @param int $telNum
+         */
     function setTelNum($telNum)
     {
         $this->telNum = $telNum;
@@ -520,9 +457,9 @@ class Compte  implements UserInterface
      * @return int
      */
     public
-    /**
-     * @return mixed
-     */
+        /**
+         * @return mixed
+         */
     function getAdmin()
     {
         return $this->admin;
@@ -532,108 +469,12 @@ class Compte  implements UserInterface
      * @param int $admin
      */
     public
-    /**
-     * @param int $admin
-     */
+        /**
+         * @param int $admin
+         */
     function setAdmin($admin)
     {
         $this->admin = $admin;
-    }
-
-    /**
-     * @return \Doctrine\Common\Collections\Collection
-     */
-    public
-    /**
-     * @return mixed
-     */
-    function getIdCompte2La()
-    {
-        return $this->idCompte2La;
-    }
-
-    /**
-     * @param \Doctrine\Common\Collections\Collection $idCompte2La
-     */
-    public
-    /**
-     * @param \Doctrine\Common\Collections\Collection $idCompte2La
-     */
-    function setIdCompte2La($idCompte2La)
-    {
-        $this->idCompte2La = $idCompte2La;
-    }
-
-    /**
-     * @return \Doctrine\Common\Collections\Collection
-     */
-    public
-    /**
-     * @return mixed
-     */
-    function getIdPostRate()
-    {
-        return $this->idPostRate;
-    }
-
-    /**
-     * @param \Doctrine\Common\Collections\Collection $idPostRate
-     */
-    public
-    /**
-     * @param \Doctrine\Common\Collections\Collection $idPostRate
-     */
-    function setIdPostRate($idPostRate)
-    {
-        $this->idPostRate = $idPostRate;
-    }
-
-    /**
-     * @return \Doctrine\Common\Collections\Collection
-     */
-    public
-    /**
-     * @return mixed
-     */
-    function getIdPostRl()
-    {
-        return $this->idPostRl;
-    }
-
-    /**
-     * @param \Doctrine\Common\Collections\Collection $idPostRl
-     */
-    public
-    /**
-     * @param \Doctrine\Common\Collections\Collection $idPostRl
-     */
-    function setIdPostRl($idPostRl)
-    {
-        $this->idPostRl = $idPostRl;
-    }
-
-    /**
-     * @return \Doctrine\Common\Collections\Collection
-     */
-    public
-    /**
-     * @return mixed
-     */
-    function getIdRequest()
-    {
-        return $this->idRequest;
-    }
-
-    /**
-     * @param \Doctrine\Common\Collections\Collection $idRequest
-     */
-    public
-    /**
-     * @param \Doctrine\Common\Collections\Collection $idRequest
-     */
-    function setIdRequest($idRequest)
-    {
-        $this->idRequest = $idRequest;
     }
 
     public function getRoles()

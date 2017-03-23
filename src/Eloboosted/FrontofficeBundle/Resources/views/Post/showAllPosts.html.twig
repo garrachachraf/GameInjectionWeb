@@ -1,0 +1,64 @@
+{# src/FrontofficeBundle/Resources/views/Products/addProduct.html.twig #}
+{% extends 'EloboostedFrontofficeBundle:Default:Layout.html.twig' %}
+{% block main %}
+<div id="wrapper">
+    <section class="border-bottom-1 border-grey-300 padding-10">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ol class="breadcrumb">
+                        <li><a href="{{ path('home') }}">Home</a></li>
+                        <li class="active">All Posts</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-grey-50 padding-bottom-60">
+        <div class="container">
+            <div class="headline">
+                <h4 class="no-padding-top">Forum <small>ALL POSTS.</small></h4>
+                <div class="pull-right">
+                    <a href="{{ path('AddPost') }}" class="btn btn-primary btn-icon-left"><i class="fa fa-comments"></i> new post</a>
+                    <div class="dropdown">
+                        <a href="forum-new.html" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bars"></i></a>
+                        <ul class="dropdown-menu pull-right">
+                            <li><a href="forum-threads.html#"><i class="fa fa-bar-chart-o"></i> All forums</a></li>
+                            <li><a href="forum-threads.html#"><i class="fa fa-sort-alpha-asc"></i> Sort forums</a></li>
+                            <li class="divider"></li>
+                            <li><a href="forum-new.html"><i class="fa fa-plus"></i> New thread</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+{% for post in post  %}
+            {% set image = null %}
+            <div class="forum forum-thread">
+                <div class="forum-group">
+                    <div class="forum-icon"><i class="fa fa-comments"></i></div>
+                    <div class="forum-title">
+                        <h4><a href="{{ path('readPost',{'idPost':post.idPost }) }}">{{ post.titre }}</a></h4>
+
+                    </div>
+                    <div class="forum-activity">
+                        {% set image=post.idComptePost.image  %}
+                        <a href="profile.html"><img src="{{image}}" alt=""></a>
+                        <div>
+
+                            <h4><a href="forum-post.html">{{ post.idComptePost.pseudo }}</a></h4>
+                            <span>{{ post.date|date}}</span>
+                        </div>
+                    </div>
+                    <div class="forum-meta">175 posts</div>
+                </div>
+{% endfor %}
+            </div>
+
+        </div>
+    </section>
+</div>
+
+{% endblock %}

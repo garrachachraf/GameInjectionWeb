@@ -1,0 +1,41 @@
+
+{% for commentaire in commentaire %}
+    <div  name="zone1"class="forum-post">
+
+
+        <div class="forum-panel">
+            <div class="forum-user">
+                <a href="profile.html" class="avatar"><img src="{{ commentaire.idCompteCp.image }}" alt=""><span class="label label-warning"></span></a>
+                <div>
+                    <a href="profile.html">{{ commentaire.idCompteCp.pseudo }}</a>
+                    <span>Birth day</span>
+                    <span class="date">{{ commentaire.idCompteCp.dateDeNaissance | date }}</span>
+                </div>
+            </div>
+            <div class="forum-body">
+                <p>{{ commentaire.contenu }}</p>
+            </div>
+        </div>
+        {% set a=0 %}
+
+        <div class="forum-footer">
+            <ul class="post-action">
+                {% for unlike in unlike %}
+                    {% if unlike.idCommentaireLj.idCommentaire == commentaire.idCommentaire  %}
+                        {% set a=1 %}
+                    {% endif %}
+                {% endfor %}
+                {% if a==0 %}
+                    <li><a href="{{ path('like',{'idCommentaireLj':commentaire.idCommentaire}) }}"><i class="fa fa-heart"></i> like</a></li>
+                {% elseif a==1 %}
+                    <li><a style="color: #00AEEF" href="{{ path('like',{'idCommentaireLj':commentaire.idCommentaire}) }}"><i class="fa fa-heart1"></i> Unlike</a></li>
+                {% endif %}
+                <li><a href="forum-post.html#"><i class="fa fa-flag"></i> Report</a></li>
+            </ul>
+            <ul class="post-meta">
+                <li><i class="fa fa-calendar-o"></i>{{ commentaire.date | date }}</li>
+
+            </ul>
+        </div>
+    </div>
+{% endfor %}

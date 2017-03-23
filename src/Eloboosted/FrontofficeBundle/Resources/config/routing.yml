@@ -33,3 +33,27 @@ trournoi_commentaire_new:
 get_user_img:
     path:     /image/{id}
     defaults: { _controller: EloboostedFrontofficeBundle:Images:img }
+home:
+    path:     /home
+    defaults: { _controller: EloboostedFrontofficeBundle:Default:index }
+AddPost:
+    path:     /addPost
+    defaults: { _controller: EloboostedFrontofficeBundle:Post:addPost}
+showAllPosts:
+    path:     /showAllPosts
+    defaults: { _controller: EloboostedFrontofficeBundle:Post:showAllPosts}
+readPost:
+    path:     /readPost
+    defaults: { _controller: EloboostedFrontofficeBundle:Post:readPost}
+removePost:
+    path:     /removePost
+    defaults: { _controller: EloboostedFrontofficeBundle:Post:removePost}
+like:
+    path:     /like
+    defaults: { _controller: EloboostedFrontofficeBundle:Post:like}
+commentaire:
+    path:     /commentaire/{id}
+    defaults: { _controller: EloboostedFrontofficeBundle:Post:commentaire}
+Addcommentaire:
+    path:     /Addcommentaire/{id}
+    defaults: { _controller: EloboostedFrontofficeBundle:Post:Addcommentaire}
