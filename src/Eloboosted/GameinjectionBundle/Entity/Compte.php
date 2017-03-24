@@ -508,4 +508,3 @@ class Compte  implements UserInterface
     }
 
 }
-

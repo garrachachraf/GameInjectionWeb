@@ -8,6 +8,8 @@ security:
         database_users:
             entity: { class: EloboostedGameinjectionBundle:Compte }
     # http://symfony.com/doc/current/book/security.html#firewalls-authentication
+    role_hierarchy:
+            ROLE_ADMIN:       ROLE_USER
     firewalls:
         secured_area:
             # this firewall applies to all URLs

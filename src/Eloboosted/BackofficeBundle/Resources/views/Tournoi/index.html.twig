@@ -122,7 +122,15 @@
                                     <td>{{ t.reward2 }}</td>
                                     <td>{{ t.reward3 }}</td>
                                     <td>{{ t.nbrJoueur }}</td>
-                                    <td>{{ t.etat }}</td>
+                                    <td>
+                                        {% if t.etat == 1 %}
+                                        <span class="label label-upper label-primary">Open</span>
+                                        {% elseif t.etat == 2 %}
+                                        <span class="label label-upper label-success">Running</span>
+                                        {% elseif t.etat == 3 %}
+                                        <span class="label label-upper label-default">Finished</span>
+                                        {% endif %}
+                                    </td>
                                 </tr>
                                 {% endfor %}
                                 </tbody>
