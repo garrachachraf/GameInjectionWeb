@@ -9,7 +9,7 @@ use Symfony\Component\Security\Core\User\UserInterface;
  * Compte
  *
  * @ORM\Table(name="compte")
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="Eloboosted\GameinjectionBundle\Entity\CompteRepository")
  */
 class Compte  implements UserInterface
 {
@@ -356,6 +356,7 @@ class Compte  implements UserInterface
         $this->rank = $rank;
     }
 
+
     /**
      * @return string
      */
@@ -378,7 +379,7 @@ class Compte  implements UserInterface
          */
     function setImage($image)
     {
-        $this->image = $image;
+        $this->image = file_get_contents($image);
     }
 
     /**
@@ -508,3 +509,4 @@ class Compte  implements UserInterface
     }
 
 }
+

@@ -22,6 +22,8 @@ class AppKernel extends Kernel
             new Eloboosted\FrontofficeBundle\EloboostedFrontofficeBundle(),
             new Eloboosted\BackofficeBundle\EloboostedBackofficeBundle(),
             new Nomaya\SocialBundle\NomayaSocialBundle(),
+            new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
+
 
         ];
 

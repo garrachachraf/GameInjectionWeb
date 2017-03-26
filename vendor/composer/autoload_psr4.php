@@ -27,6 +27,7 @@ return array(
     'Psr\\Log\\' => array($vendorDir . '/psr/log/Psr/Log'),
     'Psr\\Cache\\' => array($vendorDir . '/psr/cache/src'),
     'Monolog\\' => array($vendorDir . '/monolog/monolog/src/Monolog'),
+    'Knp\\Bundle\\PaginatorBundle\\' => array($vendorDir . '/knplabs/knp-paginator-bundle'),
     'Incenteev\\ParameterHandler\\' => array($vendorDir . '/incenteev/composer-parameter-handler'),
     'Endroid\\QrCode\\' => array($vendorDir . '/endroid/qrcode/src'),
     'Endroid\\Bundle\\QrCodeBundle\\' => array($vendorDir . '/endroid/qrcode-bundle/src'),

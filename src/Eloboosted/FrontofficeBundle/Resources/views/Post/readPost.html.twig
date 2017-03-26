@@ -1,24 +1,7 @@
 {# src/FrontofficeBundle/Resources/views/Products/addProduct.html.twig #}
 {% extends 'EloboostedFrontofficeBundle:Default:Layout.html.twig' %}
 {% block main %}
-    <script src="jquery.min.js"></script>
-    <script>
-        $(document).ready(function() {
-
-            // Update notifications section
-
-            window.setInterval(
-                function () {
-                    $.post('{{ path('commentaire', {id : post.idPost}) }}', function (data) {
-                        $('#commentaire').html(data);
-                    });
-
-                }
-
-                , 500);
-
-        })
-    </script>
+    <script src="{{ asset('assets/jquery/jquery-1.9.1.js') }}"></script>
     <script>
         $(document).ready(function() {
 
@@ -33,13 +16,26 @@
                     type: 'post',
                     data: $this.serialize(),
                     dataType: 'json', // JSON
-                    success: function (json) {
-                        console.log(json);
+                    success: function (data) {
+                        console.log(data['data']);
                     }
                 });
                 $('#textcommentaire').val('');
 
             })
+
+            // Update notifications section
+
+            window.setInterval(
+                function () {
+                    $.post('{{ path('commentaire', {id : post.idPost}) }}', function (data) {
+                        $('#commentaire').html(data);
+                    });
+
+                }
+
+                , 5000);
+
         })
     </script>
     <div id="wrapper">
@@ -62,20 +58,12 @@
                 <div class="headline">
                     <h4><i class="fa fa-comments"></i> Forum Post Thread</h4>
                     <div class="pull-right">
-                        <a href="forum-new.html" class="btn btn-primary btn-icon-left"><i class="fa fa-comments"></i> new Post</a>
+                        <a href="{{ path('AddPost') }}" class="btn btn-primary btn-icon-left"><i class="fa fa-comments"></i> new Post</a>
                         {% if app.user == post.idComptePost %}
                         <a href="{{ path('removePost',{'idPost':post.idPost }) }}" data-message="Are you sure you want to delete this post?"  class="btn btn-default btn-icon-left"><i class="fa fa-edit"></i>remove Post</a>
                         {% endif %}
 
-                        <div class="dropdown">
-                            <a href="forum-post.html#" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bars"></i></a>
-                            <ul class="dropdown-menu pull-right">
 
-                                <li><a href="forum-post.html#"><i class="fa fa-edit"></i> Edit thread</a></li>
-                                <li class="divider"></li>
-                                <li><a href="forum-new.html"><i class="fa fa-plus"></i> New thread</a></li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
 
@@ -96,7 +84,20 @@
                     </div>
                     <div class="forum-footer">
                         <ul class="post-action">
-                           <li><a href="forum-post.html#"><i class="fa fa-flag"></i> Report</a></li>
+                            {% set y1=0 %}
+                            {% for postreported in postreported %}
+                                {% if post.idPost==postreported.idPostSng.idPost %}
+                                    {% set y1=1 %}
+                                {% endif %}
+
+                            {% endfor %}
+                            {% if y1==1 %}
+                            <li><a style="color: #A00000"><i class="fa fa-flag"></i> Reported</a></li>
+
+                            {% else %}
+                            <li><a href="{{ path('report',{'id':post.idPost }) }}"><i class="fa fa-flag"></i> Report</a></li>
+                            {% endif %}
+
                         </ul>
                         <ul class="post-meta">
                             <li><i class="fa fa-calendar-o"></i>{{ post.date|date }}</li>
@@ -104,7 +105,9 @@
                         </ul>
                     </div>
                 </div>
-
+                <div class="headline">
+                    <h4><i class="fa fa-comment"></i> Comments</h4>
+                </div>
 
 <div id="commentaire">
     {{ render(controller('EloboostedFrontofficeBundle:Post:commentaire',{id : post.idPost})) }}

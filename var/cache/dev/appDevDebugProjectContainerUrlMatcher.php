@@ -233,8 +233,8 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
         }
 
         // like
-        if ($pathinfo === '/like') {
-            return array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\PostController::likeAction',  '_route' => 'like',);
+        if (0 === strpos($pathinfo, '/like') && preg_match('#^/like/(?P<id>[^/]++)/(?P<post>[^/]++)$#s', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'like')), array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\PostController::likeAction',));
         }
 
         // commentaire
@@ -245,6 +245,39 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
         // Addcommentaire
         if (0 === strpos($pathinfo, '/Addcommentaire') && preg_match('#^/Addcommentaire/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
             return $this->mergeDefaults(array_replace($matches, array('_route' => 'Addcommentaire')), array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\PostController::AddcommentaireAction',));
+        }
+
+        if (0 === strpos($pathinfo, '/report')) {
+            // report
+            if (preg_match('#^/report/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'report')), array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\PostController::reportAction',));
+            }
+
+            // reportcomment
+            if (0 === strpos($pathinfo, '/reportcomment') && preg_match('#^/reportcomment/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'reportcomment')), array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\PostController::reportcommentAction',));
+            }
+
+        }
+
+        // myProfile
+        if ($pathinfo === '/myProfile') {
+            return array (  '_controller' => 'EloboostedFrontofficeBundle:Compte:myProfile',  '_route' => 'myProfile',);
+        }
+
+        // createAccount
+        if ($pathinfo === '/createAccount') {
+            return array (  '_controller' => 'EloboostedFrontofficeBundle:Compte:createAccount',  '_route' => 'createAccount',);
+        }
+
+        // accountcreation
+        if ($pathinfo === '/accountcreation') {
+            return array (  '_controller' => 'EloboostedFrontofficeBundle:Compte:accountcreation',  '_route' => 'accountcreation',);
+        }
+
+        // SendMail
+        if ($pathinfo === '/SendMail') {
+            return array (  '_controller' => 'EloboostedFrontofficeBundle:Compte:sendMail',  '_route' => 'SendMail',);
         }
 
         if (0 === strpos($pathinfo, '/login')) {

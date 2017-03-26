@@ -49,7 +49,7 @@ removePost:
     path:     /removePost
     defaults: { _controller: EloboostedFrontofficeBundle:Post:removePost}
 like:
-    path:     /like
+    path:     /like/{id}/{post}
     defaults: { _controller: EloboostedFrontofficeBundle:Post:like}
 commentaire:
     path:     /commentaire/{id}
@@ -57,3 +57,23 @@ commentaire:
 Addcommentaire:
     path:     /Addcommentaire/{id}
     defaults: { _controller: EloboostedFrontofficeBundle:Post:Addcommentaire}
+report:
+    path:     /report/{id}
+    defaults: { _controller: EloboostedFrontofficeBundle:Post:report}
+reportcomment:
+    path:     /reportcomment/{id}
+    defaults: { _controller: EloboostedFrontofficeBundle:Post:reportcomment}
+myProfile:
+    path: /myProfile
+    defaults: { _controller:  EloboostedFrontofficeBundle:Compte:myProfile }
+createAccount:
+    path:     /createAccount
+    defaults: { _controller: EloboostedFrontofficeBundle:Compte:createAccount}
+
+accountcreation:
+    path:     /accountcreation
+    defaults: { _controller: EloboostedFrontofficeBundle:Compte:accountcreation}
+
+SendMail:
+    path: /SendMail
+    defaults: { _controller:  EloboostedFrontofficeBundle:Compte:sendMail }

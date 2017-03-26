@@ -1,11 +1,12 @@
-
+{% set img = null  %}
 {% for commentaire in commentaire %}
     <div  name="zone1"class="forum-post">
 
-
+{% set img=commentaire.idCompteCp.image %}
         <div class="forum-panel">
             <div class="forum-user">
-                <a href="profile.html" class="avatar"><img src="{{ commentaire.idCompteCp.image }}" alt=""><span class="label label-warning"></span></a>
+                <a href="profile.html" class="avatar"><img src="{{ img }}" alt=""><span class="label label-warning"></span></a>
+                {% set img=null %}
                 <div>
                     <a href="profile.html">{{ commentaire.idCompteCp.pseudo }}</a>
                     <span>Birth day</span>
@@ -25,12 +26,38 @@
                         {% set a=1 %}
                     {% endif %}
                 {% endfor %}
-                {% if a==0 %}
-                    <li><a href="{{ path('like',{'idCommentaireLj':commentaire.idCommentaire}) }}"><i class="fa fa-heart"></i> like</a></li>
-                {% elseif a==1 %}
-                    <li><a style="color: #00AEEF" href="{{ path('like',{'idCommentaireLj':commentaire.idCommentaire}) }}"><i class="fa fa-heart1"></i> Unlike</a></li>
+{%  set y=0 %}
+                {% for nbrlike in nbrlike  %}
+                {% if nbrlike.idCommentaireLj.idCommentaire == commentaire.idCommentaire  %}
+                {% set y=y+1 %}
                 {% endif %}
-                <li><a href="forum-post.html#"><i class="fa fa-flag"></i> Report</a></li>
+                {% endfor %}
+                {% if a==0 %}
+                    <li><a  href="{{ path('like',{id : commentaire.idCommentaire, post : commentaire.idPostCp.idPost  }) }}"><i class="fa fa-heart"></i> like ({{ y }})</a></li>
+                {% elseif a==1 %}
+                    <li><a style="color: #00AEEF" href="{{  path('like',{id : commentaire.idCommentaire, post : commentaire.idPostCp.idPost}) }}"><i class="fa fa-heart1"></i> Unlike  ({{ y }})</a></li>
+                {% endif %}
+                {% set y=0 %}
+                {% set x= commentaire.idCommentaire %}
+
+
+
+                {% set y1=0 %}
+                {% for commentreported in commentreported %}
+
+                    {% if commentreported.idCommentaireSng != null %}
+                    {% if commentaire.idCommentaire==commentreported.idCommentaireSng.idCommentaire %}
+                        {% set y1=1 %}
+                    {% endif %}
+                    {% endif %}
+                {% endfor %}
+                {% if y1==1 %}
+                    <li><a style="color: #A00000"><i class="fa fa-flag"></i> Reported</a></li>
+
+                {% else %}
+                    <li><a href="{{ path('reportcomment',{'id':commentaire.idCommentaire }) }}"><i class="fa fa-flag"></i> Report </a></li>
+                {% endif %}
+
             </ul>
             <ul class="post-meta">
                 <li><i class="fa fa-calendar-o"></i>{{ commentaire.date | date }}</li>
