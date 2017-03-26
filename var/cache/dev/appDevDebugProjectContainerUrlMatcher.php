@@ -262,22 +262,22 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
 
         // myProfile
         if ($pathinfo === '/myProfile') {
-            return array (  '_controller' => 'EloboostedFrontofficeBundle:Compte:myProfile',  '_route' => 'myProfile',);
+            return array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\CompteController::myProfileAction',  '_route' => 'myProfile',);
         }
 
         // createAccount
         if ($pathinfo === '/createAccount') {
-            return array (  '_controller' => 'EloboostedFrontofficeBundle:Compte:createAccount',  '_route' => 'createAccount',);
+            return array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\CompteController::createAccountAction',  '_route' => 'createAccount',);
         }
 
         // accountcreation
         if ($pathinfo === '/accountcreation') {
-            return array (  '_controller' => 'EloboostedFrontofficeBundle:Compte:accountcreation',  '_route' => 'accountcreation',);
+            return array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\CompteController::accountcreationAction',  '_route' => 'accountcreation',);
         }
 
         // SendMail
         if ($pathinfo === '/SendMail') {
-            return array (  '_controller' => 'EloboostedFrontofficeBundle:Compte:sendMail',  '_route' => 'SendMail',);
+            return array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\CompteController::sendMailAction',  '_route' => 'SendMail',);
         }
 
         if (0 === strpos($pathinfo, '/login')) {

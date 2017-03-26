@@ -15,11 +15,11 @@ class __TwigTemplate_0140eb0a9b99f3f6517fd53e05808bfe378baa01c82502f9cc51f3eb81c
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_245fc8d143ae0af0ce41364a1e81f3cb0b74876b6c879562d3df0b9211850348 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_245fc8d143ae0af0ce41364a1e81f3cb0b74876b6c879562d3df0b9211850348->enter($__internal_245fc8d143ae0af0ce41364a1e81f3cb0b74876b6c879562d3df0b9211850348_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "NomayaSocialBundle:Buttons:googleplusButton.html.twig"));
+        $__internal_83cae5945e333c7360b36ba94bfe366c174297219efd86b554fecbf5566137de = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_83cae5945e333c7360b36ba94bfe366c174297219efd86b554fecbf5566137de->enter($__internal_83cae5945e333c7360b36ba94bfe366c174297219efd86b554fecbf5566137de_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "NomayaSocialBundle:Buttons:googleplusButton.html.twig"));
 
-        $__internal_9976a4330ddad354eaec334d9aa40d88fa52f3e26f93dd8a3c3e43ecac2381e3 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_9976a4330ddad354eaec334d9aa40d88fa52f3e26f93dd8a3c3e43ecac2381e3->enter($__internal_9976a4330ddad354eaec334d9aa40d88fa52f3e26f93dd8a3c3e43ecac2381e3_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "NomayaSocialBundle:Buttons:googleplusButton.html.twig"));
+        $__internal_86f7c86262d67ffb2d210fe571097be56bc51fd76740621efea273e6debdee10 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_86f7c86262d67ffb2d210fe571097be56bc51fd76740621efea273e6debdee10->enter($__internal_86f7c86262d67ffb2d210fe571097be56bc51fd76740621efea273e6debdee10_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "NomayaSocialBundle:Buttons:googleplusButton.html.twig"));
 
         // line 1
         if (( !array_key_exists("url", $context) || ((isset($context["url"]) ? $context["url"] : $this->getContext($context, "url")) == null))) {
@@ -59,10 +59,10 @@ class __TwigTemplate_0140eb0a9b99f3f6517fd53e05808bfe378baa01c82502f9cc51f3eb81c
 ";
         echo trim(preg_replace('/>\s+</', '><', ob_get_clean()));
         
-        $__internal_245fc8d143ae0af0ce41364a1e81f3cb0b74876b6c879562d3df0b9211850348->leave($__internal_245fc8d143ae0af0ce41364a1e81f3cb0b74876b6c879562d3df0b9211850348_prof);
+        $__internal_83cae5945e333c7360b36ba94bfe366c174297219efd86b554fecbf5566137de->leave($__internal_83cae5945e333c7360b36ba94bfe366c174297219efd86b554fecbf5566137de_prof);
 
         
-        $__internal_9976a4330ddad354eaec334d9aa40d88fa52f3e26f93dd8a3c3e43ecac2381e3->leave($__internal_9976a4330ddad354eaec334d9aa40d88fa52f3e26f93dd8a3c3e43ecac2381e3_prof);
+        $__internal_86f7c86262d67ffb2d210fe571097be56bc51fd76740621efea273e6debdee10->leave($__internal_86f7c86262d67ffb2d210fe571097be56bc51fd76740621efea273e6debdee10_prof);
 
     }
 
