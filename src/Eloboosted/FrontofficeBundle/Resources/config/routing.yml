@@ -55,7 +55,7 @@ commentaire:
     path:     /commentaire/{id}
     defaults: { _controller: EloboostedFrontofficeBundle:Post:commentaire}
 Addcommentaire:
-    path:     /Addcommentaire/{id}
+    path:     /Addcommentaire
     defaults: { _controller: EloboostedFrontofficeBundle:Post:Addcommentaire}
 report:
     path:     /report/{id}

@@ -121,6 +121,24 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
                     return array (  '_controller' => 'Eloboosted\\BackofficeBundle\\Controller\\TournoiController::indexAction',  '_route' => 'eloboosted_backoffice_tournoi',);
                 }
 
+                // AccountReports
+                if ($pathinfo === '/admin/AccountReports') {
+                    return array (  '_controller' => 'Eloboosted\\BackofficeBundle\\Controller\\CompteController::AccountReportsAction',  '_route' => 'AccountReports',);
+                }
+
+                if (0 === strpos($pathinfo, '/admin/Warn')) {
+                    // WarnTarget
+                    if ($pathinfo === '/admin/WarnTarget') {
+                        return array (  '_controller' => 'Eloboosted\\BackofficeBundle\\Controller\\SignalisationController::WarnTargetAction',  '_route' => 'WarnTarget',);
+                    }
+
+                    // WarnSender
+                    if ($pathinfo === '/admin/WarnSender') {
+                        return array (  '_controller' => 'Eloboosted\\BackofficeBundle\\Controller\\SignalisationController::WarnSenderAction',  '_route' => 'WarnSender',);
+                    }
+
+                }
+
             }
 
             // AddProduct_page
@@ -243,8 +261,8 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
         }
 
         // Addcommentaire
-        if (0 === strpos($pathinfo, '/Addcommentaire') && preg_match('#^/Addcommentaire/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
-            return $this->mergeDefaults(array_replace($matches, array('_route' => 'Addcommentaire')), array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\PostController::AddcommentaireAction',));
+        if ($pathinfo === '/Addcommentaire') {
+            return array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\PostController::AddcommentaireAction',  '_route' => 'Addcommentaire',);
         }
 
         if (0 === strpos($pathinfo, '/report')) {

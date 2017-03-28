@@ -6,3 +6,14 @@ eloboosted_backoffice_tournoi:
     path:     /Tournaments
     defaults: { _controller: EloboostedBackofficeBundle:Tournoi:index }
 
+AccountReports:
+    path:     /AccountReports
+    defaults: { _controller: EloboostedBackofficeBundle:Compte:AccountReports }
+
+WarnTarget:
+    path:     /WarnTarget
+    defaults: { _controller: EloboostedBackofficeBundle:Signalisation:WarnTarget }
+
+WarnSender:
+    path:     /WarnSender
+    defaults: { _controller: EloboostedBackofficeBundle:Signalisation:WarnSender }

@@ -8,23 +8,26 @@
 
             $('#ajoutmessage').on('submit', function (e) {
                 e.preventDefault(); // J'empêche le comportement par défaut du navigateur, c-à-d de soumettre le formulaire
-
+                var msg =$('#textcommentaire').val();
                 var $this = $(this);
 
                 $.ajax({
                     url: $this.attr('action'),
                     type: 'post',
-                    data: $this.serialize(),
+                    data: { msg : msg , id : {{  post.idPost}} },
                     dataType: 'json', // JSON
                     success: function (data) {
                         console.log(data['data']);
+                    },
+                    error: function (data) {
+                        console.log('error');
                     }
                 });
                 $('#textcommentaire').val('');
 
             })
 
-            // Update notifications section
+            // Update comments section
 
             window.setInterval(
                 function () {
@@ -34,7 +37,7 @@
 
                 }
 
-                , 5000);
+                , 2000);
 
         })
     </script>
@@ -118,7 +121,7 @@
                 </div>
                 <div  name="zone2" class="panel panel-default margin-bottom-30">
                     <div class="panel-body">
-                        <form class="form-label" id ="ajoutmessage" action="{{ path('Addcommentaire',{id : post.idPost}) }}" method="post">
+                        <form class="form-label" id ="ajoutmessage" enctype="multipart/form-data" action="{{ path('Addcommentaire') }}">
 
                             <div class="form-group row">
                                 <label class="col-md-2">Message</label>

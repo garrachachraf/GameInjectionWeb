@@ -9,6 +9,8 @@ use Eloboosted\GameinjectionBundle\Entity\Signalisation;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpFoundation\JsonResponse;
+
 
 class PostController extends Controller
 {
@@ -140,7 +142,7 @@ class PostController extends Controller
         $postreported = $em->getRepository("EloboostedGameinjectionBundle:Signalisation")->findBy(array("idCommentaireSng"=>null));
 
 
-        return $this->render('@EloboostedFrontoffice/Post/readPost.html.twig',array("post" => $post , "commentaire" => $commentaire,"unlike" => $unlike,"postreported" => $postreported));
+        return $this->redirectToroute('readPost',array("idPost" => $post->getIdPost()));
 
 
     }
@@ -160,14 +162,15 @@ class PostController extends Controller
         return $this->render('EloboostedFrontofficeBundle:Post:commentaire.html.twig',array('commentaire' => $commentaitre,"unlike" => $unlike,"nbrlike" => $nbrlike,"commentreported" => $commentreported));
     }
 
-    public  function  AddcommentaireAction(Request $request,$id)
+    public  function  AddcommentaireAction(Request $request)
     {
         $em = $this->getDoctrine()->getManager();
-        $post = $em->getRepository("EloboostedGameinjectionBundle:Post")->findOneBy(array("idPost"=>$id));
+        $post = $em->getRepository("EloboostedGameinjectionBundle:Post")->find($request->get('id'));
+        $compte = $em->getRepository("EloboostedGameinjectionBundle:Compte")->find($this->get('security.token_storage')->getToken()->getUser()->getIdCompte());
         $commentaire1=new CommentairePost();
-        $commentaire1->setIdCompteCp($this->get('security.token_storage')->getToken()->getUser());
+        $commentaire1->setIdCompteCp($compte);
         $commentaire1->setIdPostCp($post);
-        $commentaire1->setContenu($request->get('replay'));
+        $commentaire1->setContenu($request->get('msg'));
         $commentaire1->setDate(new \DateTime('now'));
         $commentaire1->setMarquesolution(0);
 
@@ -175,6 +178,7 @@ class PostController extends Controller
 
         $em->persist($commentaire1);
         $em->flush();
+
         return new JsonResponse(array('data'=>'success'));
     }
 
@@ -201,8 +205,8 @@ class PostController extends Controller
         $postreported = $em->getRepository("EloboostedGameinjectionBundle:Signalisation")->findBy(array("idCommentaireSng"=>null));
 
 
+        return $this->redirectToroute('readPost',array("idPost" => $P->getIdPost()));
 
-        return $this->render('@EloboostedFrontoffice/Post/readPost.html.twig',array("post" => $P , "commentaire" => $commentaire,"unlike" => $unlike,"postreported" => $postreported));
 
     }
 
@@ -229,7 +233,8 @@ class PostController extends Controller
         $postreported = $em->getRepository("EloboostedGameinjectionBundle:Signalisation")->findBy(array("idCommentaireSng"=>null));
 
 
-        return $this->render('@EloboostedFrontoffice/Post/readPost.html.twig',array("post" => $P , "commentaire" => $commentaire,"unlike" => $unlike,"postreported" => $postreported));
+        return $this->redirectToroute('readPost',array("idPost" => $P->getIdPost()));
+
 
     }
 
