@@ -15,11 +15,11 @@ class __TwigTemplate_3ddf498a72e71e2c6b69e8a7be2ee6dfeaa6443fe842f86d454e17714c1
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_83c758dc4315f8f3ce1c751cf332cf98d8529caed9f61d227564da9db896ac75 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_83c758dc4315f8f3ce1c751cf332cf98d8529caed9f61d227564da9db896ac75->enter($__internal_83c758dc4315f8f3ce1c751cf332cf98d8529caed9f61d227564da9db896ac75_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@EloboostedGameinjection/Default/index.html.twig"));
+        $__internal_53b3c614ce0aa104e7c6eaef4c8b95e8dd2ba41db1418c4447bac5e0892a02f4 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_53b3c614ce0aa104e7c6eaef4c8b95e8dd2ba41db1418c4447bac5e0892a02f4->enter($__internal_53b3c614ce0aa104e7c6eaef4c8b95e8dd2ba41db1418c4447bac5e0892a02f4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@EloboostedGameinjection/Default/index.html.twig"));
 
-        $__internal_794b734132c839d3ff4c935699ede71b2762f37377d6ab7e93fb446ef59a59d1 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_794b734132c839d3ff4c935699ede71b2762f37377d6ab7e93fb446ef59a59d1->enter($__internal_794b734132c839d3ff4c935699ede71b2762f37377d6ab7e93fb446ef59a59d1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@EloboostedGameinjection/Default/index.html.twig"));
+        $__internal_1aae378af12db814242bd4bea1ce81dd43ef8444a7fb49d16f64e8a8b1924c1b = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_1aae378af12db814242bd4bea1ce81dd43ef8444a7fb49d16f64e8a8b1924c1b->enter($__internal_1aae378af12db814242bd4bea1ce81dd43ef8444a7fb49d16f64e8a8b1924c1b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@EloboostedGameinjection/Default/index.html.twig"));
 
         // line 1
         echo "Hello ";
@@ -33,10 +33,10 @@ class __TwigTemplate_3ddf498a72e71e2c6b69e8a7be2ee6dfeaa6443fe842f86d454e17714c1
 <br>
 ";
         
-        $__internal_83c758dc4315f8f3ce1c751cf332cf98d8529caed9f61d227564da9db896ac75->leave($__internal_83c758dc4315f8f3ce1c751cf332cf98d8529caed9f61d227564da9db896ac75_prof);
+        $__internal_53b3c614ce0aa104e7c6eaef4c8b95e8dd2ba41db1418c4447bac5e0892a02f4->leave($__internal_53b3c614ce0aa104e7c6eaef4c8b95e8dd2ba41db1418c4447bac5e0892a02f4_prof);
 
         
-        $__internal_794b734132c839d3ff4c935699ede71b2762f37377d6ab7e93fb446ef59a59d1->leave($__internal_794b734132c839d3ff4c935699ede71b2762f37377d6ab7e93fb446ef59a59d1_prof);
+        $__internal_1aae378af12db814242bd4bea1ce81dd43ef8444a7fb49d16f64e8a8b1924c1b->leave($__internal_1aae378af12db814242bd4bea1ce81dd43ef8444a7fb49d16f64e8a8b1924c1b_prof);
 
     }
 
