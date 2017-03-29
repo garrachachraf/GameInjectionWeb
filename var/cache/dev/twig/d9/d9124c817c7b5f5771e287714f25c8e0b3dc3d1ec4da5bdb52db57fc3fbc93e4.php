@@ -21,29 +21,29 @@ class __TwigTemplate_4be315e66c87706dc0dd951cdd78f3d4c5ece079f3b870508c42ffe70c3
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_3873b012ac43baa146a86838d2153055c54ce8945c25b8c466a324c7dda17499 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_3873b012ac43baa146a86838d2153055c54ce8945c25b8c466a324c7dda17499->enter($__internal_3873b012ac43baa146a86838d2153055c54ce8945c25b8c466a324c7dda17499_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@EloboostedFrontoffice/Compte/addCompte.html.twig"));
+        $__internal_55e8ee9b90bcad2fd00a932345208d18b93a92505b660ed7c949a32eb06b3fb8 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_55e8ee9b90bcad2fd00a932345208d18b93a92505b660ed7c949a32eb06b3fb8->enter($__internal_55e8ee9b90bcad2fd00a932345208d18b93a92505b660ed7c949a32eb06b3fb8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@EloboostedFrontoffice/Compte/addCompte.html.twig"));
 
-        $__internal_fb16abeb1c902c2242d0f46f9202ee16ca5fce5094b461289bbba207c243044c = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_fb16abeb1c902c2242d0f46f9202ee16ca5fce5094b461289bbba207c243044c->enter($__internal_fb16abeb1c902c2242d0f46f9202ee16ca5fce5094b461289bbba207c243044c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@EloboostedFrontoffice/Compte/addCompte.html.twig"));
+        $__internal_d0b43d24b858d59e341715f3e167e3066168d7a70b3dcf384ddb414500c1fa5e = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_d0b43d24b858d59e341715f3e167e3066168d7a70b3dcf384ddb414500c1fa5e->enter($__internal_d0b43d24b858d59e341715f3e167e3066168d7a70b3dcf384ddb414500c1fa5e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@EloboostedFrontoffice/Compte/addCompte.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_3873b012ac43baa146a86838d2153055c54ce8945c25b8c466a324c7dda17499->leave($__internal_3873b012ac43baa146a86838d2153055c54ce8945c25b8c466a324c7dda17499_prof);
+        $__internal_55e8ee9b90bcad2fd00a932345208d18b93a92505b660ed7c949a32eb06b3fb8->leave($__internal_55e8ee9b90bcad2fd00a932345208d18b93a92505b660ed7c949a32eb06b3fb8_prof);
 
         
-        $__internal_fb16abeb1c902c2242d0f46f9202ee16ca5fce5094b461289bbba207c243044c->leave($__internal_fb16abeb1c902c2242d0f46f9202ee16ca5fce5094b461289bbba207c243044c_prof);
+        $__internal_d0b43d24b858d59e341715f3e167e3066168d7a70b3dcf384ddb414500c1fa5e->leave($__internal_d0b43d24b858d59e341715f3e167e3066168d7a70b3dcf384ddb414500c1fa5e_prof);
 
     }
 
     // line 3
     public function block_main($context, array $blocks = array())
     {
-        $__internal_2474fb5b8303b02cbe5ff9889f6d559a68fb44a9f90243b94f7c4b44d56cf252 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_2474fb5b8303b02cbe5ff9889f6d559a68fb44a9f90243b94f7c4b44d56cf252->enter($__internal_2474fb5b8303b02cbe5ff9889f6d559a68fb44a9f90243b94f7c4b44d56cf252_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "main"));
+        $__internal_ec639caf614f3ae7d10c4406b9959c64c1f64bbf90522192f3ca8527e3b6b57e = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_ec639caf614f3ae7d10c4406b9959c64c1f64bbf90522192f3ca8527e3b6b57e->enter($__internal_ec639caf614f3ae7d10c4406b9959c64c1f64bbf90522192f3ca8527e3b6b57e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "main"));
 
-        $__internal_0c95cb570f3e777551dfcd201a1afc825f5bf733c4f8f2cb6aef229f76b6631c = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_0c95cb570f3e777551dfcd201a1afc825f5bf733c4f8f2cb6aef229f76b6631c->enter($__internal_0c95cb570f3e777551dfcd201a1afc825f5bf733c4f8f2cb6aef229f76b6631c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "main"));
+        $__internal_dff274cf2944c03ed3b5b999505d3d90321a2d203285ba1606f206df4a4dd05d = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_dff274cf2944c03ed3b5b999505d3d90321a2d203285ba1606f206df4a4dd05d->enter($__internal_dff274cf2944c03ed3b5b999505d3d90321a2d203285ba1606f206df4a4dd05d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "main"));
 
         // line 4
         echo "    <script type=\"text/javascript\" src=\"";
@@ -58,6 +58,18 @@ class __TwigTemplate_4be315e66c87706dc0dd951cdd78f3d4c5ece079f3b870508c42ffe70c3
             \$('#SubmitBtn').prop('disabled', true);
 
 
+
+            \$('#dateInput').change(function() {
+                var today =new Date();
+                var inputDate = new Date(\$('#dateInput').val());
+                if (inputDate > today) {
+                    \$('#dateInput').val('');
+                    alert(\"Please select a valid date\");
+                }
+            });
+
+
+
             \$('#firstCheck').click(
                 function () {
                     RandomCode=  Math.floor(Math.random()*(9999999-1000000+1)+1000000);
@@ -67,7 +79,7 @@ class __TwigTemplate_4be315e66c87706dc0dd951cdd78f3d4c5ece079f3b870508c42ffe70c3
 
                     \$.ajax({
                         url: \"";
-        // line 22
+        // line 34
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("SendMail");
         echo "\",
                         method: \"post\",
@@ -107,7 +119,7 @@ class __TwigTemplate_4be315e66c87706dc0dd951cdd78f3d4c5ece079f3b870508c42ffe70c3
     </script>
     <section class=\"bg-transparent\" style=\"padding: 0%\">
         <div class=\"background-image\" style=\"background-image: url(";
-        // line 59
+        // line 71
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/cover/cover.jpg"), "html", null, true);
         echo ");\">
             <span class=\"background-overlay\"></span>
@@ -123,7 +135,7 @@ class __TwigTemplate_4be315e66c87706dc0dd951cdd78f3d4c5ece079f3b870508c42ffe70c3
                     <ol class=\"breadcrumb\">
                         <li><a href=\"/\">Home</a></li>
                         <li><a href=\"";
-        // line 72
+        // line 84
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("check_logins");
         echo "\">Sign up</a></li>
                         <li class=\"active\">Create new account</li>
@@ -136,7 +148,7 @@ class __TwigTemplate_4be315e66c87706dc0dd951cdd78f3d4c5ece079f3b870508c42ffe70c3
 
         <div class=\"container\">
             <form method=\"POST\"  enctype=\"multipart/form-data\"  action=\"";
-        // line 82
+        // line 94
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("accountcreation");
         echo "\">
             <div class=\"row\">
@@ -169,7 +181,7 @@ class __TwigTemplate_4be315e66c87706dc0dd951cdd78f3d4c5ece079f3b870508c42ffe70c3
                         </div>
 
                         <div class=\"form-group \">
-                            <input type=\"date\" id=\"modal-select\" required name=\"DateDeNaissance\" class=\"form-control bootstrap-datetimepicker-widget\">
+                            <input type=\"date\" id=\"dateInput\" required name=\"DateDeNaissance\" class=\"form-control bootstrap-datetimepicker-widget\">
 
                         </div>
 
@@ -218,7 +230,7 @@ class __TwigTemplate_4be315e66c87706dc0dd951cdd78f3d4c5ece079f3b870508c42ffe70c3
 
                 <div class=\"col-lg-5 height-300\">
                     <img src=\"";
-        // line 161
+        // line 173
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/content/contact.jpg"), "html", null, true);
         echo "\"  width=\"120%\" height=\"150%\"  class=\"image-right padding-top-50\" alt=\"\">
                 </div>
@@ -230,10 +242,10 @@ class __TwigTemplate_4be315e66c87706dc0dd951cdd78f3d4c5ece079f3b870508c42ffe70c3
 
 ";
         
-        $__internal_0c95cb570f3e777551dfcd201a1afc825f5bf733c4f8f2cb6aef229f76b6631c->leave($__internal_0c95cb570f3e777551dfcd201a1afc825f5bf733c4f8f2cb6aef229f76b6631c_prof);
+        $__internal_dff274cf2944c03ed3b5b999505d3d90321a2d203285ba1606f206df4a4dd05d->leave($__internal_dff274cf2944c03ed3b5b999505d3d90321a2d203285ba1606f206df4a4dd05d_prof);
 
         
-        $__internal_2474fb5b8303b02cbe5ff9889f6d559a68fb44a9f90243b94f7c4b44d56cf252->leave($__internal_2474fb5b8303b02cbe5ff9889f6d559a68fb44a9f90243b94f7c4b44d56cf252_prof);
+        $__internal_ec639caf614f3ae7d10c4406b9959c64c1f64bbf90522192f3ca8527e3b6b57e->leave($__internal_ec639caf614f3ae7d10c4406b9959c64c1f64bbf90522192f3ca8527e3b6b57e_prof);
 
     }
 
@@ -249,7 +261,7 @@ class __TwigTemplate_4be315e66c87706dc0dd951cdd78f3d4c5ece079f3b870508c42ffe70c3
 
     public function getDebugInfo()
     {
-        return array (  222 => 161,  140 => 82,  127 => 72,  111 => 59,  71 => 22,  49 => 4,  40 => 3,  11 => 2,);
+        return array (  234 => 173,  152 => 94,  139 => 84,  123 => 71,  83 => 34,  49 => 4,  40 => 3,  11 => 2,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -273,6 +285,18 @@ class __TwigTemplate_4be315e66c87706dc0dd951cdd78f3d4c5ece079f3b870508c42ffe70c3
             var RandomCode=  Math.floor(Math.random()*(9999999-1000000+1)+1000000);
             \$('#SubmitBtn').hide();
             \$('#SubmitBtn').prop('disabled', true);
+
+
+
+            \$('#dateInput').change(function() {
+                var today =new Date();
+                var inputDate = new Date(\$('#dateInput').val());
+                if (inputDate > today) {
+                    \$('#dateInput').val('');
+                    alert(\"Please select a valid date\");
+                }
+            });
+
 
 
             \$('#firstCheck').click(
@@ -374,7 +398,7 @@ class __TwigTemplate_4be315e66c87706dc0dd951cdd78f3d4c5ece079f3b870508c42ffe70c3
                         </div>
 
                         <div class=\"form-group \">
-                            <input type=\"date\" id=\"modal-select\" required name=\"DateDeNaissance\" class=\"form-control bootstrap-datetimepicker-widget\">
+                            <input type=\"date\" id=\"dateInput\" required name=\"DateDeNaissance\" class=\"form-control bootstrap-datetimepicker-widget\">
 
                         </div>
 

@@ -11,6 +11,18 @@
             $('#SubmitBtn').prop('disabled', true);
 
 
+
+            $('#dateInput').change(function() {
+                var today =new Date();
+                var inputDate = new Date($('#dateInput').val());
+                if (inputDate > today) {
+                    $('#dateInput').val('');
+                    alert("Please select a valid date");
+                }
+            });
+
+
+
             $('#firstCheck').click(
                 function () {
                     RandomCode=  Math.floor(Math.random()*(9999999-1000000+1)+1000000);
@@ -110,7 +122,7 @@
                         </div>
 
                         <div class="form-group ">
-                            <input type="date" id="modal-select" required name="DateDeNaissance" class="form-control bootstrap-datetimepicker-widget">
+                            <input type="date" id="dateInput" required name="DateDeNaissance" class="form-control bootstrap-datetimepicker-widget">
 
                         </div>
 

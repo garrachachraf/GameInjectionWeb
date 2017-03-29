@@ -73,7 +73,27 @@ createAccount:
 accountcreation:
     path:     /accountcreation
     defaults: { _controller: EloboostedFrontofficeBundle:Compte:accountcreation}
+lstnots:
+    path: /lstNot
+    defaults: { _controller:  EloboostedFrontofficeBundle:Notification:NotificationlistRender }
 
 SendMail:
     path: /SendMail
     defaults: { _controller:  EloboostedFrontofficeBundle:Compte:sendMail }
+
+SendInvite:
+    path: /SendInvite
+    defaults: { _controller:  EloboostedFrontofficeBundle:Compte:SendInvite }
+acceptInvFromNot:
+    path: /acceptInvFromNot
+    defaults: { _controller:  EloboostedFrontofficeBundle:Notification:acceptInvFromNot }
+RefuseInvFromNot:
+    path: /RefuseInvFromNot
+    defaults: { _controller:  EloboostedFrontofficeBundle:Notification:RefuseInvFromNot }
+
+myProfile:
+    path: /myProfile
+    defaults: { _controller:  EloboostedFrontofficeBundle:Compte:myProfile }
+userProfile:
+    path: /userProfile/{id}
+    defaults: { _controller:  EloboostedFrontofficeBundle:Compte:userProfile }

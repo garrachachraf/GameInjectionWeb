@@ -15,11 +15,11 @@ class __TwigTemplate_8e5ad54c3a1a326aa56bbee6c9470f511c1df5f5fce558b6f8757def9e8
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_a9199b9e08996b3e25f18174d023621123b80f8a99d0112e83e27536d909a8bf = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_a9199b9e08996b3e25f18174d023621123b80f8a99d0112e83e27536d909a8bf->enter($__internal_a9199b9e08996b3e25f18174d023621123b80f8a99d0112e83e27536d909a8bf_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EloboostedFrontofficeBundle:Compte:myProfile.html.twig"));
+        $__internal_020af9da8466c2432202bf03b475a4be5abc2ada4486f8cd7533229de65911a3 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_020af9da8466c2432202bf03b475a4be5abc2ada4486f8cd7533229de65911a3->enter($__internal_020af9da8466c2432202bf03b475a4be5abc2ada4486f8cd7533229de65911a3_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EloboostedFrontofficeBundle:Compte:myProfile.html.twig"));
 
-        $__internal_87e6482e501f53103aa186b6d3be2d91c1f9a8e4549235ef340bb503615418ef = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_87e6482e501f53103aa186b6d3be2d91c1f9a8e4549235ef340bb503615418ef->enter($__internal_87e6482e501f53103aa186b6d3be2d91c1f9a8e4549235ef340bb503615418ef_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EloboostedFrontofficeBundle:Compte:myProfile.html.twig"));
+        $__internal_7fe04503bb724ecadcc37e2d4808c2631d034fdfcb46ccf514870843ed47f832 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_7fe04503bb724ecadcc37e2d4808c2631d034fdfcb46ccf514870843ed47f832->enter($__internal_7fe04503bb724ecadcc37e2d4808c2631d034fdfcb46ccf514870843ed47f832_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EloboostedFrontofficeBundle:Compte:myProfile.html.twig"));
 
         // line 1
         echo "<!DOCTYPE html>
@@ -31,7 +31,33 @@ class __TwigTemplate_8e5ad54c3a1a326aa56bbee6c9470f511c1df5f5fce558b6f8757def9e8
 \t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no\">
 \t<meta name=\"description\" content=\"\">
 \t<meta name=\"author\" content=\"\">
+\t<script src=\"";
+        // line 10
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("assets/jquery/jquery-1.9.1.js"), "html", null, true);
+        echo "\"></script>
+\t<script>
+        \$(document).ready(function() {
 
+            // Update notifications section
+
+            window.setInterval(
+
+                function()
+                {
+                    \$.post('";
+        // line 20
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("lstnots");
+        echo "', function(data) {
+                        \$('#nots2').html(data);
+                        console.log(data);
+                    });
+
+                }
+
+                , 5000);
+
+        })
+\t</script>
 \t<title>Gameforest - Responsive Gaming HTML Theme</title>
 \t
 \t<!-- FAVICON -->
@@ -39,28 +65,28 @@ class __TwigTemplate_8e5ad54c3a1a326aa56bbee6c9470f511c1df5f5fce558b6f8757def9e8
 \t
 \t<!-- CORE CSS -->
 \t<link href=\"";
-        // line 17
+        // line 37
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("plugins/bootstrap/css/bootstrap.min.css"), "html", null, true);
         echo "\" rel=\"stylesheet\">
 \t<link href=\"";
-        // line 18
+        // line 38
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("plugins/font-awesome/css/font-awesome.min.css"), "html", null, true);
         echo "\" rel=\"stylesheet\">
 \t<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'> 
     
 \t<!-- PLUGINS -->
 \t<link href=\"";
-        // line 22
+        // line 42
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("plugins/animate/animate.min.css"), "html", null, true);
         echo "\" rel=\"stylesheet\">
 
 \t<!-- THEME CSS -->
 \t<link href=\"";
-        // line 25
+        // line 45
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("css/theme.min.css"), "html", null, true);
         echo "\" rel=\"stylesheet\">
 \t<link href=\"";
-        // line 26
+        // line 46
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("css/custom.css"), "html", null, true);
         echo "\" rel=\"stylesheet\">
 </head>
@@ -257,31 +283,77 @@ class __TwigTemplate_8e5ad54c3a1a326aa56bbee6c9470f511c1df5f5fce558b6f8757def9e8
 \t\t\t\t</div>
 \t\t\t</nav>
 \t\t\t<div class=\"nav-right\">
-\t\t\t\t<div class=\"nav-profile dropdown\">
-\t\t\t\t\t<a href=\"profile.html#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\"><img src=\"img/user/avatar.jpg\" alt=\"\"> <span>Nathan Drake</span></a>
-\t\t\t\t\t<ul class=\"dropdown-menu\">
-\t\t\t\t\t\t<li><a href=\"profile.html#\"><i class=\"fa fa-user\"></i> Profile</a></li>
-\t\t\t\t\t\t<li><a href=\"profile.html#\"><i class=\"fa fa-heart\"></i> Likes <span class=\"label label-info\">32</span></a></li>
-\t\t\t\t\t\t<li><a href=\"profile.html#\"><i class=\"fa fa-gamepad\"></i> Games</a></li>
-\t\t\t\t\t\t<li><a href=\"profile.html#\"><i class=\"fa fa-gear\"></i> Settings</a></li>
-\t\t\t\t\t\t<li class=\"divider\"></li>
-\t\t\t\t\t\t<li><a href=\"login.html\"><i class=\"fa fa-power-off\"></i> Sign Out</a></li>
-\t\t\t\t\t</ul>
-\t\t\t\t</div>
-\t\t\t\t<div class=\"nav-dropdown dropdown\">
-\t\t\t\t\t<a href=\"profile.html#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\"><i class=\"fa fa-bell\"></i> <span class=\"label label-danger\">3</span></a>
-\t\t\t\t\t<ul class=\"dropdown-menu\">
-\t\t\t\t\t\t<li class=\"dropdown-header\"><i class=\"fa fa-bell\"></i> You have 5 new games</li>
-\t\t\t\t\t\t<li><a href=\"profile.html#\">Alien Isolation</a></li>
-\t\t\t\t\t\t<li><a href=\"profile.html#\">Witcher 3 <span class=\"label label-success\">XBOX</span></a></li>
-\t\t\t\t\t\t<li><a href=\"profile.html#\">Last of Us</a></li>
-\t\t\t\t\t\t<li><a href=\"profile.html#\">Uncharted 4 <span class=\"label label-primary\">PS4</span></a></li>
-\t\t\t\t\t\t<li><a href=\"profile.html#\">GTA 5 <span class=\"label label-warning\">PC</span></a></li>
-\t\t\t\t\t\t<li class=\"dropdown-footer\"><a href=\"profile.html#\">View all games</a></li>
-\t\t\t\t\t</ul>
-\t\t\t\t</div>
-\t\t\t\t<a href=\"profile.html#\" data-toggle=\"modal-search\"><i class=\"fa fa-search\"></i></a>
-\t\t\t</div>
+                ";
+        // line 241
+        if (($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "user", array()) == null)) {
+            // line 242
+            echo "\t\t\t\t\t<div class=\"nav-profile dropdown\">
+\t\t\t\t\t\t<a href=\"";
+            // line 243
+            echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("eloboosted_login_homepage");
+            echo "\" ><img src=\"";
+            echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("FOassets/img/user/avatar2.jpg"), "html", null, true);
+            echo "\" alt=\"\"> <span>Connect to you account</span></a>
+
+\t\t\t\t\t</div>
+
+                ";
+        } else {
+            // line 248
+            echo "\t\t\t\t\t";
+            $context["foo"] = $this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "user", array()), "image", array());
+            // line 249
+            echo "\t\t\t\t\t<div class=\"nav-profile dropdown\">
+\t\t\t\t\t\t<a href=\"";
+            // line 250
+            echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("AddProduct_page");
+            echo "\" class=\"dropdown-toggle\" data-toggle=\"dropdown\"><img src=\"";
+            echo twig_escape_filter($this->env, (isset($context["foo"]) ? $context["foo"] : $this->getContext($context, "foo")), "html", null, true);
+            echo "\" alt=\"\"> <span>";
+            echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "user", array()), "pseudo", array()), "html", null, true);
+            echo "</span></a>
+
+\t\t\t\t\t\t<ul class=\"dropdown-menu\">
+\t\t\t\t\t\t\t<li><a href=\"";
+            // line 253
+            echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("home");
+            echo "\"><i class=\"fa fa-user\"></i> Profile</a></li>
+\t\t\t\t\t\t\t<li><a href=\"";
+            // line 254
+            echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("home");
+            echo "\"><i class=\"fa fa-heart\"></i> Likes <span class=\"label label-info\">32</span></a></li>
+\t\t\t\t\t\t\t<li><a href=\"";
+            // line 255
+            echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("home");
+            echo "\"><i class=\"fa fa-gamepad\"></i> Games</a></li>
+\t\t\t\t\t\t\t<li><a href=\"";
+            // line 256
+            echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("home");
+            echo "\"><i class=\"fa fa-gear\"></i> Settings</a></li>
+\t\t\t\t\t\t\t<li class=\"divider\"></li>
+\t\t\t\t\t\t\t<li><a href=\"";
+            // line 258
+            echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("SignOut");
+            echo "\"><i class=\"fa fa-power-off\"></i> Sign Out</a></li>
+\t\t\t\t\t\t</ul>
+
+\t\t\t\t\t</div>
+\t\t\t\t\t<div id=\"nots2\" class=\"nav-dropdown dropdown\">
+
+                            ";
+            // line 264
+            echo $this->env->getRuntime('Symfony\Bridge\Twig\Extension\HttpKernelRuntime')->renderFragment(Symfony\Bridge\Twig\Extension\HttpKernelExtension::controller("EloboostedFrontofficeBundle:Notification:NotificationlistRender"));
+            echo "
+                            ";
+            // line 272
+            echo "\t\t\t\t\t\t</ul>
+\t\t\t\t\t</div>
+\t\t\t\t\t<a href=\"index.html#\" data-toggle=\"modal-search\"><i class=\"fa fa-search\"></i></a>
+
+                ";
+        }
+        // line 277
+        echo "\t\t\t</div>
 \t\t</div>
 \t</header>
 \t<!-- /header -->
@@ -303,7 +375,10 @@ class __TwigTemplate_8e5ad54c3a1a326aa56bbee6c9470f511c1df5f5fce558b6f8757def9e8
 \t\t\t\t\t<div class=\"profile-avatar\">
 \t\t\t\t\t\t<div class=\"thumbnail\" data-toggle=\"tooltip\" title=\"YAKUZI\">
 \t\t\t\t\t\t\t<a href=\"profile.html#\">
-\t\t\t\t\t\t\t\t<img src=\"img/user/profile.jpg\">
+\t\t\t\t\t\t\t\t<img src=\"";
+        // line 299
+        echo twig_escape_filter($this->env, (isset($context["foo"]) ? $context["foo"] : $this->getContext($context, "foo")), "html", null, true);
+        echo "\">
 \t\t\t\t\t\t\t</a>
 \t\t\t\t\t\t</div>
 \t\t\t\t\t</div>
@@ -362,25 +437,27 @@ class __TwigTemplate_8e5ad54c3a1a326aa56bbee6c9470f511c1df5f5fce558b6f8757def9e8
 \t\t\t\t\t\t<div class=\"widget widget-friends\">
 \t\t\t\t\t\t\t<div class=\"panel panel-default\">
 \t\t\t\t\t\t\t\t<div class=\"panel-heading\">Friends (";
-        // line 325
+        // line 357
         echo twig_escape_filter($this->env, twig_length_filter($this->env, (isset($context["lstAmi"]) ? $context["lstAmi"] : $this->getContext($context, "lstAmi"))), "html", null, true);
         echo ")</div>
 \t\t\t\t\t\t\t\t<div class=\"panel-body\">
 \t\t\t\t\t\t\t\t\t<ul>
 
 \t\t\t\t\t\t\t\t\t\t\t";
-        // line 329
+        // line 361
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["lstAmi"]) ? $context["lstAmi"] : $this->getContext($context, "lstAmi")));
         foreach ($context['_seq'] as $context["_key"] => $context["ami"]) {
-            // line 330
-            echo "\t\t\t\t\t\t\t\t\t\t\t\t<li><a href=\"profile.html#\" data-toggle=\"tooltip\" title=\"";
+            // line 362
+            echo "\t\t\t\t\t\t\t\t\t\t\t\t<li><a href=\"";
+            echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("userProfile", array("id" => $this->getAttribute($context["ami"], "idCompte", array()))), "html", null, true);
+            echo "\" data-toggle=\"tooltip\" title=\"";
             echo twig_escape_filter($this->env, $this->getAttribute($context["ami"], "pseudo", array()), "html", null, true);
             echo "\"><img src=\"";
             echo twig_escape_filter($this->env, $this->getAttribute($context["ami"], "image", array()), "html", null, true);
             echo "\" alt=\"\"></a></li>
 \t\t\t\t\t\t\t\t\t\t\t\t";
-            // line 331
+            // line 363
             echo twig_escape_filter($this->env, $this->getAttribute($context["ami"], "pseudo", array()), "html", null, true);
             echo " , ";
             echo twig_escape_filter($this->env, $this->getAttribute($context["ami"], "idCompte", array()), "html", null, true);
@@ -390,7 +467,7 @@ class __TwigTemplate_8e5ad54c3a1a326aa56bbee6c9470f511c1df5f5fce558b6f8757def9e8
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['ami'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 333
+        // line 365
         echo "\t\t\t\t\t\t\t\t\t</ul>
 \t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t</div>
@@ -605,9 +682,18 @@ class __TwigTemplate_8e5ad54c3a1a326aa56bbee6c9470f511c1df5f5fce558b6f8757def9e8
 \t<!-- /.footer -->
 \t
 \t<!-- Javascript -->
-\t<script src=\"plugins/jquery/jquery-3.1.0.min.js\"></script>
-\t<script src=\"plugins/bootstrap/js/bootstrap.min.js\"></script>
-\t<script src=\"js/core.min.js\"></script>
+\t<script src=\"";
+        // line 579
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("plugins/jquery/jquery-3.1.0.min.js"), "html", null, true);
+        echo "\"></script>
+\t<script src=\"";
+        // line 580
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("plugins/bootstrap/js/bootstrap.min.js"), "html", null, true);
+        echo "\"></script>
+\t<script src=\"";
+        // line 581
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("js/core.min.js"), "html", null, true);
+        echo "\"></script>
 \t<script>
 \t(function(\$) {
 \t\"use strict\";
@@ -623,10 +709,10 @@ class __TwigTemplate_8e5ad54c3a1a326aa56bbee6c9470f511c1df5f5fce558b6f8757def9e8
 </body>
 </html>";
         
-        $__internal_a9199b9e08996b3e25f18174d023621123b80f8a99d0112e83e27536d909a8bf->leave($__internal_a9199b9e08996b3e25f18174d023621123b80f8a99d0112e83e27536d909a8bf_prof);
+        $__internal_020af9da8466c2432202bf03b475a4be5abc2ada4486f8cd7533229de65911a3->leave($__internal_020af9da8466c2432202bf03b475a4be5abc2ada4486f8cd7533229de65911a3_prof);
 
         
-        $__internal_87e6482e501f53103aa186b6d3be2d91c1f9a8e4549235ef340bb503615418ef->leave($__internal_87e6482e501f53103aa186b6d3be2d91c1f9a8e4549235ef340bb503615418ef_prof);
+        $__internal_7fe04503bb724ecadcc37e2d4808c2631d034fdfcb46ccf514870843ed47f832->leave($__internal_7fe04503bb724ecadcc37e2d4808c2631d034fdfcb46ccf514870843ed47f832_prof);
 
     }
 
@@ -642,7 +728,7 @@ class __TwigTemplate_8e5ad54c3a1a326aa56bbee6c9470f511c1df5f5fce558b6f8757def9e8
 
     public function getDebugInfo()
     {
-        return array (  394 => 333,  384 => 331,  377 => 330,  373 => 329,  366 => 325,  64 => 26,  60 => 25,  54 => 22,  47 => 18,  43 => 17,  25 => 1,);
+        return array (  695 => 581,  691 => 580,  687 => 579,  471 => 365,  461 => 363,  452 => 362,  448 => 361,  441 => 357,  380 => 299,  356 => 277,  349 => 272,  345 => 264,  336 => 258,  331 => 256,  327 => 255,  323 => 254,  319 => 253,  309 => 250,  306 => 249,  303 => 248,  293 => 243,  290 => 242,  288 => 241,  90 => 46,  86 => 45,  80 => 42,  73 => 38,  69 => 37,  49 => 20,  36 => 10,  25 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -664,7 +750,27 @@ class __TwigTemplate_8e5ad54c3a1a326aa56bbee6c9470f511c1df5f5fce558b6f8757def9e8
 \t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no\">
 \t<meta name=\"description\" content=\"\">
 \t<meta name=\"author\" content=\"\">
+\t<script src=\"{{ asset('assets/jquery/jquery-1.9.1.js') }}\"></script>
+\t<script>
+        \$(document).ready(function() {
 
+            // Update notifications section
+
+            window.setInterval(
+
+                function()
+                {
+                    \$.post('{{ path('lstnots') }}', function(data) {
+                        \$('#nots2').html(data);
+                        console.log(data);
+                    });
+
+                }
+
+                , 5000);
+
+        })
+\t</script>
 \t<title>Gameforest - Responsive Gaming HTML Theme</title>
 \t
 \t<!-- FAVICON -->
@@ -875,30 +981,42 @@ class __TwigTemplate_8e5ad54c3a1a326aa56bbee6c9470f511c1df5f5fce558b6f8757def9e8
 \t\t\t\t</div>
 \t\t\t</nav>
 \t\t\t<div class=\"nav-right\">
-\t\t\t\t<div class=\"nav-profile dropdown\">
-\t\t\t\t\t<a href=\"profile.html#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\"><img src=\"img/user/avatar.jpg\" alt=\"\"> <span>Nathan Drake</span></a>
-\t\t\t\t\t<ul class=\"dropdown-menu\">
-\t\t\t\t\t\t<li><a href=\"profile.html#\"><i class=\"fa fa-user\"></i> Profile</a></li>
-\t\t\t\t\t\t<li><a href=\"profile.html#\"><i class=\"fa fa-heart\"></i> Likes <span class=\"label label-info\">32</span></a></li>
-\t\t\t\t\t\t<li><a href=\"profile.html#\"><i class=\"fa fa-gamepad\"></i> Games</a></li>
-\t\t\t\t\t\t<li><a href=\"profile.html#\"><i class=\"fa fa-gear\"></i> Settings</a></li>
-\t\t\t\t\t\t<li class=\"divider\"></li>
-\t\t\t\t\t\t<li><a href=\"login.html\"><i class=\"fa fa-power-off\"></i> Sign Out</a></li>
-\t\t\t\t\t</ul>
-\t\t\t\t</div>
-\t\t\t\t<div class=\"nav-dropdown dropdown\">
-\t\t\t\t\t<a href=\"profile.html#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\"><i class=\"fa fa-bell\"></i> <span class=\"label label-danger\">3</span></a>
-\t\t\t\t\t<ul class=\"dropdown-menu\">
-\t\t\t\t\t\t<li class=\"dropdown-header\"><i class=\"fa fa-bell\"></i> You have 5 new games</li>
-\t\t\t\t\t\t<li><a href=\"profile.html#\">Alien Isolation</a></li>
-\t\t\t\t\t\t<li><a href=\"profile.html#\">Witcher 3 <span class=\"label label-success\">XBOX</span></a></li>
-\t\t\t\t\t\t<li><a href=\"profile.html#\">Last of Us</a></li>
-\t\t\t\t\t\t<li><a href=\"profile.html#\">Uncharted 4 <span class=\"label label-primary\">PS4</span></a></li>
-\t\t\t\t\t\t<li><a href=\"profile.html#\">GTA 5 <span class=\"label label-warning\">PC</span></a></li>
-\t\t\t\t\t\t<li class=\"dropdown-footer\"><a href=\"profile.html#\">View all games</a></li>
-\t\t\t\t\t</ul>
-\t\t\t\t</div>
-\t\t\t\t<a href=\"profile.html#\" data-toggle=\"modal-search\"><i class=\"fa fa-search\"></i></a>
+                {% if app.user  == null %}
+\t\t\t\t\t<div class=\"nav-profile dropdown\">
+\t\t\t\t\t\t<a href=\"{{ path('eloboosted_login_homepage') }}\" ><img src=\"{{ asset('FOassets/img/user/avatar2.jpg') }}\" alt=\"\"> <span>Connect to you account</span></a>
+
+\t\t\t\t\t</div>
+
+                {% else %}
+\t\t\t\t\t{% set foo = app.user.image  %}
+\t\t\t\t\t<div class=\"nav-profile dropdown\">
+\t\t\t\t\t\t<a href=\"{{ path('AddProduct_page') }}\" class=\"dropdown-toggle\" data-toggle=\"dropdown\"><img src=\"{{ foo }}\" alt=\"\"> <span>{{ app.user.pseudo }}</span></a>
+
+\t\t\t\t\t\t<ul class=\"dropdown-menu\">
+\t\t\t\t\t\t\t<li><a href=\"{{ path('home') }}\"><i class=\"fa fa-user\"></i> Profile</a></li>
+\t\t\t\t\t\t\t<li><a href=\"{{ path('home') }}\"><i class=\"fa fa-heart\"></i> Likes <span class=\"label label-info\">32</span></a></li>
+\t\t\t\t\t\t\t<li><a href=\"{{ path('home') }}\"><i class=\"fa fa-gamepad\"></i> Games</a></li>
+\t\t\t\t\t\t\t<li><a href=\"{{ path('home') }}\"><i class=\"fa fa-gear\"></i> Settings</a></li>
+\t\t\t\t\t\t\t<li class=\"divider\"></li>
+\t\t\t\t\t\t\t<li><a href=\"{{ path('SignOut') }}\"><i class=\"fa fa-power-off\"></i> Sign Out</a></li>
+\t\t\t\t\t\t</ul>
+
+\t\t\t\t\t</div>
+\t\t\t\t\t<div id=\"nots2\" class=\"nav-dropdown dropdown\">
+
+                            {{ render(controller('EloboostedFrontofficeBundle:Notification:NotificationlistRender')) }}
+                            {#<li class=\"dropdown-header\"><i class=\"fa fa-bell\"></i> You have 5 new games</li>
+                            <li><a href=\"index.html#\">Alien Isolation</a></li>
+                            <li><a href=\"index.html#\">Witcher 3 <span class=\"label label-success\">XBOX</span></a></li>
+                            <li><a href=\"index.html#\">Last of Us</a></li>
+                            <li><a href=\"index.html#\">Uncharted 4 <span class=\"label label-primary\">PS4</span></a></li>
+                            <li><a href=\"index.html#\">GTA 5 <span class=\"label label-warning\">PC</span></a></li>
+                            <li class=\"dropdown-footer\"><a href=\"index.html#\">View all games</a></li>#}
+\t\t\t\t\t\t</ul>
+\t\t\t\t\t</div>
+\t\t\t\t\t<a href=\"index.html#\" data-toggle=\"modal-search\"><i class=\"fa fa-search\"></i></a>
+
+                {% endif %}
 \t\t\t</div>
 \t\t</div>
 \t</header>
@@ -921,7 +1039,7 @@ class __TwigTemplate_8e5ad54c3a1a326aa56bbee6c9470f511c1df5f5fce558b6f8757def9e8
 \t\t\t\t\t<div class=\"profile-avatar\">
 \t\t\t\t\t\t<div class=\"thumbnail\" data-toggle=\"tooltip\" title=\"YAKUZI\">
 \t\t\t\t\t\t\t<a href=\"profile.html#\">
-\t\t\t\t\t\t\t\t<img src=\"img/user/profile.jpg\">
+\t\t\t\t\t\t\t\t<img src=\"{{ foo }}\">
 \t\t\t\t\t\t\t</a>
 \t\t\t\t\t\t</div>
 \t\t\t\t\t</div>
@@ -984,7 +1102,7 @@ class __TwigTemplate_8e5ad54c3a1a326aa56bbee6c9470f511c1df5f5fce558b6f8757def9e8
 \t\t\t\t\t\t\t\t\t<ul>
 
 \t\t\t\t\t\t\t\t\t\t\t{% for ami in lstAmi %}
-\t\t\t\t\t\t\t\t\t\t\t\t<li><a href=\"profile.html#\" data-toggle=\"tooltip\" title=\"{{ ami.pseudo }}\"><img src=\"{{ ami.image }}\" alt=\"\"></a></li>
+\t\t\t\t\t\t\t\t\t\t\t\t<li><a href=\"{{ path('userProfile',{id : ami.idCompte}) }}\" data-toggle=\"tooltip\" title=\"{{ ami.pseudo }}\"><img src=\"{{ ami.image }}\" alt=\"\"></a></li>
 \t\t\t\t\t\t\t\t\t\t\t\t{{ ami.pseudo }} , {{ ami.idCompte }} <br>
 \t\t\t\t\t\t\t\t\t\t\t{% endfor %}
 \t\t\t\t\t\t\t\t\t</ul>
@@ -1201,9 +1319,9 @@ class __TwigTemplate_8e5ad54c3a1a326aa56bbee6c9470f511c1df5f5fce558b6f8757def9e8
 \t<!-- /.footer -->
 \t
 \t<!-- Javascript -->
-\t<script src=\"plugins/jquery/jquery-3.1.0.min.js\"></script>
-\t<script src=\"plugins/bootstrap/js/bootstrap.min.js\"></script>
-\t<script src=\"js/core.min.js\"></script>
+\t<script src=\"{{ asset('plugins/jquery/jquery-3.1.0.min.js') }}\"></script>
+\t<script src=\"{{ asset('plugins/bootstrap/js/bootstrap.min.js') }}\"></script>
+\t<script src=\"{{ asset('js/core.min.js') }}\"></script>
 \t<script>
 \t(function(\$) {
 \t\"use strict\";

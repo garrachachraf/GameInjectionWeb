@@ -1,0 +1,92 @@
+<script src="{{ asset('assets/jquery/jquery-1.9.1.js') }}"></script>
+{#<script>#}
+    {#$(document).ready(function () {#}
+        {#$('#sendInvite').click(#}
+            {#function () {#}
+
+                {#$.ajax({#}
+                    {#url: "{{ path('SendInvite') }}",#}
+                    {#method: "post",#}
+                    {#data : {idCompte : {{ .idCompte }}},#}
+                    {#type : 'json',#}
+                    {#success: function (data) {#}
+
+                        {#console.log(data['data']);#}
+                        {#$('#sendInvite').prop('disabled', true);#}
+
+                    {#}#}
+
+                {#})#}
+
+
+            {#});#}
+    {#})#}
+{#</script>#}
+<script>
+
+    function refuse(id) {
+
+        $(document).ready(function () {
+
+
+
+            $.ajax({
+                url: "{{ path('RefuseInvFromNot') }}",
+                method: "post",
+                data : {idNot : id},
+                type : 'json',
+                success: function (data) {
+
+                    console.log(data['data']);
+
+
+                }
+
+            })
+
+        })
+    }
+
+    function accept(id) {
+
+        $(document).ready(function () {
+
+
+
+        $.ajax({
+        url: "{{ path('acceptInvFromNot') }}",
+        method: "post",
+        data : {idNot : id},
+        type : 'json',
+        success: function (data) {
+
+        console.log(data['data']);
+
+
+        }
+
+        })
+
+        })
+    }
+
+</script>
+<a href="index.html#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> <span class="label label-danger"> {{ notifications|length }} </span></a>
+
+<ul  class="dropdown-menu">
+    {% for notification in notifications %}
+        {% if notification.forum != null %}
+            <li><a href="{{ path('readPost',{idPost : notification.forum}) }}">{{ notification.contenu }}</a></li>
+        {% endif %}
+
+        {% if notification.invite != null %}
+            <li> <a>{{ notification.contenu }}</a>
+                <button type="button" onclick="accept({{ notification.idNotification }})" class="btn btn-success btn-xs">Accept</button>
+                <button type="button" onclick="refuse({{ notification.idNotification }})"  class="btn btn-success btn-xs">Refuse</button>
+            </li>
+        {% endif %}
+
+        {% if (notification.forum == null and notification.message == null and notification.invite == null  )   %}
+            <li><a href="#">{{ notification.contenu }}</a></li>
+        {% endif %}
+    {% endfor %}

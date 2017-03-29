@@ -21,29 +21,29 @@ class __TwigTemplate_3802b33dc017089f8c85eddc9bdf32b7bf8345508b5e623f9afcf6bf7e6
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_7416c448f43ec1f6395b2dd0736f981b893a1f5a613d5859f49739f51360d78c = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_7416c448f43ec1f6395b2dd0736f981b893a1f5a613d5859f49739f51360d78c->enter($__internal_7416c448f43ec1f6395b2dd0736f981b893a1f5a613d5859f49739f51360d78c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EloboostedFrontofficeBundle:Post:readPost.html.twig"));
+        $__internal_075e31e737d05016cc310ec8c1942ce30276c0926f734ee3d4e8bc6530f7ce71 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_075e31e737d05016cc310ec8c1942ce30276c0926f734ee3d4e8bc6530f7ce71->enter($__internal_075e31e737d05016cc310ec8c1942ce30276c0926f734ee3d4e8bc6530f7ce71_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EloboostedFrontofficeBundle:Post:readPost.html.twig"));
 
-        $__internal_32f82b43eb1906249033ae8838dc45c8393ce5f9d855c7f0c59a8ae06d7de666 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_32f82b43eb1906249033ae8838dc45c8393ce5f9d855c7f0c59a8ae06d7de666->enter($__internal_32f82b43eb1906249033ae8838dc45c8393ce5f9d855c7f0c59a8ae06d7de666_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EloboostedFrontofficeBundle:Post:readPost.html.twig"));
+        $__internal_e524f73d088f2553c75d104f97c8a5b54fd354bb77093889894be01420bd6509 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_e524f73d088f2553c75d104f97c8a5b54fd354bb77093889894be01420bd6509->enter($__internal_e524f73d088f2553c75d104f97c8a5b54fd354bb77093889894be01420bd6509_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EloboostedFrontofficeBundle:Post:readPost.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_7416c448f43ec1f6395b2dd0736f981b893a1f5a613d5859f49739f51360d78c->leave($__internal_7416c448f43ec1f6395b2dd0736f981b893a1f5a613d5859f49739f51360d78c_prof);
+        $__internal_075e31e737d05016cc310ec8c1942ce30276c0926f734ee3d4e8bc6530f7ce71->leave($__internal_075e31e737d05016cc310ec8c1942ce30276c0926f734ee3d4e8bc6530f7ce71_prof);
 
         
-        $__internal_32f82b43eb1906249033ae8838dc45c8393ce5f9d855c7f0c59a8ae06d7de666->leave($__internal_32f82b43eb1906249033ae8838dc45c8393ce5f9d855c7f0c59a8ae06d7de666_prof);
+        $__internal_e524f73d088f2553c75d104f97c8a5b54fd354bb77093889894be01420bd6509->leave($__internal_e524f73d088f2553c75d104f97c8a5b54fd354bb77093889894be01420bd6509_prof);
 
     }
 
     // line 3
     public function block_main($context, array $blocks = array())
     {
-        $__internal_6e133b99933c06d214a5a7e0285f849215665adca7cd87100ee46d3ef5474e55 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_6e133b99933c06d214a5a7e0285f849215665adca7cd87100ee46d3ef5474e55->enter($__internal_6e133b99933c06d214a5a7e0285f849215665adca7cd87100ee46d3ef5474e55_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "main"));
+        $__internal_1169c2b4ecfb4eab345f264a017633faad522f5cfe1ee5226489639640cde19d = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_1169c2b4ecfb4eab345f264a017633faad522f5cfe1ee5226489639640cde19d->enter($__internal_1169c2b4ecfb4eab345f264a017633faad522f5cfe1ee5226489639640cde19d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "main"));
 
-        $__internal_2b3b4d24837e6b5b26eea527f89137a858b3ff4811b3960930e31801d0eb5b64 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_2b3b4d24837e6b5b26eea527f89137a858b3ff4811b3960930e31801d0eb5b64->enter($__internal_2b3b4d24837e6b5b26eea527f89137a858b3ff4811b3960930e31801d0eb5b64_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "main"));
+        $__internal_48f6ad0038f9721d568218aee87f8218ced0c36a318b5f5650dc4db27496e71b = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_48f6ad0038f9721d568218aee87f8218ced0c36a318b5f5650dc4db27496e71b->enter($__internal_48f6ad0038f9721d568218aee87f8218ced0c36a318b5f5650dc4db27496e71b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "main"));
 
         // line 4
         echo "    <script src=\"";
@@ -142,13 +142,17 @@ class __TwigTemplate_3802b33dc017089f8c85eddc9bdf32b7bf8345508b5e623f9afcf6bf7e6
                 <div class=\"forum-post\">
                     <div class=\"forum-panel\">
                         <div class=\"forum-user\">
-                            <a href=\"profile.html\" class=\"avatar\"><img src=";
+                            <a  href=\"";
         // line 76
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("userProfile", array("id" => $this->getAttribute($this->getAttribute((isset($context["post"]) ? $context["post"] : $this->getContext($context, "post")), "idComptePost", array()), "idCompte", array()))), "html", null, true);
+        echo "\" class=\"avatar\"><img src=";
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["post"]) ? $context["post"] : $this->getContext($context, "post")), "idComptePost", array()), "image", array()), "html", null, true);
         echo " alt=\"\"></a>
                             <div>
-                                <a href=\"profile.html\">";
+                                <a href=\"";
         // line 78
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("userProfile", array("id" => $this->getAttribute($this->getAttribute((isset($context["post"]) ? $context["post"] : $this->getContext($context, "post")), "idComptePost", array()), "idCompte", array()))), "html", null, true);
+        echo "\">";
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["post"]) ? $context["post"] : $this->getContext($context, "post")), "idComptePost", array()), "pseudo", array()), "html", null, true);
         echo "</a>
                                 <span>Birth day</span>
@@ -264,10 +268,10 @@ class __TwigTemplate_3802b33dc017089f8c85eddc9bdf32b7bf8345508b5e623f9afcf6bf7e6
 
 ";
         
-        $__internal_2b3b4d24837e6b5b26eea527f89137a858b3ff4811b3960930e31801d0eb5b64->leave($__internal_2b3b4d24837e6b5b26eea527f89137a858b3ff4811b3960930e31801d0eb5b64_prof);
+        $__internal_48f6ad0038f9721d568218aee87f8218ced0c36a318b5f5650dc4db27496e71b->leave($__internal_48f6ad0038f9721d568218aee87f8218ced0c36a318b5f5650dc4db27496e71b_prof);
 
         
-        $__internal_6e133b99933c06d214a5a7e0285f849215665adca7cd87100ee46d3ef5474e55->leave($__internal_6e133b99933c06d214a5a7e0285f849215665adca7cd87100ee46d3ef5474e55_prof);
+        $__internal_1169c2b4ecfb4eab345f264a017633faad522f5cfe1ee5226489639640cde19d->leave($__internal_1169c2b4ecfb4eab345f264a017633faad522f5cfe1ee5226489639640cde19d_prof);
 
     }
 
@@ -283,7 +287,7 @@ class __TwigTemplate_3802b33dc017089f8c85eddc9bdf32b7bf8345508b5e623f9afcf6bf7e6
 
     public function getDebugInfo()
     {
-        return array (  242 => 124,  231 => 116,  218 => 106,  213 => 103,  207 => 101,  202 => 98,  199 => 97,  192 => 95,  189 => 94,  186 => 93,  183 => 92,  178 => 91,  176 => 90,  168 => 85,  164 => 84,  157 => 80,  152 => 78,  147 => 76,  137 => 68,  131 => 66,  129 => 65,  125 => 64,  109 => 51,  105 => 50,  86 => 34,  66 => 17,  49 => 4,  40 => 3,  11 => 2,);
+        return array (  246 => 124,  235 => 116,  222 => 106,  217 => 103,  211 => 101,  206 => 98,  203 => 97,  196 => 95,  193 => 94,  190 => 93,  187 => 92,  182 => 91,  180 => 90,  172 => 85,  168 => 84,  161 => 80,  154 => 78,  147 => 76,  137 => 68,  131 => 66,  129 => 65,  125 => 64,  109 => 51,  105 => 50,  86 => 34,  66 => 17,  49 => 4,  40 => 3,  11 => 2,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -371,9 +375,9 @@ class __TwigTemplate_3802b33dc017089f8c85eddc9bdf32b7bf8345508b5e623f9afcf6bf7e6
                 <div class=\"forum-post\">
                     <div class=\"forum-panel\">
                         <div class=\"forum-user\">
-                            <a href=\"profile.html\" class=\"avatar\"><img src={{ post.idComptePost.image }} alt=\"\"></a>
+                            <a  href=\"{{ path('userProfile',{id : post.idComptePost.idCompte}) }}\" class=\"avatar\"><img src={{ post.idComptePost.image }} alt=\"\"></a>
                             <div>
-                                <a href=\"profile.html\">{{ post.idComptePost.pseudo }}</a>
+                                <a href=\"{{ path('userProfile',{id : post.idComptePost.idCompte}) }}\">{{ post.idComptePost.pseudo }}</a>
                                 <span>Birth day</span>
                                 <span class=\"date\">{{ post.idComptePost.dateDeNaissance|date }}</span>
                             </div>

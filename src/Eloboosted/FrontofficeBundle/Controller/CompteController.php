@@ -3,6 +3,7 @@
 namespace Eloboosted\FrontofficeBundle\Controller;
 
 use Eloboosted\GameinjectionBundle\Entity\Compte;
+use Eloboosted\GameinjectionBundle\Entity\Notification;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
@@ -14,6 +15,64 @@ class CompteController extends Controller
     {
         return $this->render('', array('name' => $name));
     }
+
+    public function SendInviteAction(Request $request)
+    {
+        $em = $this->getDoctrine()->getManager();
+        $notification =new Notification();
+        $compte=$em->getRepository('EloboostedGameinjectionBundle:Compte')->find($request->get('idCompte'));
+
+        if ($request->isMethod('POST'))
+        {
+
+            $notification->setNotificationtitle('Invite request');
+            $notification->setContenu('the user '.$this->get('security.token_storage')->getToken()->getUser()->getPseudo().' wants to add you to his friends list');
+            $notification->setInvite($this->get('security.token_storage')->getToken()->getUser()->getIdCompte());
+            $notification->setDateNotification(new \DateTime('now'));
+            $notification->setIdCompteNot($compte);
+            $notification->setVue(0);
+
+            $em = $this->getDoctrine()->getManager();
+
+            $em->persist($notification);
+            $em->flush();
+
+
+        }
+        return new JsonResponse(array('data'=>json_encode('success')));
+    }
+
+    public function userProfileAction(Request $request)
+    {
+        $em = $this->getDoctrine()->getManager();
+        $userId=$request->get('id');
+        $currentCompte=$this->get('security.token_storage')->getToken()->getUser();
+        if($userId == $currentCompte->getIdCompte())
+        {
+            return $this->redirectToRoute('myProfile');
+        }
+
+        $res1=$em->getRepository('EloboostedGameinjectionBundle:Compte')->findByAmiCommun1($currentCompte->getIdCompte());
+        $res2=$em->getRepository('EloboostedGameinjectionBundle:Compte')->findByAmiCommun2($currentCompte->getIdCompte());
+        $resultCurrentCompte=array_merge_recursive($res1, $res2);
+
+
+        $res3=$em->getRepository('EloboostedGameinjectionBundle:Compte')->findByAmiCommun1($userId);
+        $res4=$em->getRepository('EloboostedGameinjectionBundle:Compte')->findByAmiCommun2($userId);
+        $resultFriendCompte=array_merge_recursive($res3, $res4);
+
+        $dejaAmi=in_array($currentCompte,$resultFriendCompte,true);
+
+
+
+
+        $userInfo=$em->getRepository('EloboostedGameinjectionBundle:Compte')->findOneBy(array('idCompte'=>$userId));
+        $attenteInvite=$em->getRepository('EloboostedGameinjectionBundle:Notification')->findOneBy(array('invite'=> $currentCompte->getIdCompte(),'idCompteNot'=>$userInfo));
+        $verifInvite=Count($attenteInvite);
+
+        return $this->render('EloboostedFrontofficeBundle:Compte:userProfile.html.twig',array('userInfo'=>$userInfo,'CurrentCompteFriends'=>$resultCurrentCompte,'ProfileCompteFriends'=>$resultFriendCompte,'dejaAmi'=>$dejaAmi,'attenteInvite'=>$verifInvite));
+    }
+
     public function myProfileAction()
     {
         $em = $this->getDoctrine()->getManager();

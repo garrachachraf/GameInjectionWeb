@@ -15,11 +15,11 @@ class __TwigTemplate_29033af1667f2e2bc4b2580c5ac01a5f7fd67dd4e9464e8267bfda58ec4
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_41f0f24b912fdc15a866891e9852e465513b3e3bd20a5a2b4a891f84831a1d04 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_41f0f24b912fdc15a866891e9852e465513b3e3bd20a5a2b4a891f84831a1d04->enter($__internal_41f0f24b912fdc15a866891e9852e465513b3e3bd20a5a2b4a891f84831a1d04_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@EloboostedFrontoffice/Post/commentaire.html.twig"));
+        $__internal_cdcc040dbbff292ee1f127291c67c8348adc43f740bf8755646142f9acf53367 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_cdcc040dbbff292ee1f127291c67c8348adc43f740bf8755646142f9acf53367->enter($__internal_cdcc040dbbff292ee1f127291c67c8348adc43f740bf8755646142f9acf53367_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@EloboostedFrontoffice/Post/commentaire.html.twig"));
 
-        $__internal_006d5fc13119405f44a8d554b6cdac1daacb0cb50bc3abb58be06f16d4bef885 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_006d5fc13119405f44a8d554b6cdac1daacb0cb50bc3abb58be06f16d4bef885->enter($__internal_006d5fc13119405f44a8d554b6cdac1daacb0cb50bc3abb58be06f16d4bef885_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@EloboostedFrontoffice/Post/commentaire.html.twig"));
+        $__internal_f6f97c7f55dd1c0c8ecefc0c305207640998e1e1e22ccadaabca4d79cb9e5a08 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_f6f97c7f55dd1c0c8ecefc0c305207640998e1e1e22ccadaabca4d79cb9e5a08->enter($__internal_f6f97c7f55dd1c0c8ecefc0c305207640998e1e1e22ccadaabca4d79cb9e5a08_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@EloboostedFrontoffice/Post/commentaire.html.twig"));
 
         // line 1
         $context["img"] = null;
@@ -36,8 +36,10 @@ class __TwigTemplate_29033af1667f2e2bc4b2580c5ac01a5f7fd67dd4e9464e8267bfda58ec4
             // line 6
             echo "        <div class=\"forum-panel\">
             <div class=\"forum-user\">
-                <a href=\"profile.html\" class=\"avatar\"><img src=\"";
+                <a href=\"";
             // line 8
+            echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("userProfile", array("id" => $this->getAttribute($this->getAttribute($context["commentaire"], "idCompteCp", array()), "idCompte", array()))), "html", null, true);
+            echo "\" class=\"avatar\"><img src=\"";
             echo twig_escape_filter($this->env, (isset($context["img"]) ? $context["img"] : $this->getContext($context, "img")), "html", null, true);
             echo "\" alt=\"\"><span class=\"label label-warning\"></span></a>
                 ";
@@ -205,10 +207,10 @@ class __TwigTemplate_29033af1667f2e2bc4b2580c5ac01a5f7fd67dd4e9464e8267bfda58ec4
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['commentaire'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
         
-        $__internal_41f0f24b912fdc15a866891e9852e465513b3e3bd20a5a2b4a891f84831a1d04->leave($__internal_41f0f24b912fdc15a866891e9852e465513b3e3bd20a5a2b4a891f84831a1d04_prof);
+        $__internal_cdcc040dbbff292ee1f127291c67c8348adc43f740bf8755646142f9acf53367->leave($__internal_cdcc040dbbff292ee1f127291c67c8348adc43f740bf8755646142f9acf53367_prof);
 
         
-        $__internal_006d5fc13119405f44a8d554b6cdac1daacb0cb50bc3abb58be06f16d4bef885->leave($__internal_006d5fc13119405f44a8d554b6cdac1daacb0cb50bc3abb58be06f16d4bef885_prof);
+        $__internal_f6f97c7f55dd1c0c8ecefc0c305207640998e1e1e22ccadaabca4d79cb9e5a08->leave($__internal_f6f97c7f55dd1c0c8ecefc0c305207640998e1e1e22ccadaabca4d79cb9e5a08_prof);
 
     }
 
@@ -224,7 +226,7 @@ class __TwigTemplate_29033af1667f2e2bc4b2580c5ac01a5f7fd67dd4e9464e8267bfda58ec4
 
     public function getDebugInfo()
     {
-        return array (  196 => 63,  191 => 60,  185 => 58,  180 => 55,  177 => 54,  171 => 53,  168 => 52,  165 => 51,  162 => 50,  159 => 49,  157 => 48,  154 => 47,  149 => 46,  147 => 45,  142 => 42,  139 => 41,  136 => 40,  128 => 38,  126 => 37,  119 => 36,  116 => 35,  110 => 34,  107 => 33,  104 => 32,  101 => 31,  96 => 30,  94 => 29,  88 => 28,  85 => 27,  82 => 26,  79 => 25,  75 => 24,  70 => 21,  68 => 20,  62 => 17,  55 => 13,  50 => 11,  47 => 10,  45 => 9,  41 => 8,  37 => 6,  35 => 5,  31 => 3,  27 => 2,  25 => 1,);
+        return array (  198 => 63,  193 => 60,  187 => 58,  182 => 55,  179 => 54,  173 => 53,  170 => 52,  167 => 51,  164 => 50,  161 => 49,  159 => 48,  156 => 47,  151 => 46,  149 => 45,  144 => 42,  141 => 41,  138 => 40,  130 => 38,  128 => 37,  121 => 36,  118 => 35,  112 => 34,  109 => 33,  106 => 32,  103 => 31,  98 => 30,  96 => 29,  90 => 28,  87 => 27,  84 => 26,  81 => 25,  77 => 24,  72 => 21,  70 => 20,  64 => 17,  57 => 13,  52 => 11,  49 => 10,  47 => 9,  41 => 8,  37 => 6,  35 => 5,  31 => 3,  27 => 2,  25 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -244,7 +246,7 @@ class __TwigTemplate_29033af1667f2e2bc4b2580c5ac01a5f7fd67dd4e9464e8267bfda58ec4
 {% set img=commentaire.idCompteCp.image %}
         <div class=\"forum-panel\">
             <div class=\"forum-user\">
-                <a href=\"profile.html\" class=\"avatar\"><img src=\"{{ img }}\" alt=\"\"><span class=\"label label-warning\"></span></a>
+                <a href=\"{{ path('userProfile',{id : commentaire.idCompteCp.idCompte}) }}\" class=\"avatar\"><img src=\"{{ img }}\" alt=\"\"><span class=\"label label-warning\"></span></a>
                 {% set img=null %}
                 <div>
                     <a href=\"profile.html\">{{ commentaire.idCompteCp.pseudo }}</a>

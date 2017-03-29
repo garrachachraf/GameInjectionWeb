@@ -5,7 +5,7 @@
 {% set img=commentaire.idCompteCp.image %}
         <div class="forum-panel">
             <div class="forum-user">
-                <a href="profile.html" class="avatar"><img src="{{ img }}" alt=""><span class="label label-warning"></span></a>
+                <a href="{{ path('userProfile',{id : commentaire.idCompteCp.idCompte}) }}" class="avatar"><img src="{{ img }}" alt=""><span class="label label-warning"></span></a>
                 {% set img=null %}
                 <div>
                     <a href="profile.html">{{ commentaire.idCompteCp.pseudo }}</a>

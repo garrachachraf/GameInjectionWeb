@@ -73,9 +73,9 @@
                 <div class="forum-post">
                     <div class="forum-panel">
                         <div class="forum-user">
-                            <a href="profile.html" class="avatar"><img src={{ post.idComptePost.image }} alt=""></a>
+                            <a  href="{{ path('userProfile',{id : post.idComptePost.idCompte}) }}" class="avatar"><img src={{ post.idComptePost.image }} alt=""></a>
                             <div>
-                                <a href="profile.html">{{ post.idComptePost.pseudo }}</a>
+                                <a href="{{ path('userProfile',{id : post.idComptePost.idCompte}) }}">{{ post.idComptePost.pseudo }}</a>
                                 <span>Birth day</span>
                                 <span class="date">{{ post.idComptePost.dateDeNaissance|date }}</span>
                             </div>

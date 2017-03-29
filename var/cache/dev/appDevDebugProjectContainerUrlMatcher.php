@@ -293,9 +293,37 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
             return array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\CompteController::accountcreationAction',  '_route' => 'accountcreation',);
         }
 
-        // SendMail
-        if ($pathinfo === '/SendMail') {
-            return array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\CompteController::sendMailAction',  '_route' => 'SendMail',);
+        // lstnots
+        if ($pathinfo === '/lstNot') {
+            return array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\NotificationController::NotificationlistRenderAction',  '_route' => 'lstnots',);
+        }
+
+        if (0 === strpos($pathinfo, '/Send')) {
+            // SendMail
+            if ($pathinfo === '/SendMail') {
+                return array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\CompteController::sendMailAction',  '_route' => 'SendMail',);
+            }
+
+            // SendInvite
+            if ($pathinfo === '/SendInvite') {
+                return array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\CompteController::SendInviteAction',  '_route' => 'SendInvite',);
+            }
+
+        }
+
+        // acceptInvFromNot
+        if ($pathinfo === '/acceptInvFromNot') {
+            return array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\NotificationController::acceptInvFromNotAction',  '_route' => 'acceptInvFromNot',);
+        }
+
+        // RefuseInvFromNot
+        if ($pathinfo === '/RefuseInvFromNot') {
+            return array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\NotificationController::RefuseInvFromNotAction',  '_route' => 'RefuseInvFromNot',);
+        }
+
+        // userProfile
+        if (0 === strpos($pathinfo, '/userProfile') && preg_match('#^/userProfile/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'userProfile')), array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\CompteController::userProfileAction',));
         }
 
         if (0 === strpos($pathinfo, '/login')) {
