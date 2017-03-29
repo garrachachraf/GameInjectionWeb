@@ -171,17 +171,17 @@
                             <div class="title">{{ tournoi.nom }}</div>
 
                             <div class="chart-align">
-                                <span class="chart" data-percent="{{ (8 / tournoi.nbrJoueur) * 100 }}"><span class="percent"></span></span>
+                                <span class="chart" data-percent="{{ (nbp / tournoi.nbrJoueur) * 100 }}"><span class="percent"></span></span>
                             </div>
 
                             <p class="progress-label">Players In <span>{{ tournoi.nbrJoueur }}</span></p>
                             <div class="progress progress-animation progress-xs">
-                                <div class="progress-bar progress-bar-success" aria-valuenow="{{ (8 / tournoi.nbrJoueur) * 100 }}" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+                                <div class="progress-bar progress-bar-success" aria-valuenow="{{ (nbp / tournoi.nbrJoueur) * 100 }}" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
                             </div>
 
-                            <p class="progress-label">Free Places <span>{{ tournoi.nbrJoueur - 8 }}</span></p>
+                            <p class="progress-label">Free Places <span>{{ tournoi.nbrJoueur - nbp }}</span></p>
                             <div class="progress progress-animation progress-xs">
-                                <div class="progress-bar progress-bar-danger" aria-valuenow="{{ ((tournoi.nbrJoueur - 8 ) / tournoi.nbrJoueur) * 100 }}" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+                                <div class="progress-bar progress-bar-danger" aria-valuenow="{{ ((tournoi.nbrJoueur - nbp ) / tournoi.nbrJoueur) * 100 }}" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
                             </div>
 
                             <p class="progress-label">Starting <span>{% set diffdate = (tournoi.startDate|time_diff) %}{{ diffdate }}</span></p>
@@ -205,7 +205,7 @@
 
                             <div class="description">
                                 {{ tournoi.nom | upper }}: A Tournament for {{ tournoi.idGameTrn.Name }} players ans lovers . <br> Participation fee : {{ tournoi.prixParJoueur }}
-                                <a href="#" class="btn btn-block btn-primary margin-top-40 {% if  not(is_granted('ROLE_USER')) or (app.user.points < tournoi.prixParJoueur) %} disabled {% endif %} }">Participate <i class="fa fa-heart-o margin-left-10"></i></a>
+                                <a href="{{ path('participation_new',{ 'tournament':tournoi.idTournoi }) }}" class="btn btn-block btn-primary margin-top-40 {% if  (not(is_granted('ROLE_USER')) or (app.user.points < tournoi.prixParJoueur) or isparticipated ==1)  %} disabled {% endif %} }">Participate <i class="fa fa-heart-o margin-left-10"></i></a>
                             </div>
                         </div>
                     </div>

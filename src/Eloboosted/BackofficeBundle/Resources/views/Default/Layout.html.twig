@@ -24,7 +24,7 @@
     <!-- JQVMap -->
     <link href="{{ asset('BOassets/vendors/jqvmap/dist/jqvmap.min.css') }}" rel="stylesheet"/>
     <!-- bootstrap-daterangepicker -->
-    <link href="{{ asset('BOassets/vendors/bootstrap-daterangepicker/daterangepicker.css') }}" rel="stylesheet">
+
 
     <!-- Custom Theme Style -->
     <link href="{{ asset('BOassets/build/css/custom.min.css') }}"  rel="stylesheet">
@@ -236,11 +236,15 @@
                     </ul>
                 </nav>
             </div>
+
         </div>
+
         <!-- /top navigation -->
 
         <!-- page content -->
         <div class="right_col" role="main">
+            {% block topnav %}
+
             <!-- top tiles -->
             <div class="row tile_count">
 
@@ -276,6 +280,7 @@
                 </div>
 
             </div>
+            {% endblock %}
             <!-- /top tiles -->
 
             <div class="row">
@@ -344,7 +349,7 @@
 <script src="{{ asset('BOassets/vendors/jqvmap/examples/js/jquery.vmap.sampledata.js') }}"></script>
 <!-- bootstrap-daterangepicker -->
 <script src="{{ asset('BOassets/vendors/moment/min/moment.min.js') }}"></script>
-<script src="{{ asset('BOassets/vendors/bootstrap-daterangepicker/daterangepicker.js') }}"></script>
+
 
 <!-- Custom Theme Scripts -->
 <script src="{{ asset('BOassets/build/js/custom.min.js') }}"></script>

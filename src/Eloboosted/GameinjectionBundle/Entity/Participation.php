@@ -5,7 +5,7 @@ namespace Eloboosted\GameinjectionBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Participation
+ * v
  *
  * @ORM\Table(name="participation", uniqueConstraints={@ORM\UniqueConstraint(name="id_compte", columns={"id_compte_part"})}, indexes={@ORM\Index(name="id_tournoi", columns={"id_tournoi_part"})})
  * @ORM\Entity
