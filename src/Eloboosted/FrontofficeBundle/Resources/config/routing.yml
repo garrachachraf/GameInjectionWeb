@@ -97,3 +97,27 @@ myProfile:
 userProfile:
     path: /userProfile/{id}
     defaults: { _controller:  EloboostedFrontofficeBundle:Compte:userProfile }
+yes_index:
+    path:     /games
+    defaults: { _controller: "EloboostedFrontofficeBundle:Games:index" }
+    methods:  GET
+
+yes_show:
+    path:     /{id}/showGames
+    defaults: { _controller: "EloboostedFrontofficeBundle:Games:show" }
+    methods:  GET
+
+yes_new:
+    path:     /newGames
+    defaults: { _controller: "EloboostedFrontofficeBundle:Games:new" }
+    methods:  [GET, POST]
+
+yes_edit:
+    path:     /{id}/editGames
+    defaults: { _controller: "EloboostedFrontofficeBundle:Games:edit" }
+    methods:  [GET, POST]
+
+yes_delete:
+    path:     /{id}/deleteGames
+    defaults: { _controller: "EloboostedFrontofficeBundle:Games:delete" }
+    methods:  DELETE

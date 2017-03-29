@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Games list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Idgames</th>
+                <th>Nomgames</th>
+                <th>Imagegames</th>
+                <th>Prix</th>
+                <th>Supported</th>
+                <th>Description</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for game in games %}
+            <tr>
+                <td><a href="{{ path('yes_show', { 'id': game.idGames }) }}">{{ game.idGames }}</a></td>
+                <td>{{ game.nomGames }}</td>
+                <td>{{ game.imageGames }}</td>
+                <td>{{ game.prix }}</td>
+                <td>{{ game.supported }}</td>
+                <td>{{ game.description }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('yes_show', { 'id': game.idGames }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('yes_edit', { 'id': game.idGames }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('yes_new') }}">Create a new game</a>
+        </li>
+    </ul>
+{% endblock %}

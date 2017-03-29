@@ -31,7 +31,7 @@ class Games
     /**
      * @var string
      *
-     * @ORM\Column(name="Image_games", type="string", length=255, nullable=false)
+     * @ORM\Column(name="Image_games", type="blob", nullable=false)
      */
     private $imageGames;
 
@@ -103,7 +103,7 @@ class Games
      */
     public function getImageGames()
     {
-        return $this->imageGames;
+        return base64_encode(@stream_get_contents($this->imageGames));
     }
 
     /**
@@ -111,7 +111,7 @@ class Games
      */
     public function setImageGames($imageGames)
     {
-        $this->imageGames = $imageGames;
+        $this->imageGames = @file_get_contents($imageGames);
     }
 
     /**

@@ -1,3 +1,7 @@
+eloboosted_gameinjection:
+    resource: "@EloboostedGameinjectionBundle/Resources/config/routing.yml"
+    prefix:   /
+
 eloboosted_backoffice:
     resource: "@EloboostedBackofficeBundle/Resources/config/routing.yml"
     prefix:   /admin

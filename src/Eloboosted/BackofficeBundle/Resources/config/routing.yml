@@ -17,3 +17,6 @@ WarnTarget:
 WarnSender:
     path:     /WarnSender
     defaults: { _controller: EloboostedBackofficeBundle:Signalisation:WarnSender }
+eloboosted_backoffice_games:
+    path:     /games
+    defaults: { _controller: EloboostedBackofficeBundle:Games:index }
