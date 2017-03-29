@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d73e6a33-b9cb-404e-b7d4-77be369b3955" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/2f/37/db372f" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/62/1e/9f1e62" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/8c/fb/78fb8c" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/logs/dev.log" afterPath="$PROJECT_DIR$/var/logs/dev.log" />
     </list>
@@ -1252,7 +1249,7 @@
       <workItem from="1490725721140" duration="793000" />
       <workItem from="1490727634739" duration="534000" />
       <workItem from="1490786215656" duration="708000" />
-      <workItem from="1490793102606" duration="5634000" />
+      <workItem from="1490793102606" duration="5757000" />
     </task>
     <task id="LOCAL-00001" summary="add tournament controller + products controller">
       <created>1489284724008</created>
@@ -1373,11 +1370,18 @@
       <option name="project" value="LOCAL" />
       <updated>1490799220011</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="ffff">
+      <created>1490799597742</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1490799597742</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119843000" />
+    <option name="totallyTimeSpent" value="119966000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1440,7 +1444,8 @@
     <MESSAGE value="backoffice" />
     <MESSAGE value="compte  update" />
     <MESSAGE value="ttt" />
-    <option name="LAST_COMMIT_MESSAGE" value="ttt" />
+    <MESSAGE value="ffff" />
+    <option name="LAST_COMMIT_MESSAGE" value="ffff" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
