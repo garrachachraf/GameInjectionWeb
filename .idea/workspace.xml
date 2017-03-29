@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d73e6a33-b9cb-404e-b7d4-77be369b3955" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/2f/37/db372f" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/62/1e/9f1e62" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/8c/fb/78fb8c" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/logs/dev.log" afterPath="$PROJECT_DIR$/var/logs/dev.log" />
     </list>
@@ -133,8 +136,8 @@
       <file leaf-file-name="commentaire.html.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Resources/views/Post/commentaire.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="12" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+            <state relative-caret-position="408">
+              <caret line="24" column="75" lean-forward="false" selection-start-line="24" selection-start-column="75" selection-end-line="24" selection-end-column="75" />
               <folding>
                 <element signature="e#250#261#0#Twig" expanded="true" />
               </folding>
@@ -199,7 +202,6 @@
   </component>
   <component name="FrameworkCommandLineHistory">
     <commandsHistory>
-      <command text="s doctrine:mapping:import --force Eloboosted\GameinjectionBundle yml" />
       <command text="s doctrine:mapping:import --force EloboostedGameinjectionBundle yml" />
       <command text="s doctrine:mapping:convert annotation ./src" />
       <command text="s doctrine:mapping:convert --force annotation ./src" />
@@ -224,13 +226,14 @@
       <command text="s cache:clear" />
       <command text="c require knplabs/knp-paginator-bundle " />
       <command text="s cache:clear" />
+      <command text="git push -f origin master" />
     </commandsHistory>
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
-        <option value="Bloodthirst &lt;ahmedhoussem.assal@esprit.tn&gt;" />
         <option value="ahmed &lt;ahmed.benrouha@esprit.tn&gt;" />
+        <option value="Bloodthirst &lt;ahmedhoussem.assal@esprit.tn&gt;" />
       </list>
     </option>
     <option name="UPDATE_CHANGES_POLICY" value="SHELVE" />
@@ -1249,7 +1252,7 @@
       <workItem from="1490725721140" duration="793000" />
       <workItem from="1490727634739" duration="534000" />
       <workItem from="1490786215656" duration="708000" />
-      <workItem from="1490793102606" duration="5257000" />
+      <workItem from="1490793102606" duration="5634000" />
     </task>
     <task id="LOCAL-00001" summary="add tournament controller + products controller">
       <created>1489284724008</created>
@@ -1363,11 +1366,18 @@
       <option name="project" value="LOCAL" />
       <updated>1490799018976</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="ttt">
+      <created>1490799220011</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1490799220011</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119466000" />
+    <option name="totallyTimeSpent" value="119843000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1822,8 +1832,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Resources/views/Post/commentaire.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="12" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+        <state relative-caret-position="408">
+          <caret line="24" column="75" lean-forward="false" selection-start-line="24" selection-start-column="75" selection-end-line="24" selection-end-column="75" />
           <folding>
             <element signature="e#250#261#0#Twig" expanded="true" />
           </folding>
