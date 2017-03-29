@@ -133,8 +133,8 @@
       <file leaf-file-name="commentaire.html.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Resources/views/Post/commentaire.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="75" lean-forward="false" selection-start-line="24" selection-start-column="75" selection-end-line="24" selection-end-column="75" />
+            <state relative-caret-position="289">
+              <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
               <folding>
                 <element signature="e#250#261#0#Twig" expanded="true" />
               </folding>
@@ -229,8 +229,8 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
-        <option value="ahmed &lt;ahmed.benrouha@esprit.tn&gt;" />
         <option value="Bloodthirst &lt;ahmedhoussem.assal@esprit.tn&gt;" />
+        <option value="ahmed &lt;ahmed.benrouha@esprit.tn&gt;" />
       </list>
     </option>
     <option name="UPDATE_CHANGES_POLICY" value="SHELVE" />
@@ -1249,7 +1249,7 @@
       <workItem from="1490725721140" duration="793000" />
       <workItem from="1490727634739" duration="534000" />
       <workItem from="1490786215656" duration="708000" />
-      <workItem from="1490793102606" duration="5757000" />
+      <workItem from="1490793102606" duration="5990000" />
     </task>
     <task id="LOCAL-00001" summary="add tournament controller + products controller">
       <created>1489284724008</created>
@@ -1377,11 +1377,18 @@
       <option name="project" value="LOCAL" />
       <updated>1490799597742</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="final">
+      <created>1490799776162</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1490799776162</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119966000" />
+    <option name="totallyTimeSpent" value="120199000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1445,7 +1452,8 @@
     <MESSAGE value="compte  update" />
     <MESSAGE value="ttt" />
     <MESSAGE value="ffff" />
-    <option name="LAST_COMMIT_MESSAGE" value="ffff" />
+    <MESSAGE value="final" />
+    <option name="LAST_COMMIT_MESSAGE" value="final" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1837,8 +1845,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Resources/views/Post/commentaire.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="75" lean-forward="false" selection-start-line="24" selection-start-column="75" selection-end-line="24" selection-end-column="75" />
+        <state relative-caret-position="289">
+          <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
           <folding>
             <element signature="e#250#261#0#Twig" expanded="true" />
           </folding>
