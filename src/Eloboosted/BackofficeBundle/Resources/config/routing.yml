@@ -6,6 +6,29 @@ eloboosted_backoffice_tournoi:
     path:     /Tournaments
     defaults: { _controller: EloboostedBackofficeBundle:Tournoi:index }
 
+eloboosted_backoffice_updatetournoi:
+    path:     /updatet
+    defaults: { _controller: EloboostedBackofficeBundle:Tournoi:up}
+eloboosted_backoffice_tournoi_show:
+    path:     /{id}/showTournament
+    defaults: { _controller: EloboostedBackofficeBundle:Tournoi:show }
+    methods:  GET
+
+eloboosted_backoffice_tournoi_new:
+    path:     /newTournament
+    defaults: { _controller: "EloboostedBackofficeBundle:Tournoi:new" }
+    methods:  [GET, POST]
+
+eloboosted_backoffice_tournoi_edit:
+    path:     /{id}/editTournament
+    defaults: { _controller: "EloboostedBackofficeBundle:Tournoi:edit" }
+    methods:  [GET, POST]
+
+eloboosted_backoffice_tournoi_delete:
+    path:     /{id}/deleteTournament
+    defaults: { _controller: "EloboostedBacktofficeBundle:Tournoi:delete" }
+    methods:  DELETE
+
 AccountReports:
     path:     /AccountReports
     defaults: { _controller: EloboostedBackofficeBundle:Compte:AccountReports }
