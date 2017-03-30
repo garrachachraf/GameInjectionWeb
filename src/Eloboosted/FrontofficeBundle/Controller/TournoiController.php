@@ -19,11 +19,30 @@ class TournoiController extends Controller
         $tournois = $em->getRepository('EloboostedGameinjectionBundle:Tournoi')->findAll();
         $countt = count($tournois);
 
-        $tournois = array_slice($tournois,$p-1,$p+12);
+        $tournois = array_slice($tournois, $p - 1, $p + 12);
         return $this->render('EloboostedFrontofficeBundle:tournoi:index.html.twig', array(
             'tournois' => $tournois,
-            'pages'=>$countt
+            'pages' => $countt
         ));
+    }
+
+    public function serachtournamentAction(Request $request)
+    {
+        $word = $request->get('word');
+        $em = $this->getDoctrine()->getManager();
+        $query = $em->createQuery(
+            'SELECT t
+    FROM EloboostedGameinjectionBundle:Tournoi t
+    WHERE t.nom LIKE :word'
+        )->setParameter('word', '%'.$word.'%');
+
+        $tournois = $query->getResult();
+
+        return $this->render('EloboostedFrontofficeBundle:tournoi:SearchTournament.html.twig', array(
+            'tournois' => $tournois,
+
+        ));
+
     }
 
     /**
@@ -59,11 +78,22 @@ class TournoiController extends Controller
     {
         $deleteForm = $this->createDeleteForm($tournoi);
         $em = $this->getDoctrine()->getManager();
-        $comments = $em->getRepository('EloboostedGameinjectionBundle:CommentaireTournoi')->findBy(array('idTournoiCt'=>$tournoi));
+        $user = $this->get('security.token_storage')->getToken()->getUser();
+        $participation = $em->getRepository('EloboostedGameinjectionBundle:Participation')->findBy(array('idComptePart'=>$user,'idTournoiPart'=>$tournoi));
+        $isParticipated = 0 ;
+        if ($participation)
+        {
+            $isParticipated = 1 ;
+        }
+        $participations = $em->getRepository('EloboostedGameinjectionBundle:Participation')->findBy(array('idTournoiPart'=>$tournoi));
+        $nbp = count($participation);
+        $comments = $em->getRepository('EloboostedGameinjectionBundle:CommentaireTournoi')->findBy(array('idTournoiCt' => $tournoi));
         return $this->render('EloboostedFrontofficeBundle:tournoi:show.html.twig', array(
             'tournoi' => $tournoi,
             'delete_form' => $deleteForm->createView(),
-            'comments'=>$comments,
+            'comments' => $comments,
+            'isparticipated'=>$isParticipated,
+            'nbp'=>$nbp,
         ));
     }
 
@@ -77,16 +107,13 @@ class TournoiController extends Controller
         $editForm = $this->createForm('Eloboosted\FrontofficeBundle\Form\TournoiType', $tournoi);
         $editForm->handleRequest($request);
 
-        if ($editForm->isSubmitted() && $editForm->isValid() ) {
-            if ($tournoi->getStartDate()< $tournoi->getEndDate())
-            {
+        if ($editForm->isSubmitted() && $editForm->isValid()) {
+            if ($tournoi->getStartDate() < $tournoi->getEndDate()) {
 
                 $this->getDoctrine()->getManager()->flush();
 
                 return $this->redirectToRoute('tournoi_edit', array('id' => $tournoi->getIdTournoi()));
-            }
-            else
-            {
+            } else {
                 return $this->render('EloboostedFrontofficeBundle:tournoi:edit.html.twig', array(
                     'tournoi' => $tournoi,
                     'edit_form' => $editForm->createView(),
@@ -134,8 +161,9 @@ class TournoiController extends Controller
         return $this->createFormBuilder()
             ->setAction($this->generateUrl('tournoi_delete', array('id' => $tournoi->getIdTournoi())))
             ->setMethod('DELETE')
-            ->getForm()
-            ;
+            ->getForm();
     }
+
+
 }
 

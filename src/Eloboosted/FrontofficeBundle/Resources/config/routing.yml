@@ -121,3 +121,11 @@ yes_delete:
     path:     /{id}/deleteGames
     defaults: { _controller: "EloboostedFrontofficeBundle:Games:delete" }
     methods:  DELETE
+
+Search_tournament:
+    path:     /Searchtournament
+    defaults: { _controller: EloboostedFrontofficeBundle:Tournoi:serachtournament }
+
+participation_new:
+    path:     /Participate/{tournament}
+    defaults: { _controller: EloboostedFrontofficeBundle:Participation:newParticipation }
