@@ -21,29 +21,29 @@ class __TwigTemplate_696dbe7ea90c39c4341009c19ec7e49c07567431d816be420460965fc11
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_6976b2aeab622f7f31571e08558b04040c99e345eb49c09c36aa46a1954cfc1e = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_6976b2aeab622f7f31571e08558b04040c99e345eb49c09c36aa46a1954cfc1e->enter($__internal_6976b2aeab622f7f31571e08558b04040c99e345eb49c09c36aa46a1954cfc1e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@EloboostedFrontoffice/Post/readPost.html.twig"));
+        $__internal_f8f2d1e68c7409918c00ddd134ff32497a16d0a918555ec33d83e8c0034efda8 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_f8f2d1e68c7409918c00ddd134ff32497a16d0a918555ec33d83e8c0034efda8->enter($__internal_f8f2d1e68c7409918c00ddd134ff32497a16d0a918555ec33d83e8c0034efda8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@EloboostedFrontoffice/Post/readPost.html.twig"));
 
-        $__internal_65002992fe55d757733aec02f48af8a1308e0b377fe05f831f30b7448967e4ab = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_65002992fe55d757733aec02f48af8a1308e0b377fe05f831f30b7448967e4ab->enter($__internal_65002992fe55d757733aec02f48af8a1308e0b377fe05f831f30b7448967e4ab_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@EloboostedFrontoffice/Post/readPost.html.twig"));
+        $__internal_c3caad24504b4ed954b41c8a912b67ec69048b0e9f3d5bbb5906980df77781bc = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_c3caad24504b4ed954b41c8a912b67ec69048b0e9f3d5bbb5906980df77781bc->enter($__internal_c3caad24504b4ed954b41c8a912b67ec69048b0e9f3d5bbb5906980df77781bc_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@EloboostedFrontoffice/Post/readPost.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_6976b2aeab622f7f31571e08558b04040c99e345eb49c09c36aa46a1954cfc1e->leave($__internal_6976b2aeab622f7f31571e08558b04040c99e345eb49c09c36aa46a1954cfc1e_prof);
+        $__internal_f8f2d1e68c7409918c00ddd134ff32497a16d0a918555ec33d83e8c0034efda8->leave($__internal_f8f2d1e68c7409918c00ddd134ff32497a16d0a918555ec33d83e8c0034efda8_prof);
 
         
-        $__internal_65002992fe55d757733aec02f48af8a1308e0b377fe05f831f30b7448967e4ab->leave($__internal_65002992fe55d757733aec02f48af8a1308e0b377fe05f831f30b7448967e4ab_prof);
+        $__internal_c3caad24504b4ed954b41c8a912b67ec69048b0e9f3d5bbb5906980df77781bc->leave($__internal_c3caad24504b4ed954b41c8a912b67ec69048b0e9f3d5bbb5906980df77781bc_prof);
 
     }
 
     // line 3
     public function block_main($context, array $blocks = array())
     {
-        $__internal_9cf3664196f515593dc0099070047912f6998cea26185146f7fd1e6c34e47ca5 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_9cf3664196f515593dc0099070047912f6998cea26185146f7fd1e6c34e47ca5->enter($__internal_9cf3664196f515593dc0099070047912f6998cea26185146f7fd1e6c34e47ca5_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "main"));
+        $__internal_573efb2b1af80f11e8db9de872103344bdab1fd43e702a9cf66d4ceb79b93606 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_573efb2b1af80f11e8db9de872103344bdab1fd43e702a9cf66d4ceb79b93606->enter($__internal_573efb2b1af80f11e8db9de872103344bdab1fd43e702a9cf66d4ceb79b93606_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "main"));
 
-        $__internal_e618ab63c2975b7f3572f3760898550c5f4bed1691464a93e9586d23d5888429 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_e618ab63c2975b7f3572f3760898550c5f4bed1691464a93e9586d23d5888429->enter($__internal_e618ab63c2975b7f3572f3760898550c5f4bed1691464a93e9586d23d5888429_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "main"));
+        $__internal_e342cf03c27f08e676458bf19af7f5ba0050916ce3f7f9267c3f29031a6a1f72 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_e342cf03c27f08e676458bf19af7f5ba0050916ce3f7f9267c3f29031a6a1f72->enter($__internal_e342cf03c27f08e676458bf19af7f5ba0050916ce3f7f9267c3f29031a6a1f72_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "main"));
 
         // line 4
         echo "    <script src=\"";
@@ -250,14 +250,37 @@ class __TwigTemplate_696dbe7ea90c39c4341009c19ec7e49c07567431d816be420460965fc11
                                 <label class=\"col-md-2\">Message</label>
 
                                 <div class=\"col-md-10\" >
-                                    <input type=\"text\" class=\"form-control\" required  id=\"textcommentaire\" name=\"replay\" placeholder=\"Add Message\" style=\"height:200px;\">
+
+                                    ";
+        // line 131
+        if (($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "user", array()) == null)) {
+            // line 132
+            echo "                                        <input type=\"text\" class=\"form-control\" required  id=\"textcommentaire\" name=\"replay\" placeholder=\"You need to login first \" style=\"height:200px;\">
+                                    ";
+        } elseif (($this->getAttribute(        // line 133
+(isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "user", array()) != null)) {
+            // line 134
+            echo "                                        <input type=\"text\" class=\"form-control\" required  id=\"textcommentaire\" name=\"replay\" placeholder=\"Add Message\" style=\"height:200px;\">
+                                    ";
+        }
+        // line 136
+        echo "
                                 </div>
                             </div>
-
-                            <div class=\"text-center\"><input type=\"submit\" name=\"btn\" value=\"SUBMIT\" class=\"btn btn-primary btn-lg btn-rounded btn-shadow\"></div>
-
-
-                        </form>
+                             ";
+        // line 139
+        if (($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "user", array()) == null)) {
+            // line 140
+            echo "                            <div class=\"text-center\"><input type=\"submit\" name=\"btn\" value=\"SUBMIT\"  disabled class=\"btn btn-primary btn-lg btn-rounded btn-shadow\"></div>
+                             ";
+        } elseif (($this->getAttribute(        // line 141
+(isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "user", array()) != null)) {
+            // line 142
+            echo "                            <div class=\"text-center\"><input type=\"submit\" name=\"btn\" value=\"SUBMIT\" class=\"btn btn-primary btn-lg btn-rounded btn-shadow\"></div>
+                            ";
+        }
+        // line 144
+        echo "                        </form>
                     </div>
                 </div>
 
@@ -268,10 +291,10 @@ class __TwigTemplate_696dbe7ea90c39c4341009c19ec7e49c07567431d816be420460965fc11
 
 ";
         
-        $__internal_e618ab63c2975b7f3572f3760898550c5f4bed1691464a93e9586d23d5888429->leave($__internal_e618ab63c2975b7f3572f3760898550c5f4bed1691464a93e9586d23d5888429_prof);
+        $__internal_e342cf03c27f08e676458bf19af7f5ba0050916ce3f7f9267c3f29031a6a1f72->leave($__internal_e342cf03c27f08e676458bf19af7f5ba0050916ce3f7f9267c3f29031a6a1f72_prof);
 
         
-        $__internal_9cf3664196f515593dc0099070047912f6998cea26185146f7fd1e6c34e47ca5->leave($__internal_9cf3664196f515593dc0099070047912f6998cea26185146f7fd1e6c34e47ca5_prof);
+        $__internal_573efb2b1af80f11e8db9de872103344bdab1fd43e702a9cf66d4ceb79b93606->leave($__internal_573efb2b1af80f11e8db9de872103344bdab1fd43e702a9cf66d4ceb79b93606_prof);
 
     }
 
@@ -287,7 +310,7 @@ class __TwigTemplate_696dbe7ea90c39c4341009c19ec7e49c07567431d816be420460965fc11
 
     public function getDebugInfo()
     {
-        return array (  246 => 124,  235 => 116,  222 => 106,  217 => 103,  211 => 101,  206 => 98,  203 => 97,  196 => 95,  193 => 94,  190 => 93,  187 => 92,  182 => 91,  180 => 90,  172 => 85,  168 => 84,  161 => 80,  154 => 78,  147 => 76,  137 => 68,  131 => 66,  129 => 65,  125 => 64,  109 => 51,  105 => 50,  86 => 34,  66 => 17,  49 => 4,  40 => 3,  11 => 2,);
+        return array (  283 => 144,  279 => 142,  277 => 141,  274 => 140,  272 => 139,  267 => 136,  263 => 134,  261 => 133,  258 => 132,  256 => 131,  246 => 124,  235 => 116,  222 => 106,  217 => 103,  211 => 101,  206 => 98,  203 => 97,  196 => 95,  193 => 94,  190 => 93,  187 => 92,  182 => 91,  180 => 90,  172 => 85,  168 => 84,  161 => 80,  154 => 78,  147 => 76,  137 => 68,  131 => 66,  129 => 65,  125 => 64,  109 => 51,  105 => 50,  86 => 34,  66 => 17,  49 => 4,  40 => 3,  11 => 2,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -429,13 +452,20 @@ class __TwigTemplate_696dbe7ea90c39c4341009c19ec7e49c07567431d816be420460965fc11
                                 <label class=\"col-md-2\">Message</label>
 
                                 <div class=\"col-md-10\" >
-                                    <input type=\"text\" class=\"form-control\" required  id=\"textcommentaire\" name=\"replay\" placeholder=\"Add Message\" style=\"height:200px;\">
+
+                                    {% if app.user==null %}
+                                        <input type=\"text\" class=\"form-control\" required  id=\"textcommentaire\" name=\"replay\" placeholder=\"You need to login first \" style=\"height:200px;\">
+                                    {% elseif app.user!=null %}
+                                        <input type=\"text\" class=\"form-control\" required  id=\"textcommentaire\" name=\"replay\" placeholder=\"Add Message\" style=\"height:200px;\">
+                                    {% endif %}
+
                                 </div>
                             </div>
-
+                             {% if app.user==null %}
+                            <div class=\"text-center\"><input type=\"submit\" name=\"btn\" value=\"SUBMIT\"  disabled class=\"btn btn-primary btn-lg btn-rounded btn-shadow\"></div>
+                             {% elseif app.user!=null %}
                             <div class=\"text-center\"><input type=\"submit\" name=\"btn\" value=\"SUBMIT\" class=\"btn btn-primary btn-lg btn-rounded btn-shadow\"></div>
-
-
+                            {% endif %}
                         </form>
                     </div>
                 </div>

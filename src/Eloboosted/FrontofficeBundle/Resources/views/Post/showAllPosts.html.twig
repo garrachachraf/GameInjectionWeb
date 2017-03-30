@@ -23,6 +23,7 @@
                     {% if app.user!=null %}
                     <a href="{{ path('AddPost') }}" class="btn btn-primary btn-icon-left"><i class="fa fa-comments"></i> new post</a>
                     {% elseif app.user==null %}
+                        <a href="{{ path('check_logins') }}" class="btn btn-primary btn-icon-left"><i class="fa fa-comments"></i> new post</a>
 
                     {% endif %}
                 </div>
@@ -40,11 +41,11 @@
                     </div>
                     <div class="forum-activity">
 
-                        <a href="profile.html"><img src="{{post.idComptePost.image}}" alt=""></a>
+                        <a href="{{ path('userProfile',{id : post.idComptePost.idCompte}) }}"><img src="{{post.idComptePost.image}}" alt=""></a>
 
                         <div>
 
-                            <h4><a href="forum-post.html">{{ post.idComptePost.pseudo }}</a></h4>
+                            <h4><a href="{{ path('userProfile',{id : post.idComptePost.idCompte}) }}">{{ post.idComptePost.pseudo }}</a></h4>
                             <span>{{ post.date|date}}</span>
                         </div>
                     </div>

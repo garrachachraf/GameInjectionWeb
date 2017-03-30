@@ -8,7 +8,7 @@
                 <a href="{{ path('userProfile',{id : commentaire.idCompteCp.idCompte}) }}" class="avatar"><img src="{{ img }}" alt=""><span class="label label-warning"></span></a>
                 {% set img=null %}
                 <div>
-                    <a href="profile.html">{{ commentaire.idCompteCp.pseudo }}</a>
+                    <a  href="{{ path('userProfile',{id : commentaire.idCompteCp.idCompte}) }}">{{ commentaire.idCompteCp.pseudo }}</a>
                     <span>Birth day</span>
                     <span class="date">{{ commentaire.idCompteCp.dateDeNaissance | date }}</span>
                 </div>

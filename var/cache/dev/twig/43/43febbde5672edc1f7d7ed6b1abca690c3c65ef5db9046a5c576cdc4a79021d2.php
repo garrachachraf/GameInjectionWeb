@@ -15,11 +15,11 @@ class __TwigTemplate_1fda205ab44638a2465efaee5926c3d5f81028b9dc9c738744e8ecaa91a
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_dc2494fc09dc7ff64a93443d381366262012b174eedf7bf341387890c44dbc3f = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_dc2494fc09dc7ff64a93443d381366262012b174eedf7bf341387890c44dbc3f->enter($__internal_dc2494fc09dc7ff64a93443d381366262012b174eedf7bf341387890c44dbc3f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EloboostedFrontofficeBundle:Post:commentaire.html.twig"));
+        $__internal_8217b173389bea08254d795d680d3aa9f4d66841c8c73fe5e98af644d891c9ab = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_8217b173389bea08254d795d680d3aa9f4d66841c8c73fe5e98af644d891c9ab->enter($__internal_8217b173389bea08254d795d680d3aa9f4d66841c8c73fe5e98af644d891c9ab_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EloboostedFrontofficeBundle:Post:commentaire.html.twig"));
 
-        $__internal_237eecedd4489cd260aac758a4315ed7abb9503faf87a047acd58ad1920e41bb = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_237eecedd4489cd260aac758a4315ed7abb9503faf87a047acd58ad1920e41bb->enter($__internal_237eecedd4489cd260aac758a4315ed7abb9503faf87a047acd58ad1920e41bb_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EloboostedFrontofficeBundle:Post:commentaire.html.twig"));
+        $__internal_b98fd87f23e26844e342dbe1cfd2cc2de093ceabf000569b32f9903819e7ece7 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_b98fd87f23e26844e342dbe1cfd2cc2de093ceabf000569b32f9903819e7ece7->enter($__internal_b98fd87f23e26844e342dbe1cfd2cc2de093ceabf000569b32f9903819e7ece7_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EloboostedFrontofficeBundle:Post:commentaire.html.twig"));
 
         // line 1
         $context["img"] = null;
@@ -47,8 +47,10 @@ class __TwigTemplate_1fda205ab44638a2465efaee5926c3d5f81028b9dc9c738744e8ecaa91a
             $context["img"] = null;
             // line 10
             echo "                <div>
-                    <a href=\"profile.html\">";
+                    <a  href=\"";
             // line 11
+            echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("userProfile", array("id" => $this->getAttribute($this->getAttribute($context["commentaire"], "idCompteCp", array()), "idCompte", array()))), "html", null, true);
+            echo "\">";
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["commentaire"], "idCompteCp", array()), "pseudo", array()), "html", null, true);
             echo "</a>
                     <span>Birth day</span>
@@ -207,10 +209,10 @@ class __TwigTemplate_1fda205ab44638a2465efaee5926c3d5f81028b9dc9c738744e8ecaa91a
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['commentaire'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
         
-        $__internal_dc2494fc09dc7ff64a93443d381366262012b174eedf7bf341387890c44dbc3f->leave($__internal_dc2494fc09dc7ff64a93443d381366262012b174eedf7bf341387890c44dbc3f_prof);
+        $__internal_8217b173389bea08254d795d680d3aa9f4d66841c8c73fe5e98af644d891c9ab->leave($__internal_8217b173389bea08254d795d680d3aa9f4d66841c8c73fe5e98af644d891c9ab_prof);
 
         
-        $__internal_237eecedd4489cd260aac758a4315ed7abb9503faf87a047acd58ad1920e41bb->leave($__internal_237eecedd4489cd260aac758a4315ed7abb9503faf87a047acd58ad1920e41bb_prof);
+        $__internal_b98fd87f23e26844e342dbe1cfd2cc2de093ceabf000569b32f9903819e7ece7->leave($__internal_b98fd87f23e26844e342dbe1cfd2cc2de093ceabf000569b32f9903819e7ece7_prof);
 
     }
 
@@ -226,7 +228,7 @@ class __TwigTemplate_1fda205ab44638a2465efaee5926c3d5f81028b9dc9c738744e8ecaa91a
 
     public function getDebugInfo()
     {
-        return array (  198 => 63,  193 => 60,  187 => 58,  182 => 55,  179 => 54,  173 => 53,  170 => 52,  167 => 51,  164 => 50,  161 => 49,  159 => 48,  156 => 47,  151 => 46,  149 => 45,  144 => 42,  141 => 41,  138 => 40,  130 => 38,  128 => 37,  121 => 36,  118 => 35,  112 => 34,  109 => 33,  106 => 32,  103 => 31,  98 => 30,  96 => 29,  90 => 28,  87 => 27,  84 => 26,  81 => 25,  77 => 24,  72 => 21,  70 => 20,  64 => 17,  57 => 13,  52 => 11,  49 => 10,  47 => 9,  41 => 8,  37 => 6,  35 => 5,  31 => 3,  27 => 2,  25 => 1,);
+        return array (  200 => 63,  195 => 60,  189 => 58,  184 => 55,  181 => 54,  175 => 53,  172 => 52,  169 => 51,  166 => 50,  163 => 49,  161 => 48,  158 => 47,  153 => 46,  151 => 45,  146 => 42,  143 => 41,  140 => 40,  132 => 38,  130 => 37,  123 => 36,  120 => 35,  114 => 34,  111 => 33,  108 => 32,  105 => 31,  100 => 30,  98 => 29,  92 => 28,  89 => 27,  86 => 26,  83 => 25,  79 => 24,  74 => 21,  72 => 20,  66 => 17,  59 => 13,  52 => 11,  49 => 10,  47 => 9,  41 => 8,  37 => 6,  35 => 5,  31 => 3,  27 => 2,  25 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -249,7 +251,7 @@ class __TwigTemplate_1fda205ab44638a2465efaee5926c3d5f81028b9dc9c738744e8ecaa91a
                 <a href=\"{{ path('userProfile',{id : commentaire.idCompteCp.idCompte}) }}\" class=\"avatar\"><img src=\"{{ img }}\" alt=\"\"><span class=\"label label-warning\"></span></a>
                 {% set img=null %}
                 <div>
-                    <a href=\"profile.html\">{{ commentaire.idCompteCp.pseudo }}</a>
+                    <a  href=\"{{ path('userProfile',{id : commentaire.idCompteCp.idCompte}) }}\">{{ commentaire.idCompteCp.pseudo }}</a>
                     <span>Birth day</span>
                     <span class=\"date\">{{ commentaire.idCompteCp.dateDeNaissance | date }}</span>
                 </div>

@@ -127,13 +127,20 @@
                                 <label class="col-md-2">Message</label>
 
                                 <div class="col-md-10" >
-                                    <input type="text" class="form-control" required  id="textcommentaire" name="replay" placeholder="Add Message" style="height:200px;">
+
+                                    {% if app.user==null %}
+                                        <input type="text" class="form-control" required  id="textcommentaire" name="replay" placeholder="You need to login first " style="height:200px;">
+                                    {% elseif app.user!=null %}
+                                        <input type="text" class="form-control" required  id="textcommentaire" name="replay" placeholder="Add Message" style="height:200px;">
+                                    {% endif %}
+
                                 </div>
                             </div>
-
+                             {% if app.user==null %}
+                            <div class="text-center"><input type="submit" name="btn" value="SUBMIT"  disabled class="btn btn-primary btn-lg btn-rounded btn-shadow"></div>
+                             {% elseif app.user!=null %}
                             <div class="text-center"><input type="submit" name="btn" value="SUBMIT" class="btn btn-primary btn-lg btn-rounded btn-shadow"></div>
-
-
+                            {% endif %}
                         </form>
                     </div>
                 </div>

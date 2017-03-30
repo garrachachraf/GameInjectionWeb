@@ -15,11 +15,11 @@ class __TwigTemplate_29033af1667f2e2bc4b2580c5ac01a5f7fd67dd4e9464e8267bfda58ec4
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_5b7882daec55ac3cb2e1c36fb247a82676e03e9419ae84e1a87dc7919815b240 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_5b7882daec55ac3cb2e1c36fb247a82676e03e9419ae84e1a87dc7919815b240->enter($__internal_5b7882daec55ac3cb2e1c36fb247a82676e03e9419ae84e1a87dc7919815b240_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@EloboostedFrontoffice/Post/commentaire.html.twig"));
+        $__internal_987f835088a8bdcfee7be3181755dab3e4116e76cc9d3aa0a4007cd9229b7aa9 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_987f835088a8bdcfee7be3181755dab3e4116e76cc9d3aa0a4007cd9229b7aa9->enter($__internal_987f835088a8bdcfee7be3181755dab3e4116e76cc9d3aa0a4007cd9229b7aa9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@EloboostedFrontoffice/Post/commentaire.html.twig"));
 
-        $__internal_e2eccc3e342729da5686fa86dec3a6d532b0b84bcc6dff2cfd59049b768cc4a9 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_e2eccc3e342729da5686fa86dec3a6d532b0b84bcc6dff2cfd59049b768cc4a9->enter($__internal_e2eccc3e342729da5686fa86dec3a6d532b0b84bcc6dff2cfd59049b768cc4a9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@EloboostedFrontoffice/Post/commentaire.html.twig"));
+        $__internal_00f6b14884f88e45e4a43787927f250ee008dfb7422a8762361ca852c2a0ccea = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_00f6b14884f88e45e4a43787927f250ee008dfb7422a8762361ca852c2a0ccea->enter($__internal_00f6b14884f88e45e4a43787927f250ee008dfb7422a8762361ca852c2a0ccea_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@EloboostedFrontoffice/Post/commentaire.html.twig"));
 
         // line 1
         $context["img"] = null;
@@ -47,8 +47,10 @@ class __TwigTemplate_29033af1667f2e2bc4b2580c5ac01a5f7fd67dd4e9464e8267bfda58ec4
             $context["img"] = null;
             // line 10
             echo "                <div>
-                    <a href=\"profile.html\">";
+                    <a  href=\"";
             // line 11
+            echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("userProfile", array("id" => $this->getAttribute($this->getAttribute($context["commentaire"], "idCompteCp", array()), "idCompte", array()))), "html", null, true);
+            echo "\">";
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["commentaire"], "idCompteCp", array()), "pseudo", array()), "html", null, true);
             echo "</a>
                     <span>Birth day</span>
@@ -207,10 +209,10 @@ class __TwigTemplate_29033af1667f2e2bc4b2580c5ac01a5f7fd67dd4e9464e8267bfda58ec4
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['commentaire'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
         
-        $__internal_5b7882daec55ac3cb2e1c36fb247a82676e03e9419ae84e1a87dc7919815b240->leave($__internal_5b7882daec55ac3cb2e1c36fb247a82676e03e9419ae84e1a87dc7919815b240_prof);
+        $__internal_987f835088a8bdcfee7be3181755dab3e4116e76cc9d3aa0a4007cd9229b7aa9->leave($__internal_987f835088a8bdcfee7be3181755dab3e4116e76cc9d3aa0a4007cd9229b7aa9_prof);
 
         
-        $__internal_e2eccc3e342729da5686fa86dec3a6d532b0b84bcc6dff2cfd59049b768cc4a9->leave($__internal_e2eccc3e342729da5686fa86dec3a6d532b0b84bcc6dff2cfd59049b768cc4a9_prof);
+        $__internal_00f6b14884f88e45e4a43787927f250ee008dfb7422a8762361ca852c2a0ccea->leave($__internal_00f6b14884f88e45e4a43787927f250ee008dfb7422a8762361ca852c2a0ccea_prof);
 
     }
 
@@ -226,7 +228,7 @@ class __TwigTemplate_29033af1667f2e2bc4b2580c5ac01a5f7fd67dd4e9464e8267bfda58ec4
 
     public function getDebugInfo()
     {
-        return array (  198 => 63,  193 => 60,  187 => 58,  182 => 55,  179 => 54,  173 => 53,  170 => 52,  167 => 51,  164 => 50,  161 => 49,  159 => 48,  156 => 47,  151 => 46,  149 => 45,  144 => 42,  141 => 41,  138 => 40,  130 => 38,  128 => 37,  121 => 36,  118 => 35,  112 => 34,  109 => 33,  106 => 32,  103 => 31,  98 => 30,  96 => 29,  90 => 28,  87 => 27,  84 => 26,  81 => 25,  77 => 24,  72 => 21,  70 => 20,  64 => 17,  57 => 13,  52 => 11,  49 => 10,  47 => 9,  41 => 8,  37 => 6,  35 => 5,  31 => 3,  27 => 2,  25 => 1,);
+        return array (  200 => 63,  195 => 60,  189 => 58,  184 => 55,  181 => 54,  175 => 53,  172 => 52,  169 => 51,  166 => 50,  163 => 49,  161 => 48,  158 => 47,  153 => 46,  151 => 45,  146 => 42,  143 => 41,  140 => 40,  132 => 38,  130 => 37,  123 => 36,  120 => 35,  114 => 34,  111 => 33,  108 => 32,  105 => 31,  100 => 30,  98 => 29,  92 => 28,  89 => 27,  86 => 26,  83 => 25,  79 => 24,  74 => 21,  72 => 20,  66 => 17,  59 => 13,  52 => 11,  49 => 10,  47 => 9,  41 => 8,  37 => 6,  35 => 5,  31 => 3,  27 => 2,  25 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -249,7 +251,7 @@ class __TwigTemplate_29033af1667f2e2bc4b2580c5ac01a5f7fd67dd4e9464e8267bfda58ec4
                 <a href=\"{{ path('userProfile',{id : commentaire.idCompteCp.idCompte}) }}\" class=\"avatar\"><img src=\"{{ img }}\" alt=\"\"><span class=\"label label-warning\"></span></a>
                 {% set img=null %}
                 <div>
-                    <a href=\"profile.html\">{{ commentaire.idCompteCp.pseudo }}</a>
+                    <a  href=\"{{ path('userProfile',{id : commentaire.idCompteCp.idCompte}) }}\">{{ commentaire.idCompteCp.pseudo }}</a>
                     <span>Birth day</span>
                     <span class=\"date\">{{ commentaire.idCompteCp.dateDeNaissance | date }}</span>
                 </div>

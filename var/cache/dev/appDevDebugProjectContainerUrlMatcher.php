@@ -105,6 +105,15 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
 
         }
 
+        // eloboosted_gameinjection_homepage
+        if (rtrim($pathinfo, '/') === '') {
+            if (substr($pathinfo, -1) !== '/') {
+                return $this->redirect($pathinfo.'/', 'eloboosted_gameinjection_homepage');
+            }
+
+            return array (  '_controller' => 'Eloboosted\\GameinjectionBundle\\Controller\\DefaultController::indexAction',  '_route' => 'eloboosted_gameinjection_homepage',);
+        }
+
         if (0 === strpos($pathinfo, '/ad')) {
             if (0 === strpos($pathinfo, '/admin')) {
                 // eloboosted_backoffice_homepage
@@ -137,6 +146,11 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
                         return array (  '_controller' => 'Eloboosted\\BackofficeBundle\\Controller\\SignalisationController::WarnSenderAction',  '_route' => 'WarnSender',);
                     }
 
+                }
+
+                // eloboosted_backoffice_games
+                if ($pathinfo === '/admin/games') {
+                    return array (  '_controller' => 'Eloboosted\\BackofficeBundle\\Controller\\GamesController::indexAction',  '_route' => 'eloboosted_backoffice_games',);
                 }
 
             }
@@ -325,6 +339,61 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
         if (0 === strpos($pathinfo, '/userProfile') && preg_match('#^/userProfile/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
             return $this->mergeDefaults(array_replace($matches, array('_route' => 'userProfile')), array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\CompteController::userProfileAction',));
         }
+
+        // yes_index
+        if ($pathinfo === '/games') {
+            if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                $allow = array_merge($allow, array('GET', 'HEAD'));
+                goto not_yes_index;
+            }
+
+            return array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\GamesController::indexAction',  '_route' => 'yes_index',);
+        }
+        not_yes_index:
+
+        // yes_show
+        if (preg_match('#^/(?P<id>[^/]++)/showGames$#s', $pathinfo, $matches)) {
+            if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                $allow = array_merge($allow, array('GET', 'HEAD'));
+                goto not_yes_show;
+            }
+
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'yes_show')), array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\GamesController::showAction',));
+        }
+        not_yes_show:
+
+        // yes_new
+        if ($pathinfo === '/newGames') {
+            if (!in_array($this->context->getMethod(), array('GET', 'POST', 'HEAD'))) {
+                $allow = array_merge($allow, array('GET', 'POST', 'HEAD'));
+                goto not_yes_new;
+            }
+
+            return array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\GamesController::newAction',  '_route' => 'yes_new',);
+        }
+        not_yes_new:
+
+        // yes_edit
+        if (preg_match('#^/(?P<id>[^/]++)/editGames$#s', $pathinfo, $matches)) {
+            if (!in_array($this->context->getMethod(), array('GET', 'POST', 'HEAD'))) {
+                $allow = array_merge($allow, array('GET', 'POST', 'HEAD'));
+                goto not_yes_edit;
+            }
+
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'yes_edit')), array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\GamesController::editAction',));
+        }
+        not_yes_edit:
+
+        // yes_delete
+        if (preg_match('#^/(?P<id>[^/]++)/deleteGames$#s', $pathinfo, $matches)) {
+            if ($this->context->getMethod() != 'DELETE') {
+                $allow[] = 'DELETE';
+                goto not_yes_delete;
+            }
+
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'yes_delete')), array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\GamesController::deleteAction',));
+        }
+        not_yes_delete:
 
         if (0 === strpos($pathinfo, '/login')) {
             // eloboosted_login_homepage

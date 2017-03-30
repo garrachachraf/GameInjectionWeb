@@ -21,29 +21,29 @@ class __TwigTemplate_2e5c3800c3927f35709b97bd4cf077cb458192d9846f779bf75f5c03245
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_bfffdf9424e31128a45e961c18b74113e5419223ecf87e7bb990a1a3f4082b0d = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_bfffdf9424e31128a45e961c18b74113e5419223ecf87e7bb990a1a3f4082b0d->enter($__internal_bfffdf9424e31128a45e961c18b74113e5419223ecf87e7bb990a1a3f4082b0d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@EloboostedFrontoffice/Post/showAllPosts.html.twig"));
+        $__internal_4c2f48ba84ccdf37750aa4e601e5d5bf378de2413527977db7bcb6bb95fb4fae = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_4c2f48ba84ccdf37750aa4e601e5d5bf378de2413527977db7bcb6bb95fb4fae->enter($__internal_4c2f48ba84ccdf37750aa4e601e5d5bf378de2413527977db7bcb6bb95fb4fae_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@EloboostedFrontoffice/Post/showAllPosts.html.twig"));
 
-        $__internal_03f0ea967fe96028458e4a6b06f2b494529db6bb86813df3b0a9d8a70fb01e6f = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_03f0ea967fe96028458e4a6b06f2b494529db6bb86813df3b0a9d8a70fb01e6f->enter($__internal_03f0ea967fe96028458e4a6b06f2b494529db6bb86813df3b0a9d8a70fb01e6f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@EloboostedFrontoffice/Post/showAllPosts.html.twig"));
+        $__internal_71c6cf200bc8c506969a405b498fc3c28c0d6e702a57660f079c850550297daa = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_71c6cf200bc8c506969a405b498fc3c28c0d6e702a57660f079c850550297daa->enter($__internal_71c6cf200bc8c506969a405b498fc3c28c0d6e702a57660f079c850550297daa_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@EloboostedFrontoffice/Post/showAllPosts.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_bfffdf9424e31128a45e961c18b74113e5419223ecf87e7bb990a1a3f4082b0d->leave($__internal_bfffdf9424e31128a45e961c18b74113e5419223ecf87e7bb990a1a3f4082b0d_prof);
+        $__internal_4c2f48ba84ccdf37750aa4e601e5d5bf378de2413527977db7bcb6bb95fb4fae->leave($__internal_4c2f48ba84ccdf37750aa4e601e5d5bf378de2413527977db7bcb6bb95fb4fae_prof);
 
         
-        $__internal_03f0ea967fe96028458e4a6b06f2b494529db6bb86813df3b0a9d8a70fb01e6f->leave($__internal_03f0ea967fe96028458e4a6b06f2b494529db6bb86813df3b0a9d8a70fb01e6f_prof);
+        $__internal_71c6cf200bc8c506969a405b498fc3c28c0d6e702a57660f079c850550297daa->leave($__internal_71c6cf200bc8c506969a405b498fc3c28c0d6e702a57660f079c850550297daa_prof);
 
     }
 
     // line 3
     public function block_main($context, array $blocks = array())
     {
-        $__internal_bfed0a6629575feb3606b7ed56aa4538d822d37ea81e623c15364c18d35923ef = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_bfed0a6629575feb3606b7ed56aa4538d822d37ea81e623c15364c18d35923ef->enter($__internal_bfed0a6629575feb3606b7ed56aa4538d822d37ea81e623c15364c18d35923ef_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "main"));
+        $__internal_a13b6f2961cbbaaa3827e512e02f3c1faab6be249806f94a31140c046e05c727 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_a13b6f2961cbbaaa3827e512e02f3c1faab6be249806f94a31140c046e05c727->enter($__internal_a13b6f2961cbbaaa3827e512e02f3c1faab6be249806f94a31140c046e05c727_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "main"));
 
-        $__internal_32f83399a619121c168b988c7bbaa54dd821f6839d5343f9e2ac8afc4e710c59 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_32f83399a619121c168b988c7bbaa54dd821f6839d5343f9e2ac8afc4e710c59->enter($__internal_32f83399a619121c168b988c7bbaa54dd821f6839d5343f9e2ac8afc4e710c59_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "main"));
+        $__internal_3b398776e459ab5695712934491347b9ad5c7c31583821affc3957364af5f40c = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_3b398776e459ab5695712934491347b9ad5c7c31583821affc3957364af5f40c->enter($__internal_3b398776e459ab5695712934491347b9ad5c7c31583821affc3957364af5f40c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "main"));
 
         // line 4
         echo "<div id=\"wrapper\">
@@ -79,27 +79,30 @@ class __TwigTemplate_2e5c3800c3927f35709b97bd4cf077cb458192d9846f779bf75f5c03245
         } elseif (($this->getAttribute(        // line 25
 (isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "user", array()) == null)) {
             // line 26
-            echo "
+            echo "                        <a href=\"";
+            echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("check_logins");
+            echo "\" class=\"btn btn-primary btn-icon-left\"><i class=\"fa fa-comments\"></i> new post</a>
+
                     ";
         }
-        // line 28
+        // line 29
         echo "                </div>
             </div>
 
 
 ";
-        // line 32
+        // line 33
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable($context["post"]);
         foreach ($context['_seq'] as $context["_key"] => $context["post"]) {
-            // line 33
+            // line 34
             echo "
             <div class=\"forum forum-thread\">
                 <div class=\"forum-group\">
                     <div class=\"forum-icon\"><i class=\"fa fa-comments\"></i></div>
                     <div class=\"forum-title\">
                         <h4><a href=\"";
-            // line 38
+            // line 39
             echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("readPost", array("idPost" => $this->getAttribute($context["post"], "idPost", array()))), "html", null, true);
             echo "\">";
             echo twig_escape_filter($this->env, $this->getAttribute($context["post"], "titre", array()), "html", null, true);
@@ -108,54 +111,58 @@ class __TwigTemplate_2e5c3800c3927f35709b97bd4cf077cb458192d9846f779bf75f5c03245
                     </div>
                     <div class=\"forum-activity\">
 
-                        <a href=\"profile.html\"><img src=\"";
-            // line 43
+                        <a href=\"";
+            // line 44
+            echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("userProfile", array("id" => $this->getAttribute($this->getAttribute($context["post"], "idComptePost", array()), "idCompte", array()))), "html", null, true);
+            echo "\"><img src=\"";
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["post"], "idComptePost", array()), "image", array()), "html", null, true);
             echo "\" alt=\"\"></a>
 
                         <div>
 
-                            <h4><a href=\"forum-post.html\">";
-            // line 47
+                            <h4><a href=\"";
+            // line 48
+            echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("userProfile", array("id" => $this->getAttribute($this->getAttribute($context["post"], "idComptePost", array()), "idCompte", array()))), "html", null, true);
+            echo "\">";
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["post"], "idComptePost", array()), "pseudo", array()), "html", null, true);
             echo "</a></h4>
                             <span>";
-            // line 48
+            // line 49
             echo twig_escape_filter($this->env, twig_date_format_filter($this->env, $this->getAttribute($context["post"], "date", array())), "html", null, true);
             echo "</span>
                         </div>
                     </div>
                     ";
-            // line 51
-            $context["x"] = 0;
             // line 52
+            $context["x"] = 0;
+            // line 53
             echo "                    ";
             $context['_parent'] = $context;
             $context['_seq'] = twig_ensure_traversable($context["comments"]);
             foreach ($context['_seq'] as $context["_key"] => $context["comments"]) {
-                // line 53
+                // line 54
                 echo "                        ";
                 if (($this->getAttribute($context["post"], "idPost", array()) == $this->getAttribute($this->getAttribute($context["comments"], "idPostCp", array()), "idPost", array()))) {
-                    // line 54
+                    // line 55
                     echo "                         ";
                     $context["x"] = ((isset($context["x"]) ? $context["x"] : $this->getContext($context, "x")) + 1);
-                    // line 55
+                    // line 56
                     echo "                        ";
                 }
-                // line 56
+                // line 57
                 echo "                    ";
             }
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['comments'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 57
+            // line 58
             echo "                    <div class=\"forum-meta\">";
             echo twig_escape_filter($this->env, (isset($context["x"]) ? $context["x"] : $this->getContext($context, "x")), "html", null, true);
             echo " Comments </div>
                     ";
-            // line 58
-            $context["x"] = 0;
             // line 59
+            $context["x"] = 0;
+            // line 60
             echo "                </div>
             </div>
      ";
@@ -163,23 +170,23 @@ class __TwigTemplate_2e5c3800c3927f35709b97bd4cf077cb458192d9846f779bf75f5c03245
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['post'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 62
+        // line 63
         echo "
         </div>
     </section>
 </div>
     <div class=\"navigation\"   >
         ";
-        // line 67
+        // line 68
         echo $this->env->getExtension('Knp\Bundle\PaginatorBundle\Twig\Extension\PaginationExtension')->render($this->env, (isset($context["post"]) ? $context["post"] : $this->getContext($context, "post")));
         echo "
     </div>
 ";
         
-        $__internal_32f83399a619121c168b988c7bbaa54dd821f6839d5343f9e2ac8afc4e710c59->leave($__internal_32f83399a619121c168b988c7bbaa54dd821f6839d5343f9e2ac8afc4e710c59_prof);
+        $__internal_3b398776e459ab5695712934491347b9ad5c7c31583821affc3957364af5f40c->leave($__internal_3b398776e459ab5695712934491347b9ad5c7c31583821affc3957364af5f40c_prof);
 
         
-        $__internal_bfed0a6629575feb3606b7ed56aa4538d822d37ea81e623c15364c18d35923ef->leave($__internal_bfed0a6629575feb3606b7ed56aa4538d822d37ea81e623c15364c18d35923ef_prof);
+        $__internal_a13b6f2961cbbaaa3827e512e02f3c1faab6be249806f94a31140c046e05c727->leave($__internal_a13b6f2961cbbaaa3827e512e02f3c1faab6be249806f94a31140c046e05c727_prof);
 
     }
 
@@ -195,7 +202,7 @@ class __TwigTemplate_2e5c3800c3927f35709b97bd4cf077cb458192d9846f779bf75f5c03245
 
     public function getDebugInfo()
     {
-        return array (  174 => 67,  167 => 62,  159 => 59,  157 => 58,  152 => 57,  146 => 56,  143 => 55,  140 => 54,  137 => 53,  132 => 52,  130 => 51,  124 => 48,  120 => 47,  113 => 43,  103 => 38,  96 => 33,  92 => 32,  86 => 28,  82 => 26,  80 => 25,  75 => 24,  73 => 23,  57 => 10,  49 => 4,  40 => 3,  11 => 2,);
+        return array (  181 => 68,  174 => 63,  166 => 60,  164 => 59,  159 => 58,  153 => 57,  150 => 56,  147 => 55,  144 => 54,  139 => 53,  137 => 52,  131 => 49,  125 => 48,  116 => 44,  106 => 39,  99 => 34,  95 => 33,  89 => 29,  82 => 26,  80 => 25,  75 => 24,  73 => 23,  57 => 10,  49 => 4,  40 => 3,  11 => 2,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -233,6 +240,7 @@ class __TwigTemplate_2e5c3800c3927f35709b97bd4cf077cb458192d9846f779bf75f5c03245
                     {% if app.user!=null %}
                     <a href=\"{{ path('AddPost') }}\" class=\"btn btn-primary btn-icon-left\"><i class=\"fa fa-comments\"></i> new post</a>
                     {% elseif app.user==null %}
+                        <a href=\"{{ path('check_logins') }}\" class=\"btn btn-primary btn-icon-left\"><i class=\"fa fa-comments\"></i> new post</a>
 
                     {% endif %}
                 </div>
@@ -250,11 +258,11 @@ class __TwigTemplate_2e5c3800c3927f35709b97bd4cf077cb458192d9846f779bf75f5c03245
                     </div>
                     <div class=\"forum-activity\">
 
-                        <a href=\"profile.html\"><img src=\"{{post.idComptePost.image}}\" alt=\"\"></a>
+                        <a href=\"{{ path('userProfile',{id : post.idComptePost.idCompte}) }}\"><img src=\"{{post.idComptePost.image}}\" alt=\"\"></a>
 
                         <div>
 
-                            <h4><a href=\"forum-post.html\">{{ post.idComptePost.pseudo }}</a></h4>
+                            <h4><a href=\"{{ path('userProfile',{id : post.idComptePost.idCompte}) }}\">{{ post.idComptePost.pseudo }}</a></h4>
                             <span>{{ post.date|date}}</span>
                         </div>
                     </div>
