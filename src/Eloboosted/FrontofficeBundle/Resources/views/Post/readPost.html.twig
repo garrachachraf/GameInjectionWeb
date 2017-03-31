@@ -61,7 +61,15 @@
                 <div class="headline">
                     <h4><i class="fa fa-comments"></i> Forum Post Thread</h4>
                     <div class="pull-right">
-                        <a href="{{ path('AddPost') }}" class="btn btn-primary btn-icon-left"><i class="fa fa-comments"></i> new Post</a>
+
+                        {% if app.user!=null %}
+                            <a href="{{ path('AddPost') }}" class="btn btn-primary btn-icon-left"><i class="fa fa-comments"></i> new post</a>
+                        {% elseif app.user==null %}
+                            <a href="{{ path('check_logins') }}" class="btn btn-primary btn-icon-left"><i class="fa fa-comments"></i> new post</a>
+
+                        {% endif %}
+
+
                         {% if app.user == post.idComptePost %}
                         <a href="{{ path('removePost',{'idPost':post.idPost }) }}" data-message="Are you sure you want to delete this post?"  class="btn btn-default btn-icon-left"><i class="fa fa-edit"></i>remove Post</a>
                         {% endif %}

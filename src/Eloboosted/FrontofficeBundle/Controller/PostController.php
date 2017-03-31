@@ -54,7 +54,7 @@ class PostController extends Controller
     {
         $em = $this->getDoctrine()->getManager();
 
-        $post =$em->getRepository("EloboostedGameinjectionBundle:Post")->findAll();
+        $post =$em->getRepository("EloboostedGameinjectionBundle:Post")->findBy(array(), array('date' => 'desc'));
 
         $paginator  = $this->get('knp_paginator');
         $result=$paginator->paginate(

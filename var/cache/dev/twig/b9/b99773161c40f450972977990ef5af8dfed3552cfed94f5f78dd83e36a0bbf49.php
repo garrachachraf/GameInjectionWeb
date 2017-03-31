@@ -21,29 +21,29 @@ class __TwigTemplate_fb9f7166c189b996b61079f22780a9f61d88c0432dd7b7d3287896b5fcb
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_4fd1f5221f685ee23410f13d65d7140524d4ce401f3230f1a0085dafbc064c89 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_4fd1f5221f685ee23410f13d65d7140524d4ce401f3230f1a0085dafbc064c89->enter($__internal_4fd1f5221f685ee23410f13d65d7140524d4ce401f3230f1a0085dafbc064c89_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EloboostedFrontofficeBundle:tournoi:show.html.twig"));
+        $__internal_23f6e73e195a23b900d70cae93e64c9c655497dc071abf2ad7b80943adec8388 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_23f6e73e195a23b900d70cae93e64c9c655497dc071abf2ad7b80943adec8388->enter($__internal_23f6e73e195a23b900d70cae93e64c9c655497dc071abf2ad7b80943adec8388_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EloboostedFrontofficeBundle:tournoi:show.html.twig"));
 
-        $__internal_f60141c2ad56b67d715bc5330df59550795baad5c516bd3d24ee5afddc164c2b = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_f60141c2ad56b67d715bc5330df59550795baad5c516bd3d24ee5afddc164c2b->enter($__internal_f60141c2ad56b67d715bc5330df59550795baad5c516bd3d24ee5afddc164c2b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EloboostedFrontofficeBundle:tournoi:show.html.twig"));
+        $__internal_de944f636b5db7dbac66034273324215a005fe749988050e41177665405220bd = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_de944f636b5db7dbac66034273324215a005fe749988050e41177665405220bd->enter($__internal_de944f636b5db7dbac66034273324215a005fe749988050e41177665405220bd_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EloboostedFrontofficeBundle:tournoi:show.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_4fd1f5221f685ee23410f13d65d7140524d4ce401f3230f1a0085dafbc064c89->leave($__internal_4fd1f5221f685ee23410f13d65d7140524d4ce401f3230f1a0085dafbc064c89_prof);
+        $__internal_23f6e73e195a23b900d70cae93e64c9c655497dc071abf2ad7b80943adec8388->leave($__internal_23f6e73e195a23b900d70cae93e64c9c655497dc071abf2ad7b80943adec8388_prof);
 
         
-        $__internal_f60141c2ad56b67d715bc5330df59550795baad5c516bd3d24ee5afddc164c2b->leave($__internal_f60141c2ad56b67d715bc5330df59550795baad5c516bd3d24ee5afddc164c2b_prof);
+        $__internal_de944f636b5db7dbac66034273324215a005fe749988050e41177665405220bd->leave($__internal_de944f636b5db7dbac66034273324215a005fe749988050e41177665405220bd_prof);
 
     }
 
     // line 3
     public function block_main($context, array $blocks = array())
     {
-        $__internal_513a04f8078de7e0571c054f92b863e62d7e3fcdaf3b0c03b8bb9977f8fa4e11 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_513a04f8078de7e0571c054f92b863e62d7e3fcdaf3b0c03b8bb9977f8fa4e11->enter($__internal_513a04f8078de7e0571c054f92b863e62d7e3fcdaf3b0c03b8bb9977f8fa4e11_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "main"));
+        $__internal_1b8c5e9a79f8f438762fada09d612b5a11b85e5a873542d8bfcb5ccce70fe34f = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_1b8c5e9a79f8f438762fada09d612b5a11b85e5a873542d8bfcb5ccce70fe34f->enter($__internal_1b8c5e9a79f8f438762fada09d612b5a11b85e5a873542d8bfcb5ccce70fe34f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "main"));
 
-        $__internal_d95d520b1744bca22e3699c0c360f52543efa64185304bdb60937f9447bd24b2 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_d95d520b1744bca22e3699c0c360f52543efa64185304bdb60937f9447bd24b2->enter($__internal_d95d520b1744bca22e3699c0c360f52543efa64185304bdb60937f9447bd24b2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "main"));
+        $__internal_5c22506ad8742c7c8ab3d5c67e8294475c0e27033de8cb84d3f8522de135f2c0 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_5c22506ad8742c7c8ab3d5c67e8294475c0e27033de8cb84d3f8522de135f2c0->enter($__internal_5c22506ad8742c7c8ab3d5c67e8294475c0e27033de8cb84d3f8522de135f2c0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "main"));
 
         // line 4
         echo "    <link href=\"";
@@ -311,7 +311,7 @@ class __TwigTemplate_fb9f7166c189b996b61079f22780a9f61d88c0432dd7b7d3287896b5fcb
                             <div class=\"chart-align\">
                                 <span class=\"chart\" data-percent=\"";
         // line 174
-        echo twig_escape_filter($this->env, ((8 / $this->getAttribute((isset($context["tournoi"]) ? $context["tournoi"] : $this->getContext($context, "tournoi")), "nbrJoueur", array())) * 100), "html", null, true);
+        echo twig_escape_filter($this->env, (((isset($context["nbp"]) ? $context["nbp"] : $this->getContext($context, "nbp")) / $this->getAttribute((isset($context["tournoi"]) ? $context["tournoi"] : $this->getContext($context, "tournoi")), "nbrJoueur", array())) * 100), "html", null, true);
         echo "\"><span class=\"percent\"></span></span>
                             </div>
 
@@ -322,18 +322,18 @@ class __TwigTemplate_fb9f7166c189b996b61079f22780a9f61d88c0432dd7b7d3287896b5fcb
                             <div class=\"progress progress-animation progress-xs\">
                                 <div class=\"progress-bar progress-bar-success\" aria-valuenow=\"";
         // line 179
-        echo twig_escape_filter($this->env, ((8 / $this->getAttribute((isset($context["tournoi"]) ? $context["tournoi"] : $this->getContext($context, "tournoi")), "nbrJoueur", array())) * 100), "html", null, true);
+        echo twig_escape_filter($this->env, (((isset($context["nbp"]) ? $context["nbp"] : $this->getContext($context, "nbp")) / $this->getAttribute((isset($context["tournoi"]) ? $context["tournoi"] : $this->getContext($context, "tournoi")), "nbrJoueur", array())) * 100), "html", null, true);
         echo "\" aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width: 0%\"></div>
                             </div>
 
                             <p class=\"progress-label\">Free Places <span>";
         // line 182
-        echo twig_escape_filter($this->env, ($this->getAttribute((isset($context["tournoi"]) ? $context["tournoi"] : $this->getContext($context, "tournoi")), "nbrJoueur", array()) - 8), "html", null, true);
+        echo twig_escape_filter($this->env, ($this->getAttribute((isset($context["tournoi"]) ? $context["tournoi"] : $this->getContext($context, "tournoi")), "nbrJoueur", array()) - (isset($context["nbp"]) ? $context["nbp"] : $this->getContext($context, "nbp"))), "html", null, true);
         echo "</span></p>
                             <div class=\"progress progress-animation progress-xs\">
                                 <div class=\"progress-bar progress-bar-danger\" aria-valuenow=\"";
         // line 184
-        echo twig_escape_filter($this->env, ((($this->getAttribute((isset($context["tournoi"]) ? $context["tournoi"] : $this->getContext($context, "tournoi")), "nbrJoueur", array()) - 8) / $this->getAttribute((isset($context["tournoi"]) ? $context["tournoi"] : $this->getContext($context, "tournoi")), "nbrJoueur", array())) * 100), "html", null, true);
+        echo twig_escape_filter($this->env, ((($this->getAttribute((isset($context["tournoi"]) ? $context["tournoi"] : $this->getContext($context, "tournoi")), "nbrJoueur", array()) - (isset($context["nbp"]) ? $context["nbp"] : $this->getContext($context, "nbp"))) / $this->getAttribute((isset($context["tournoi"]) ? $context["tournoi"] : $this->getContext($context, "tournoi")), "nbrJoueur", array())) * 100), "html", null, true);
         echo "\" aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width: 0%\"></div>
                             </div>
 
@@ -393,9 +393,11 @@ class __TwigTemplate_fb9f7166c189b996b61079f22780a9f61d88c0432dd7b7d3287896b5fcb
         echo " players ans lovers . <br> Participation fee : ";
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["tournoi"]) ? $context["tournoi"] : $this->getContext($context, "tournoi")), "prixParJoueur", array()), "html", null, true);
         echo "
-                                <a href=\"#\" class=\"btn btn-block btn-primary margin-top-40 ";
+                                <a href=\"";
         // line 208
-        if (( !$this->env->getExtension('Symfony\Bridge\Twig\Extension\SecurityExtension')->isGranted("ROLE_USER") || ($this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "user", array()), "points", array()) < $this->getAttribute((isset($context["tournoi"]) ? $context["tournoi"] : $this->getContext($context, "tournoi")), "prixParJoueur", array())))) {
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("participation_new", array("tournament" => $this->getAttribute((isset($context["tournoi"]) ? $context["tournoi"] : $this->getContext($context, "tournoi")), "idTournoi", array()))), "html", null, true);
+        echo "\" class=\"btn btn-block btn-primary margin-top-40 ";
+        if ((( !$this->env->getExtension('Symfony\Bridge\Twig\Extension\SecurityExtension')->isGranted("ROLE_USER") || ($this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "user", array()), "points", array()) < $this->getAttribute((isset($context["tournoi"]) ? $context["tournoi"] : $this->getContext($context, "tournoi")), "prixParJoueur", array()))) || ((isset($context["isparticipated"]) ? $context["isparticipated"] : $this->getContext($context, "isparticipated")) == 1))) {
             echo " disabled ";
         }
         echo " }\">Participate <i class=\"fa fa-heart-o margin-left-10\"></i></a>
@@ -589,10 +591,10 @@ class __TwigTemplate_fb9f7166c189b996b61079f22780a9f61d88c0432dd7b7d3287896b5fcb
     </script>
 ";
         
-        $__internal_d95d520b1744bca22e3699c0c360f52543efa64185304bdb60937f9447bd24b2->leave($__internal_d95d520b1744bca22e3699c0c360f52543efa64185304bdb60937f9447bd24b2_prof);
+        $__internal_5c22506ad8742c7c8ab3d5c67e8294475c0e27033de8cb84d3f8522de135f2c0->leave($__internal_5c22506ad8742c7c8ab3d5c67e8294475c0e27033de8cb84d3f8522de135f2c0_prof);
 
         
-        $__internal_513a04f8078de7e0571c054f92b863e62d7e3fcdaf3b0c03b8bb9977f8fa4e11->leave($__internal_513a04f8078de7e0571c054f92b863e62d7e3fcdaf3b0c03b8bb9977f8fa4e11_prof);
+        $__internal_1b8c5e9a79f8f438762fada09d612b5a11b85e5a873542d8bfcb5ccce70fe34f->leave($__internal_1b8c5e9a79f8f438762fada09d612b5a11b85e5a873542d8bfcb5ccce70fe34f_prof);
 
     }
 
@@ -608,7 +610,7 @@ class __TwigTemplate_fb9f7166c189b996b61079f22780a9f61d88c0432dd7b7d3287896b5fcb
 
     public function getDebugInfo()
     {
-        return array (  536 => 317,  532 => 316,  528 => 315,  524 => 314,  452 => 245,  442 => 238,  432 => 231,  422 => 224,  412 => 217,  398 => 208,  390 => 207,  383 => 203,  375 => 199,  371 => 197,  368 => 196,  365 => 195,  362 => 194,  359 => 193,  356 => 192,  353 => 191,  350 => 190,  348 => 189,  342 => 187,  336 => 184,  331 => 182,  325 => 179,  320 => 177,  314 => 174,  308 => 171,  303 => 169,  288 => 157,  282 => 153,  271 => 148,  267 => 147,  262 => 145,  255 => 141,  250 => 138,  246 => 137,  241 => 135,  223 => 120,  219 => 119,  215 => 118,  185 => 91,  171 => 80,  156 => 68,  141 => 56,  137 => 55,  132 => 53,  127 => 51,  109 => 36,  104 => 34,  98 => 31,  93 => 29,  77 => 16,  71 => 13,  64 => 9,  58 => 6,  54 => 5,  49 => 4,  40 => 3,  11 => 1,);
+        return array (  538 => 317,  534 => 316,  530 => 315,  526 => 314,  454 => 245,  444 => 238,  434 => 231,  424 => 224,  414 => 217,  398 => 208,  390 => 207,  383 => 203,  375 => 199,  371 => 197,  368 => 196,  365 => 195,  362 => 194,  359 => 193,  356 => 192,  353 => 191,  350 => 190,  348 => 189,  342 => 187,  336 => 184,  331 => 182,  325 => 179,  320 => 177,  314 => 174,  308 => 171,  303 => 169,  288 => 157,  282 => 153,  271 => 148,  267 => 147,  262 => 145,  255 => 141,  250 => 138,  246 => 137,  241 => 135,  223 => 120,  219 => 119,  215 => 118,  185 => 91,  171 => 80,  156 => 68,  141 => 56,  137 => 55,  132 => 53,  127 => 51,  109 => 36,  104 => 34,  98 => 31,  93 => 29,  77 => 16,  71 => 13,  64 => 9,  58 => 6,  54 => 5,  49 => 4,  40 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -794,17 +796,17 @@ class __TwigTemplate_fb9f7166c189b996b61079f22780a9f61d88c0432dd7b7d3287896b5fcb
                             <div class=\"title\">{{ tournoi.nom }}</div>
 
                             <div class=\"chart-align\">
-                                <span class=\"chart\" data-percent=\"{{ (8 / tournoi.nbrJoueur) * 100 }}\"><span class=\"percent\"></span></span>
+                                <span class=\"chart\" data-percent=\"{{ (nbp / tournoi.nbrJoueur) * 100 }}\"><span class=\"percent\"></span></span>
                             </div>
 
                             <p class=\"progress-label\">Players In <span>{{ tournoi.nbrJoueur }}</span></p>
                             <div class=\"progress progress-animation progress-xs\">
-                                <div class=\"progress-bar progress-bar-success\" aria-valuenow=\"{{ (8 / tournoi.nbrJoueur) * 100 }}\" aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width: 0%\"></div>
+                                <div class=\"progress-bar progress-bar-success\" aria-valuenow=\"{{ (nbp / tournoi.nbrJoueur) * 100 }}\" aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width: 0%\"></div>
                             </div>
 
-                            <p class=\"progress-label\">Free Places <span>{{ tournoi.nbrJoueur - 8 }}</span></p>
+                            <p class=\"progress-label\">Free Places <span>{{ tournoi.nbrJoueur - nbp }}</span></p>
                             <div class=\"progress progress-animation progress-xs\">
-                                <div class=\"progress-bar progress-bar-danger\" aria-valuenow=\"{{ ((tournoi.nbrJoueur - 8 ) / tournoi.nbrJoueur) * 100 }}\" aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width: 0%\"></div>
+                                <div class=\"progress-bar progress-bar-danger\" aria-valuenow=\"{{ ((tournoi.nbrJoueur - nbp ) / tournoi.nbrJoueur) * 100 }}\" aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width: 0%\"></div>
                             </div>
 
                             <p class=\"progress-label\">Starting <span>{% set diffdate = (tournoi.startDate|time_diff) %}{{ diffdate }}</span></p>
@@ -828,7 +830,7 @@ class __TwigTemplate_fb9f7166c189b996b61079f22780a9f61d88c0432dd7b7d3287896b5fcb
 
                             <div class=\"description\">
                                 {{ tournoi.nom | upper }}: A Tournament for {{ tournoi.idGameTrn.Name }} players ans lovers . <br> Participation fee : {{ tournoi.prixParJoueur }}
-                                <a href=\"#\" class=\"btn btn-block btn-primary margin-top-40 {% if  not(is_granted('ROLE_USER')) or (app.user.points < tournoi.prixParJoueur) %} disabled {% endif %} }\">Participate <i class=\"fa fa-heart-o margin-left-10\"></i></a>
+                                <a href=\"{{ path('participation_new',{ 'tournament':tournoi.idTournoi }) }}\" class=\"btn btn-block btn-primary margin-top-40 {% if  (not(is_granted('ROLE_USER')) or (app.user.points < tournoi.prixParJoueur) or isparticipated ==1)  %} disabled {% endif %} }\">Participate <i class=\"fa fa-heart-o margin-left-10\"></i></a>
                             </div>
                         </div>
                     </div>

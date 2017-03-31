@@ -7,8 +7,8 @@ class __TwigTemplate_6bf489ce0cad1db30a3319b5563eba3e4e1479d3a9b43cba03ec46ffbfa
     {
         parent::__construct($env);
 
-        // line 1
-        $this->parent = $this->loadTemplate("EloboostedFrontofficeBundle:Default:Layout.html.twig", "@EloboostedFrontoffice/tournoi/index.html.twig", 1);
+        // line 2
+        $this->parent = $this->loadTemplate("EloboostedFrontofficeBundle:Default:Layout.html.twig", "@EloboostedFrontoffice/tournoi/index.html.twig", 2);
         $this->blocks = array(
             'main' => array($this, 'block_main'),
         );
@@ -21,32 +21,53 @@ class __TwigTemplate_6bf489ce0cad1db30a3319b5563eba3e4e1479d3a9b43cba03ec46ffbfa
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_79f4e41a35ccbe5ee729fbcc4022bdb43123c8e094cc8bf26ade5fdf5c25ecfb = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_79f4e41a35ccbe5ee729fbcc4022bdb43123c8e094cc8bf26ade5fdf5c25ecfb->enter($__internal_79f4e41a35ccbe5ee729fbcc4022bdb43123c8e094cc8bf26ade5fdf5c25ecfb_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@EloboostedFrontoffice/tournoi/index.html.twig"));
+        $__internal_fb877a534066c3d607dc71a688bc134f7f257d21f535cd20be9e4dbf5403244b = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_fb877a534066c3d607dc71a688bc134f7f257d21f535cd20be9e4dbf5403244b->enter($__internal_fb877a534066c3d607dc71a688bc134f7f257d21f535cd20be9e4dbf5403244b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@EloboostedFrontoffice/tournoi/index.html.twig"));
 
-        $__internal_ead92a1d29cd6f439e8b64964e0c9eb6bb1e38ebc7b1011987918c6c348a8b5b = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_ead92a1d29cd6f439e8b64964e0c9eb6bb1e38ebc7b1011987918c6c348a8b5b->enter($__internal_ead92a1d29cd6f439e8b64964e0c9eb6bb1e38ebc7b1011987918c6c348a8b5b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@EloboostedFrontoffice/tournoi/index.html.twig"));
+        $__internal_99d90453dddb922ab7a45e38bd114a725e0c0c052c1efe155735c8b1d6b8e7cb = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_99d90453dddb922ab7a45e38bd114a725e0c0c052c1efe155735c8b1d6b8e7cb->enter($__internal_99d90453dddb922ab7a45e38bd114a725e0c0c052c1efe155735c8b1d6b8e7cb_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@EloboostedFrontoffice/tournoi/index.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_79f4e41a35ccbe5ee729fbcc4022bdb43123c8e094cc8bf26ade5fdf5c25ecfb->leave($__internal_79f4e41a35ccbe5ee729fbcc4022bdb43123c8e094cc8bf26ade5fdf5c25ecfb_prof);
+        $__internal_fb877a534066c3d607dc71a688bc134f7f257d21f535cd20be9e4dbf5403244b->leave($__internal_fb877a534066c3d607dc71a688bc134f7f257d21f535cd20be9e4dbf5403244b_prof);
 
         
-        $__internal_ead92a1d29cd6f439e8b64964e0c9eb6bb1e38ebc7b1011987918c6c348a8b5b->leave($__internal_ead92a1d29cd6f439e8b64964e0c9eb6bb1e38ebc7b1011987918c6c348a8b5b_prof);
+        $__internal_99d90453dddb922ab7a45e38bd114a725e0c0c052c1efe155735c8b1d6b8e7cb->leave($__internal_99d90453dddb922ab7a45e38bd114a725e0c0c052c1efe155735c8b1d6b8e7cb_prof);
 
     }
 
-    // line 2
+    // line 3
     public function block_main($context, array $blocks = array())
     {
-        $__internal_5cf36089fd9f1a2463e2c3d4ae44c9eeb4f54668b132ac2a8ba52a03fb70a9c0 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_5cf36089fd9f1a2463e2c3d4ae44c9eeb4f54668b132ac2a8ba52a03fb70a9c0->enter($__internal_5cf36089fd9f1a2463e2c3d4ae44c9eeb4f54668b132ac2a8ba52a03fb70a9c0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "main"));
+        $__internal_2faf9f2ada2f7f5229a921620ab2b5725530b267a9d7ca7c4b9e9456dcfdb68f = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_2faf9f2ada2f7f5229a921620ab2b5725530b267a9d7ca7c4b9e9456dcfdb68f->enter($__internal_2faf9f2ada2f7f5229a921620ab2b5725530b267a9d7ca7c4b9e9456dcfdb68f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "main"));
 
-        $__internal_f444f409d3293946d95ea973730ac91d101d119a32eb32a345b570c1f44cd17b = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_f444f409d3293946d95ea973730ac91d101d119a32eb32a345b570c1f44cd17b->enter($__internal_f444f409d3293946d95ea973730ac91d101d119a32eb32a345b570c1f44cd17b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "main"));
+        $__internal_8ccace946e2529ff5413134bfde09f555a638f42b061eb2c3e1335e8cd81c789 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_8ccace946e2529ff5413134bfde09f555a638f42b061eb2c3e1335e8cd81c789->enter($__internal_8ccace946e2529ff5413134bfde09f555a638f42b061eb2c3e1335e8cd81c789_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "main"));
 
-        // line 3
-        echo "    <section class=\"hero hero-games height-300\" style=\"background-image: url(";
+        // line 4
+        echo "    <script>
+        function showHint(str) {
+            if (str.length == 0) {
+                document.getElementById(\"txtHint\").innerHTML = \"\";
+                return;
+            } else {
+                var xmlhttp = new XMLHttpRequest();
+                xmlhttp.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+                        document.getElementById(\"tournoisaff\").innerHTML = this.responseText;
+                    }
+                };
+                xmlhttp.open(\"GET\", \"";
+        // line 16
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("Search_tournament");
+        echo "?word=\" + str, true);
+                xmlhttp.send();
+            }
+        }
+    </script>
+    <section class=\"hero hero-games height-300\" style=\"background-image: url(";
+        // line 21
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/cover/cover-game.jpg"), "html", null, true);
         echo ");\">
         <div class=\"hero-bg\"></div>
@@ -64,11 +85,17 @@ class __TwigTemplate_6bf489ce0cad1db30a3319b5563eba3e4e1479d3a9b43cba03ec46ffbfa
             <div class=\"headline\">
                 <h4>Recent Tournaments</h4>
                 <div class=\"btn-group pull-right\">
-                    <a href=\"games.html#\" class=\"btn btn-default\"><i class=\"fa fa-th-large no-margin\"></i></a>
-                    <a href=\"games.html#\" class=\"btn btn-default\"><i class=\"fa fa-bars no-margin\"></i></a>
+                    <a href=\"";
+        // line 37
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("tournoi_new");
+        echo "\" class=\"btn btn-default\"><i class=\"fa fa-th-large no-margin\"></i></a>
+                    <a href=\"";
+        // line 38
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("tournoi_new");
+        echo "\" class=\"btn btn-default\"><i class=\"fa fa-bars no-margin\"></i></a>
                 </div>
 
-                <input type=\"text\" class=\"form-control hidden-xs\" placeholder=\"Search Game...\">
+                <input type=\"text\" class=\"form-control hidden-xs\" placeholder=\"Search Game...\" onkeyup=\"showHint(this.value)\">
 
                 <div class=\"dropdown\">
                     <a href=\"games.html#\" class=\"btn btn-default btn-icon-left btn-icon-right dropdown-toggle\" data-toggle=\"dropdown\"><i class=\"fa fa-sort-amount-desc\"></i> Sort by <i class=\"fa fa-caret-down\"></i></a>
@@ -105,30 +132,30 @@ class __TwigTemplate_6bf489ce0cad1db30a3319b5563eba3e4e1479d3a9b43cba03ec46ffbfa
 
 
     <section class=\"bg-grey-50\">
-        <div class=\"container\">
+        <div class=\"container\" >
 
-            <div class=\"row\">
+            <div class=\"row\" name=\"tournoisaff\" id=\"tournoisaff\">
                 ";
-        // line 63
+        // line 81
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["tournois"]) ? $context["tournois"] : $this->getContext($context, "tournois")));
         foreach ($context['_seq'] as $context["_key"] => $context["tournoi"]) {
-            // line 64
+            // line 82
             echo "                    <div class=\"col-lg-4 col-md-4 col-sm-6 col-xs-12\">
                         <div class=\"card\">
                             <div class=\"card-img\">
                                 <a href=\"";
-            // line 67
+            // line 85
             echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("tournoi_show", array("id" => $this->getAttribute($context["tournoi"], "idTournoi", array()))), "html", null, true);
             echo "\"><img
                                             src=\"data:image/png;base64,";
-            // line 68
+            // line 86
             echo twig_escape_filter($this->env, $this->getAttribute($context["tournoi"], "imageTournoi", array()), "html", null, true);
             echo "\" alt=\"\"
                                             style=\"height: 200px; background-color: #4B5F71\"></a>
                                 <div class=\"category\"><span
                                             class=\"label label-success\">";
-            // line 71
+            // line 89
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["tournoi"], "idCompteTrn", array()), "nom", array()), "html", null, true);
             echo "</span></div>
                                 <div class=\"meta\"><a href=\"games-single.html\"><i class=\"fa fa-child\"></i>6</a></div>
@@ -137,7 +164,7 @@ class __TwigTemplate_6bf489ce0cad1db30a3319b5563eba3e4e1479d3a9b43cba03ec46ffbfa
                             <div class=\"caption\">
                                 <h3 class=\"card-title\"><a
                                             href=\"";
-            // line 77
+            // line 95
             echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("tournoi_show", array("id" => $this->getAttribute($context["tournoi"], "idTournoi", array()))), "html", null, true);
             echo "\">";
             echo twig_escape_filter($this->env, $this->getAttribute($context["tournoi"], "nom", array()), "html", null, true);
@@ -145,24 +172,24 @@ class __TwigTemplate_6bf489ce0cad1db30a3319b5563eba3e4e1479d3a9b43cba03ec46ffbfa
                                 </h3>
                                 <ul>
                                     <li>Coming ";
-            // line 80
+            // line 98
             echo twig_escape_filter($this->env, twig_date_format_filter($this->env, $this->getAttribute($context["tournoi"], "startDate", array()), "Y-m-d H:i:s"), "html", null, true);
             echo "</li>
                                 </ul>
                                 <p>
                                 <div id=\"clock";
-            // line 83
+            // line 101
             echo twig_escape_filter($this->env, $this->getAttribute($context["tournoi"], "idTournoi", array()), "html", null, true);
             echo "\"></div>
-                                <img src=\"";
-            // line 84
+                                <!--<img src=\"";
+            // line 102
             echo twig_escape_filter($this->env, $this->env->getExtension('Endroid\Bundle\QrCodeBundle\Twig\Extension\QrCodeExtension')->qrcodeUrlFunction("dsds", array("extension" => "png")), "html", null, true);
-            echo "\" />
+            echo "\" />-->
                                 </p>
                                 <script>
                                     // Set the date we're counting down to
                                     var countDownDate";
-            // line 88
+            // line 106
             echo twig_escape_filter($this->env, $this->getAttribute($context["tournoi"], "idTournoi", array()), "html", null, true);
             echo " = new Date(\"";
             echo twig_escape_filter($this->env, twig_date_format_filter($this->env, $this->getAttribute($context["tournoi"], "startDate", array())), "html", null, true);
@@ -176,7 +203,7 @@ class __TwigTemplate_6bf489ce0cad1db30a3319b5563eba3e4e1479d3a9b43cba03ec46ffbfa
 
                                         // Find the distance between now an the count down date
                                         var distance = countDownDate";
-            // line 97
+            // line 115
             echo twig_escape_filter($this->env, $this->getAttribute($context["tournoi"], "idTournoi", array()), "html", null, true);
             echo " - now;
 
@@ -188,7 +215,7 @@ class __TwigTemplate_6bf489ce0cad1db30a3319b5563eba3e4e1479d3a9b43cba03ec46ffbfa
 
                                         // Output the result in an element with id=\"demo\"
                                         document.getElementById(\"clock";
-            // line 106
+            // line 124
             echo twig_escape_filter($this->env, $this->getAttribute($context["tournoi"], "idTournoi", array()), "html", null, true);
             echo "\").innerHTML = days + \"d \" + hours + \"h \"
                                             + minutes + \"m \" + seconds + \"s \";
@@ -197,9 +224,9 @@ class __TwigTemplate_6bf489ce0cad1db30a3319b5563eba3e4e1479d3a9b43cba03ec46ffbfa
                                         if (distance < 0) {
                                             clearInterval(x);
                                             document.getElementById(\"clock";
-            // line 112
+            // line 130
             echo twig_escape_filter($this->env, $this->getAttribute($context["tournoi"], "idTournoi", array()), "html", null, true);
-            echo "\").innerHTML = \"EXPIRED\";
+            echo "\").innerHTML = \"Started\";
                                         }
                                     });
                                 </script>
@@ -212,7 +239,7 @@ class __TwigTemplate_6bf489ce0cad1db30a3319b5563eba3e4e1479d3a9b43cba03ec46ffbfa
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['tournoi'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 121
+        // line 139
         echo "
             </div>
 
@@ -220,18 +247,18 @@ class __TwigTemplate_6bf489ce0cad1db30a3319b5563eba3e4e1479d3a9b43cba03ec46ffbfa
                 <li class=\"disabled\"><a href=\"games.html#\">Previous</a></li>
                 
                 ";
-        // line 127
+        // line 145
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable(range(1, (isset($context["pages"]) ? $context["pages"] : $this->getContext($context, "pages"))));
         foreach ($context['_seq'] as $context["_key"] => $context["i"]) {
-            // line 128
+            // line 146
             echo "
                     <li ";
-            // line 129
+            // line 147
             echo (((1 == $context["i"])) ? ("class=\"disabled\"") : (""));
             echo ">
                         <a href=\"";
-            // line 130
+            // line 148
             echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("tournoi_index", array("p" => $context["i"])), "html", null, true);
             echo "\">";
             echo twig_escape_filter($this->env, $context["i"], "html", null, true);
@@ -242,25 +269,18 @@ class __TwigTemplate_6bf489ce0cad1db30a3319b5563eba3e4e1479d3a9b43cba03ec46ffbfa
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['i'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 133
+        // line 151
         echo "                <li><a href=\"games.html#\">Next</a></li>
             </ul>
         </div>
-        <ul>
-            <li>
-                <a href=\"";
-        // line 138
-        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("tournoi_new");
-        echo "\">Create a new tournoi</a>
-            </li>
-        </ul>
+
     </section>
 ";
         
-        $__internal_f444f409d3293946d95ea973730ac91d101d119a32eb32a345b570c1f44cd17b->leave($__internal_f444f409d3293946d95ea973730ac91d101d119a32eb32a345b570c1f44cd17b_prof);
+        $__internal_8ccace946e2529ff5413134bfde09f555a638f42b061eb2c3e1335e8cd81c789->leave($__internal_8ccace946e2529ff5413134bfde09f555a638f42b061eb2c3e1335e8cd81c789_prof);
 
         
-        $__internal_5cf36089fd9f1a2463e2c3d4ae44c9eeb4f54668b132ac2a8ba52a03fb70a9c0->leave($__internal_5cf36089fd9f1a2463e2c3d4ae44c9eeb4f54668b132ac2a8ba52a03fb70a9c0_prof);
+        $__internal_2faf9f2ada2f7f5229a921620ab2b5725530b267a9d7ca7c4b9e9456dcfdb68f->leave($__internal_2faf9f2ada2f7f5229a921620ab2b5725530b267a9d7ca7c4b9e9456dcfdb68f_prof);
 
     }
 
@@ -276,7 +296,7 @@ class __TwigTemplate_6bf489ce0cad1db30a3319b5563eba3e4e1479d3a9b43cba03ec46ffbfa
 
     public function getDebugInfo()
     {
-        return array (  253 => 138,  246 => 133,  235 => 130,  231 => 129,  228 => 128,  224 => 127,  216 => 121,  201 => 112,  192 => 106,  180 => 97,  166 => 88,  159 => 84,  155 => 83,  149 => 80,  141 => 77,  132 => 71,  126 => 68,  122 => 67,  117 => 64,  113 => 63,  49 => 3,  40 => 2,  11 => 1,);
+        return array (  273 => 151,  262 => 148,  258 => 147,  255 => 146,  251 => 145,  243 => 139,  228 => 130,  219 => 124,  207 => 115,  193 => 106,  186 => 102,  182 => 101,  176 => 98,  168 => 95,  159 => 89,  153 => 86,  149 => 85,  144 => 82,  140 => 81,  94 => 38,  90 => 37,  71 => 21,  63 => 16,  49 => 4,  40 => 3,  11 => 2,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -289,8 +309,26 @@ class __TwigTemplate_6bf489ce0cad1db30a3319b5563eba3e4e1479d3a9b43cba03ec46ffbfa
 
     public function getSourceContext()
     {
-        return new Twig_Source("{% extends 'EloboostedFrontofficeBundle:Default:Layout.html.twig' %}
+        return new Twig_Source("
+{% extends 'EloboostedFrontofficeBundle:Default:Layout.html.twig' %}
 {% block main %}
+    <script>
+        function showHint(str) {
+            if (str.length == 0) {
+                document.getElementById(\"txtHint\").innerHTML = \"\";
+                return;
+            } else {
+                var xmlhttp = new XMLHttpRequest();
+                xmlhttp.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+                        document.getElementById(\"tournoisaff\").innerHTML = this.responseText;
+                    }
+                };
+                xmlhttp.open(\"GET\", \"{{ path('Search_tournament') }}?word=\" + str, true);
+                xmlhttp.send();
+            }
+        }
+    </script>
     <section class=\"hero hero-games height-300\" style=\"background-image: url({{ asset('img/cover/cover-game.jpg') }});\">
         <div class=\"hero-bg\"></div>
         <div class=\"container\">
@@ -307,11 +345,11 @@ class __TwigTemplate_6bf489ce0cad1db30a3319b5563eba3e4e1479d3a9b43cba03ec46ffbfa
             <div class=\"headline\">
                 <h4>Recent Tournaments</h4>
                 <div class=\"btn-group pull-right\">
-                    <a href=\"games.html#\" class=\"btn btn-default\"><i class=\"fa fa-th-large no-margin\"></i></a>
-                    <a href=\"games.html#\" class=\"btn btn-default\"><i class=\"fa fa-bars no-margin\"></i></a>
+                    <a href=\"{{ path('tournoi_new') }}\" class=\"btn btn-default\"><i class=\"fa fa-th-large no-margin\"></i></a>
+                    <a href=\"{{ path('tournoi_new') }}\" class=\"btn btn-default\"><i class=\"fa fa-bars no-margin\"></i></a>
                 </div>
 
-                <input type=\"text\" class=\"form-control hidden-xs\" placeholder=\"Search Game...\">
+                <input type=\"text\" class=\"form-control hidden-xs\" placeholder=\"Search Game...\" onkeyup=\"showHint(this.value)\">
 
                 <div class=\"dropdown\">
                     <a href=\"games.html#\" class=\"btn btn-default btn-icon-left btn-icon-right dropdown-toggle\" data-toggle=\"dropdown\"><i class=\"fa fa-sort-amount-desc\"></i> Sort by <i class=\"fa fa-caret-down\"></i></a>
@@ -348,9 +386,9 @@ class __TwigTemplate_6bf489ce0cad1db30a3319b5563eba3e4e1479d3a9b43cba03ec46ffbfa
 
 
     <section class=\"bg-grey-50\">
-        <div class=\"container\">
+        <div class=\"container\" >
 
-            <div class=\"row\">
+            <div class=\"row\" name=\"tournoisaff\" id=\"tournoisaff\">
                 {% for tournoi in tournois %}
                     <div class=\"col-lg-4 col-md-4 col-sm-6 col-xs-12\">
                         <div class=\"card\">
@@ -372,7 +410,7 @@ class __TwigTemplate_6bf489ce0cad1db30a3319b5563eba3e4e1479d3a9b43cba03ec46ffbfa
                                 </ul>
                                 <p>
                                 <div id=\"clock{{ tournoi.idTournoi }}\"></div>
-                                <img src=\"{{ qrcode_url(\"dsds\", { extension: 'png' }) }}\" />
+                                <!--<img src=\"{{ qrcode_url(\"dsds\", { extension: 'png' }) }}\" />-->
                                 </p>
                                 <script>
                                     // Set the date we're counting down to
@@ -400,7 +438,7 @@ class __TwigTemplate_6bf489ce0cad1db30a3319b5563eba3e4e1479d3a9b43cba03ec46ffbfa
                                         // If the count down is over, write some text
                                         if (distance < 0) {
                                             clearInterval(x);
-                                            document.getElementById(\"clock{{ tournoi.idTournoi }}\").innerHTML = \"EXPIRED\";
+                                            document.getElementById(\"clock{{ tournoi.idTournoi }}\").innerHTML = \"Started\";
                                         }
                                     });
                                 </script>
@@ -424,11 +462,7 @@ class __TwigTemplate_6bf489ce0cad1db30a3319b5563eba3e4e1479d3a9b43cba03ec46ffbfa
                 <li><a href=\"games.html#\">Next</a></li>
             </ul>
         </div>
-        <ul>
-            <li>
-                <a href=\"{{ path('tournoi_new') }}\">Create a new tournoi</a>
-            </li>
-        </ul>
+
     </section>
 {% endblock %}
 ", "@EloboostedFrontoffice/tournoi/index.html.twig", "C:\\wamp\\www\\sprintweb\\src\\Eloboosted\\FrontofficeBundle\\Resources\\views\\tournoi\\index.html.twig");

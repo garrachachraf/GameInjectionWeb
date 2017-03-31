@@ -130,6 +130,55 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
                     return array (  '_controller' => 'Eloboosted\\BackofficeBundle\\Controller\\TournoiController::indexAction',  '_route' => 'eloboosted_backoffice_tournoi',);
                 }
 
+                // eloboosted_backoffice_updatetournoi
+                if ($pathinfo === '/admin/updatet') {
+                    return array (  '_controller' => 'Eloboosted\\BackofficeBundle\\Controller\\TournoiController::upAction',  '_route' => 'eloboosted_backoffice_updatetournoi',);
+                }
+
+                // eloboosted_backoffice_tournoi_show
+                if (preg_match('#^/admin/(?P<id>[^/]++)/showTournament$#s', $pathinfo, $matches)) {
+                    if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                        $allow = array_merge($allow, array('GET', 'HEAD'));
+                        goto not_eloboosted_backoffice_tournoi_show;
+                    }
+
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'eloboosted_backoffice_tournoi_show')), array (  '_controller' => 'Eloboosted\\BackofficeBundle\\Controller\\TournoiController::showAction',));
+                }
+                not_eloboosted_backoffice_tournoi_show:
+
+                // eloboosted_backoffice_tournoi_new
+                if ($pathinfo === '/admin/newTournament') {
+                    if (!in_array($this->context->getMethod(), array('GET', 'POST', 'HEAD'))) {
+                        $allow = array_merge($allow, array('GET', 'POST', 'HEAD'));
+                        goto not_eloboosted_backoffice_tournoi_new;
+                    }
+
+                    return array (  '_controller' => 'Eloboosted\\BackofficeBundle\\Controller\\TournoiController::newAction',  '_route' => 'eloboosted_backoffice_tournoi_new',);
+                }
+                not_eloboosted_backoffice_tournoi_new:
+
+                // eloboosted_backoffice_tournoi_edit
+                if (preg_match('#^/admin/(?P<id>[^/]++)/editTournament$#s', $pathinfo, $matches)) {
+                    if (!in_array($this->context->getMethod(), array('GET', 'POST', 'HEAD'))) {
+                        $allow = array_merge($allow, array('GET', 'POST', 'HEAD'));
+                        goto not_eloboosted_backoffice_tournoi_edit;
+                    }
+
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'eloboosted_backoffice_tournoi_edit')), array (  '_controller' => 'Eloboosted\\BackofficeBundle\\Controller\\TournoiController::editAction',));
+                }
+                not_eloboosted_backoffice_tournoi_edit:
+
+                // eloboosted_backoffice_tournoi_delete
+                if (preg_match('#^/admin/(?P<id>[^/]++)/deleteTournament$#s', $pathinfo, $matches)) {
+                    if ($this->context->getMethod() != 'DELETE') {
+                        $allow[] = 'DELETE';
+                        goto not_eloboosted_backoffice_tournoi_delete;
+                    }
+
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'eloboosted_backoffice_tournoi_delete')), array (  '_controller' => 'EloboostedBacktofficeBundle:Tournoi:delete',));
+                }
+                not_eloboosted_backoffice_tournoi_delete:
+
                 // AccountReports
                 if ($pathinfo === '/admin/AccountReports') {
                     return array (  '_controller' => 'Eloboosted\\BackofficeBundle\\Controller\\CompteController::AccountReportsAction',  '_route' => 'AccountReports',);
@@ -151,6 +200,11 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
                 // eloboosted_backoffice_games
                 if ($pathinfo === '/admin/games') {
                     return array (  '_controller' => 'Eloboosted\\BackofficeBundle\\Controller\\GamesController::indexAction',  '_route' => 'eloboosted_backoffice_games',);
+                }
+
+                // addcategorypost
+                if ($pathinfo === '/admin/addcategorypost') {
+                    return array (  '_controller' => 'Eloboosted\\BackofficeBundle\\Controller\\PostController::addcategorypostAction',  '_route' => 'addcategorypost',);
                 }
 
             }
@@ -394,6 +448,16 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
             return $this->mergeDefaults(array_replace($matches, array('_route' => 'yes_delete')), array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\GamesController::deleteAction',));
         }
         not_yes_delete:
+
+        // Search_tournament
+        if ($pathinfo === '/Searchtournament') {
+            return array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\TournoiController::serachtournamentAction',  '_route' => 'Search_tournament',);
+        }
+
+        // participation_new
+        if (0 === strpos($pathinfo, '/Participate') && preg_match('#^/Participate/(?P<tournament>[^/]++)$#s', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'participation_new')), array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\ParticipationController::newParticipationAction',));
+        }
 
         if (0 === strpos($pathinfo, '/login')) {
             // eloboosted_login_homepage

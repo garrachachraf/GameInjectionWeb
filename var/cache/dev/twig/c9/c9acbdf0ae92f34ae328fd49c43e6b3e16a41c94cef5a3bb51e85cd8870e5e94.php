@@ -21,29 +21,29 @@ class __TwigTemplate_3802b33dc017089f8c85eddc9bdf32b7bf8345508b5e623f9afcf6bf7e6
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_d9866c4066c62a1bc70d241dcd090a6890881398df90b50e3b3f3daf4172263b = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_d9866c4066c62a1bc70d241dcd090a6890881398df90b50e3b3f3daf4172263b->enter($__internal_d9866c4066c62a1bc70d241dcd090a6890881398df90b50e3b3f3daf4172263b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EloboostedFrontofficeBundle:Post:readPost.html.twig"));
+        $__internal_70426ce96ac1ddb779bd62505a9283213e5475d2dadd513b341ad79ad4436189 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_70426ce96ac1ddb779bd62505a9283213e5475d2dadd513b341ad79ad4436189->enter($__internal_70426ce96ac1ddb779bd62505a9283213e5475d2dadd513b341ad79ad4436189_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EloboostedFrontofficeBundle:Post:readPost.html.twig"));
 
-        $__internal_40def315719090114900d034ae8280ed629b06441788285eb059019a617fad45 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_40def315719090114900d034ae8280ed629b06441788285eb059019a617fad45->enter($__internal_40def315719090114900d034ae8280ed629b06441788285eb059019a617fad45_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EloboostedFrontofficeBundle:Post:readPost.html.twig"));
+        $__internal_499aa3621b18d9e342c8487a6e3a6e69150a114ba8890278da9fbbce4a01aa6c = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_499aa3621b18d9e342c8487a6e3a6e69150a114ba8890278da9fbbce4a01aa6c->enter($__internal_499aa3621b18d9e342c8487a6e3a6e69150a114ba8890278da9fbbce4a01aa6c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EloboostedFrontofficeBundle:Post:readPost.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_d9866c4066c62a1bc70d241dcd090a6890881398df90b50e3b3f3daf4172263b->leave($__internal_d9866c4066c62a1bc70d241dcd090a6890881398df90b50e3b3f3daf4172263b_prof);
+        $__internal_70426ce96ac1ddb779bd62505a9283213e5475d2dadd513b341ad79ad4436189->leave($__internal_70426ce96ac1ddb779bd62505a9283213e5475d2dadd513b341ad79ad4436189_prof);
 
         
-        $__internal_40def315719090114900d034ae8280ed629b06441788285eb059019a617fad45->leave($__internal_40def315719090114900d034ae8280ed629b06441788285eb059019a617fad45_prof);
+        $__internal_499aa3621b18d9e342c8487a6e3a6e69150a114ba8890278da9fbbce4a01aa6c->leave($__internal_499aa3621b18d9e342c8487a6e3a6e69150a114ba8890278da9fbbce4a01aa6c_prof);
 
     }
 
     // line 3
     public function block_main($context, array $blocks = array())
     {
-        $__internal_86ce57e3958edc950a14d5e7a7981e22309bc117e72ac38160441e7b68b1cd03 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_86ce57e3958edc950a14d5e7a7981e22309bc117e72ac38160441e7b68b1cd03->enter($__internal_86ce57e3958edc950a14d5e7a7981e22309bc117e72ac38160441e7b68b1cd03_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "main"));
+        $__internal_6d49e4ec59c17ff77a1107697ba85ed111cda29f41630c76812b3695890626d0 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_6d49e4ec59c17ff77a1107697ba85ed111cda29f41630c76812b3695890626d0->enter($__internal_6d49e4ec59c17ff77a1107697ba85ed111cda29f41630c76812b3695890626d0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "main"));
 
-        $__internal_98225b70b202a5061e311b5303e3d1ac94d9e4d5197c330de20f1fb5f02e2fd2 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_98225b70b202a5061e311b5303e3d1ac94d9e4d5197c330de20f1fb5f02e2fd2->enter($__internal_98225b70b202a5061e311b5303e3d1ac94d9e4d5197c330de20f1fb5f02e2fd2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "main"));
+        $__internal_5302a7e7b2bcc692aae164b6fe58afa9ecbec29da990d011f0b4a6a0605b4653 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_5302a7e7b2bcc692aae164b6fe58afa9ecbec29da990d011f0b4a6a0605b4653->enter($__internal_5302a7e7b2bcc692aae164b6fe58afa9ecbec29da990d011f0b4a6a0605b4653_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "main"));
 
         // line 4
         echo "    <script src=\"";
@@ -120,20 +120,37 @@ class __TwigTemplate_3802b33dc017089f8c85eddc9bdf32b7bf8345508b5e623f9afcf6bf7e6
                 <div class=\"headline\">
                     <h4><i class=\"fa fa-comments\"></i> Forum Post Thread</h4>
                     <div class=\"pull-right\">
-                        <a href=\"";
-        // line 64
-        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("AddPost");
-        echo "\" class=\"btn btn-primary btn-icon-left\"><i class=\"fa fa-comments\"></i> new Post</a>
+
                         ";
         // line 65
-        if (($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "user", array()) == $this->getAttribute((isset($context["post"]) ? $context["post"] : $this->getContext($context, "post")), "idComptePost", array()))) {
+        if (($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "user", array()) != null)) {
             // line 66
+            echo "                            <a href=\"";
+            echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("AddPost");
+            echo "\" class=\"btn btn-primary btn-icon-left\"><i class=\"fa fa-comments\"></i> new post</a>
+                        ";
+        } elseif (($this->getAttribute(        // line 67
+(isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "user", array()) == null)) {
+            // line 68
+            echo "                            <a href=\"";
+            echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("check_logins");
+            echo "\" class=\"btn btn-primary btn-icon-left\"><i class=\"fa fa-comments\"></i> new post</a>
+
+                        ";
+        }
+        // line 71
+        echo "
+
+                        ";
+        // line 73
+        if (($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "user", array()) == $this->getAttribute((isset($context["post"]) ? $context["post"] : $this->getContext($context, "post")), "idComptePost", array()))) {
+            // line 74
             echo "                        <a href=\"";
             echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("removePost", array("idPost" => $this->getAttribute((isset($context["post"]) ? $context["post"] : $this->getContext($context, "post")), "idPost", array()))), "html", null, true);
             echo "\" data-message=\"Are you sure you want to delete this post?\"  class=\"btn btn-default btn-icon-left\"><i class=\"fa fa-edit\"></i>remove Post</a>
                         ";
         }
-        // line 68
+        // line 76
         echo "
 
                     </div>
@@ -143,32 +160,32 @@ class __TwigTemplate_3802b33dc017089f8c85eddc9bdf32b7bf8345508b5e623f9afcf6bf7e6
                     <div class=\"forum-panel\">
                         <div class=\"forum-user\">
                             <a  href=\"";
-        // line 76
+        // line 84
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("userProfile", array("id" => $this->getAttribute($this->getAttribute((isset($context["post"]) ? $context["post"] : $this->getContext($context, "post")), "idComptePost", array()), "idCompte", array()))), "html", null, true);
         echo "\" class=\"avatar\"><img src=";
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["post"]) ? $context["post"] : $this->getContext($context, "post")), "idComptePost", array()), "image", array()), "html", null, true);
         echo " alt=\"\"></a>
                             <div>
                                 <a href=\"";
-        // line 78
+        // line 86
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("userProfile", array("id" => $this->getAttribute($this->getAttribute((isset($context["post"]) ? $context["post"] : $this->getContext($context, "post")), "idComptePost", array()), "idCompte", array()))), "html", null, true);
         echo "\">";
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["post"]) ? $context["post"] : $this->getContext($context, "post")), "idComptePost", array()), "pseudo", array()), "html", null, true);
         echo "</a>
                                 <span>Birth day</span>
                                 <span class=\"date\">";
-        // line 80
+        // line 88
         echo twig_escape_filter($this->env, twig_date_format_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["post"]) ? $context["post"] : $this->getContext($context, "post")), "idComptePost", array()), "dateDeNaissance", array())), "html", null, true);
         echo "</span>
                             </div>
                         </div>
                         <div class=\"forum-body\">
                             <h4>";
-        // line 84
+        // line 92
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["post"]) ? $context["post"] : $this->getContext($context, "post")), "titre", array()), "html", null, true);
         echo ",</h4>
                             <p>";
-        // line 85
+        // line 93
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["post"]) ? $context["post"] : $this->getContext($context, "post")), "sujet", array()), "html", null, true);
         echo "</p>
                         </div>
@@ -176,49 +193,49 @@ class __TwigTemplate_3802b33dc017089f8c85eddc9bdf32b7bf8345508b5e623f9afcf6bf7e6
                     <div class=\"forum-footer\">
                         <ul class=\"post-action\">
                             ";
-        // line 90
+        // line 98
         $context["y1"] = 0;
-        // line 91
+        // line 99
         echo "                            ";
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable($context["postreported"]);
         foreach ($context['_seq'] as $context["_key"] => $context["postreported"]) {
-            // line 92
+            // line 100
             echo "                                ";
             if (($this->getAttribute((isset($context["post"]) ? $context["post"] : $this->getContext($context, "post")), "idPost", array()) == $this->getAttribute($this->getAttribute($context["postreported"], "idPostSng", array()), "idPost", array()))) {
-                // line 93
+                // line 101
                 echo "                                    ";
                 $context["y1"] = 1;
-                // line 94
+                // line 102
                 echo "                                ";
             }
-            // line 95
+            // line 103
             echo "
                             ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['postreported'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 97
+        // line 105
         echo "                            ";
         if (((isset($context["y1"]) ? $context["y1"] : $this->getContext($context, "y1")) == 1)) {
-            // line 98
+            // line 106
             echo "                            <li><a style=\"color: #A00000\"><i class=\"fa fa-flag\"></i> Reported</a></li>
 
                             ";
         } else {
-            // line 101
+            // line 109
             echo "                            <li><a href=\"";
             echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("report", array("id" => $this->getAttribute((isset($context["post"]) ? $context["post"] : $this->getContext($context, "post")), "idPost", array()))), "html", null, true);
             echo "\"><i class=\"fa fa-flag\"></i> Report</a></li>
                             ";
         }
-        // line 103
+        // line 111
         echo "
                         </ul>
                         <ul class=\"post-meta\">
                             <li><i class=\"fa fa-calendar-o\"></i>";
-        // line 106
+        // line 114
         echo twig_escape_filter($this->env, twig_date_format_filter($this->env, $this->getAttribute((isset($context["post"]) ? $context["post"] : $this->getContext($context, "post")), "date", array())), "html", null, true);
         echo "</li>
 
@@ -231,7 +248,7 @@ class __TwigTemplate_3802b33dc017089f8c85eddc9bdf32b7bf8345508b5e623f9afcf6bf7e6
 
 <div id=\"commentaire\">
     ";
-        // line 116
+        // line 124
         echo $this->env->getRuntime('Symfony\Bridge\Twig\Extension\HttpKernelRuntime')->renderFragment(Symfony\Bridge\Twig\Extension\HttpKernelExtension::controller("EloboostedFrontofficeBundle:Post:commentaire", array("id" => $this->getAttribute((isset($context["post"]) ? $context["post"] : $this->getContext($context, "post")), "idPost", array()))));
         echo "
 </div>
@@ -242,7 +259,7 @@ class __TwigTemplate_3802b33dc017089f8c85eddc9bdf32b7bf8345508b5e623f9afcf6bf7e6
                 <div  name=\"zone2\" class=\"panel panel-default margin-bottom-30\">
                     <div class=\"panel-body\">
                         <form class=\"form-label\" id =\"ajoutmessage\" enctype=\"multipart/form-data\" action=\"";
-        // line 124
+        // line 132
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("Addcommentaire");
         echo "\">
 
@@ -252,34 +269,34 @@ class __TwigTemplate_3802b33dc017089f8c85eddc9bdf32b7bf8345508b5e623f9afcf6bf7e6
                                 <div class=\"col-md-10\" >
 
                                     ";
-        // line 131
+        // line 139
         if (($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "user", array()) == null)) {
-            // line 132
+            // line 140
             echo "                                        <input type=\"text\" class=\"form-control\" required  id=\"textcommentaire\" name=\"replay\" placeholder=\"You need to login first \" style=\"height:200px;\">
                                     ";
-        } elseif (($this->getAttribute(        // line 133
+        } elseif (($this->getAttribute(        // line 141
 (isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "user", array()) != null)) {
-            // line 134
+            // line 142
             echo "                                        <input type=\"text\" class=\"form-control\" required  id=\"textcommentaire\" name=\"replay\" placeholder=\"Add Message\" style=\"height:200px;\">
                                     ";
         }
-        // line 136
+        // line 144
         echo "
                                 </div>
                             </div>
                              ";
-        // line 139
+        // line 147
         if (($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "user", array()) == null)) {
-            // line 140
+            // line 148
             echo "                            <div class=\"text-center\"><input type=\"submit\" name=\"btn\" value=\"SUBMIT\"  disabled class=\"btn btn-primary btn-lg btn-rounded btn-shadow\"></div>
                              ";
-        } elseif (($this->getAttribute(        // line 141
+        } elseif (($this->getAttribute(        // line 149
 (isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "user", array()) != null)) {
-            // line 142
+            // line 150
             echo "                            <div class=\"text-center\"><input type=\"submit\" name=\"btn\" value=\"SUBMIT\" class=\"btn btn-primary btn-lg btn-rounded btn-shadow\"></div>
                             ";
         }
-        // line 144
+        // line 152
         echo "                        </form>
                     </div>
                 </div>
@@ -291,10 +308,10 @@ class __TwigTemplate_3802b33dc017089f8c85eddc9bdf32b7bf8345508b5e623f9afcf6bf7e6
 
 ";
         
-        $__internal_98225b70b202a5061e311b5303e3d1ac94d9e4d5197c330de20f1fb5f02e2fd2->leave($__internal_98225b70b202a5061e311b5303e3d1ac94d9e4d5197c330de20f1fb5f02e2fd2_prof);
+        $__internal_5302a7e7b2bcc692aae164b6fe58afa9ecbec29da990d011f0b4a6a0605b4653->leave($__internal_5302a7e7b2bcc692aae164b6fe58afa9ecbec29da990d011f0b4a6a0605b4653_prof);
 
         
-        $__internal_86ce57e3958edc950a14d5e7a7981e22309bc117e72ac38160441e7b68b1cd03->leave($__internal_86ce57e3958edc950a14d5e7a7981e22309bc117e72ac38160441e7b68b1cd03_prof);
+        $__internal_6d49e4ec59c17ff77a1107697ba85ed111cda29f41630c76812b3695890626d0->leave($__internal_6d49e4ec59c17ff77a1107697ba85ed111cda29f41630c76812b3695890626d0_prof);
 
     }
 
@@ -310,7 +327,7 @@ class __TwigTemplate_3802b33dc017089f8c85eddc9bdf32b7bf8345508b5e623f9afcf6bf7e6
 
     public function getDebugInfo()
     {
-        return array (  283 => 144,  279 => 142,  277 => 141,  274 => 140,  272 => 139,  267 => 136,  263 => 134,  261 => 133,  258 => 132,  256 => 131,  246 => 124,  235 => 116,  222 => 106,  217 => 103,  211 => 101,  206 => 98,  203 => 97,  196 => 95,  193 => 94,  190 => 93,  187 => 92,  182 => 91,  180 => 90,  172 => 85,  168 => 84,  161 => 80,  154 => 78,  147 => 76,  137 => 68,  131 => 66,  129 => 65,  125 => 64,  109 => 51,  105 => 50,  86 => 34,  66 => 17,  49 => 4,  40 => 3,  11 => 2,);
+        return array (  300 => 152,  296 => 150,  294 => 149,  291 => 148,  289 => 147,  284 => 144,  280 => 142,  278 => 141,  275 => 140,  273 => 139,  263 => 132,  252 => 124,  239 => 114,  234 => 111,  228 => 109,  223 => 106,  220 => 105,  213 => 103,  210 => 102,  207 => 101,  204 => 100,  199 => 99,  197 => 98,  189 => 93,  185 => 92,  178 => 88,  171 => 86,  164 => 84,  154 => 76,  148 => 74,  146 => 73,  142 => 71,  135 => 68,  133 => 67,  128 => 66,  126 => 65,  109 => 51,  105 => 50,  86 => 34,  66 => 17,  49 => 4,  40 => 3,  11 => 2,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -386,7 +403,15 @@ class __TwigTemplate_3802b33dc017089f8c85eddc9bdf32b7bf8345508b5e623f9afcf6bf7e6
                 <div class=\"headline\">
                     <h4><i class=\"fa fa-comments\"></i> Forum Post Thread</h4>
                     <div class=\"pull-right\">
-                        <a href=\"{{ path('AddPost') }}\" class=\"btn btn-primary btn-icon-left\"><i class=\"fa fa-comments\"></i> new Post</a>
+
+                        {% if app.user!=null %}
+                            <a href=\"{{ path('AddPost') }}\" class=\"btn btn-primary btn-icon-left\"><i class=\"fa fa-comments\"></i> new post</a>
+                        {% elseif app.user==null %}
+                            <a href=\"{{ path('check_logins') }}\" class=\"btn btn-primary btn-icon-left\"><i class=\"fa fa-comments\"></i> new post</a>
+
+                        {% endif %}
+
+
                         {% if app.user == post.idComptePost %}
                         <a href=\"{{ path('removePost',{'idPost':post.idPost }) }}\" data-message=\"Are you sure you want to delete this post?\"  class=\"btn btn-default btn-icon-left\"><i class=\"fa fa-edit\"></i>remove Post</a>
                         {% endif %}

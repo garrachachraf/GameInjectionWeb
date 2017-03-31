@@ -43,3 +43,7 @@ WarnSender:
 eloboosted_backoffice_games:
     path:     /games
     defaults: { _controller: EloboostedBackofficeBundle:Games:index }
+
+addcategorypost:
+    path:     /addcategorypost
+    defaults: { _controller: EloboostedBackofficeBundle:Post:addcategorypost }
