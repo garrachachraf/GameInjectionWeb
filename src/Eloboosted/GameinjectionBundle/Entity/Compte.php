@@ -4,6 +4,7 @@ namespace Eloboosted\GameinjectionBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\UserInterface;
+use Cunningsoft\ChatBundle\Entity\AuthorInterface;
 
 /**
  * Compte
@@ -11,7 +12,7 @@ use Symfony\Component\Security\Core\User\UserInterface;
  * @ORM\Table(name="compte")
  * @ORM\Entity(repositoryClass="Eloboosted\GameinjectionBundle\Entity\CompteRepository")
  */
-class Compte  implements UserInterface
+class Compte  implements UserInterface,AuthorInterface
 {
     /**
      * @var integer
@@ -508,5 +509,12 @@ class Compte  implements UserInterface
         // TODO: Implement eraseCredentials() method.
     }
 
+    /**
+     * @return string
+     */
+    public function __toString()
+    {
+        return $this->pseudo;
+    }
 }
 

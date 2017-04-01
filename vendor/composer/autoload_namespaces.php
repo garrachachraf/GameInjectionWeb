@@ -11,6 +11,7 @@ return array(
     'SensioLabs\\Security' => array($vendorDir . '/sensiolabs/security-checker'),
     'Nomaya\\SocialBundle\\' => array($vendorDir . '/nomaya/social-bundle'),
     'Knp\\Component' => array($vendorDir . '/knplabs/knp-components/src'),
+    'Knp\\Bundle\\TimeBundle' => array($vendorDir . '/knplabs/knp-time-bundle'),
     'Doctrine\\ORM\\' => array($vendorDir . '/doctrine/orm/lib'),
     'Doctrine\\DBAL\\' => array($vendorDir . '/doctrine/dbal/lib'),
     'Doctrine\\Common\\Lexer\\' => array($vendorDir . '/doctrine/lexer/lib'),

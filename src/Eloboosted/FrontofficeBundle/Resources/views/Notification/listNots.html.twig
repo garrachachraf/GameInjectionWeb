@@ -75,8 +75,12 @@
 
 <ul  class="dropdown-menu">
     {% for notification in notifications %}
-        {% if notification.forum != null %}
+        {% if notification.forum != null and notification.message == null and notification.invite == null  %}
             <li><a href="{{ path('readPost',{idPost : notification.forum}) }}">{{ notification.contenu }}</a></li>
+        {% endif %}
+
+        {% if notification.forum == null and notification.message != null and notification.invite == null  %}
+            <li><a href="{{ path('myInbox') }}">{{ notification.contenu }}</a></li>
         {% endif %}
 
         {% if notification.invite != null %}

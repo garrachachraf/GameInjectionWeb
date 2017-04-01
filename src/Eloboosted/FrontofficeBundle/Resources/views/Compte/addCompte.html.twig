@@ -10,7 +10,12 @@
             $('#SubmitBtn').hide();
             $('#SubmitBtn').prop('disabled', true);
 
+            //////////////////////
+            //////////////////////
+           // $('.class1').add('.class2').on('click', some_function);
 
+            //////////////////////
+            //////////////////////
 
             $('#dateInput').change(function() {
                 var today =new Date();
@@ -88,12 +93,14 @@
             </div>
         </div>
     </section>
-    <section class="elements bg-white padding-top-10 padding-bottom-50"  >
-
-        <div class="container">
+    <section class="hero hero-panel" style="background-image: url({{ asset('FOassets/img/cover/cover-register.jpg') }});"  >
+        <div class="hero-bg"></div>
+        <div class="container relative">
             <form method="POST"  enctype="multipart/form-data"  action="{{ path('accountcreation') }}">
             <div class="row">
-                <div class="col-lg-7">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 pull-none margin-auto">
+                    <div class="panel panel-default panel-login">
+                        <div class="panel-body">
                     <div class="title">
                         <h3> Registed new account</h3>
                     </div>
@@ -163,15 +170,14 @@
                     <div class="text-center margin-top-30">
                         <button type="button" id="firstCheck" class="btn btn-success btn-lg btn-rounded btn-shadow">Comfirm</button>
                     </div>
-
+                    </div>
+                </div>
                 </div>
             </div>
                 </form>
 
 
-                <div class="col-lg-5 height-300">
-                    <img src="{{ asset('img/content/contact.jpg') }}"  width="120%" height="150%"  class="image-right padding-top-50" alt="">
-                </div>
+
             </div>
 
         </div>

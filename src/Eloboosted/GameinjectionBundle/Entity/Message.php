@@ -36,9 +36,12 @@ class Message
     private $contenu;
 
     /**
-     * @var integer
+     * @var \Compte
      *
-     * @ORM\Column(name="emetteur_msg", type="integer", nullable=false)
+     * @ORM\ManyToOne(targetEntity="Compte")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="emetteur_msg", referencedColumnName="id_compte")
+     * })
      */
     private $emetteurMsg;
 
@@ -108,7 +111,7 @@ class Message
     }
 
     /**
-     * @return int
+     * @return \Compte
      */
     public function getEmetteurMsg()
     {
@@ -116,7 +119,7 @@ class Message
     }
 
     /**
-     * @param int $emetteurMsg
+     * @param \Compte $emetteurMsg
      */
     public function setEmetteurMsg($emetteurMsg)
     {
@@ -154,6 +157,8 @@ class Message
     {
         $this->recepteurMsg = $recepteurMsg;
     }
+
+
 
 
 }

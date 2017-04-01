@@ -23,6 +23,8 @@ class AppKernel extends Kernel
             new Eloboosted\BackofficeBundle\EloboostedBackofficeBundle(),
             new Nomaya\SocialBundle\NomayaSocialBundle(),
             new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
+            new Knp\Bundle\TimeBundle\KnpTimeBundle(),
+            new Cunningsoft\ChatBundle\CunningsoftChatBundle(),
 
 
         ];

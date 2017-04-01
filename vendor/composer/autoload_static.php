@@ -38,6 +38,7 @@ class ComposerStaticInit2554ac6f5d571f82debebd2d3d7133d2
             'Symfony\\Bridge\\PhpUnit\\' => 23,
             'Symfony\\Bridge\\Monolog\\' => 23,
             'Symfony\\Bridge\\Doctrine\\' => 24,
+            'Snilius\\Twig\\' => 13,
             'Sensio\\Bundle\\GeneratorBundle\\' => 30,
             'Sensio\\Bundle\\FrameworkExtraBundle\\' => 35,
             'Sensio\\Bundle\\DistributionBundle\\' => 33,
@@ -134,6 +135,10 @@ class ComposerStaticInit2554ac6f5d571f82debebd2d3d7133d2
         'Symfony\\Bridge\\Doctrine\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/symfony/src/Symfony/Bridge/Doctrine',
+        ),
+        'Snilius\\Twig\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/snilius/twig-sort-by-field/src',
         ),
         'Sensio\\Bundle\\GeneratorBundle\\' => 
         array (
@@ -232,6 +237,10 @@ class ComposerStaticInit2554ac6f5d571f82debebd2d3d7133d2
             'Knp\\Component' => 
             array (
                 0 => __DIR__ . '/..' . '/knplabs/knp-components/src',
+            ),
+            'Knp\\Bundle\\TimeBundle' => 
+            array (
+                0 => __DIR__ . '/..' . '/knplabs/knp-time-bundle',
             ),
         ),
         'D' => 

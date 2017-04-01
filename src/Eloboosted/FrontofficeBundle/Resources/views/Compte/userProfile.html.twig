@@ -13,6 +13,32 @@
     <script type="text/javascript" src="{{ asset('assets/jquery/jquery-1.9.1.js') }}"></script>
     <script>
         $(document).ready(function () {
+
+            $('#SendMessageBtn').click( function (e) {
+
+                var msg =$('#MessageContent').val();
+                var idEnv = {{ userInfo.idCompte }} ;
+
+
+                $.ajax({
+                    url: '{{ path('sendMessage') }}',
+                    type: 'post',
+                    data: { MessageContent : msg , id : idEnv},
+                    dataType: 'json', // JSON
+                    success: function (data) {
+                        alert("Message successfully sent !");
+                    },
+                    error: function (data) {
+
+                        console.log('error');
+                    }
+                });
+
+                $('#MessageContent').val('');
+
+            })
+
+
             $('#sendInvite').click(
                 function () {
 
@@ -34,8 +60,10 @@
 
 
                 });
+
         })
     </script>
+
     <!-- FAVICON -->
     <link rel="shortcut icon" href="img/favicon.ico">
 
@@ -312,12 +340,7 @@
         <div class="tab-select sticky">
             <div class="container">
                 <ul class="nav nav-tabs" role="tablist">
-                    <li class="active"><a href="profile.html#">Timeline</a></li>
-                    <li><a href="profile.html#">About</a></li>
-                    <li><a href="profile.html#">Friends <span>({{ ProfileCompteFriends|length }})</span></a></li>
-                    <li><a href="profile.html#">Images <span>(8)</span></a></li>
-                    <li><a href="profile.html#">Videos <span>(2)</span></a></li>
-                    <li><a href="profile.html#">Groups</a></li>
+                    <li class="active"><a href="profile.html#">{{ userInfo.pseudo }}'s timeline</a></li>
                 </ul>
             </div>
         </div>
@@ -341,20 +364,7 @@
                         </div>
                     </div>
 
-                    <div class="widget">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">Navigation</div>
-                            <div class="panel-body no-padding">
-                                <ul class="panel-list-bordered">
-                                    <li><a href="profile.html#"><i class="fa fa-gamepad"></i> Games (4)</a></li>
-                                    <li><a href="profile.html#"><i class="fa fa-film"></i> Videos (2)</a></li>
-                                    <li><a href="profile.html#"><i class="fa fa-picture-o"></i> Galleries (3)</a></li>
-                                    <li><a href="profile.html#"><i class="fa fa-calendar-o"></i> Events</a></li>
-                                    <li><a href="profile.html#"><i class="fa fa-users"></i> Groups (1)</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+
 
                     <div class="widget widget-friends">
                         <div class="panel panel-default">
@@ -369,6 +379,7 @@
                                             {% endif %}
                                         {% endfor %}
                                     {% endfor %}
+
 
                                 </ul>
                             </div>
@@ -423,107 +434,87 @@
 
                 <div class="col-md-9 col-sm-8">
                     <div class="panel panel-default margin-bottom-40">
+
                         <div class="panel-body">
+                            <input type="text" name="id" value="{{ userInfo.idCompte }}" hidden>
                             <div class="form-group">
-                                <textarea class="form-control" rows="4" placeholder="What's in your head?..."></textarea>
+                                <textarea class="form-control" id="MessageContent" rows="4" placeholder="Wanna get to know the user more ??? send him a mssage 😛..."></textarea>
                             </div>
                             <div class="btn-group pull-left">
-                                <a href="profile.html#" class="btn btn-link btn-icon-left no-padding-left"><i class="fa fa-image"></i> Image</a>
-                                <a href="profile.html#" class="btn btn-link btn-icon-left"><i class="fa fa-film"></i> Video</a>
-                                <a href="profile.html#" class="btn btn-link btn-icon-left"><i class="fa fa-map-marker"></i> Location</a>
+                                <a class="btn btn-link btn-icon-left no-padding-left"><i class="fa fa-smile-o"></i> Send a message to {{ userInfo.pseudo }}</a>
+
                             </div>
-                            <button type="submit" class="btn btn-primary btn-icon-left pull-right"><i class="fa fa-edit"></i> Submit</button>
+                            <button type="button" id="SendMessageBtn" class="btn btn-primary btn-icon-left pull-right"><i class="fa fa-edit"></i> Submit</button>
                         </div>
+
                     </div>
 
-                    <div class="panel panel-default panel-post">
-                        <div class="panel-body">
+                    {% for item in activitiesTotal | sortbyfield('date') | reverse %}
+                        {% if item.idCommentaire is defined %}
                             <div class="post">
-                                <div class="post-header post-author">
-                                    <a href="profile.html#" class="author" data-toggle="tooltip" title="YAKUZI"><img src="img/user/avatar.jpg" alt=""></a>
-                                    <div class="post-title">
-                                        <h3><a href="profile.html#">Deadpool Gets the Movie He Deserves</a></h3>
-                                        <ul class="post-meta">
-                                            <li><i class="fa fa-calendar-o"></i> April 13, 2016</li>
-                                            <li><a href="profile.html#">#hashtag</a>, <a href="profile.html#">#witcher 3</a></li>
+                                <h4 class="page-header text-center no-padding"><i class="fa fa-clock-o"></i>Commented {{ item.date|ago }} </h4>
+                                <div class="panel panel-default panel-post">
+                                    <div class="panel-body">
+                                        <div class="post">
+                                            <div class="post-header post-author">
+                                                <a href="{{ path('userProfile',{id : item.idPostCp.idComptePost.idCompte}) }}" class="author" data-toggle="tooltip" title="YAKUZI"><img src="{{ item.idPostCp.idComptePost.image }}" alt=""></a>
+                                                <div class="post-title">
+                                                    <h3><a>{{ item.idPostCp.titre }}</a></h3>
+                                                    <ul class="post-meta">
+                                                        <li><i class="fa fa-calendar-o"></i> {{ item.idPostCp.date|date }}</li>
+                                                        <li> Category : {{ item.idPostCp.cathegorieSpecifique.nom }}</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        {{ item.idPostCp.sujet }}
+                                        </div>
+                                    </div>
+                                    <div class="panel-footer">
+                                        <ul class="post-action">
+                                            <li><i class="fa fa-comments"></i> Comments (insert value here) </li>
                                         </ul>
                                     </div>
                                 </div>
-                                Etiam et sollicitudin elit. Sed ultrices aliquet dui, eu aliquet metus sodales sit amet. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis porttitor varius pulvinar. Vivamus efficitur vulputate imperdiet.
                             </div>
-                        </div>
-                        <div class="panel-footer">
-                            <ul class="post-action">
-                                <li><a href="profile.html#"><i class="fa fa-heart"></i> like (5)</a></li>
-                                <li><a href="profile.html#"><i class="fa fa-comments"></i> Comments</a></li>
-                                <li><a href="profile.html#"><i class="fa fa-reply"></i> share</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="panel panel-default panel-post">
-                        <div class="panel-body">
+                        {% else %}
                             <div class="post">
-                                <div class="post-header post-author">
-                                    <a href="profile.html#" class="author" data-toggle="tooltip" title="YAKUZI"><img src="img/user/avatar.jpg" alt=""></a>
-                                    <div class="post-title">
-                                        <h3><a href="profile.html#">Official Mirror’s Edge Catalyst Trailer</a></h3>
-                                        <ul class="post-meta">
-                                            <li><i class="fa fa-calendar-o"></i> April 13, 2016</li>
-                                            <li><a href="profile.html#">#hashtag</a>, <a href="profile.html#">#witcher 3</a></li>
-                                        </ul>
+                                    <h4 class="page-header text-center no-padding"><i class="fa fa-clock-o"></i>Created a post {{ item.date|ago }} </h4>
+                                    <div class="panel panel-default panel-post">
+                                        <div class="panel-body">
+                                            <div class="post">
+                                                <div class="post-header post-author">
+                                                    <a href="{{ path('userProfile',{id : item.idComptePost.idCOmpte}) }}" class="author" data-toggle="tooltip" title="YAKUZI"><img src="{{ item.idComptePost.image }}" alt=""></a>
+                                                    <div class="post-title">
+                                                        <h3><a>{{ item.titre }}</a></h3>
+                                                        <ul class="post-meta">
+                                                            <li><i class="fa fa-calendar-o"></i> {{ item.date|date }}</li>
+                                                            <li> Category : {{ item.cathegorieSpecifique.nom }}</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                {{ item.sujet }}
+                                            </div>
+                                        </div>
+                                        <div class="panel-footer">
+                                            <ul class="post-action">
+                                                <li><i class="fa fa-comments"></i> Comments (insert value here) </li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                </div>
-
-                                <div class="post-thumbnail">
-                                    <div class="embed-responsive embed-responsive-16by9">
-                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/IsDX_LiJT7E?rel=0&amp;showinfo=0" allowfullscreen></iframe>
-                                    </div>
-                                </div>
-
-                                Etiam et sollicitudin elit. Sed ultrices aliquet dui, eu aliquet metus sodales sit amet. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis porttitor varius pulvinar. Vivamus efficitur vulputate imperdiet.
-                            </div>
-                        </div>
-                        <div class="panel-footer">
-                            <ul class="post-action">
-                                <li><a href="profile.html#" class="active"><i class="fa fa-heart"></i> you like it (7)</a></li>
-                                <li><a href="profile.html#"><i class="fa fa-comments"></i> Comments</a></li>
-                                <li><a href="profile.html#"><i class="fa fa-reply"></i> share</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <h4 class="page-header text-center no-padding"><i class="fa fa-clock-o"></i> February, 2016</h4>
-                    <div class="panel panel-default panel-post">
-                        <div class="panel-body">
                             <div class="post">
-                                <div class="post-header post-author">
-                                    <a href="profile.html#" class="author" data-toggle="tooltip" title="YAKUZI"><img src="img/user/avatar.jpg" alt=""></a>
-                                    <div class="post-title">
-                                        <h3><a href="profile.html#">The Witcher 3 is Game of the Year</a></h3>
-                                        <ul class="post-meta">
-                                            <li><i class="fa fa-calendar-o"></i> April 13, 2016</li>
-                                            <li><a href="profile.html#">#hashtag</a>, <a href="profile.html#">#witcher 3</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                Etiam et sollicitudin elit. Sed ultrices aliquet dui, eu aliquet metus sodales sit amet. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis porttitor varius pulvinar. Vivamus efficitur vulputate imperdiet.
-                            </div>
-                        </div>
-                        <div class="panel-footer">
-                            <ul class="post-action">
-                                <li><a href="profile.html#"><i class="fa fa-heart"></i> like (5)</a></li>
-                                <li><a href="profile.html#"><i class="fa fa-comments"></i> Comments</a></li>
-                                <li><a href="profile.html#"><i class="fa fa-reply"></i> share</a></li>
-                            </ul>
-                        </div>
-                    </div>
+                        {% endif %}
+                    {% endfor %}
 
-                    <center><a href="profile.html#" class="btn btn-primary btn-lg btn-shadow btn-rounded">Show More</a></center>
+
+
+                    <center><input type="button" id="showMore" class="btn btn-primary" value="Show More"></center>
                 </div>
             </div>
         </div>
+            </div>
+        </div>
     </section>
+
 </div>
 <!-- /#wrapper -->
 

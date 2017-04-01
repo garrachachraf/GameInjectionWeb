@@ -91,6 +91,19 @@ RefuseInvFromNot:
     path: /RefuseInvFromNot
     defaults: { _controller:  EloboostedFrontofficeBundle:Notification:RefuseInvFromNot }
 
+myInbox:
+    path: /myInbox
+    defaults: { _controller:  EloboostedFrontofficeBundle:Compte:myInbox }
+
+editAccount:
+    path:     /editAccount
+    defaults: { _controller: EloboostedFrontofficeBundle:Compte:editAccount}
+accountEdit:
+    path:     /accountEdit
+    defaults: { _controller: EloboostedFrontofficeBundle:Compte:edit}
+sendMessage:
+    path: /sendMessage
+    defaults: { _controller:  EloboostedFrontofficeBundle:Message:sendMessage }
 myProfile:
     path: /myProfile
     defaults: { _controller:  EloboostedFrontofficeBundle:Compte:myProfile }

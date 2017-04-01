@@ -42,6 +42,8 @@ class CompteController extends Controller
         return new JsonResponse(array('data'=>json_encode('success')));
     }
 
+
+
     public function userProfileAction(Request $request)
     {
         $em = $this->getDoctrine()->getManager();
@@ -63,6 +65,14 @@ class CompteController extends Controller
 
         $dejaAmi=in_array($currentCompte,$resultFriendCompte,true);
 
+        $forumActivity=$em->getRepository('EloboostedGameinjectionBundle:Post')->findBy(array('idComptePost'=>$userId));
+        $CommentaireActivity=$em->getRepository('EloboostedGameinjectionBundle:CommentairePost')->findBy(array('idCompteCp'=>$userId));
+
+//
+
+        $activitiesTotal=array_merge_recursive($CommentaireActivity, $forumActivity);
+
+
 
 
 
@@ -70,7 +80,7 @@ class CompteController extends Controller
         $attenteInvite=$em->getRepository('EloboostedGameinjectionBundle:Notification')->findOneBy(array('invite'=> $currentCompte->getIdCompte(),'idCompteNot'=>$userInfo));
         $verifInvite=Count($attenteInvite);
 
-        return $this->render('EloboostedFrontofficeBundle:Compte:userProfile.html.twig',array('userInfo'=>$userInfo,'CurrentCompteFriends'=>$resultCurrentCompte,'ProfileCompteFriends'=>$resultFriendCompte,'dejaAmi'=>$dejaAmi,'attenteInvite'=>$verifInvite));
+        return $this->render('EloboostedFrontofficeBundle:Compte:userProfile.html.twig',array('userInfo'=>$userInfo,'CurrentCompteFriends'=>$resultCurrentCompte,'ProfileCompteFriends'=>$resultFriendCompte,'dejaAmi'=>$dejaAmi,'attenteInvite'=>$verifInvite,'activitiesTotal'=>$activitiesTotal));
     }
 
     public function myProfileAction()
@@ -85,6 +95,20 @@ class CompteController extends Controller
         return $this->render('EloboostedFrontofficeBundle:Compte:myProfile.html.twig',array('lstAmi'=>$result));
     }
 
+    public function myInboxAction()
+    {
+        $em = $this->getDoctrine()->getManager();
+        $compte=$this->get('security.token_storage')->getToken()->getUser();
+
+        $res1=$em->getRepository('EloboostedGameinjectionBundle:Compte')->findByAmiCommun1($compte->getIdCompte());
+        $res2=$em->getRepository('EloboostedGameinjectionBundle:Compte')->findByAmiCommun2($compte->getIdCompte());
+
+        $allmessages=$em->getRepository('EloboostedGameinjectionBundle:Message')->findBy(array('recepteurMsg'=>$compte->getIdCompte()));
+
+        $result=array_merge_recursive($res1, $res2);
+        return $this->render('EloboostedFrontofficeBundle:Compte:myInbox.html.twig',array('lstAmi'=>$result,'myMsgs'=>$allmessages));
+    }
+
     public function createAccountAction()
     {
         $compte = new Compte();
@@ -93,6 +117,50 @@ class CompteController extends Controller
         return $this->render('EloboostedFrontofficeBundle:Compte:addCompte.html.twig');
     }
 
+    public function editAccountAction()
+    {
+        $em = $this->getDoctrine()->getManager();
+        $compte = new Compte();
+        $compte=$em->getRepository('EloboostedGameinjectionBundle:Compte')->find($this->get('security.token_storage')->getToken()->getUser()->getIdCompte());
+
+
+
+        return $this->render('EloboostedFrontofficeBundle:Compte:editCompte.html.twig',array('userInfo'=>$compte));
+    }
+
+    public function editAction(Request $request)
+    {
+        $em = $this->getDoctrine()->getManager();
+        $compte =new Compte();
+        $compte=$em->getRepository('EloboostedGameinjectionBundle:Compte')->find($this->get('security.token_storage')->getToken()->getUser()->getIdCompte());
+
+        if ($request->isMethod('POST'))
+        {
+            $file=$request->files->get('image');
+            //var_dump($request->get('DateDeNaissance'));
+            $compte->setPrenom($request->get('Prenom'));
+            $compte->setNom($request->get('Nom'));
+            $compte->setPseudo($request->get('Pseudo'));
+            $time = new \DateTime($request->get('DateDeNaissance'));
+            $compte->setMotDePasse($request->get('MotDePasse'));
+            $compte->setTelNum($request->get('TelNum'));
+            $compte->setEmail($request->get('Email'));
+            $compte->setDateDeNaissance($time);
+            if($file != null)
+            {
+                $compte->setImage($request->files->get('image'));
+            }
+            $em = $this->getDoctrine()->getManager();
+
+            $em->persist($compte);
+            $em->flush();
+
+
+
+            return($this->redirectToRoute("home"));
+        }
+        return $this->render('@EloboostedFrontofficeBundle:Compte:editCompte.html.twig');
+    }
 
     public function accountcreationAction(Request $request)
     {
@@ -108,7 +176,7 @@ class CompteController extends Controller
             $compte->setPseudo($request->get('Pseudo'));
             $time = new \DateTime($request->get('DateDeNaissance'));
             $compte->setMotDePasse($request->get('MotDePasse'));
-            $compte->setTelNum(0);
+            $compte->setTelNum($request->get('TelNum'));
             $compte->setEmail($request->get('Email'));
             $compte->setEtat(0);
             $compte->setPoints(0);
@@ -125,7 +193,7 @@ class CompteController extends Controller
 
 
 
-            return($this->redirectToRoute("showAllPosts"));
+            return($this->redirectToRoute("home"));
         }
         return $this->render('@EloboostedFrontofficeBundle:Products:addProduct.html.twig');
     }
