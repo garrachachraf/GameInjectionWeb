@@ -106,8 +106,13 @@
                             <li><a style="color: #A00000"><i class="fa fa-flag"></i> Reported</a></li>
 
                             {% else %}
+                           {% if app.user!= null %}
                             <li><a href="{{ path('report',{'id':post.idPost }) }}"><i class="fa fa-flag"></i> Report</a></li>
-                            {% endif %}
+                           {% else %}
+                               <li><a style="color: #0a0a0a"><i class="fa fa-flag"></i> Report</a></li>
+
+                           {% endif %}
+                           {% endif %}
 
                         </ul>
                         <ul class="post-meta">

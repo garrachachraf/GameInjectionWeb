@@ -95,7 +95,42 @@ class SignalisationController extends Controller
 //
 //
 //        $em = $this->getDoctrine()->getManager();
+
 //
+
+        ////////////
+if($signalisation->getIdCommentaireSng() == null) {
+    $idpost = $signalisation->getIdPostSng()->getIdPost();
+    $post = $em->getRepository("EloboostedGameinjectionBundle:Post")->find($idpost);
+    $commentaire = $em->getRepository("EloboostedGameinjectionBundle:CommentairePost")->findBy(array("idPostCp" => $idpost));
+
+
+    foreach ($commentaire as $c) {
+
+        $em->remove($c);
+        $em->flush();
+
+    }
+
+    $em->remove($post);
+    $em->flush();
+}
+
+
+else if ($signalisation != null)
+{
+    $commentaire1 = $signalisation->getIdCommentaireSng();
+    $em->remove($commentaire1);
+    $em->flush();
+
+}
+        //////////
+
+
+
+
+
+
         $em->persist($notification);
         $em->persist($target);
         $em->remove($signalisation);

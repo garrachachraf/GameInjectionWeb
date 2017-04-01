@@ -15,11 +15,11 @@ class __TwigTemplate_29033af1667f2e2bc4b2580c5ac01a5f7fd67dd4e9464e8267bfda58ec4
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_d0a9aceddfde223ea92a45e00b07492b573cd61a9e7a8d9d24aad8e7cc46b0c6 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_d0a9aceddfde223ea92a45e00b07492b573cd61a9e7a8d9d24aad8e7cc46b0c6->enter($__internal_d0a9aceddfde223ea92a45e00b07492b573cd61a9e7a8d9d24aad8e7cc46b0c6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@EloboostedFrontoffice/Post/commentaire.html.twig"));
+        $__internal_f8c80afbfc213d7f68ef4a64ff2cf5a4e088196a58e6f188c3832b9d2e8ad5f0 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_f8c80afbfc213d7f68ef4a64ff2cf5a4e088196a58e6f188c3832b9d2e8ad5f0->enter($__internal_f8c80afbfc213d7f68ef4a64ff2cf5a4e088196a58e6f188c3832b9d2e8ad5f0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@EloboostedFrontoffice/Post/commentaire.html.twig"));
 
-        $__internal_0b0b22b4c815978cfb99cdcd5badba50f8a54a96af3fee3a9e8b994add9b2c02 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_0b0b22b4c815978cfb99cdcd5badba50f8a54a96af3fee3a9e8b994add9b2c02->enter($__internal_0b0b22b4c815978cfb99cdcd5badba50f8a54a96af3fee3a9e8b994add9b2c02_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@EloboostedFrontoffice/Post/commentaire.html.twig"));
+        $__internal_b60ac11c5191c56939d2786e7d1e4b916005d5c7ecd8480504715c8d82905ad9 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_b60ac11c5191c56939d2786e7d1e4b916005d5c7ecd8480504715c8d82905ad9->enter($__internal_b60ac11c5191c56939d2786e7d1e4b916005d5c7ecd8480504715c8d82905ad9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@EloboostedFrontoffice/Post/commentaire.html.twig"));
 
         // line 1
         $context["img"] = null;
@@ -120,15 +120,32 @@ class __TwigTemplate_29033af1667f2e2bc4b2580c5ac01a5f7fd67dd4e9464e8267bfda58ec4
             echo "                ";
             if (((isset($context["a"]) ? $context["a"] : $this->getContext($context, "a")) == 0)) {
                 // line 36
-                echo "                    <li><a  href=\"";
-                echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("like", array("id" => $this->getAttribute($context["commentaire"], "idCommentaire", array()), "post" => $this->getAttribute($this->getAttribute($context["commentaire"], "idPostCp", array()), "idPost", array()))), "html", null, true);
-                echo "\"><i class=\"fa fa-heart\"></i> like (";
-                echo twig_escape_filter($this->env, (isset($context["y"]) ? $context["y"] : $this->getContext($context, "y")), "html", null, true);
-                echo ")</a></li>
-                ";
-            } elseif ((            // line 37
-(isset($context["a"]) ? $context["a"] : $this->getContext($context, "a")) == 1)) {
-                // line 38
+                echo "
+
+
+                    ";
+                // line 39
+                if (($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "user", array()) != null)) {
+                    // line 40
+                    echo "                        <li><a  href=\"";
+                    echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("like", array("id" => $this->getAttribute($context["commentaire"], "idCommentaire", array()), "post" => $this->getAttribute($this->getAttribute($context["commentaire"], "idPostCp", array()), "idPost", array()))), "html", null, true);
+                    echo "\"><i class=\"fa fa-heart\"></i> like (";
+                    echo twig_escape_filter($this->env, (isset($context["y"]) ? $context["y"] : $this->getContext($context, "y")), "html", null, true);
+                    echo ")</a></li>
+                    ";
+                } else {
+                    // line 42
+                    echo "                        <li><a style=\"color: #0a0a0a\" ><i class=\"fa fa-heart\"></i> like (";
+                    echo twig_escape_filter($this->env, (isset($context["y"]) ? $context["y"] : $this->getContext($context, "y")), "html", null, true);
+                    echo ")</a></li>
+
+
+                    ";
+                }
+                // line 46
+                echo "                ";
+            } elseif (((isset($context["a"]) ? $context["a"] : $this->getContext($context, "a")) == 1)) {
+                // line 47
                 echo "                    <li><a style=\"color: #00AEEF\" href=\"";
                 echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("like", array("id" => $this->getAttribute($context["commentaire"], "idCommentaire", array()), "post" => $this->getAttribute($this->getAttribute($context["commentaire"], "idPostCp", array()), "idPost", array()))), "html", null, true);
                 echo "\"><i class=\"fa fa-heart1\"></i> Unlike  (";
@@ -136,67 +153,83 @@ class __TwigTemplate_29033af1667f2e2bc4b2580c5ac01a5f7fd67dd4e9464e8267bfda58ec4
                 echo ")</a></li>
                 ";
             }
-            // line 40
+            // line 49
             echo "                ";
             $context["y"] = 0;
-            // line 41
+            // line 50
             echo "                ";
             $context["x"] = $this->getAttribute($context["commentaire"], "idCommentaire", array());
-            // line 42
+            // line 51
             echo "
 
 
                 ";
-            // line 45
+            // line 54
             $context["y1"] = 0;
-            // line 46
+            // line 55
             echo "                ";
             $context['_parent'] = $context;
             $context['_seq'] = twig_ensure_traversable($context["commentreported"]);
             foreach ($context['_seq'] as $context["_key"] => $context["commentreported"]) {
-                // line 47
+                // line 56
                 echo "
                     ";
-                // line 48
+                // line 57
                 if (($this->getAttribute($context["commentreported"], "idCommentaireSng", array()) != null)) {
-                    // line 49
+                    // line 58
                     echo "                    ";
                     if (($this->getAttribute($context["commentaire"], "idCommentaire", array()) == $this->getAttribute($this->getAttribute($context["commentreported"], "idCommentaireSng", array()), "idCommentaire", array()))) {
-                        // line 50
+                        // line 59
                         echo "                        ";
                         $context["y1"] = 1;
-                        // line 51
+                        // line 60
                         echo "                    ";
                     }
-                    // line 52
+                    // line 61
                     echo "                    ";
                 }
-                // line 53
+                // line 62
                 echo "                ";
             }
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['commentreported'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 54
+            // line 63
             echo "                ";
             if (((isset($context["y1"]) ? $context["y1"] : $this->getContext($context, "y1")) == 1)) {
-                // line 55
+                // line 64
                 echo "                    <li><a style=\"color: #A00000\"><i class=\"fa fa-flag\"></i> Reported</a></li>
 
                 ";
             } else {
-                // line 58
-                echo "                    <li><a href=\"";
-                echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("reportcomment", array("id" => $this->getAttribute($context["commentaire"], "idCommentaire", array()))), "html", null, true);
-                echo "\"><i class=\"fa fa-flag\"></i> Report </a></li>
+                // line 67
+                echo "
+
+                    ";
+                // line 69
+                if (($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "user", array()) != null)) {
+                    // line 70
+                    echo "                        <li><a href=\"";
+                    echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("reportcomment", array("id" => $this->getAttribute($context["commentaire"], "idCommentaire", array()))), "html", null, true);
+                    echo "\"><i class=\"fa fa-flag\"></i> Report </a></li>
+                    ";
+                } else {
+                    // line 72
+                    echo "                        <li><a style=\"color: #0a0a0a\"><i class=\"fa fa-flag\"></i> Report</a></li>
+
+                    ";
+                }
+                // line 75
+                echo "
+
                 ";
             }
-            // line 60
+            // line 78
             echo "
             </ul>
             <ul class=\"post-meta\">
                 <li><i class=\"fa fa-calendar-o\"></i>";
-            // line 63
+            // line 81
             echo twig_escape_filter($this->env, twig_date_format_filter($this->env, $this->getAttribute($context["commentaire"], "date", array())), "html", null, true);
             echo "</li>
 
@@ -209,10 +242,10 @@ class __TwigTemplate_29033af1667f2e2bc4b2580c5ac01a5f7fd67dd4e9464e8267bfda58ec4
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['commentaire'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
         
-        $__internal_d0a9aceddfde223ea92a45e00b07492b573cd61a9e7a8d9d24aad8e7cc46b0c6->leave($__internal_d0a9aceddfde223ea92a45e00b07492b573cd61a9e7a8d9d24aad8e7cc46b0c6_prof);
+        $__internal_f8c80afbfc213d7f68ef4a64ff2cf5a4e088196a58e6f188c3832b9d2e8ad5f0->leave($__internal_f8c80afbfc213d7f68ef4a64ff2cf5a4e088196a58e6f188c3832b9d2e8ad5f0_prof);
 
         
-        $__internal_0b0b22b4c815978cfb99cdcd5badba50f8a54a96af3fee3a9e8b994add9b2c02->leave($__internal_0b0b22b4c815978cfb99cdcd5badba50f8a54a96af3fee3a9e8b994add9b2c02_prof);
+        $__internal_b60ac11c5191c56939d2786e7d1e4b916005d5c7ecd8480504715c8d82905ad9->leave($__internal_b60ac11c5191c56939d2786e7d1e4b916005d5c7ecd8480504715c8d82905ad9_prof);
 
     }
 
@@ -228,7 +261,7 @@ class __TwigTemplate_29033af1667f2e2bc4b2580c5ac01a5f7fd67dd4e9464e8267bfda58ec4
 
     public function getDebugInfo()
     {
-        return array (  200 => 63,  195 => 60,  189 => 58,  184 => 55,  181 => 54,  175 => 53,  172 => 52,  169 => 51,  166 => 50,  163 => 49,  161 => 48,  158 => 47,  153 => 46,  151 => 45,  146 => 42,  143 => 41,  140 => 40,  132 => 38,  130 => 37,  123 => 36,  120 => 35,  114 => 34,  111 => 33,  108 => 32,  105 => 31,  100 => 30,  98 => 29,  92 => 28,  89 => 27,  86 => 26,  83 => 25,  79 => 24,  74 => 21,  72 => 20,  66 => 17,  59 => 13,  52 => 11,  49 => 10,  47 => 9,  41 => 8,  37 => 6,  35 => 5,  31 => 3,  27 => 2,  25 => 1,);
+        return array (  233 => 81,  228 => 78,  223 => 75,  218 => 72,  212 => 70,  210 => 69,  206 => 67,  201 => 64,  198 => 63,  192 => 62,  189 => 61,  186 => 60,  183 => 59,  180 => 58,  178 => 57,  175 => 56,  170 => 55,  168 => 54,  163 => 51,  160 => 50,  157 => 49,  149 => 47,  146 => 46,  138 => 42,  130 => 40,  128 => 39,  123 => 36,  120 => 35,  114 => 34,  111 => 33,  108 => 32,  105 => 31,  100 => 30,  98 => 29,  92 => 28,  89 => 27,  86 => 26,  83 => 25,  79 => 24,  74 => 21,  72 => 20,  66 => 17,  59 => 13,  52 => 11,  49 => 10,  47 => 9,  41 => 8,  37 => 6,  35 => 5,  31 => 3,  27 => 2,  25 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -276,7 +309,16 @@ class __TwigTemplate_29033af1667f2e2bc4b2580c5ac01a5f7fd67dd4e9464e8267bfda58ec4
                 {% endif %}
                 {% endfor %}
                 {% if a==0 %}
-                    <li><a  href=\"{{ path('like',{id : commentaire.idCommentaire, post : commentaire.idPostCp.idPost  }) }}\"><i class=\"fa fa-heart\"></i> like ({{ y }})</a></li>
+
+
+
+                    {% if app.user!= null %}
+                        <li><a  href=\"{{ path('like',{id : commentaire.idCommentaire, post : commentaire.idPostCp.idPost  }) }}\"><i class=\"fa fa-heart\"></i> like ({{ y }})</a></li>
+                    {% else %}
+                        <li><a style=\"color: #0a0a0a\" ><i class=\"fa fa-heart\"></i> like ({{ y }})</a></li>
+
+
+                    {% endif %}
                 {% elseif a==1 %}
                     <li><a style=\"color: #00AEEF\" href=\"{{  path('like',{id : commentaire.idCommentaire, post : commentaire.idPostCp.idPost}) }}\"><i class=\"fa fa-heart1\"></i> Unlike  ({{ y }})</a></li>
                 {% endif %}
@@ -298,7 +340,16 @@ class __TwigTemplate_29033af1667f2e2bc4b2580c5ac01a5f7fd67dd4e9464e8267bfda58ec4
                     <li><a style=\"color: #A00000\"><i class=\"fa fa-flag\"></i> Reported</a></li>
 
                 {% else %}
-                    <li><a href=\"{{ path('reportcomment',{'id':commentaire.idCommentaire }) }}\"><i class=\"fa fa-flag\"></i> Report </a></li>
+
+
+                    {% if app.user!= null %}
+                        <li><a href=\"{{ path('reportcomment',{'id':commentaire.idCommentaire }) }}\"><i class=\"fa fa-flag\"></i> Report </a></li>
+                    {% else %}
+                        <li><a style=\"color: #0a0a0a\"><i class=\"fa fa-flag\"></i> Report</a></li>
+
+                    {% endif %}
+
+
                 {% endif %}
 
             </ul>

@@ -21,29 +21,29 @@ class __TwigTemplate_696dbe7ea90c39c4341009c19ec7e49c07567431d816be420460965fc11
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_8ef757b951676739c5b7383aa5ca9963e7c7616214d3098c5cd95ee5941a3817 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_8ef757b951676739c5b7383aa5ca9963e7c7616214d3098c5cd95ee5941a3817->enter($__internal_8ef757b951676739c5b7383aa5ca9963e7c7616214d3098c5cd95ee5941a3817_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@EloboostedFrontoffice/Post/readPost.html.twig"));
+        $__internal_8e76c74f6eea70465451220c5e2a1722956d7b9460e585b2b3875ec2f043f41e = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_8e76c74f6eea70465451220c5e2a1722956d7b9460e585b2b3875ec2f043f41e->enter($__internal_8e76c74f6eea70465451220c5e2a1722956d7b9460e585b2b3875ec2f043f41e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@EloboostedFrontoffice/Post/readPost.html.twig"));
 
-        $__internal_4c90744541d05e72d705a514316c2bcb0a08f3e62048b1cfa0d41484b26e598f = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_4c90744541d05e72d705a514316c2bcb0a08f3e62048b1cfa0d41484b26e598f->enter($__internal_4c90744541d05e72d705a514316c2bcb0a08f3e62048b1cfa0d41484b26e598f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@EloboostedFrontoffice/Post/readPost.html.twig"));
+        $__internal_684a662c98b6b626ba786d062588f84a9eda0c7e4c925b412da0a3ddc477ef1e = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_684a662c98b6b626ba786d062588f84a9eda0c7e4c925b412da0a3ddc477ef1e->enter($__internal_684a662c98b6b626ba786d062588f84a9eda0c7e4c925b412da0a3ddc477ef1e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@EloboostedFrontoffice/Post/readPost.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_8ef757b951676739c5b7383aa5ca9963e7c7616214d3098c5cd95ee5941a3817->leave($__internal_8ef757b951676739c5b7383aa5ca9963e7c7616214d3098c5cd95ee5941a3817_prof);
+        $__internal_8e76c74f6eea70465451220c5e2a1722956d7b9460e585b2b3875ec2f043f41e->leave($__internal_8e76c74f6eea70465451220c5e2a1722956d7b9460e585b2b3875ec2f043f41e_prof);
 
         
-        $__internal_4c90744541d05e72d705a514316c2bcb0a08f3e62048b1cfa0d41484b26e598f->leave($__internal_4c90744541d05e72d705a514316c2bcb0a08f3e62048b1cfa0d41484b26e598f_prof);
+        $__internal_684a662c98b6b626ba786d062588f84a9eda0c7e4c925b412da0a3ddc477ef1e->leave($__internal_684a662c98b6b626ba786d062588f84a9eda0c7e4c925b412da0a3ddc477ef1e_prof);
 
     }
 
     // line 3
     public function block_main($context, array $blocks = array())
     {
-        $__internal_79729a7866c9ca1550b8b5613974c700b2db15a3856e7ac3cbbf04844952305d = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_79729a7866c9ca1550b8b5613974c700b2db15a3856e7ac3cbbf04844952305d->enter($__internal_79729a7866c9ca1550b8b5613974c700b2db15a3856e7ac3cbbf04844952305d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "main"));
+        $__internal_14cd5667e46b962caf68c48f8eed17eaff2df10368b53c7685b0a87aa93216eb = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_14cd5667e46b962caf68c48f8eed17eaff2df10368b53c7685b0a87aa93216eb->enter($__internal_14cd5667e46b962caf68c48f8eed17eaff2df10368b53c7685b0a87aa93216eb_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "main"));
 
-        $__internal_5c38319853a5a90a21f4d2e48fd5e925f46cf80ff8b47496722ebf4ee6847299 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_5c38319853a5a90a21f4d2e48fd5e925f46cf80ff8b47496722ebf4ee6847299->enter($__internal_5c38319853a5a90a21f4d2e48fd5e925f46cf80ff8b47496722ebf4ee6847299_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "main"));
+        $__internal_543d4a48c7aec5607ab9a31c52084250cc6bdd5abeb573d1eaf349511ad75f93 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_543d4a48c7aec5607ab9a31c52084250cc6bdd5abeb573d1eaf349511ad75f93->enter($__internal_543d4a48c7aec5607ab9a31c52084250cc6bdd5abeb573d1eaf349511ad75f93_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "main"));
 
         // line 4
         echo "    <script src=\"";
@@ -225,17 +225,28 @@ class __TwigTemplate_696dbe7ea90c39c4341009c19ec7e49c07567431d816be420460965fc11
                             ";
         } else {
             // line 109
-            echo "                            <li><a href=\"";
-            echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("report", array("id" => $this->getAttribute((isset($context["post"]) ? $context["post"] : $this->getContext($context, "post")), "idPost", array()))), "html", null, true);
-            echo "\"><i class=\"fa fa-flag\"></i> Report</a></li>
-                            ";
+            echo "                           ";
+            if (($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "user", array()) != null)) {
+                // line 110
+                echo "                            <li><a href=\"";
+                echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("report", array("id" => $this->getAttribute((isset($context["post"]) ? $context["post"] : $this->getContext($context, "post")), "idPost", array()))), "html", null, true);
+                echo "\"><i class=\"fa fa-flag\"></i> Report</a></li>
+                           ";
+            } else {
+                // line 112
+                echo "                               <li><a style=\"color: #0a0a0a\"><i class=\"fa fa-flag\"></i> Report</a></li>
+
+                           ";
+            }
+            // line 115
+            echo "                           ";
         }
-        // line 111
+        // line 116
         echo "
                         </ul>
                         <ul class=\"post-meta\">
                             <li><i class=\"fa fa-calendar-o\"></i>";
-        // line 114
+        // line 119
         echo twig_escape_filter($this->env, twig_date_format_filter($this->env, $this->getAttribute((isset($context["post"]) ? $context["post"] : $this->getContext($context, "post")), "date", array())), "html", null, true);
         echo "</li>
 
@@ -248,7 +259,7 @@ class __TwigTemplate_696dbe7ea90c39c4341009c19ec7e49c07567431d816be420460965fc11
 
 <div id=\"commentaire\">
     ";
-        // line 124
+        // line 129
         echo $this->env->getRuntime('Symfony\Bridge\Twig\Extension\HttpKernelRuntime')->renderFragment(Symfony\Bridge\Twig\Extension\HttpKernelExtension::controller("EloboostedFrontofficeBundle:Post:commentaire", array("id" => $this->getAttribute((isset($context["post"]) ? $context["post"] : $this->getContext($context, "post")), "idPost", array()))));
         echo "
 </div>
@@ -259,7 +270,7 @@ class __TwigTemplate_696dbe7ea90c39c4341009c19ec7e49c07567431d816be420460965fc11
                 <div  name=\"zone2\" class=\"panel panel-default margin-bottom-30\">
                     <div class=\"panel-body\">
                         <form class=\"form-label\" id =\"ajoutmessage\" enctype=\"multipart/form-data\" action=\"";
-        // line 132
+        // line 137
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("Addcommentaire");
         echo "\">
 
@@ -269,34 +280,34 @@ class __TwigTemplate_696dbe7ea90c39c4341009c19ec7e49c07567431d816be420460965fc11
                                 <div class=\"col-md-10\" >
 
                                     ";
-        // line 139
+        // line 144
         if (($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "user", array()) == null)) {
-            // line 140
+            // line 145
             echo "                                        <input type=\"text\" class=\"form-control\" required  id=\"textcommentaire\" name=\"replay\" placeholder=\"You need to login first \" style=\"height:200px;\">
                                     ";
-        } elseif (($this->getAttribute(        // line 141
+        } elseif (($this->getAttribute(        // line 146
 (isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "user", array()) != null)) {
-            // line 142
+            // line 147
             echo "                                        <input type=\"text\" class=\"form-control\" required  id=\"textcommentaire\" name=\"replay\" placeholder=\"Add Message\" style=\"height:200px;\">
                                     ";
         }
-        // line 144
+        // line 149
         echo "
                                 </div>
                             </div>
                              ";
-        // line 147
+        // line 152
         if (($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "user", array()) == null)) {
-            // line 148
+            // line 153
             echo "                            <div class=\"text-center\"><input type=\"submit\" name=\"btn\" value=\"SUBMIT\"  disabled class=\"btn btn-primary btn-lg btn-rounded btn-shadow\"></div>
                              ";
-        } elseif (($this->getAttribute(        // line 149
+        } elseif (($this->getAttribute(        // line 154
 (isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "user", array()) != null)) {
-            // line 150
+            // line 155
             echo "                            <div class=\"text-center\"><input type=\"submit\" name=\"btn\" value=\"SUBMIT\" class=\"btn btn-primary btn-lg btn-rounded btn-shadow\"></div>
                             ";
         }
-        // line 152
+        // line 157
         echo "                        </form>
                     </div>
                 </div>
@@ -308,10 +319,10 @@ class __TwigTemplate_696dbe7ea90c39c4341009c19ec7e49c07567431d816be420460965fc11
 
 ";
         
-        $__internal_5c38319853a5a90a21f4d2e48fd5e925f46cf80ff8b47496722ebf4ee6847299->leave($__internal_5c38319853a5a90a21f4d2e48fd5e925f46cf80ff8b47496722ebf4ee6847299_prof);
+        $__internal_543d4a48c7aec5607ab9a31c52084250cc6bdd5abeb573d1eaf349511ad75f93->leave($__internal_543d4a48c7aec5607ab9a31c52084250cc6bdd5abeb573d1eaf349511ad75f93_prof);
 
         
-        $__internal_79729a7866c9ca1550b8b5613974c700b2db15a3856e7ac3cbbf04844952305d->leave($__internal_79729a7866c9ca1550b8b5613974c700b2db15a3856e7ac3cbbf04844952305d_prof);
+        $__internal_14cd5667e46b962caf68c48f8eed17eaff2df10368b53c7685b0a87aa93216eb->leave($__internal_14cd5667e46b962caf68c48f8eed17eaff2df10368b53c7685b0a87aa93216eb_prof);
 
     }
 
@@ -327,7 +338,7 @@ class __TwigTemplate_696dbe7ea90c39c4341009c19ec7e49c07567431d816be420460965fc11
 
     public function getDebugInfo()
     {
-        return array (  300 => 152,  296 => 150,  294 => 149,  291 => 148,  289 => 147,  284 => 144,  280 => 142,  278 => 141,  275 => 140,  273 => 139,  263 => 132,  252 => 124,  239 => 114,  234 => 111,  228 => 109,  223 => 106,  220 => 105,  213 => 103,  210 => 102,  207 => 101,  204 => 100,  199 => 99,  197 => 98,  189 => 93,  185 => 92,  178 => 88,  171 => 86,  164 => 84,  154 => 76,  148 => 74,  146 => 73,  142 => 71,  135 => 68,  133 => 67,  128 => 66,  126 => 65,  109 => 51,  105 => 50,  86 => 34,  66 => 17,  49 => 4,  40 => 3,  11 => 2,);
+        return array (  311 => 157,  307 => 155,  305 => 154,  302 => 153,  300 => 152,  295 => 149,  291 => 147,  289 => 146,  286 => 145,  284 => 144,  274 => 137,  263 => 129,  250 => 119,  245 => 116,  242 => 115,  237 => 112,  231 => 110,  228 => 109,  223 => 106,  220 => 105,  213 => 103,  210 => 102,  207 => 101,  204 => 100,  199 => 99,  197 => 98,  189 => 93,  185 => 92,  178 => 88,  171 => 86,  164 => 84,  154 => 76,  148 => 74,  146 => 73,  142 => 71,  135 => 68,  133 => 67,  128 => 66,  126 => 65,  109 => 51,  105 => 50,  86 => 34,  66 => 17,  49 => 4,  40 => 3,  11 => 2,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -448,8 +459,13 @@ class __TwigTemplate_696dbe7ea90c39c4341009c19ec7e49c07567431d816be420460965fc11
                             <li><a style=\"color: #A00000\"><i class=\"fa fa-flag\"></i> Reported</a></li>
 
                             {% else %}
+                           {% if app.user!= null %}
                             <li><a href=\"{{ path('report',{'id':post.idPost }) }}\"><i class=\"fa fa-flag\"></i> Report</a></li>
-                            {% endif %}
+                           {% else %}
+                               <li><a style=\"color: #0a0a0a\"><i class=\"fa fa-flag\"></i> Report</a></li>
+
+                           {% endif %}
+                           {% endif %}
 
                         </ul>
                         <ul class=\"post-meta\">

@@ -33,7 +33,16 @@
                 {% endif %}
                 {% endfor %}
                 {% if a==0 %}
-                    <li><a  href="{{ path('like',{id : commentaire.idCommentaire, post : commentaire.idPostCp.idPost  }) }}"><i class="fa fa-heart"></i> like ({{ y }})</a></li>
+
+
+
+                    {% if app.user!= null %}
+                        <li><a  href="{{ path('like',{id : commentaire.idCommentaire, post : commentaire.idPostCp.idPost  }) }}"><i class="fa fa-heart"></i> like ({{ y }})</a></li>
+                    {% else %}
+                        <li><a style="color: #0a0a0a" ><i class="fa fa-heart"></i> like ({{ y }})</a></li>
+
+
+                    {% endif %}
                 {% elseif a==1 %}
                     <li><a style="color: #00AEEF" href="{{  path('like',{id : commentaire.idCommentaire, post : commentaire.idPostCp.idPost}) }}"><i class="fa fa-heart1"></i> Unlike  ({{ y }})</a></li>
                 {% endif %}
@@ -55,7 +64,16 @@
                     <li><a style="color: #A00000"><i class="fa fa-flag"></i> Reported</a></li>
 
                 {% else %}
-                    <li><a href="{{ path('reportcomment',{'id':commentaire.idCommentaire }) }}"><i class="fa fa-flag"></i> Report </a></li>
+
+
+                    {% if app.user!= null %}
+                        <li><a href="{{ path('reportcomment',{'id':commentaire.idCommentaire }) }}"><i class="fa fa-flag"></i> Report </a></li>
+                    {% else %}
+                        <li><a style="color: #0a0a0a"><i class="fa fa-flag"></i> Report</a></li>
+
+                    {% endif %}
+
+
                 {% endif %}
 
             </ul>
