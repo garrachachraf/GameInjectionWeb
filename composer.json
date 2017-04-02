@@ -32,8 +32,10 @@
         "nomaya/social-bundle": "dev-master",
         "knplabs/knp-paginator-bundle": "^2.5",
         "knplabs/knp-time-bundle": "^1.7",
+        "whiteoctober/tcpdf-bundle": "^1.0",
         "snilius/twig-sort-by-field": "^0.1.5",
         "cunningsoft/chat-bundle": "0.5.*"
+
     },
     "require-dev": {
         "sensio/generator-bundle": "^3.0",

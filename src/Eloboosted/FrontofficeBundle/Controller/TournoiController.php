@@ -79,7 +79,7 @@ class TournoiController extends Controller
         $deleteForm = $this->createDeleteForm($tournoi);
         $em = $this->getDoctrine()->getManager();
         $user = $this->get('security.token_storage')->getToken()->getUser();
-        $participation = $em->getRepository('EloboostedGameinjectionBundle:Participation')->findBy(array('idComptePart'=>$user,'idTournoiPart'=>$tournoi));
+        $participation = $em->getRepository('EloboostedGameinjectionBundle:Participation')->findOneBy(array('idComptePart'=>$user,'idTournoiPart'=>$tournoi));
         $isParticipated = 0 ;
         if ($participation)
         {
@@ -93,6 +93,7 @@ class TournoiController extends Controller
             'delete_form' => $deleteForm->createView(),
             'comments' => $comments,
             'isparticipated'=>$isParticipated,
+            'participation'=>$participation,
             'nbp'=>$nbp,
         ));
     }

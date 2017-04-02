@@ -110,6 +110,36 @@
                                     </p><p>7. Have fun.</p>
                                 </div>
                             </div>
+                        <div class="panel panel-inverse margin-top-20">
+                            <div class="panel-heading">
+                                <h3 class="panel-title text-center"><i class="fa fa-list-ol"></i> Prizes</h3>
+                            </div>
+                            <div class="panel-body">
+                                <table class="table table-striped">
+                                    <thead>
+
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td style="text-align: center;">1st place</td>
+                                        <td style="text-align: center;">{{ tournoi.reward1 }} Points</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: center;">2nd Place </td>
+                                        <td  style="text-align: center;">{{ tournoi.reward2 }} Points</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: center;">3rd Place</td>
+                                        <td  style="text-align: center;">{{ tournoi.reward3 }} Points</td>
+
+                                    </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
 
 
                         <div class="row margin-top-40">
@@ -206,6 +236,10 @@
                             <div class="description">
                                 {{ tournoi.nom | upper }}: A Tournament for {{ tournoi.idGameTrn.Name }} players ans lovers . <br> Participation fee : {{ tournoi.prixParJoueur }}
                                 <a href="{{ path('participation_new',{ 'tournament':tournoi.idTournoi }) }}" class="btn btn-block btn-primary margin-top-40 {% if  (not(is_granted('ROLE_USER')) or (app.user.points < tournoi.prixParJoueur) or isparticipated ==1)  %} disabled {% endif %} }">Participate <i class="fa fa-heart-o margin-left-10"></i></a>
+                                {% if  (is_granted('ROLE_USER') and isparticipated ==1)  %}
+                                <a href="{{ path('participation_tiket',{ 'participation':participation.IdParticipation}) }}" class="btn btn-block btn-primary margin-top-40 ">Get Ticket <i class="fa fa-ticket-o margin-left-10"></i></a>
+                                {% endif %}
+
                             </div>
                         </div>
                     </div>

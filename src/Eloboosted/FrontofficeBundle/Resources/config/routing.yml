@@ -142,3 +142,9 @@ Search_tournament:
 participation_new:
     path:     /Participate/{tournament}
     defaults: { _controller: EloboostedFrontofficeBundle:Participation:newParticipation }
+participation_tiket:
+    path:     /Ticket/{participation}
+    defaults: { _controller: EloboostedFrontofficeBundle:Participation:ticket }
+participation_tikethtml:
+    path:     /Tickethtml/{participation}
+    defaults: { _controller: EloboostedFrontofficeBundle:Participation:tickethtml }

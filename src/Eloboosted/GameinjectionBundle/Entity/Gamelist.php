@@ -95,7 +95,7 @@ class Gamelist
      */
     public function getImage()
     {
-        return $this->image;
+        return base64_encode(@stream_get_contents($this->image));
     }
 
     /**
@@ -103,7 +103,7 @@ class Gamelist
      */
     public function setImage($image)
     {
-        $this->image = $image;
+        $this->image = @file_get_contents($image);
     }
 
 
