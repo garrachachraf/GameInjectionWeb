@@ -389,6 +389,26 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
             return array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\NotificationController::RefuseInvFromNotAction',  '_route' => 'RefuseInvFromNot',);
         }
 
+        // myInbox
+        if ($pathinfo === '/myInbox') {
+            return array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\CompteController::myInboxAction',  '_route' => 'myInbox',);
+        }
+
+        // editAccount
+        if ($pathinfo === '/editAccount') {
+            return array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\CompteController::editAccountAction',  '_route' => 'editAccount',);
+        }
+
+        // accountEdit
+        if ($pathinfo === '/accountEdit') {
+            return array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\CompteController::editAction',  '_route' => 'accountEdit',);
+        }
+
+        // sendMessage
+        if ($pathinfo === '/sendMessage') {
+            return array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\MessageController::sendMessageAction',  '_route' => 'sendMessage',);
+        }
+
         // userProfile
         if (0 === strpos($pathinfo, '/userProfile') && preg_match('#^/userProfile/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
             return $this->mergeDefaults(array_replace($matches, array('_route' => 'userProfile')), array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\CompteController::userProfileAction',));
@@ -457,6 +477,19 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
         // participation_new
         if (0 === strpos($pathinfo, '/Participate') && preg_match('#^/Participate/(?P<tournament>[^/]++)$#s', $pathinfo, $matches)) {
             return $this->mergeDefaults(array_replace($matches, array('_route' => 'participation_new')), array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\ParticipationController::newParticipationAction',));
+        }
+
+        if (0 === strpos($pathinfo, '/Ticket')) {
+            // participation_tiket
+            if (preg_match('#^/Ticket/(?P<participation>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'participation_tiket')), array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\ParticipationController::ticketAction',));
+            }
+
+            // participation_tikethtml
+            if (0 === strpos($pathinfo, '/Tickethtml') && preg_match('#^/Tickethtml/(?P<participation>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'participation_tikethtml')), array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\ParticipationController::tickethtmlAction',));
+            }
+
         }
 
         if (0 === strpos($pathinfo, '/login')) {

@@ -4,6 +4,7 @@ namespace Eloboosted\FrontofficeBundle\Controller;
 
 use Eloboosted\GameinjectionBundle\Entity\CommentairePost;
 use Eloboosted\GameinjectionBundle\Entity\Listjaime;
+use Eloboosted\GameinjectionBundle\Entity\Notification;
 use Eloboosted\GameinjectionBundle\Entity\Post;
 use Eloboosted\GameinjectionBundle\Entity\Signalisation;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
@@ -174,9 +175,15 @@ class PostController extends Controller
         $commentaire1->setDate(new \DateTime('now'));
         $commentaire1->setMarquesolution(0);
 
-
+        $notif = new Notification();
+        $notif->setContenu($post->getIdComptePost()->getPseudo()." a commenter votre poste intitulé ".$post->getTitre());
+        $notif->setDateNotification(new \DateTime('now'));
+        $notif->setIdCompteNot($post->getIdComptePost());
+        $notif->setVue(0);
+        $notif->setNotificationtitle("Votre poster a ete commenté ");
 
         $em->persist($commentaire1);
+        $em->persist($notif);
         $em->flush();
 
         return new JsonResponse(array('data'=>'success'));
