@@ -30,8 +30,12 @@
             <state relative-caret-position="306">
               <caret line="72" column="18" lean-forward="false" selection-start-line="72" selection-start-column="18" selection-end-line="72" selection-end-column="18" />
               <folding>
-                <element signature="e#3527#3541#0#Twig" expanded="true" />
-                <element signature="e#17949#17964#0#Twig" expanded="true" />
+                <element signature="e#17643#17668#0#Twig" expanded="false" />
+                <element signature="e#18229#18233#0#Twig" expanded="false" />
+                <element signature="e#18338#18342#0#Twig" expanded="false" />
+                <element signature="e#18487#18491#0#Twig" expanded="false" />
+                <element signature="e#18597#18601#0#Twig" expanded="false" />
+                <element signature="e#18765#18772#0#Twig" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -58,8 +62,8 @@
       <file leaf-file-name="config.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/config/config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="747">
-              <caret line="109" column="48" lean-forward="false" selection-start-line="109" selection-start-column="48" selection-end-line="109" selection-end-column="48" />
+            <state relative-caret-position="407">
+              <caret line="89" column="32" lean-forward="true" selection-start-line="89" selection-start-column="32" selection-end-line="89" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -664,7 +668,7 @@
       <workItem from="1491577786982" duration="211000" />
       <workItem from="1491580077012" duration="224000" />
       <workItem from="1491588123496" duration="15000" />
-      <workItem from="1491659939434" duration="22646000" />
+      <workItem from="1491659939434" duration="22683000" />
     </task>
     <task id="LOCAL-00001" summary="add tournament controller + products controller">
       <created>1489284724008</created>
@@ -855,11 +859,18 @@
       <option name="project" value="LOCAL" />
       <updated>1491686518137</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Taha Push : All">
+      <created>1491686544464</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1491686544464</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="194805000" />
+    <option name="totallyTimeSpent" value="194842000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -1391,16 +1402,20 @@
         <state relative-caret-position="306">
           <caret line="72" column="18" lean-forward="false" selection-start-line="72" selection-start-column="18" selection-end-line="72" selection-end-column="18" />
           <folding>
-            <element signature="e#3527#3541#0#Twig" expanded="true" />
-            <element signature="e#17949#17964#0#Twig" expanded="true" />
+            <element signature="e#17643#17668#0#Twig" expanded="false" />
+            <element signature="e#18229#18233#0#Twig" expanded="false" />
+            <element signature="e#18338#18342#0#Twig" expanded="false" />
+            <element signature="e#18487#18491#0#Twig" expanded="false" />
+            <element signature="e#18597#18601#0#Twig" expanded="false" />
+            <element signature="e#18765#18772#0#Twig" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="747">
-          <caret line="109" column="48" lean-forward="false" selection-start-line="109" selection-start-column="48" selection-end-line="109" selection-end-column="48" />
+        <state relative-caret-position="407">
+          <caret line="89" column="32" lean-forward="true" selection-start-line="89" selection-start-column="32" selection-end-line="89" selection-end-column="32" />
           <folding />
         </state>
       </provider>
