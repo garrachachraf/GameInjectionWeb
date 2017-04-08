@@ -79,7 +79,7 @@ swiftmailer:
 nomaya_social:
     buttons:
         facebook:
-            url:            null
+            url:            "https://www.facebook.com/GAME-Injection-215820738884152/?fref=ts"
             locale:         "fr_FR"
             send:           false
             width:          300
