@@ -207,6 +207,105 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
                     return array (  '_controller' => 'Eloboosted\\BackofficeBundle\\Controller\\PostController::addcategorypostAction',  '_route' => 'addcategorypost',);
                 }
 
+                // tcategorie_index
+                if ($pathinfo === '/admin/cat') {
+                    if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                        $allow = array_merge($allow, array('GET', 'HEAD'));
+                        goto not_tcategorie_index;
+                    }
+
+                    return array (  '_controller' => 'Eloboosted\\BackofficeBundle\\Controller\\TCategorieController::indexAction',  '_route' => 'tcategorie_index',);
+                }
+                not_tcategorie_index:
+
+                // tcategorie_show
+                if (preg_match('#^/admin/(?P<id>[^/]++)/showcat$#s', $pathinfo, $matches)) {
+                    if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                        $allow = array_merge($allow, array('GET', 'HEAD'));
+                        goto not_tcategorie_show;
+                    }
+
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'tcategorie_show')), array (  '_controller' => 'Eloboosted\\BackofficeBundle\\Controller\\TCategorieController::showAction',));
+                }
+                not_tcategorie_show:
+
+                // tcategorie_new
+                if ($pathinfo === '/admin/newcat') {
+                    if (!in_array($this->context->getMethod(), array('GET', 'POST', 'HEAD'))) {
+                        $allow = array_merge($allow, array('GET', 'POST', 'HEAD'));
+                        goto not_tcategorie_new;
+                    }
+
+                    return array (  '_controller' => 'Eloboosted\\BackofficeBundle\\Controller\\TCategorieController::newAction',  '_route' => 'tcategorie_new',);
+                }
+                not_tcategorie_new:
+
+                // tcategorie_edit
+                if (preg_match('#^/admin/(?P<id>[^/]++)/editcat$#s', $pathinfo, $matches)) {
+                    if (!in_array($this->context->getMethod(), array('GET', 'POST', 'HEAD'))) {
+                        $allow = array_merge($allow, array('GET', 'POST', 'HEAD'));
+                        goto not_tcategorie_edit;
+                    }
+
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'tcategorie_edit')), array (  '_controller' => 'Eloboosted\\BackofficeBundle\\Controller\\TCategorieController::editAction',));
+                }
+                not_tcategorie_edit:
+
+                // tcategorie_delete
+                if (preg_match('#^/admin/(?P<id>[^/]++)/deletecat$#s', $pathinfo, $matches)) {
+                    if ($this->context->getMethod() != 'DELETE') {
+                        $allow[] = 'DELETE';
+                        goto not_tcategorie_delete;
+                    }
+
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'tcategorie_delete')), array (  '_controller' => 'Eloboosted\\BackofficeBundle\\Controller\\TCategorieController::deleteAction',));
+                }
+                not_tcategorie_delete:
+
+                // tevenement_index
+                if ($pathinfo === '/admin/events') {
+                    if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                        $allow = array_merge($allow, array('GET', 'HEAD'));
+                        goto not_tevenement_index;
+                    }
+
+                    return array (  '_controller' => 'Eloboosted\\BackofficeBundle\\Controller\\TEvenementController::indexAction',  '_route' => 'tevenement_index',);
+                }
+                not_tevenement_index:
+
+                // tevenement_new
+                if ($pathinfo === '/admin/newevent') {
+                    if (!in_array($this->context->getMethod(), array('GET', 'POST', 'HEAD'))) {
+                        $allow = array_merge($allow, array('GET', 'POST', 'HEAD'));
+                        goto not_tevenement_new;
+                    }
+
+                    return array (  '_controller' => 'Eloboosted\\BackofficeBundle\\Controller\\TEvenementController::newAction',  '_route' => 'tevenement_new',);
+                }
+                not_tevenement_new:
+
+                // tevenement_edit
+                if (preg_match('#^/admin/(?P<id>[^/]++)/editevent$#s', $pathinfo, $matches)) {
+                    if (!in_array($this->context->getMethod(), array('GET', 'POST', 'HEAD'))) {
+                        $allow = array_merge($allow, array('GET', 'POST', 'HEAD'));
+                        goto not_tevenement_edit;
+                    }
+
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'tevenement_edit')), array (  '_controller' => 'Eloboosted\\BackofficeBundle\\Controller\\TEvenementController::editAction',));
+                }
+                not_tevenement_edit:
+
+                // tevenement_delete
+                if (preg_match('#^/admin/(?P<id>[^/]++)/deleteevent$#s', $pathinfo, $matches)) {
+                    if ($this->context->getMethod() != 'DELETE') {
+                        $allow[] = 'DELETE';
+                        goto not_tevenement_delete;
+                    }
+
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'tevenement_delete')), array (  '_controller' => 'Eloboosted\\BackofficeBundle\\Controller\\TEvenementController::deleteAction',));
+                }
+                not_tevenement_delete:
+
             }
 
             // AddProduct_page
@@ -492,6 +591,131 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
 
         }
 
+        // tproduit_index
+        if (0 === strpos($pathinfo, '/Products') && preg_match('#^/Products(?:/(?P<page>[^/]++))?$#s', $pathinfo, $matches)) {
+            if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                $allow = array_merge($allow, array('GET', 'HEAD'));
+                goto not_tproduit_index;
+            }
+
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'tproduit_index')), array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\TProduitController::indexAction',  'page' => 1,));
+        }
+        not_tproduit_index:
+
+        // tproduit_show
+        if (preg_match('#^/(?P<id>[^/]++)/showProd$#s', $pathinfo, $matches)) {
+            if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                $allow = array_merge($allow, array('GET', 'HEAD'));
+                goto not_tproduit_show;
+            }
+
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'tproduit_show')), array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\TProduitController::showAction',));
+        }
+        not_tproduit_show:
+
+        // tproduit_new
+        if ($pathinfo === '/newProd') {
+            if (!in_array($this->context->getMethod(), array('GET', 'POST', 'HEAD'))) {
+                $allow = array_merge($allow, array('GET', 'POST', 'HEAD'));
+                goto not_tproduit_new;
+            }
+
+            return array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\TProduitController::newAction',  '_route' => 'tproduit_new',);
+        }
+        not_tproduit_new:
+
+        // tproduit_search
+        if ($pathinfo === '/searchprod') {
+            if (!in_array($this->context->getMethod(), array('GET', 'POST', 'HEAD'))) {
+                $allow = array_merge($allow, array('GET', 'POST', 'HEAD'));
+                goto not_tproduit_search;
+            }
+
+            return array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\TProduitController::SearchProductAction',  '_route' => 'tproduit_search',);
+        }
+        not_tproduit_search:
+
+        // tproduit_edit
+        if (preg_match('#^/(?P<id>[^/]++)/editProd$#s', $pathinfo, $matches)) {
+            if (!in_array($this->context->getMethod(), array('GET', 'POST', 'HEAD'))) {
+                $allow = array_merge($allow, array('GET', 'POST', 'HEAD'));
+                goto not_tproduit_edit;
+            }
+
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'tproduit_edit')), array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\TProduitController::editAction',));
+        }
+        not_tproduit_edit:
+
+        // tproduit_delete
+        if (preg_match('#^/(?P<id>[^/]++)/deleteProd$#s', $pathinfo, $matches)) {
+            if ($this->context->getMethod() != 'DELETE') {
+                $allow[] = 'DELETE';
+                goto not_tproduit_delete;
+            }
+
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'tproduit_delete')), array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\TProduitController::deleteAction',));
+        }
+        not_tproduit_delete:
+
+        // tevenement_index_front
+        if (0 === strpos($pathinfo, '/eventsfront') && preg_match('#^/eventsfront(?:/(?P<page>[^/]++))?$#s', $pathinfo, $matches)) {
+            if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                $allow = array_merge($allow, array('GET', 'HEAD'));
+                goto not_tevenement_index_front;
+            }
+
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'tevenement_index_front')), array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\TEvenementController::eventsAction',  'page' => 1,));
+        }
+        not_tevenement_index_front:
+
+        // vote_prod
+        if (0 === strpos($pathinfo, '/voteprod') && preg_match('#^/voteprod/(?P<idprod>[^/]++)/(?P<nbrevote>[^/]++)$#s', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'vote_prod')), array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\VoteProductController::newVoteAction',));
+        }
+
+        // tevenement_show
+        if (preg_match('#^/(?P<id>[^/]++)/showevent$#s', $pathinfo, $matches)) {
+            if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                $allow = array_merge($allow, array('GET', 'HEAD'));
+                goto not_tevenement_show;
+            }
+
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'tevenement_show')), array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\TEvenementController::showAction',));
+        }
+        not_tevenement_show:
+
+        // calender
+        if ($pathinfo === '/calender') {
+            if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                $allow = array_merge($allow, array('GET', 'HEAD'));
+                goto not_calender;
+            }
+
+            return array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\TProduitController::CalenderAction',  '_route' => 'calender',);
+        }
+        not_calender:
+
+        // streaming_all
+        if ($pathinfo === '/streaming') {
+            if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                $allow = array_merge($allow, array('GET', 'HEAD'));
+                goto not_streaming_all;
+            }
+
+            return array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\TEvenementController::streamAction',  '_route' => 'streaming_all',);
+        }
+        not_streaming_all:
+
+        // get_product_img
+        if (0 === strpos($pathinfo, '/productimg') && preg_match('#^/productimg/(?P<id>[^/]++)(?:/(?P<nb>[^/]++))?$#s', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'get_product_img')), array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\ImagesController::ProductsimgAction',  'nb' => 1,));
+        }
+
+        // get_event_img
+        if (0 === strpos($pathinfo, '/eventimg') && preg_match('#^/eventimg/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'get_event_img')), array (  '_controller' => 'Eloboosted\\FrontofficeBundle\\Controller\\ImagesController::EventsimgAction',));
+        }
+
         if (0 === strpos($pathinfo, '/login')) {
             // eloboosted_login_homepage
             if (rtrim($pathinfo, '/') === '/login') {
@@ -536,6 +760,16 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
             }
 
             return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::indexAction',  '_route' => 'homepage',);
+        }
+
+        // fos_js_routing_js
+        if (0 === strpos($pathinfo, '/js/routing') && preg_match('#^/js/routing(?:\\.(?P<_format>js|json))?$#s', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'fos_js_routing_js')), array (  '_controller' => 'fos_js_routing.controller:indexAction',  '_format' => 'js',));
+        }
+
+        // fullcalendar_loader
+        if ($pathinfo === '/fc-load-events') {
+            return array (  '_controller' => 'ADesigns\\CalendarBundle\\Controller\\CalendarController::loadCalendarAction',  '_route' => 'fullcalendar_loader',);
         }
 
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();

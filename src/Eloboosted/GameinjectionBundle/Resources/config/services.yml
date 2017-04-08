@@ -2,3 +2,8 @@ services:
 #    eloboosted_gameinjection.example:
 #        class: Eloboosted\GameinjectionBundle\Example
 #        arguments: ["@service_id", "plain_value", "%parameter%"]
+  calendar_event.taha:
+    class: Eloboosted\GameinjectionBundle\Entity\EventListener
+    #arguments: [ @doctrine.orm.entity_manager  ]
+    tags:
+     - { name: kernel.event_listener, event: calendar.load_events, method: loadEvents }

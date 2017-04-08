@@ -24,8 +24,12 @@ class AppKernel extends Kernel
             new Nomaya\SocialBundle\NomayaSocialBundle(),
             new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
             new Knp\Bundle\TimeBundle\KnpTimeBundle(),
-            new Cunningsoft\ChatBundle\CunningsoftChatBundle(),
             new WhiteOctober\TCPDFBundle\WhiteOctoberTCPDFBundle(),
+            new blackknight467\StarRatingBundle\StarRatingBundle(),
+            new FOS\JsRoutingBundle\FOSJsRoutingBundle(),
+            new ADesigns\CalendarBundle\ADesignsCalendarBundle(),
+            new Gregwar\CaptchaBundle\GregwarCaptchaBundle(),
+
 
 
         ];

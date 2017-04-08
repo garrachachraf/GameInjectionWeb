@@ -47,3 +47,51 @@ eloboosted_backoffice_games:
 addcategorypost:
     path:     /addcategorypost
     defaults: { _controller: EloboostedBackofficeBundle:Post:addcategorypost }
+
+
+#taha routes
+
+tcategorie_index:
+    path:     /cat
+    defaults: { _controller: "EloboostedBackofficeBundle:TCategorie:index" }
+    methods:  GET
+
+tcategorie_show:
+    path:     /{id}/showcat
+    defaults: { _controller: "EloboostedBackofficeBundle:TCategorie:show" }
+    methods:  GET
+
+tcategorie_new:
+    path:     /newcat
+    defaults: { _controller: "EloboostedBackofficeBundle:TCategorie:new" }
+    methods:  [GET, POST]
+
+tcategorie_edit:
+    path:     /{id}/editcat
+    defaults: { _controller: "EloboostedBackofficeBundle:TCategorie:edit" }
+    methods:  [GET, POST]
+
+tcategorie_delete:
+    path:     /{id}/deletecat
+    defaults: { _controller: "EloboostedBackofficeBundle:TCategorie:delete" }
+    methods:  DELETE
+
+tevenement_index:
+    path:     /events
+    defaults: { _controller: "EloboostedBackofficeBundle:TEvenement:index" }
+    methods:  GET
+
+tevenement_new:
+    path:     /newevent
+    defaults: { _controller: "EloboostedBackofficeBundle:TEvenement:new" }
+    methods:  [GET, POST]
+
+tevenement_edit:
+    path:     /{id}/editevent
+    defaults: { _controller: "EloboostedBackofficeBundle:TEvenement:edit" }
+    methods:  [GET, POST]
+
+tevenement_delete:
+    path:     /{id}/deleteevent
+    defaults: { _controller: "EloboostedBackofficeBundle:TEvenement:delete" }
+    methods:  DELETE

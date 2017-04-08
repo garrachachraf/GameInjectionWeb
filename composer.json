@@ -33,8 +33,13 @@
         "knplabs/knp-paginator-bundle": "^2.5",
         "knplabs/knp-time-bundle": "^1.7",
         "whiteoctober/tcpdf-bundle": "^1.0",
+        "blackknight467/star-rating-bundle": "^2.0",
+        "friendsofsymfony/jsrouting-bundle": "^1.6",
+        "adesigns/calendar-bundle": "^1.1",
+        "gregwar/captcha-bundle": "^2.0",
+        "nicklaw5/twitch-api-php": "^0.1.4",
         "snilius/twig-sort-by-field": "^0.1.5",
-        "cunningsoft/chat-bundle": "0.5.*"
+        "endroid/qrcode-bundle": "^2.0"
 
     },
     "require-dev": {

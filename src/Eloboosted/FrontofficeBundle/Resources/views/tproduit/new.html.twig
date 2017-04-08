@@ -1,0 +1,142 @@
+{% extends 'EloboostedFrontofficeBundle:Default:Layout.html.twig' %}
+
+{% block main %}
+    <script type="text/javascript" src="http://www.jquery-az.com/boots/js/bootstrap-filestyle.min.js"></script>
+    <link href="{{ asset('plugins/owl-carousel/owl.carousel.css') }}" rel="stylesheet">
+    <link href="{{ asset('plugins/ekko-lightbox/ekko-lightbox.min.css') }}" rel="stylesheet">
+
+
+    <section class="bg-transparent" style="padding: 0%">
+        <div class="background-image" style="background-image: url({{ asset('img/cover/cover.jpg') }});">
+            <span class="background-overlay"></span>
+            <div class="container">
+
+            </div>
+        </div>
+    </section>
+    <section class="border-bottom-1 border-grey-300 padding-top-10 padding-bottom-10">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ol class="breadcrumb">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="#">Store</a></li>
+                        <li class="active">Add Product</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="elements bg-white padding-top-40 padding-bottom-50" id="body">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="form-group">
+
+                    {{ form_start(form) }}
+                        {{ form_widget(form.libelleProduit) }}<br>
+                        {{ form_widget(form.marqueProduit) }}<br>
+                        {{ form_widget(form.prixProduit) }}<br>
+                        {{ form_widget(form.idCategorieProd) }}<br>
+                        {{ form_widget(form.etat) }}<br>
+
+                        <div class="form-group input-icon-left">
+                        {{ form_widget(form.imgProduit) }}
+                            <script>$('#{{ form.imgProduit.vars.id }}').filestyle({
+                                    buttonName: 'btn-success {{ form.imgProduit.vars.name }}',
+                                    buttonText: ' Choose an image'
+                                });</script>
+
+                        </div>
+                        <div class="form-group input-icon-left">
+                            {{ form_widget(form.imageProduit2) }}
+                            <script>$('#{{ form.imageProduit2.vars.id }}').filestyle({
+                                    buttonName: 'btn-success {{ form.imageProduit2.vars.name }}',
+                                    buttonText: ' Choose an image'
+                                });</script>
+                        </div>
+                        <div class="form-group input-icon-left">
+                            {{ form_widget(form.imageProduit3) }}
+                            <script>$('#{{ form.imageProduit3.vars.id }}').filestyle({
+                                    buttonName: 'btn-success',
+                                    buttonText: ' Choose an image'
+                                });</script>
+                        </div>
+                        {{ form_widget(form.descriptionProduit) }}<br>
+                        <div class="text-center margin-top-30">
+                            {% spaceless %}
+                                {{ form_widget(form.captcha) }}
+                            {% endspaceless %}
+                        </div>
+                        <div class="text-center margin-top-30">
+                            {{ form_widget(form.Valider) }}
+                        </div>
+                        {{ form_end(form) }}
+                </div>
+                </div>
+                <div class="col-lg-5 height-300">
+                    <img src="{{ asset('img/content/contact.jpg') }}"  width="120%" height="150%"  class="image-right padding-top-50" alt="">
+                </div>
+                </div>
+
+            </div>
+        <script src="{{ asset('plugins/ekko-lightbox/ekko-lightbox.min.js') }}"></script>
+        <script src="{{ asset('js/core.min.js') }}"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.js"></script>
+        <script src="http://jschr.github.io/bootstrap-modal/js/bootstrap-modalmanager.js"></script>
+        <script src="http://jschr.github.io/bootstrap-modal/js/bootstrap-modal.js"></script>
+        <link href="http://jschr.github.io/bootstrap-modal/css/bootstrap-modal.css" rel="stylesheet">
+        <link href="http://jschr.github.io/bootstrap-modal/css/bootstrap-modal-bs3patch.css" rel="stylesheet">
+        <script>
+            $(function(){
+
+                $.fn.modal.defaults.spinner = $.fn.modalmanager.defaults.spinner =
+                    '<div class="loading-spinner" style="width: 200px; margin-left: -100px;">' +
+                    '<div class="progress progress-striped active">' +
+                    '<div class="progress-bar" style="width: 100%;"></div>' +
+                    '</div>' +
+                    '</div>';
+
+                $.fn.modalmanager.defaults.resize = true;
+
+                $('[data-source]').each(function(){
+                    var $this = $(this),
+                        $source = $($this.data('source'));
+
+                    var text = [];
+                    $source.each(function(){
+                        var $s = $(this);
+                        if ($s.attr('type') == 'text/javascript'){
+                            text.push($s.html().replace(/(\n)*/, ''));
+                        } else {
+                            text.push($s.clone().wrap('<div>').parent().html());
+                        }
+                    });
+
+                    $this.text(text.join('\n\n').replace(/\t/g, '    '));
+                });
+
+                prettyPrint();
+            });
+        </script>
+        <script  type="text/javascript">
+            $(document).ready(function(){
+                $("#{{ form.Valider.vars.id }}").click(function(){
+                    $('body').modalmanager('loading');
+                });
+            });
+            function isNumber(evt) {
+                evt = (evt) ? evt : window.event;
+                var charCode = (evt.which) ? evt.which : evt.keyCode;
+                if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+                    return false;
+                }
+                return true;
+            }
+        </script>
+    </section>
+
+{% endblock %}

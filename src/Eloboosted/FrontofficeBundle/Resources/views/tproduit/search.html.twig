@@ -1,0 +1,17 @@
+{% for t in Products %}
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <div class="card">
+            <div class="card-img" style="height:257px;width:360px; background-color: white">
+                <a href="{{ path('tproduit_show', { 'id': t.idProduit }) }}"><img src="{{ path('get_product_img',{ 'id':t.idProduit }) }}" height="100%" width="100%" alt=""></a>
+                <div class="category"><span class="label label-success">{{ t.idCategorieProd }}</span></div>
+                <div class="meta"><a href="{{ path('tproduit_show', { 'id': t.idProduit }) }}"><i class="fa fa-heart-o"></i> <span></span></a></div>
+            </div>
+            <div class="caption">
+                <h3 class="card-title"><a href="{{ path('tproduit_show', { 'id': t.idProduit }) }}">{{ t.libelleProduit }}</a></h3>
+                <ul><li>{{ t.dateProduit | date }}</li></ul>
+                <p>{{ t.etat }}</p>
+            </div>
+        </div>
+    </div>
+
+{% endfor %}

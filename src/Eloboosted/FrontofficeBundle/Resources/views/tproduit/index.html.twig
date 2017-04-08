@@ -1,0 +1,111 @@
+{% extends 'EloboostedFrontofficeBundle:Default:Layout.html.twig' %}
+
+{% block main %}
+    <link href="{{ asset('plugins/owl-carousel/owl.carousel.css') }}" rel="stylesheet">
+    <link href="{{ asset('plugins/ekko-lightbox/ekko-lightbox.min.css') }}" rel="stylesheet">
+    <script>
+        function showHint(str) {
+            if (str.length == 0) {
+                document.getElementById("txtHint").innerHTML = "";
+                return;
+            } else {
+                var xmlhttp = new XMLHttpRequest();
+                xmlhttp.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+                        document.getElementById("productssearch").innerHTML = this.responseText;
+                    }
+                };
+                xmlhttp.open("GET", "{{ path('tproduit_search') }}?p=" + str, true);
+                xmlhttp.send();
+            }
+        }
+    </script>
+
+    <section class="hero hero-games height-300" style="background-image:url('{{ asset('img/cover/cover-game.jpg') }}')">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="page-header">
+                <div class="page-title bold"><a href="games-single.html">The Witcher 3: Wild Hunt</a></div>
+                <p>New battle mechanics, a fantastic storyline, and a gritty setting make The Witcher one of the most engrossing RPGs.</p>
+            </div>
+        </div>
+    </section>
+    <section class="padding-top-25 no-padding-bottom border-bottom-1 border-grey-300">
+        <div class="container">
+            <div class="headline">
+                <h4>Recent Games</h4>
+                <div class="btn-group pull-right">
+                    <a href="games.html#" class="btn btn-default"><i class="fa fa-th-large no-margin"></i></a>
+                    <a href="games.html#" class="btn btn-default"><i class="fa fa-bars no-margin"></i></a>
+                </div>
+                <input type="text" class="form-control hidden-xs" placeholder="Search Game..." onkeyup="showHint(this.value)">
+                <div class="dropdown">
+                    <a href="games.html#" class="btn btn-default btn-icon-left btn-icon-right dropdown-toggle" data-toggle="dropdown"><i class="fa fa-sort-amount-desc"></i> Sort by <i class="fa fa-caret-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="?a=1">Date</a></li>
+                        <li><a href="?a=2">Score</a></li>
+                        <li><a href="?a=3">A-Z</a></li>
+                        <li><a href="?a=4">Price</a></li>
+                    </ul>
+                </div>
+
+                <div class="dropdown">
+                    <a href="games.html#" class="btn btn-default btn-icon-left btn-icon-right dropdown-toggle" data-toggle="dropdown"><i class="fa fa-gamepad"></i> Status  <i class="fa fa-caret-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="?a=5">Sell</a></li>
+                        <li><a href="?a=6">Exchange</a></li>
+                    </ul>
+                </div>
+
+                <div class="dropdown">
+                    <a href="games.html#" class="btn btn-default btn-icon-left btn-icon-right dropdown-toggle" data-toggle="dropdown"><i class="fa fa-calendar-o"></i> Release Date <i class="fa fa-caret-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="games.html#">Released</a></li>
+                        <li><a href="games.html#">Unreleased</a></li>
+                        <li><a href="games.html#">2016</a></li>
+                        <li><a href="games.html#">2015</a></li>
+                        <li><a href="games.html#">2014</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <section class="bg-grey-50">
+            <div class="container">
+                <div class="row" name="productssearch" id="productssearch">
+                    {% for t in tproducts %}
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                            <div class="card">
+                                <div class="card-img" style="height:257px;width:360px; background-color: white">
+                                    <a href="{{ path('tproduit_show', { 'id': t.idProduit }) }}"><img src="{{ path('get_product_img',{ 'id':t.idProduit }) }}" height="100%" width="100%" alt=""></a>
+                                    <div class="category"><span class="label label-success">{{ t.idCategorieProd }}</span></div>
+                                    <div class="meta"><a href="{{ path('tproduit_show', { 'id': t.idProduit }) }}"><i class="fa fa-heart-o"></i> <span></span></a></div>
+                                </div>
+                                <div class="caption">
+                                    <h3 class="card-title"><a href="{{ path('tproduit_show', { 'id': t.idProduit }) }}">{{ t.libelleProduit }}</a></h3>
+                                    <ul><li>{{ t.dateProduit | date }}</li></ul>
+                                    <p>{{ t.etat }}</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    {% endfor %}
+                </div>
+                {% if pages > 1 %}
+                <ul class="pagination margin-top-20">
+
+                    <li><a href="{{ path('tproduit_index',{ 'page':p-1 }) }}?a={{ tree }}"><span>&laquo;</span></a></li>
+                    {% for i in 1..pages %}
+                        <li {% if i==p %} class="active"{% endif %}><a href="{{ path('tproduit_index',{ 'page':i }) }}?a={{ tree }}">{{ i }}</a></li>
+
+                    {% endfor %}
+
+                    <li><a href="{{ path('tproduit_index',{ 'page':p+1 }) }}?a={{ tree }}"><span>&raquo;</span></a></li>
+
+                </ul>
+                {% endif %}
+            </div>
+            <script src="{{ asset('js/core.min.js') }}"></script>
+        </section>
+    </section>
+
+{% endblock %}

@@ -38,7 +38,6 @@
 
         <!-- THEME CSS -->
         <link href="{{ asset('css/theme.min.css') }}" rel="stylesheet">
-    <!-- <link href="{{ asset('css/custom.css') }}" rel="stylesheet"> -->
     {% endblock %}
 </head>
 
@@ -46,9 +45,10 @@
 {% block body %}
     <header>
         {% block header %}
+
             <div class="container">
                 <span class="bar hide"></span>
-                <a href="index.html" class="logo"><img src="{{ asset('img/logo.png') }}" alt=""></a>
+                <a href="" class="logo"><img src="{{ asset('img/logo.png') }}" alt=""></a>
                 <nav>
                     <div class="nav-control">
                         <ul>
@@ -66,11 +66,11 @@
                                 <a href="#">Games</a>
                                 <ul class="dropdown-menu mega-dropdown-menu category">
                                     <li class="col-md-3">
-                                        <a href="games-single.html">
+                                        <a href="{{ path('tproduit_index', {'page': 1}) }}">
                                             <img src="{{ asset('img/game/menu-1.jpg') }}" alt="">
                                             <div class="caption">
                                                 <span class="label label-warning">PC</span>
-                                                <h3>Assassin's Creed Syndicate</h3>
+                                                <h3>Assassin's Creedsss Syndicate</h3>
                                                 <p>Lorem ipsum dolor sit amet, adipise elit.</p>
                                             </div>
                                         </a>

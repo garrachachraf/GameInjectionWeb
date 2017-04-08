@@ -85,6 +85,29 @@ class TProduit
     private $imageProduit3;
 
     /**
+     * @var string
+     *
+     * @ORM\Column(name="score_produit", type="integer", nullable=true)
+     */
+    private $scoreproduit=0;
+
+    /**
+     * @return string
+     */
+    public function getScoreproduit()
+    {
+        return $this->scoreproduit;
+    }
+
+    /**
+     * @param string $scoreproduit
+     */
+    public function setScoreproduit($scoreproduit)
+    {
+        $this->scoreproduit = $scoreproduit;
+    }
+
+    /**
      * @var \Compte
      *
      * @ORM\ManyToOne(targetEntity="Compte")
@@ -221,7 +244,10 @@ class TProduit
      */
     public function getImgProduit()
     {
-        return $this->imgProduit;
+        if ($this->imgProduit != null)
+        {
+            return base64_encode(@stream_get_contents($this->imgProduit)) ;
+        }
     }
 
     /**
@@ -229,7 +255,10 @@ class TProduit
      */
     public function setImgProduit($imgProduit)
     {
-        $this->imgProduit = $imgProduit;
+        if ($imgProduit != null)
+        {
+            $this->imgProduit = @file_get_contents($imgProduit);
+        }
     }
 
     /**
@@ -237,7 +266,10 @@ class TProduit
      */
     public function getImageProduit2()
     {
-        return $this->imageProduit2;
+        if ($this->imageProduit2 != null)
+        {
+            return base64_encode(@stream_get_contents($this->imageProduit2)) ;
+        }
     }
 
     /**
@@ -245,7 +277,11 @@ class TProduit
      */
     public function setImageProduit2($imageProduit2)
     {
-        $this->imageProduit2 = $imageProduit2;
+        if ($imageProduit2 != null)
+        {
+            $this->imageProduit2 = @file_get_contents($imageProduit2);
+        }
+
     }
 
     /**
@@ -253,7 +289,10 @@ class TProduit
      */
     public function getImageProduit3()
     {
-        return $this->imageProduit3;
+        if ($this->imageProduit3 != null)
+        {
+            return base64_encode(@stream_get_contents($this->imageProduit3)) ;
+        }
     }
 
     /**
@@ -261,7 +300,10 @@ class TProduit
      */
     public function setImageProduit3($imageProduit3)
     {
-        $this->imageProduit3 = $imageProduit3;
+        if ($imageProduit3 != null)
+        {
+            $this->imageProduit3 = @file_get_contents($imageProduit3);
+        }
     }
 
     /**
@@ -295,6 +337,7 @@ class TProduit
     {
         $this->idCategorieProd = $idCategorieProd;
     }
+
 
 
 }

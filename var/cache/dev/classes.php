@@ -8,6 +8,7 @@ public static function getSubscribedEvents();
 }
 namespace Symfony\Component\HttpKernel\EventListener
 {
+use Symfony\Component\HttpFoundation\Session\SessionInterface;
 use Symfony\Component\HttpKernel\Event\GetResponseEvent;
 use Symfony\Component\HttpKernel\KernelEvents;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
@@ -1128,7 +1129,7 @@ parent::__construct($namespace, $defaultLifetime);
 if (null !== $version) {
 CacheItem::validateKey($version);
 if (!apcu_exists($version.'@'.$namespace)) {
-$this->clear($namespace);
+$this->doClear($namespace);
 apcu_add($version.'@'.$namespace, null);
 }
 }
@@ -1201,7 +1202,6 @@ if ('\\'=== DIRECTORY_SEPARATOR && strlen($dir) > 234) {
 throw new InvalidArgumentException(sprintf('Cache directory too long (%s)', $directory));
 }
 $this->directory = $dir;
-$this->tmp = $this->directory.uniqid('', true);
 }
 protected function doClear($namespace)
 {
@@ -1222,17 +1222,19 @@ return $ok;
 }
 private function write($file, $data, $expiresAt = null)
 {
-if (false === @file_put_contents($this->tmp, $data)) {
-return false;
+set_error_handler(__CLASS__.'::throwError');
+try {
+if (null === $this->tmp) {
+$this->tmp = $this->directory.uniqid('', true);
 }
+file_put_contents($this->tmp, $data);
 if (null !== $expiresAt) {
-@touch($this->tmp, $expiresAt);
+touch($this->tmp, $expiresAt);
 }
-if (@rename($this->tmp, $file)) {
-return true;
+return rename($this->tmp, $file);
+} finally {
+restore_error_handler();
 }
-@unlink($this->tmp);
-return false;
 }
 private function getFile($id, $mkdir = false)
 {
@@ -1242,6 +1244,17 @@ if ($mkdir && !file_exists($dir)) {
 @mkdir($dir, 0777, true);
 }
 return $dir.substr($hash, 2, 20);
+}
+public static function throwError($type, $message, $file, $line)
+{
+throw new \ErrorException($message, 0, $type, $file, $line);
+}
+public function __destruct()
+{
+parent::__destruct();
+if (null !== $this->tmp && file_exists($this->tmp)) {
+unlink($this->tmp);
+}
 }
 }
 }
@@ -2347,7 +2360,7 @@ $dump .="\n);\n";
 $dump = str_replace("' . \"\\0\" . '","\0", $dump);
 $tmpFile = uniqid($this->file, true);
 file_put_contents($tmpFile, $dump);
-@chmod($tmpFile, 0666);
+@chmod($tmpFile, 0666 & ~umask());
 unset($serialized, $unserialized, $value, $dump);
 @rename($tmpFile, $this->file);
 $this->values = (include $this->file) ?: array();
@@ -3219,7 +3232,7 @@ return $priority;
 }
 public function hasListeners($eventName = null)
 {
-return (bool) count($this->getListeners($eventName));
+return (bool) $this->getListeners($eventName);
 }
 public function addListener($eventName, $listener, $priority = 0)
 {
@@ -5068,10 +5081,10 @@ namespace
 {
 class Twig_Environment
 {
-const VERSION ='1.31.0';
-const VERSION_ID = 13100;
+const VERSION ='1.33.0';
+const VERSION_ID = 13300;
 const MAJOR_VERSION = 1;
-const MINOR_VERSION = 31;
+const MINOR_VERSION = 33;
 const RELEASE_VERSION = 0;
 const EXTRA_VERSION ='';
 protected $charset;
@@ -6036,7 +6049,7 @@ new Twig_SimpleFilter('capitalize','twig_capitalize_string_filter', array('needs
 new Twig_SimpleFilter('upper','strtoupper'),
 new Twig_SimpleFilter('lower','strtolower'),
 new Twig_SimpleFilter('striptags','strip_tags'),
-new Twig_SimpleFilter('trim','trim'),
+new Twig_SimpleFilter('trim','twig_trim_filter'),
 new Twig_SimpleFilter('nl2br','nl2br', array('pre_escape'=>'html','is_safe'=> array('html'))),
 new Twig_SimpleFilter('join','twig_join_filter'),
 new Twig_SimpleFilter('split','twig_split_filter', array('needs_environment'=> true)),
@@ -6435,6 +6448,22 @@ return false;
 }
 return false;
 }
+function twig_trim_filter($string, $characterMask = null, $side ='both')
+{
+if (null === $characterMask) {
+$characterMask =" \t\n\r\0\x0B";
+}
+switch ($side) {
+case'both':
+return trim($string, $characterMask);
+case'left':
+return ltrim($string, $characterMask);
+case'right':
+return rtrim($string, $characterMask);
+default:
+throw new Twig_Error_Runtime('Trimming side must be "left", "right" or "both".');
+}
+}
 function twig_escape_filter(Twig_Environment $env, $string, $strategy ='html', $charset = null, $autoescape = false)
 {
 if ($autoescape && $string instanceof Twig_Markup) {
@@ -6557,7 +6586,11 @@ if (!isset($char[1])) {
 return'\\x'.strtoupper(substr('00'.bin2hex($char), -2));
 }
 $char = twig_convert_encoding($char,'UTF-16BE','UTF-8');
-return'\\u'.strtoupper(substr('0000'.bin2hex($char), -4));
+$char = strtoupper(bin2hex($char));
+if (4 >= strlen($char)) {
+return sprintf('\u%04s', $char);
+}
+return sprintf('\u%04s\u%04s', substr($char, 0, -4), substr($char, -4));
 }
 function _twig_escape_css_callback($matches)
 {
@@ -6600,7 +6633,13 @@ return sprintf('&#x%s;', $hex);
 if (function_exists('mb_get_info')) {
 function twig_length_filter(Twig_Environment $env, $thing)
 {
-return is_scalar($thing) ? mb_strlen($thing, $env->getCharset()) : count($thing);
+if (is_scalar($thing)) {
+return mb_strlen($thing, $env->getCharset());
+}
+if (method_exists($thing,'__toString') && !$thing instanceof \Countable) {
+return mb_strlen((string) $thing, $env->getCharset());
+}
+return count($thing);
 }
 function twig_upper_filter(Twig_Environment $env, $string)
 {
@@ -6634,7 +6673,13 @@ return ucfirst(strtolower($string));
 else {
 function twig_length_filter(Twig_Environment $env, $thing)
 {
-return is_scalar($thing) ? strlen($thing) : count($thing);
+if (is_scalar($thing)) {
+return strlen($thing);
+}
+if (method_exists($thing,'__toString') && !$thing instanceof \Countable) {
+return strlen((string) $thing);
+}
+return count($thing);
 }
 function twig_title_string_filter(Twig_Environment $env, $string)
 {
@@ -6656,6 +6701,9 @@ function twig_test_empty($value)
 {
 if ($value instanceof Countable) {
 return 0 == count($value);
+}
+if (method_exists($value,'__toString')) {
+return''=== (string) $value;
 }
 return''=== $value || false === $value || null === $value || array() === $value;
 }
@@ -7535,7 +7583,7 @@ $previousText .=', '.get_class($previous).'(code: '.$previous->getCode().'): '.$
 }
 $str ='[object] ('.get_class($e).'(code: '.$e->getCode().'): '.$e->getMessage().' at '.$e->getFile().':'.$e->getLine().$previousText.')';
 if ($this->includeStacktraces) {
-$str .="\n[stacktrace]\n".$e->getTraceAsString();
+$str .="\n[stacktrace]\n".$e->getTraceAsString()."\n";
 }
 return $str;
 }
@@ -7555,6 +7603,9 @@ return str_replace('\\/','/', @json_encode($data));
 protected function replaceNewlines($str)
 {
 if ($this->allowInlineLineBreaks) {
+if (0 === strpos($str,'{')) {
+return str_replace(array('\r','\n'), array("\r","\n"), $str);
+}
 return $str;
 }
 return str_replace(array("\r\n","\r","\n"),' ', $str);
@@ -8582,7 +8633,7 @@ $this->saveCacheFile($path, $annot);
 return $this->loadedAnnotations[$key] = $annot;
 }
 if ($this->debug
-&& (false !== $filename = $class->getFilename())
+&& (false !== $filename = $class->getFileName())
 && filemtime($path) < filemtime($filename)) {
 @unlink($path);
 $annot = $this->reader->getClassAnnotations($class);
@@ -8652,6 +8703,7 @@ $tempfile = tempnam($this->dir, uniqid('', true));
 if (false === $tempfile) {
 throw new \RuntimeException(sprintf('Unable to create tempfile in directory: %s', $this->dir));
 }
+@chmod($tempfile, 0666 & (~$this->umask));
 $written = file_put_contents($tempfile,'<?php return unserialize('.var_export(serialize($data), true).');');
 if (false === $written) {
 throw new \RuntimeException(sprintf('Unable to write cached file to: %s', $tempfile));
@@ -8708,7 +8760,7 @@ public function parseClass(\ReflectionClass $class)
 if (method_exists($class,'getUseStatements')) {
 return $class->getUseStatements();
 }
-if (false === $filename = $class->getFilename()) {
+if (false === $filename = $class->getFileName()) {
 return array();
 }
 $content = $this->getFileContent($filename, $class->getStartLine());
@@ -8964,7 +9016,7 @@ return;
 }
 $manager = $this->container->get($name);
 if (!$manager instanceof LazyLoadingInterface) {
-@trigger_error(sprintf('Resetting a non-lazy manager service is deprecated since Symfony 3.2 and will throw an exception in version 4.0. Set the "%s" service as lazy and require "symfony/proxy-manager-bridge" in your composer.json file instead.', $name));
+@trigger_error(sprintf('Resetting a non-lazy manager service is deprecated since Symfony 3.2 and will throw an exception in version 4.0. Set the "%s" service as lazy and require "symfony/proxy-manager-bridge" in your composer.json file instead.', $name), E_USER_DEPRECATED);
 $this->container->set($name, null);
 return;
 }
@@ -9168,18 +9220,20 @@ if ($param->getClass() && $param->getClass()->isInstance($request)) {
 continue;
 }
 $name = $param->getName();
-if ($param->getClass()) {
+$class = $param->getClass();
+$hasType = $this->isParameterTypeSupported && $param->hasType();
+if ($class || $hasType) {
 if (!isset($configurations[$name])) {
 $configuration = new ParamConverter(array());
 $configuration->setName($name);
-$configuration->setClass($param->getClass()->getName());
 $configurations[$name] = $configuration;
-} elseif (null === $configurations[$name]->getClass()) {
-$configurations[$name]->setClass($param->getClass()->getName());
+}
+if ($class && null === $configurations[$name]->getClass()) {
+$configurations[$name]->setClass($class->getName());
 }
 }
 if (isset($configurations[$name])) {
-$configurations[$name]->setIsOptional($param->isOptional() || $param->isDefaultValueAvailable() || $this->isParameterTypeSupported && $param->hasType() && $param->getType()->allowsNull());
+$configurations[$name]->setIsOptional($param->isOptional() || $param->isDefaultValueAvailable() || $hasType && $param->getType()->allowsNull());
 }
 }
 return $configurations;
@@ -9506,11 +9560,8 @@ public function onKernelController(FilterControllerEvent $event)
 {
 $request = $event->getRequest();
 $template = $request->attributes->get('_template');
-if (null === $template) {
-return;
-}
 if (!$template instanceof Template) {
-throw new \InvalidArgumentException('Request attribute "_template" is reserved for @Template annotations.');
+return;
 }
 $template->setOwner($controller = $event->getController());
 if (null === $template->getTemplate()) {
@@ -9522,7 +9573,7 @@ public function onKernelView(GetResponseForControllerResultEvent $event)
 {
 $request = $event->getRequest();
 $template = $request->attributes->get('_template');
-if (null === $template) {
+if (!$template instanceof Template) {
 return;
 }
 $parameters = $event->getControllerResult();

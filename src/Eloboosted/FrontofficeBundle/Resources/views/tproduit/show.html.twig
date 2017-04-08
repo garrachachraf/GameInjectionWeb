@@ -1,0 +1,239 @@
+{% extends '@EloboostedFrontoffice/Default/Layout.html.twig' %}
+
+{% block main %}
+    <link href="{{ asset('css/rating.css') }}" rel="stylesheet">
+    <section class="hero height-350 hero-game" style="background-image: url('{{ asset('img/cover/cover-game.jpg') }}');">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="page-header">
+                <div class="page-title">Game Injection</div>
+                <ol class="breadcrumb">
+                    <li><a href="index.html" class="no-padding-left">Home</a></li>
+                    <li><a href="{{ path('tproduit_index') }}">Products</a></li>
+                    <li class="active">Show Product</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+    <section class="bg-grey-50">
+        <div class="container">
+            <div class="row sidebar">
+                <div class="col-md-8 leftside">
+                    <div class="panel panel-default panel-post">
+                        <div class="panel-body">
+
+                            <div class="post post-single">
+                                <div class="post-header">
+                                    <div class="post-title">
+                                        <h2><a href="{{ path('tproduit_show', { 'id': tProduit.idProduit }) }}">{{ tProduit.libelleProduit }}</a></h2>
+                                        <ul class="post-meta">
+                                            <li><a href=""><i class="fa fa-user"></i> {{ tProduit.idCompteProd }}</a></li>
+                                            <li><i class="fa fa-calendar-o"></i>{{ tProduit.dateProduit|date }}</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div id="post-carousel" class="carousel slide post-thumbnail" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#post-carousel" data-slide-to="0" class="active"></li>
+                                        <li data-target="#post-carousel" data-slide-to="1"></li>
+                                        <li data-target="#post-carousel" data-slide-to="2"></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                        <div class="item active">
+                                            <img src="{{ path('get_product_img',{ 'id':tProduit.idProduit,'nb':1 }) }}" alt="">
+                                            <div class="post-caption">{{ tProduit.prixProduit }}$</div>
+                                        </div>
+                                        <div class="item">
+                                            <img src="{{ path('get_product_img',{ 'id':tProduit.idProduit,'nb':2 }) }}" alt="">
+                                            <div class="post-caption">{{ tProduit.prixProduit }}$</div>
+                                        </div>
+                                        <div class="item">
+                                            <img src="{{ path('get_product_img',{ 'id':tProduit.idProduit,'nb':3 }) }}" alt="">
+                                            <div class="post-caption">{{ tProduit.prixProduit }}$</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row margin-top-40">
+
+                                </div>
+                                <table border="0" width="100%">
+                                    <tr>
+                                        <td class="padding-10">Categorie: </td>
+                                        <td><span class="label label-warning">{{ tProduit.idCategorieProd }}</span>
+                                    </tr><tr>
+                                        <td class="padding-10">Mark: </td>
+                                        <td><span class="label label-warning">{{ tProduit.marqueProduit }}</span>
+                                    </tr>
+
+                                </table>
+                                <p class="padding-10">{{ tProduit.descriptionProduit }} </p>
+                            </div>
+
+                            <div class="comments">
+                            </div>
+                        </div>
+                        <div class="panel-footer">
+                            {% if app.user == tProduit.idCompteProd %}
+                            <ul class="post-action ">
+                                <li>{% if voted == 0 %}
+                                        {{ form_start(form) }}
+                                        {{ form_widget(form.nombreVote) }}
+                                        <script>
+                                            $(document).ready(function () {
+                                                $('#rating_star_1').click(function () {
+                                                    window.location.replace('{{ path('vote_prod',{'idprod':tProduit.idProduit , 'nbrevote':'1'}) }}');
+                                                });
+                                                $('#rating_star_2').click(function () {
+                                                    window.location.replace('{{ path('vote_prod',{'idprod':tProduit.idProduit , 'nbrevote':'2'}) }}');
+                                                });
+                                                $('#rating_star_3').click(function () {
+                                                    window.location.replace('{{ path('vote_prod',{'idprod':tProduit.idProduit , 'nbrevote':'3'})}}');
+
+                                                });
+                                                $('#rating_star_4').click(function () {
+                                                    window.location.replace('{{ path('vote_prod',{'idprod':tProduit.idProduit , 'nbrevote':'4'})}}');
+                                                });
+                                                $('#rating_star_5').click(function () {
+                                                    window.location.replace('{{ path('vote_prod',{'idprod':tProduit.idProduit , 'nbrevote':'5'})}}');
+                                                });
+
+                                            });
+
+                                        </script>
+                                        {{ form_end(form) }}
+                                    {% endif %}</li>
+                                <li> </li>
+                                <li><a href="{{ path('tproduit_edit', { 'id': tProduit.idProduit }) }}">
+                                        <button class="btn btn-warning padding-left-15" >EDIT</button>
+                                    </a>
+                                </li>
+                                <li>
+                                    {{ form_start(delete_form,{'attr':{'class':"inline"}}) }}
+                                    <input type="submit" class="btn btn-danger" value="Delete">
+                                    {{ form_end(delete_form) }}
+                                </li>
+                            </ul>
+                            {% endif %}
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-4 rightside">
+                    <div class="widget widget-game" >
+                        <div class="overlay">
+                            <div class="title">{{ tProduit.libelleProduit }}</div>
+
+                            <div class="chart-align">
+                                <span class="chart" data-percent="{{ tProduit.scoreproduit * 20 }}"><span class="percent"></span></span>
+                            </div>
+
+                            <p class="progress-label">Rating <span>{{ tProduit.scoreproduit }}</span></p>
+                            <div class="progress progress-animation progress-xs">
+                                <div class="progress-bar progress-bar-success" aria-valuenow="{{ tProduit.scoreproduit * 20 }}" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+                            </div>
+
+                            <p class="progress-label">Total Of votes <span>{{ score }}</span></p>
+                            <div class="progress progress-animation progress-xs no-margin-bottom">
+                                <div class="progress-bar progress-bar-warning" aria-valuenow="{{ score * 10 }}" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+                            </div>
+
+                            <div class="bold text-uppercase margin-top-40">Posted By</div>
+                            <span class="font-size-13">{{ tProduit.idCompteProd }}</span>
+
+
+                            <div class="description">
+                                GameInjection dosen't garantee Any kind of fraud .
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="widget widget-list">
+                        <div class="title">Recent Products</div>
+                        <ul>
+                            {% for l in lasts %}
+                                <li>
+                                    <a href="{{ path('tproduit_show', { 'id': l.idProduit }) }}" class="thumb"><img src="{{ path('get_product_img',{ 'id':l.idProduit,'nb':1 }) }}" alt=""></a>
+                                    <div class="widget-list-meta">
+                                        <h4 class="widget-list-title"><a href="{{ path('tproduit_show', { 'id': l.idProduit }) }}">{{ l.libelleProduit }}</a></h4>
+                                        <p><i class="fa fa-clock-o"></i> {{ l.dateProduit|date }}</p>
+                                    </div>
+                                </li>
+
+                            {% endfor %}
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="{{ asset('plugins/jquery/jquery-3.1.0.min.js') }}"></script>
+    <script src="{{ asset('plugins/bootstrap/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('plugins/ekko-lightbox/ekko-lightbox.min.js') }}"></script>
+    <script src="{{ asset('js/core.min.js') }}"></script>
+    <script src="{{ asset('plugins/owl-carousel/owl.carousel.min.js') }}"></script>
+    <script src="{{ asset('plugins/easypiechart/jquery.easypiechart.min.js') }}"></script>
+    <script src="{{ asset('js/rating.js') }}"></script>
+    <script>
+        (function($) {
+            "use strict";
+            var owl = $(".owl-carousel");
+
+            owl.owlCarousel({
+                autoPlay: 3000,
+                items : 1, //4 items above 1000px browser width
+                itemsDesktop : [1000,3], //3 items between 1000px and 0
+                itemsTablet: [600,1], //1 items between 600 and 0
+                itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
+            });
+
+            $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
+                event.preventDefault();
+                $(this).ekkoLightbox();
+            });
+
+            $(window).scroll(function(){
+                if ($(this).scrollTop() > 400) {
+                    $('body').addClass('fixed-tab');
+                } else {
+                    $('body').removeClass('fixed-tab');
+                }
+            });
+
+            $('.chart').easyPieChart({
+                easing: 'easeOutBounce',
+                barColor: '#5eb404',
+                trackColor: '#e3e3e3',
+                onStep: function(from, to, percent) {
+                    $(this.el).find('.percent').text(Math.round(percent));
+                }
+            });
+
+            setTimeout(function(){
+                $('.progress-animation .progress-bar').each(function() {
+                    var me = $(this);
+                    var perc = me.attr("aria-valuenow");
+                    var current_perc = 0;
+                    var progress = setInterval(function() {
+                        if (current_perc>=perc) {
+                            clearInterval(progress);
+                        } else {
+                            current_perc +=1;
+                            me.css('width', (current_perc)+'%');
+                        }
+                    }, 0);
+                });
+            },0);
+        })(jQuery);
+
+    </script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.js"></script>
+    <script src="http://jschr.github.io/bootstrap-modal/js/bootstrap-modalmanager.js"></script>
+    <script src="http://jschr.github.io/bootstrap-modal/js/bootstrap-modal.js"></script>
+    <link href="http://jschr.github.io/bootstrap-modal/css/bootstrap-modal.css" rel="stylesheet">
+    <link href="http://jschr.github.io/bootstrap-modal/css/bootstrap-modal-bs3patch.css" rel="stylesheet">
+{% endblock %}
+

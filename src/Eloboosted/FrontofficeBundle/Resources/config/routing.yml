@@ -148,3 +148,60 @@ participation_tiket:
 participation_tikethtml:
     path:     /Tickethtml/{participation}
     defaults: { _controller: EloboostedFrontofficeBundle:Participation:tickethtml }
+
+#taha routes
+tproduit_index:
+    path:     /Products/{page}
+    defaults: { _controller: "EloboostedFrontofficeBundle:TProduit:index",page:1 }
+    methods:  GET
+
+tproduit_show:
+    path:     /{id}/showProd
+    defaults: { _controller: "EloboostedFrontofficeBundle:TProduit:show" }
+    methods:  GET
+
+tproduit_new:
+    path:     /newProd
+    defaults: { _controller: "EloboostedFrontofficeBundle:TProduit:new" }
+    methods:  [GET, POST]
+
+tproduit_search:
+    path:     /searchprod
+    defaults: { _controller: "EloboostedFrontofficeBundle:TProduit:SearchProduct" }
+    methods:  [GET, POST]
+
+tproduit_edit:
+    path:     /{id}/editProd
+    defaults: { _controller: "EloboostedFrontofficeBundle:TProduit:edit" }
+    methods:  [GET, POST]
+
+tproduit_delete:
+    path:     /{id}/deleteProd
+    defaults: { _controller: "EloboostedFrontofficeBundle:TProduit:delete" }
+    methods:  DELETE
+
+tevenement_index_front:
+    path:     /eventsfront/{page}
+    defaults: { _controller: "EloboostedFrontofficeBundle:TEvenement:events" , page:1 }
+    methods:  GET
+vote_prod:
+    path:     /voteprod/{idprod}/{nbrevote}
+    defaults: { _controller: EloboostedFrontofficeBundle:VoteProduct:newVote }
+tevenement_show:
+        path:     /{id}/showevent
+        defaults: { _controller: "EloboostedFrontofficeBundle:TEvenement:show" }
+        methods:  GET
+calender:
+        path:     /calender
+        defaults: { _controller: "EloboostedFrontofficeBundle:TProduit:Calender" }
+        methods:  GET
+streaming_all:
+    path:     /streaming
+    defaults: { _controller: "EloboostedFrontofficeBundle:TEvenement:stream" }
+    methods:  GET
+get_product_img:
+    path:     /productimg/{id}/{nb}
+    defaults: { _controller: EloboostedFrontofficeBundle:Images:Productsimg , nb:1 }
+get_event_img:
+    path:     /eventimg/{id}
+    defaults: { _controller: EloboostedFrontofficeBundle:Images:Eventsimg }

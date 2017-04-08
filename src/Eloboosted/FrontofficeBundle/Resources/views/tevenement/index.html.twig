@@ -1,0 +1,96 @@
+{% extends 'EloboostedFrontofficeBundle:Default:Layout.html.twig' %}
+{% block main %}
+    <link href="{{ asset('plugins/owl-carousel/owl.carousel.css') }}" rel="stylesheet">
+    <div id="wrapper">
+
+        <section class="background-image" style="background-image: url(http://img.youtube.com/vi/bcjA74emEJI/maxresdefault.jpg);">
+            <span class="background-overlay"></span>
+            <div class="container">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/bcjA74emEJI?rel=0&amp;showinfo=0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section class="padding-top-15 padding-bottom-10">
+
+            <div class="owl-carousel owl-video">
+                {% for vid in lasts %}
+                <div class="card card-video">
+                    <div class="card-img">
+                        <a href="{{ path('tevenement_show',{ 'id':vid.idEvenement }) }}"><img src="{{ path('get_event_img',{ 'id':vid.idEvenement }) }}" alt=""></a>
+                        <div class="time">{{ vid.dureeevent }}</div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+
+        <section class="bg-grey-50">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="title outline">
+                            <h4><i class="fa fa-video-camera"></i> Recent Events</h4>
+                            <p> Check Here Last Events Only available On Game Injection</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-group">
+                    <div class="row">
+
+                        {% for ev in tEvenements %}
+
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                <div class="card card-video">
+                                    <div class="card-img">
+                                        <a href="{{ path('tevenement_show',{ 'id':ev.idEvenement }) }}"><img src="{{ path('get_event_img',{ 'id':ev.idEvenement }) }}" alt=""></a>
+                                        <div class="time">{{ ev.dureeevent }}</div>
+                                    </div>
+                                    <div class="caption">
+                                        <h3 class="card-title"><a href="{{ path('tevenement_show',{ 'id':ev.idEvenement }) }}">{{ ev.titleevent }}</a></h3>
+                                        <ul>
+                                            <li><i class="fa fa-clock-o"></i> {{ ev.dateEvent|date }}</li>
+                                        </ul>
+                                        <p> </p>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+
+
+                    </div>
+                </div>
+                {% if pages > 1 %}
+                <ul class="pagination margin-top-20">
+
+                    <li><a href="{{ path('tevenement_index_front',{ 'page':p-1 }) }}"><span>&laquo;</span></a></li>
+                    {% for i in 1..pages %}
+                    <li {% if i==p %} class="active"{% endif %}><a href="{{ path('tevenement_index_front',{ 'page':i }) }}">{{ i }}</a></li>
+
+                    {% endfor %}
+
+                    <li><a href="{{ path('tevenement_index_front',{ 'page':p+1 }) }}"><span>&raquo;</span></a></li>
+
+                </ul>
+                {% endif %}
+            </div>
+        </section>
+    </div>
+    <script src="{{ asset('plugins/jquery/jquery-3.1.0.min.js') }}"></script>
+    <script src="{{ asset('plugins/bootstrap/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('plugins/owl-carousel/owl.carousel.min.js') }}"></script>
+    <script src="{{ asset('js/core.min.js') }}"></script>
+    <script>
+        (function($) {
+            "use strict";
+            $(".owl-carousel").owlCarousel({
+                autoPlay: true,
+                items : 6, //4 items above 1000px browser width
+                itemsDesktop : [1600,3], //3 items between 1000px and 0
+                itemsTablet: [940,1], //1 items between 600 and 0
+                itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
+            });
+        })(jQuery);
+    </script>
+{% endblock %}
