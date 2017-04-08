@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d73e6a33-b9cb-404e-b7d4-77be369b3955" name="Default" comment="Taha Push : All">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/classes.php.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/fosJsRouting/data.json.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/index.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/doctrine/orm/Proxies/__CG__EloboostedGameinjectionBundleEntityTypeEvent.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/fosJsRouting/data.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/twig/8d/8dca6520a7e4e528d7eda49d04e1e21e279e497d02fcc6599b9ba89935477389.php" />
+    <list default="true" id="d73e6a33-b9cb-404e-b7d4-77be369b3955" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="C:\wamp\www\sprintweb1\.idea\shelf/" />
@@ -670,7 +664,7 @@
       <workItem from="1491577786982" duration="211000" />
       <workItem from="1491580077012" duration="224000" />
       <workItem from="1491588123496" duration="15000" />
-      <workItem from="1491659939434" duration="22618000" />
+      <workItem from="1491659939434" duration="22646000" />
     </task>
     <task id="LOCAL-00001" summary="add tournament controller + products controller">
       <created>1489284724008</created>
@@ -854,11 +848,18 @@
       <option name="project" value="LOCAL" />
       <updated>1491685786487</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Taha Push : All">
+      <created>1491686518137</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1491686518137</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="194777000" />
+    <option name="totallyTimeSpent" value="194805000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -871,8 +872,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24810319" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24810319" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281787" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4707904" sideWeight="0.5060698" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
