@@ -1,6 +1,6 @@
 <?php
 
-/* NomayaSocialBundle:Buttons:googleplusButton.html.twig */
+/* @NomayaSocial/Buttons/googleplusButton.html.twig */
 class __TwigTemplate_d860f76e1cbf1b5f5ee99ac90b50fd269eb2468b35855c1b5ae58c3d1a1ca3fd extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
@@ -15,11 +15,11 @@ class __TwigTemplate_d860f76e1cbf1b5f5ee99ac90b50fd269eb2468b35855c1b5ae58c3d1a1
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_3d3511a9b8fdf9991d3e3e1f44b9c8de9efb6ae5a095357465b0652e6c5ef531 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_3d3511a9b8fdf9991d3e3e1f44b9c8de9efb6ae5a095357465b0652e6c5ef531->enter($__internal_3d3511a9b8fdf9991d3e3e1f44b9c8de9efb6ae5a095357465b0652e6c5ef531_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "NomayaSocialBundle:Buttons:googleplusButton.html.twig"));
+        $__internal_583ac9ecad1b80f6460fe27df81999379d4d8b02e1bcdc3940727f6311daed92 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_583ac9ecad1b80f6460fe27df81999379d4d8b02e1bcdc3940727f6311daed92->enter($__internal_583ac9ecad1b80f6460fe27df81999379d4d8b02e1bcdc3940727f6311daed92_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@NomayaSocial/Buttons/googleplusButton.html.twig"));
 
-        $__internal_042ffc114ad68cd8f8fc17eb305bcb8268cd57b8510ed42f0c47c46e3e65b05e = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_042ffc114ad68cd8f8fc17eb305bcb8268cd57b8510ed42f0c47c46e3e65b05e->enter($__internal_042ffc114ad68cd8f8fc17eb305bcb8268cd57b8510ed42f0c47c46e3e65b05e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "NomayaSocialBundle:Buttons:googleplusButton.html.twig"));
+        $__internal_8ff0d8620280abc8d370ff323424e3e998ff9aa5a493f4f59d32f2eb0e02395f = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_8ff0d8620280abc8d370ff323424e3e998ff9aa5a493f4f59d32f2eb0e02395f->enter($__internal_8ff0d8620280abc8d370ff323424e3e998ff9aa5a493f4f59d32f2eb0e02395f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@NomayaSocial/Buttons/googleplusButton.html.twig"));
 
         // line 1
         if (( !array_key_exists("url", $context) || ((isset($context["url"]) ? $context["url"] : $this->getContext($context, "url")) == null))) {
@@ -59,16 +59,16 @@ class __TwigTemplate_d860f76e1cbf1b5f5ee99ac90b50fd269eb2468b35855c1b5ae58c3d1a1
 ";
         echo trim(preg_replace('/>\s+</', '><', ob_get_clean()));
         
-        $__internal_3d3511a9b8fdf9991d3e3e1f44b9c8de9efb6ae5a095357465b0652e6c5ef531->leave($__internal_3d3511a9b8fdf9991d3e3e1f44b9c8de9efb6ae5a095357465b0652e6c5ef531_prof);
+        $__internal_583ac9ecad1b80f6460fe27df81999379d4d8b02e1bcdc3940727f6311daed92->leave($__internal_583ac9ecad1b80f6460fe27df81999379d4d8b02e1bcdc3940727f6311daed92_prof);
 
         
-        $__internal_042ffc114ad68cd8f8fc17eb305bcb8268cd57b8510ed42f0c47c46e3e65b05e->leave($__internal_042ffc114ad68cd8f8fc17eb305bcb8268cd57b8510ed42f0c47c46e3e65b05e_prof);
+        $__internal_8ff0d8620280abc8d370ff323424e3e998ff9aa5a493f4f59d32f2eb0e02395f->leave($__internal_8ff0d8620280abc8d370ff323424e3e998ff9aa5a493f4f59d32f2eb0e02395f_prof);
 
     }
 
     public function getTemplateName()
     {
-        return "NomayaSocialBundle:Buttons:googleplusButton.html.twig";
+        return "@NomayaSocial/Buttons/googleplusButton.html.twig";
     }
 
     public function isTraitable()
@@ -108,6 +108,6 @@ class __TwigTemplate_d860f76e1cbf1b5f5ee99ac90b50fd269eb2468b35855c1b5ae58c3d1a1
    })();
  </script>
 
-{% endspaceless %}", "NomayaSocialBundle:Buttons:googleplusButton.html.twig", "C:\\wamp64\\www\\testmerge\\vendor\\nomaya\\social-bundle\\Nomaya\\SocialBundle\\Resources\\views\\Buttons\\googleplusButton.html.twig");
+{% endspaceless %}", "@NomayaSocial/Buttons/googleplusButton.html.twig", "C:\\wamp64\\www\\testmerge\\vendor\\nomaya\\social-bundle\\Nomaya\\SocialBundle\\Resources\\views\\Buttons\\googleplusButton.html.twig");
     }
 }

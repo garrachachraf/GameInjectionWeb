@@ -1,6 +1,6 @@
 <?php
 
-/* EloboostedFrontofficeBundle:Default:Layout.html.twig */
+/* @EloboostedFrontoffice/Default/Layout.html.twig */
 class __TwigTemplate_739ae83e8ecb0d8308ae4b03ec6daaa2e9ea276b555c04ef8dcf9b3410a31ab7 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
@@ -21,11 +21,11 @@ class __TwigTemplate_739ae83e8ecb0d8308ae4b03ec6daaa2e9ea276b555c04ef8dcf9b3410a
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_61407d97936a7a87168b192ac17284f3562a06a2d0b522cc2d88ffc2fd1a6680 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_61407d97936a7a87168b192ac17284f3562a06a2d0b522cc2d88ffc2fd1a6680->enter($__internal_61407d97936a7a87168b192ac17284f3562a06a2d0b522cc2d88ffc2fd1a6680_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EloboostedFrontofficeBundle:Default:Layout.html.twig"));
+        $__internal_9c232f26f4222701f830cffa15ec3ac4e4e69bdf45ccdcb430ad48d0653fe9a2 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_9c232f26f4222701f830cffa15ec3ac4e4e69bdf45ccdcb430ad48d0653fe9a2->enter($__internal_9c232f26f4222701f830cffa15ec3ac4e4e69bdf45ccdcb430ad48d0653fe9a2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@EloboostedFrontoffice/Default/Layout.html.twig"));
 
-        $__internal_0b93473edf8ae658f202b0bcbf3f4c3b5c0ca99c6cb05b3df59ea44bfb9ce869 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_0b93473edf8ae658f202b0bcbf3f4c3b5c0ca99c6cb05b3df59ea44bfb9ce869->enter($__internal_0b93473edf8ae658f202b0bcbf3f4c3b5c0ca99c6cb05b3df59ea44bfb9ce869_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EloboostedFrontofficeBundle:Default:Layout.html.twig"));
+        $__internal_7ff7df4e4f4932be2fdcf9166d9d29517f17d614b17076120e010f10d8b0d4a1 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_7ff7df4e4f4932be2fdcf9166d9d29517f17d614b17076120e010f10d8b0d4a1->enter($__internal_7ff7df4e4f4932be2fdcf9166d9d29517f17d614b17076120e010f10d8b0d4a1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@EloboostedFrontoffice/Default/Layout.html.twig"));
 
         // line 2
         echo "<!DOCTYPE html>
@@ -76,39 +76,62 @@ class __TwigTemplate_739ae83e8ecb0d8308ae4b03ec6daaa2e9ea276b555c04ef8dcf9b3410a
         // line 16
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("plugins/bootstrap/css/prettify-1.0.css"), "html", null, true);
         echo "\" rel=\"stylesheet\">
+    <style>
+
+        .custom {
+            background: #ff081b;
+            animation: myfirst 5s;
+            -webkit-animation: myfirst 1.25s infinite; /* Safari and Chrome */
+        }
+
+        @-webkit-keyframes myfirst /* Firefox */
+        {
+            0% {
+                background: red;
+            }
+            50% {
+                background: #e6023f;
+            }
+            100% {
+                background: #ff0079;
+            }
+        }
+
+
+    </style>
 
     ";
-        // line 18
+        // line 41
         $this->displayBlock('head', $context, $blocks);
-        // line 42
+        // line 65
         echo "</head>
 
 <body class=\"fixed-header\">
 ";
-        // line 45
+        // line 68
         $this->displayBlock('body', $context, $blocks);
-        // line 364
+        // line 337
         echo "
 </body>
 </html>";
         
-        $__internal_61407d97936a7a87168b192ac17284f3562a06a2d0b522cc2d88ffc2fd1a6680->leave($__internal_61407d97936a7a87168b192ac17284f3562a06a2d0b522cc2d88ffc2fd1a6680_prof);
+        $__internal_9c232f26f4222701f830cffa15ec3ac4e4e69bdf45ccdcb430ad48d0653fe9a2->leave($__internal_9c232f26f4222701f830cffa15ec3ac4e4e69bdf45ccdcb430ad48d0653fe9a2_prof);
 
         
-        $__internal_0b93473edf8ae658f202b0bcbf3f4c3b5c0ca99c6cb05b3df59ea44bfb9ce869->leave($__internal_0b93473edf8ae658f202b0bcbf3f4c3b5c0ca99c6cb05b3df59ea44bfb9ce869_prof);
+        $__internal_7ff7df4e4f4932be2fdcf9166d9d29517f17d614b17076120e010f10d8b0d4a1->leave($__internal_7ff7df4e4f4932be2fdcf9166d9d29517f17d614b17076120e010f10d8b0d4a1_prof);
 
     }
 
-    // line 18
+    // line 41
     public function block_head($context, array $blocks = array())
     {
-        $__internal_ecff967dcc0ba0969c3906a5038f7ee37a25f98486f94a7e46242f319ac8a0d5 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_ecff967dcc0ba0969c3906a5038f7ee37a25f98486f94a7e46242f319ac8a0d5->enter($__internal_ecff967dcc0ba0969c3906a5038f7ee37a25f98486f94a7e46242f319ac8a0d5_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "head"));
+        $__internal_61dcd3d2a9c1d8f1d61f82c2be06f45bef5685c66f7647ce9af80b8f7a853431 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_61dcd3d2a9c1d8f1d61f82c2be06f45bef5685c66f7647ce9af80b8f7a853431->enter($__internal_61dcd3d2a9c1d8f1d61f82c2be06f45bef5685c66f7647ce9af80b8f7a853431_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "head"));
 
-        $__internal_5825916e5c8f54463bcffb1e5a60b0b01105b6cc034f5ef111dd0107dd008ea7 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_5825916e5c8f54463bcffb1e5a60b0b01105b6cc034f5ef111dd0107dd008ea7->enter($__internal_5825916e5c8f54463bcffb1e5a60b0b01105b6cc034f5ef111dd0107dd008ea7_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "head"));
+        $__internal_589b670ff768a9fb31bd5f194dbd61543b458a4fad68c967cb312e8555accaa0 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_589b670ff768a9fb31bd5f194dbd61543b458a4fad68c967cb312e8555accaa0->enter($__internal_589b670ff768a9fb31bd5f194dbd61543b458a4fad68c967cb312e8555accaa0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "head"));
 
-        // line 19
+        // line 42
         echo "        <!-- META -->
         <meta charset=\"utf-8\">
         <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">
@@ -120,102 +143,102 @@ class __TwigTemplate_739ae83e8ecb0d8308ae4b03ec6daaa2e9ea276b555c04ef8dcf9b3410a
 
         <!-- FAVICON -->
         <link rel=\"shortcut icon\" href=\"";
-        // line 29
+        // line 52
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/favicon.ico"), "html", null, true);
         echo "\">
 
         <!-- CORE CSS -->
         <link href=\"";
-        // line 32
+        // line 55
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("plugins/bootstrap/css/bootstrap.min.css"), "html", null, true);
         echo "\" rel=\"stylesheet\">
         <link href=\"";
-        // line 33
+        // line 56
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("plugins/font-awesome/css/font-awesome.min.css"), "html", null, true);
         echo "\" rel=\"stylesheet\">
         <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
 
         <!-- PLUGINS -->
         <link href=\"";
-        // line 37
+        // line 60
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("plugins/animate/animate.min.css"), "html", null, true);
         echo "\" rel=\"stylesheet\">
 
         <!-- THEME CSS -->
         <link href=\"";
-        // line 40
+        // line 63
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("css/theme.min.css"), "html", null, true);
         echo "\" rel=\"stylesheet\">
     ";
         
-        $__internal_5825916e5c8f54463bcffb1e5a60b0b01105b6cc034f5ef111dd0107dd008ea7->leave($__internal_5825916e5c8f54463bcffb1e5a60b0b01105b6cc034f5ef111dd0107dd008ea7_prof);
+        $__internal_589b670ff768a9fb31bd5f194dbd61543b458a4fad68c967cb312e8555accaa0->leave($__internal_589b670ff768a9fb31bd5f194dbd61543b458a4fad68c967cb312e8555accaa0_prof);
 
         
-        $__internal_ecff967dcc0ba0969c3906a5038f7ee37a25f98486f94a7e46242f319ac8a0d5->leave($__internal_ecff967dcc0ba0969c3906a5038f7ee37a25f98486f94a7e46242f319ac8a0d5_prof);
+        $__internal_61dcd3d2a9c1d8f1d61f82c2be06f45bef5685c66f7647ce9af80b8f7a853431->leave($__internal_61dcd3d2a9c1d8f1d61f82c2be06f45bef5685c66f7647ce9af80b8f7a853431_prof);
 
     }
 
-    // line 45
+    // line 68
     public function block_body($context, array $blocks = array())
     {
-        $__internal_48a9a27c4ad04e2a64dadb6d06aef11d2e1d9ac47c70eca856fe1398eafd425a = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_48a9a27c4ad04e2a64dadb6d06aef11d2e1d9ac47c70eca856fe1398eafd425a->enter($__internal_48a9a27c4ad04e2a64dadb6d06aef11d2e1d9ac47c70eca856fe1398eafd425a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_3cd05ab8ef02a6b5e637a03887c7c2668bcf883662d48bccb41f2043d5b04670 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_3cd05ab8ef02a6b5e637a03887c7c2668bcf883662d48bccb41f2043d5b04670->enter($__internal_3cd05ab8ef02a6b5e637a03887c7c2668bcf883662d48bccb41f2043d5b04670_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_308db7523352d1842177139edff45668075db44bcf9dcde0d2b93940b1d40955 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_308db7523352d1842177139edff45668075db44bcf9dcde0d2b93940b1d40955->enter($__internal_308db7523352d1842177139edff45668075db44bcf9dcde0d2b93940b1d40955_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_c61f5473333c5d3500bacea4b3eecdee0d9884bcc03e4251e49d4c1517f84c52 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_c61f5473333c5d3500bacea4b3eecdee0d9884bcc03e4251e49d4c1517f84c52->enter($__internal_c61f5473333c5d3500bacea4b3eecdee0d9884bcc03e4251e49d4c1517f84c52_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        // line 46
+        // line 69
         echo "    <header>
         ";
-        // line 47
+        // line 70
         $this->displayBlock('header', $context, $blocks);
-        // line 275
+        // line 259
         echo "    </header>
     <!-- /header -->
 
     <div class=\"modal-search\">
         ";
-        // line 279
+        // line 263
         $this->displayBlock('search', $context, $blocks);
-        // line 285
+        // line 269
         echo "    </div><!-- /.modal-search -->
 
           <!-- wrapper -->
     <div id=\"wrapper\">
         ";
-        // line 289
+        // line 273
         $this->displayBlock('main', $context, $blocks);
-        // line 299
+        // line 283
         echo "    </div>
     <!-- /#wrapper -->
 
     <!-- footer -->
 ";
-        // line 303
+        // line 287
         $this->displayBlock('footer', $context, $blocks);
         
-        $__internal_308db7523352d1842177139edff45668075db44bcf9dcde0d2b93940b1d40955->leave($__internal_308db7523352d1842177139edff45668075db44bcf9dcde0d2b93940b1d40955_prof);
+        $__internal_c61f5473333c5d3500bacea4b3eecdee0d9884bcc03e4251e49d4c1517f84c52->leave($__internal_c61f5473333c5d3500bacea4b3eecdee0d9884bcc03e4251e49d4c1517f84c52_prof);
 
         
-        $__internal_48a9a27c4ad04e2a64dadb6d06aef11d2e1d9ac47c70eca856fe1398eafd425a->leave($__internal_48a9a27c4ad04e2a64dadb6d06aef11d2e1d9ac47c70eca856fe1398eafd425a_prof);
+        $__internal_3cd05ab8ef02a6b5e637a03887c7c2668bcf883662d48bccb41f2043d5b04670->leave($__internal_3cd05ab8ef02a6b5e637a03887c7c2668bcf883662d48bccb41f2043d5b04670_prof);
 
     }
 
-    // line 47
+    // line 70
     public function block_header($context, array $blocks = array())
     {
-        $__internal_5ee1f9b168bf937e7fafd204848510992dfe804865b25e6d17cd03592a7dd224 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_5ee1f9b168bf937e7fafd204848510992dfe804865b25e6d17cd03592a7dd224->enter($__internal_5ee1f9b168bf937e7fafd204848510992dfe804865b25e6d17cd03592a7dd224_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "header"));
+        $__internal_7f0b13d163207b81c1cea863d494b71abdd7ff09a50705f019d58ed1be9c4627 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_7f0b13d163207b81c1cea863d494b71abdd7ff09a50705f019d58ed1be9c4627->enter($__internal_7f0b13d163207b81c1cea863d494b71abdd7ff09a50705f019d58ed1be9c4627_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "header"));
 
-        $__internal_b75dcdffb06b4972c487dd2f702193275d7b949c06d46651245bc1d64895dbc0 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_b75dcdffb06b4972c487dd2f702193275d7b949c06d46651245bc1d64895dbc0->enter($__internal_b75dcdffb06b4972c487dd2f702193275d7b949c06d46651245bc1d64895dbc0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "header"));
+        $__internal_eaaf2d319c4e9207a8f70b5446612dd63ee6068302d71846915ea49d1822656e = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_eaaf2d319c4e9207a8f70b5446612dd63ee6068302d71846915ea49d1822656e->enter($__internal_eaaf2d319c4e9207a8f70b5446612dd63ee6068302d71846915ea49d1822656e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "header"));
 
-        // line 48
+        // line 71
         echo "
             <div class=\"container\">
                 <span class=\"bar hide\"></span>
                 <a href=\"\" class=\"logo\"><img src=\"";
-        // line 51
+        // line 74
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/logo.png"), "html", null, true);
         echo "\" alt=\"\"></a>
                 <nav>
@@ -232,15 +255,12 @@ class __TwigTemplate_739ae83e8ecb0d8308ae4b03ec6daaa2e9ea276b555c04ef8dcf9b3410a
                                 </ul>
                             </li>
                             <li class=\"dropdown mega-dropdown\">
-                                <a href=\"#\">Games</a>
+                                <a href=\"#\">games</a>
                                 <ul class=\"dropdown-menu mega-dropdown-menu category\">
                                     <li class=\"col-md-3\">
-                                        <a href=\"";
-        // line 69
-        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("tproduit_index", array("page" => 1));
-        echo "\">
+                                        <a href=\"\">
                                             <img src=\"";
-        // line 70
+        // line 93
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/game/menu-1.jpg"), "html", null, true);
         echo "\" alt=\"\">
                                             <div class=\"caption\">
@@ -253,7 +273,7 @@ class __TwigTemplate_739ae83e8ecb0d8308ae4b03ec6daaa2e9ea276b555c04ef8dcf9b3410a
                                     <li class=\"col-md-3\">
                                         <a href=\"games-single.html\">
                                             <img src=\"";
-        // line 80
+        // line 103
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/game/menu-2.jpg"), "html", null, true);
         echo "\" alt=\"\">
                                             <div class=\"caption\">
@@ -266,7 +286,7 @@ class __TwigTemplate_739ae83e8ecb0d8308ae4b03ec6daaa2e9ea276b555c04ef8dcf9b3410a
                                     <li class=\"col-md-3\">
                                         <a href=\"games-single.html\">
                                             <img src=\"";
-        // line 90
+        // line 113
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/game/menu-3.jpg"), "html", null, true);
         echo "\" alt=\"\">
                                             <div class=\"caption\">
@@ -279,7 +299,7 @@ class __TwigTemplate_739ae83e8ecb0d8308ae4b03ec6daaa2e9ea276b555c04ef8dcf9b3410a
                                     <li class=\"col-md-3\">
                                         <a href=\"games-single.html\">
                                             <img src=\"";
-        // line 100
+        // line 123
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/game/menu-4.jpg"), "html", null, true);
         echo "\" alt=\"\">
                                             <div class=\"caption\">
@@ -292,10 +312,10 @@ class __TwigTemplate_739ae83e8ecb0d8308ae4b03ec6daaa2e9ea276b555c04ef8dcf9b3410a
                                 </ul>
                             </li>
                             <li class=\"dropdown\">
-                                <a href=\"blank-page.html#\" class=\"dropdown-toggle\">Blog</a>
+                                <a href=\"\" class=\"dropdown-toggle\">Blog</a>
                                 <ul class=\"dropdown-menu default\">
                                     <li class=\"dropdown-submenu\">
-                                        <a href=\"blog-large.html\"><i class=\"fa fa-align-justify\"></i> Blog Large</a>
+                                        <a href=\"\"><i class=\"fa fa-align-justify\"></i> blogs</a>
                                         <ul class=\"dropdown-menu\">
                                             <li><a href=\"blog-large.html\">Archive</a></li>
                                             <li><a href=\"blog-large-sidebar.html\">Sidebar</a></li>
@@ -354,82 +374,58 @@ class __TwigTemplate_739ae83e8ecb0d8308ae4b03ec6daaa2e9ea276b555c04ef8dcf9b3410a
                                         </ul>
                                     </li>
                                 </ul>
-                            </li>
-                            <li class=\"dropdown mega-dropdown\">
-                                <a href=\"blank-page.html#\">Elements</a>
-                                <ul class=\"dropdown-menu mega-dropdown-menu row\" style=\"background-image:url('";
-        // line 176
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/content/menu.png"), "html", null, true);
-        echo "')\">
-                                    <li class=\"col-md-3\">
-                                        <ul>
-                                            <li class=\"dropdown-header\">Typography</li>
-                                            <li><a href=\"elements-typography.html\"><i class=\"fa fa-text-height\"></i> General Typography</a></li>
-                                            <li><a href=\"elements-blockquote.html\"><i class=\"fa fa-quote-left\"></i> Blockquote</a></li>
-                                            <li><a href=\"elements-helpers.html\"><i class=\"fa fa-square-o\"></i> Helper Classes</a></li>
-                                            <li><a href=\"elements-testimonials.html\"><i class=\"fa fa-bullhorn\"></i> Testimonials</a></li>
-                                            <li><a href=\"elements-grids.html\"><i class=\"fa fa-th-large\"></i> Grid Layouts</a></li>
-                                            <li><a href=\"elements-alerts.html\"><i class=\"fa fa-bell-o\"></i> Alert & Messages</a></li>
-                                            <li><a href=\"elements-labels.html\"><i class=\"fa fa-bookmark-o\"></i> Labels & Badges</a></li>
-                                            <li><a href=\"elements-media.html\"><i class=\"fa fa-image\"></i> Audio, Videos & Images</a></li>
-                                            <li><a href=\"elements-pagers.html\"><i class=\"fa fa-ellipsis-h\"></i> Pagination & Pagers</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class=\"col-md-3\">
-                                        <ul>
-                                            <li class=\"dropdown-header\">Button & Icons</li>
-                                            <li><a href=\"elements-buttons.html\"><i class=\"fa fa-flash\"></i> General Buttons</a></li>
-                                            <li><a href=\"elements-social-buttons.html\"><i class=\"fa fa-thumbs-o-up\"></i> Social Buttons</a></li>
-                                            <li><a href=\"elements-glyphicons.html\"><i class=\"fa fa-chevron-circle-right\"></i> Glyphicons</a></li>
-                                            <li><a href=\"elements-fontawesome.html\"><i class=\"fa fa-chevron-circle-right\"></i> FontAwesome</a></li>
-                                            <li><a href=\"elements-ionicons.html\"><i class=\"fa fa-chevron-circle-right\"></i> IonIcons</a></li>
-                                            <li class=\"dropdown-header\">Components</li>
-                                            <li><a href=\"elements-media-objects.html\"><i class=\"fa fa-align-justify\"></i> Media Objects</a></li>
-                                            <li><a href=\"elements-page-headers.html\"><i class=\"fa fa-align-justify\"></i> Page headers</a></li>
-                                            <li><a href=\"elements-wells.html\"><i class=\"fa fa-align-justify\"></i> Wells</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class=\"col-md-3\">
-                                        <ul>
-                                            <li class=\"dropdown-header\">Default Elements</li>
-                                            <li><a href=\"elements-widgets.html\"><i class=\"fa fa-th\"></i> Widgets</a></li>
-                                            <li><a href=\"elements-sections.html\"><i class=\"fa fa-th\"></i> Sections</a></li>
-                                            <li><a href=\"elements-thumbnails.html\"><i class=\"fa fa-file-o\"></i> Thumbnails</a></li>
-                                            <li><a href=\"elements-cards.html\"><i class=\"fa fa-sticky-note-o\"></i> Cards</a></li>
-                                            <li><a href=\"elements-tabs.html\"><i class=\"fa fa-external-link\"></i> Accordion & Tabs</a></li>
-                                            <li><a href=\"elements-timeline.html\"><i class=\"fa fa-th-large\"></i> Timeline</a></li>
-                                            <li><a href=\"elements-tables.html\"><i class=\"fa fa-th\"></i> Tables</a></li>
-                                            <li><a href=\"elements-progress.html\"><i class=\"fa fa-arrows-h\"></i> Progress Bars</a></li>
-                                            <li><a href=\"elements-panels.html\"><i class=\"fa fa-th\"></i> Panels</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class=\"col-md-3\">
-                                        <ul>
-                                            <li class=\"dropdown-header\">Forms & Info</li>
-                                            <li><a href=\"elements-forms.html\"><i class=\"fa fa-align-justify\"></i> Form Elements</a></li>
-                                            <li><a href=\"elements-form-layouts.html\"><i class=\"fa fa-align-justify\"></i> Form Layouts</a></li>
-                                            <li><a href=\"elements-modals.html\"><i class=\"fa fa-external-link\"></i> Modals</a></li>
-                                            <li><a href=\"elements-carousel.html\"><i class=\"fa fa-arrows\"></i> Carousel Examples</a></li>
-                                            <li><a href=\"elements-charts.html\"><i class=\"fa fa-bar-chart-o\"></i> Charts & Countdowns</a></li>
-                                            <li><a href=\"elements-google-maps.html\"><i class=\"fa fa-map-marker\"></i> Google Maps</a></li>
-                                        </ul>
-                                    </li>
+                            <li class=\"dropdown\">
+                                <a href=\"\" class=\"dropdown-toggle\">Tournaments</a>
+                                <ul class=\"dropdown-menu default\">
+                                    <li><a href=\"";
+        // line 199
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("tournoi_index", array("p" => 1));
+        echo "\">View All Tournaments</a></li>
                                 </ul>
                             </li>
-                            <li><a href=\"videos.html\">Videos</a></li>
-                            <li><a href=\"gallery.html\">Gallery</a></li>
-                            <li><a href=\"contact.html\">Contact</a></li>
+                            <li class=\"dropdown\">
+                                <a href=\"\" class=\"dropdown-toggle\">Events</a>
+                                <ul class=\"dropdown-menu default\">
+                                    <li><a href=\"";
+        // line 205
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("tevenement_index_front", array("page" => 1));
+        echo "\"><i class=\"fa fa-newspaper-o\"></i> Check Our Events</a></li>
+                                    <li><a href=\"";
+        // line 206
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("calender");
+        echo "\"><i class=\"fa fa-calendar\"></i> Calender</a></li>
+
+                                </ul>
+                            </li>
+                            <li class=\"dropdown\">
+                                <a href=\"\" class=\"dropdown-toggle\">Shop</a>
+                                <ul class=\"dropdown-menu default\">
+                                    <li><a href=\"";
+        // line 213
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("tproduit_index", array("page" => 1));
+        echo "\"><i class=\"fa fa-shopping-bag\"></i>View All Products</a></li>
+                                    <li><a href=\"";
+        // line 214
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("tproduit_new");
+        echo "\"><i class=\"fa fa-plus\"></i>Post You Product</a></li>
+                                </ul>
+                            </li>
+                            <li class=\"custom\"><a href=\"";
+        // line 217
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("streaming_all");
+        echo "\"><i class=\"fa fa-eye\" ></i>Streaming</a></li>
+                            <li><a href=\"\">Contact</a></li>
                         </ul>
                     </div>
                 </nav>
                 <div class=\"nav-right\">
                     ";
-        // line 239
+        // line 223
         if (($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "user", array()) == null)) {
-            // line 240
+            // line 224
             echo "                        <div class=\"nav-profile dropdown\">
                             <a href=\"";
-            // line 241
+            // line 225
             echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("eloboosted_login_homepage");
             echo "\" ><img src=\"";
             echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("FOassets/img/user/avatar2.jpg"), "html", null, true);
@@ -439,10 +435,10 @@ class __TwigTemplate_739ae83e8ecb0d8308ae4b03ec6daaa2e9ea276b555c04ef8dcf9b3410a
 
                     ";
         } else {
-            // line 246
+            // line 230
             echo "                        <div class=\"nav-profile dropdown\">
                             <a href=\"";
-            // line 247
+            // line 231
             echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("AddProduct_page");
             echo "\" class=\"dropdown-toggle\" data-toggle=\"dropdown\"><img src=\"";
             echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("FOassets/img/user/avatar.jpg"), "html", null, true);
@@ -451,24 +447,24 @@ class __TwigTemplate_739ae83e8ecb0d8308ae4b03ec6daaa2e9ea276b555c04ef8dcf9b3410a
             echo "</span></a>
                             <ul class=\"dropdown-menu\">
                                 <li><a href=\"";
-            // line 249
+            // line 233
             echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("home");
             echo "\"><i class=\"fa fa-user\"></i> Profile</a></li>
                                 <li><a href=\"";
-            // line 250
+            // line 234
             echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("home");
             echo "\"><i class=\"fa fa-heart\"></i> Likes <span class=\"label label-info\">32</span></a></li>
                                 <li><a href=\"";
-            // line 251
+            // line 235
             echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("home");
             echo "\"><i class=\"fa fa-gamepad\"></i> Games</a></li>
                                 <li><a href=\"";
-            // line 252
+            // line 236
             echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("home");
             echo "\"><i class=\"fa fa-gear\"></i> Settings</a></li>
                                 <li class=\"divider\"></li>
                                 <li><a href=\"";
-            // line 254
+            // line 238
             echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("SignOut");
             echo "\"><i class=\"fa fa-power-off\"></i> Sign Out</a></li>
                             </ul>
@@ -489,51 +485,51 @@ class __TwigTemplate_739ae83e8ecb0d8308ae4b03ec6daaa2e9ea276b555c04ef8dcf9b3410a
 
                     ";
         }
-        // line 272
+        // line 256
         echo "                </div>
             </div>
         ";
         
-        $__internal_b75dcdffb06b4972c487dd2f702193275d7b949c06d46651245bc1d64895dbc0->leave($__internal_b75dcdffb06b4972c487dd2f702193275d7b949c06d46651245bc1d64895dbc0_prof);
+        $__internal_eaaf2d319c4e9207a8f70b5446612dd63ee6068302d71846915ea49d1822656e->leave($__internal_eaaf2d319c4e9207a8f70b5446612dd63ee6068302d71846915ea49d1822656e_prof);
 
         
-        $__internal_5ee1f9b168bf937e7fafd204848510992dfe804865b25e6d17cd03592a7dd224->leave($__internal_5ee1f9b168bf937e7fafd204848510992dfe804865b25e6d17cd03592a7dd224_prof);
+        $__internal_7f0b13d163207b81c1cea863d494b71abdd7ff09a50705f019d58ed1be9c4627->leave($__internal_7f0b13d163207b81c1cea863d494b71abdd7ff09a50705f019d58ed1be9c4627_prof);
 
     }
 
-    // line 279
+    // line 263
     public function block_search($context, array $blocks = array())
     {
-        $__internal_14bcc23c00c240d9553284d8fb6f18f0dc625470b3becdd5d1d079e17342f7af = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_14bcc23c00c240d9553284d8fb6f18f0dc625470b3becdd5d1d079e17342f7af->enter($__internal_14bcc23c00c240d9553284d8fb6f18f0dc625470b3becdd5d1d079e17342f7af_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "search"));
+        $__internal_81b52e359d3cae187630e7a17db838b1ec04505ecb9171b3c407a82c2b84adc2 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_81b52e359d3cae187630e7a17db838b1ec04505ecb9171b3c407a82c2b84adc2->enter($__internal_81b52e359d3cae187630e7a17db838b1ec04505ecb9171b3c407a82c2b84adc2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "search"));
 
-        $__internal_bbcb21afc7a0952b559df02b227d81fcb581d689c9902f92e61a08c2610b478d = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_bbcb21afc7a0952b559df02b227d81fcb581d689c9902f92e61a08c2610b478d->enter($__internal_bbcb21afc7a0952b559df02b227d81fcb581d689c9902f92e61a08c2610b478d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "search"));
+        $__internal_11433607c9b56cd9478aad91498bb9f266bd5ae57b8927502bca57b5a3ef81b7 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_11433607c9b56cd9478aad91498bb9f266bd5ae57b8927502bca57b5a3ef81b7->enter($__internal_11433607c9b56cd9478aad91498bb9f266bd5ae57b8927502bca57b5a3ef81b7_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "search"));
 
-        // line 280
+        // line 264
         echo "            <div class=\"container\">
                 <input type=\"text\" class=\"form-control\" placeholder=\"Type to search...\">
                 <i class=\"fa fa-times close\"></i>
             </div>
         ";
         
-        $__internal_bbcb21afc7a0952b559df02b227d81fcb581d689c9902f92e61a08c2610b478d->leave($__internal_bbcb21afc7a0952b559df02b227d81fcb581d689c9902f92e61a08c2610b478d_prof);
+        $__internal_11433607c9b56cd9478aad91498bb9f266bd5ae57b8927502bca57b5a3ef81b7->leave($__internal_11433607c9b56cd9478aad91498bb9f266bd5ae57b8927502bca57b5a3ef81b7_prof);
 
         
-        $__internal_14bcc23c00c240d9553284d8fb6f18f0dc625470b3becdd5d1d079e17342f7af->leave($__internal_14bcc23c00c240d9553284d8fb6f18f0dc625470b3becdd5d1d079e17342f7af_prof);
+        $__internal_81b52e359d3cae187630e7a17db838b1ec04505ecb9171b3c407a82c2b84adc2->leave($__internal_81b52e359d3cae187630e7a17db838b1ec04505ecb9171b3c407a82c2b84adc2_prof);
 
     }
 
-    // line 289
+    // line 273
     public function block_main($context, array $blocks = array())
     {
-        $__internal_aa833ed066baaeb381e0525ed6adb67caa4c25c1a7f297f6e439413e40fa8ab0 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_aa833ed066baaeb381e0525ed6adb67caa4c25c1a7f297f6e439413e40fa8ab0->enter($__internal_aa833ed066baaeb381e0525ed6adb67caa4c25c1a7f297f6e439413e40fa8ab0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "main"));
+        $__internal_da9fae80c6b5535986935778b49da213c9d0ca91218695c48a09a4378b115686 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_da9fae80c6b5535986935778b49da213c9d0ca91218695c48a09a4378b115686->enter($__internal_da9fae80c6b5535986935778b49da213c9d0ca91218695c48a09a4378b115686_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "main"));
 
-        $__internal_c9b892e30f5eed9a99b47a32af4959e34dd031ed34d558826851cf0774152b59 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_c9b892e30f5eed9a99b47a32af4959e34dd031ed34d558826851cf0774152b59->enter($__internal_c9b892e30f5eed9a99b47a32af4959e34dd031ed34d558826851cf0774152b59_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "main"));
+        $__internal_5a24c62f6f71c069ad30ee930c6849799a8d5c51fd01a59555831f97ea2a425a = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_5a24c62f6f71c069ad30ee930c6849799a8d5c51fd01a59555831f97ea2a425a->enter($__internal_5a24c62f6f71c069ad30ee930c6849799a8d5c51fd01a59555831f97ea2a425a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "main"));
 
-        // line 290
+        // line 274
         echo "            <section>
                 <div class=\"container\">
                     <div class=\"row\">
@@ -544,50 +540,54 @@ class __TwigTemplate_739ae83e8ecb0d8308ae4b03ec6daaa2e9ea276b555c04ef8dcf9b3410a
             </section>
         ";
         
-        $__internal_c9b892e30f5eed9a99b47a32af4959e34dd031ed34d558826851cf0774152b59->leave($__internal_c9b892e30f5eed9a99b47a32af4959e34dd031ed34d558826851cf0774152b59_prof);
+        $__internal_5a24c62f6f71c069ad30ee930c6849799a8d5c51fd01a59555831f97ea2a425a->leave($__internal_5a24c62f6f71c069ad30ee930c6849799a8d5c51fd01a59555831f97ea2a425a_prof);
 
         
-        $__internal_aa833ed066baaeb381e0525ed6adb67caa4c25c1a7f297f6e439413e40fa8ab0->leave($__internal_aa833ed066baaeb381e0525ed6adb67caa4c25c1a7f297f6e439413e40fa8ab0_prof);
+        $__internal_da9fae80c6b5535986935778b49da213c9d0ca91218695c48a09a4378b115686->leave($__internal_da9fae80c6b5535986935778b49da213c9d0ca91218695c48a09a4378b115686_prof);
 
     }
 
-    // line 303
+    // line 287
     public function block_footer($context, array $blocks = array())
     {
-        $__internal_8a087f98cef9ce057bbc17a9259733a36ed4117752d437883dfa4bf5969f3e4d = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_8a087f98cef9ce057bbc17a9259733a36ed4117752d437883dfa4bf5969f3e4d->enter($__internal_8a087f98cef9ce057bbc17a9259733a36ed4117752d437883dfa4bf5969f3e4d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "footer"));
+        $__internal_4540ef3ae93d8987e33ec63bac3d37c39cb5872b1729f90243e775cfb43c707f = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_4540ef3ae93d8987e33ec63bac3d37c39cb5872b1729f90243e775cfb43c707f->enter($__internal_4540ef3ae93d8987e33ec63bac3d37c39cb5872b1729f90243e775cfb43c707f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "footer"));
 
-        $__internal_1d97cd1eac00e6201bac2ce8ad0c6a9f02453de4501c83619b550e5d3db9c283 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_1d97cd1eac00e6201bac2ce8ad0c6a9f02453de4501c83619b550e5d3db9c283->enter($__internal_1d97cd1eac00e6201bac2ce8ad0c6a9f02453de4501c83619b550e5d3db9c283_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "footer"));
+        $__internal_63fef1eafc07ef12430747585340c50f485aabf0c88180f37c0e799dae6b9710 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_63fef1eafc07ef12430747585340c50f485aabf0c88180f37c0e799dae6b9710->enter($__internal_63fef1eafc07ef12430747585340c50f485aabf0c88180f37c0e799dae6b9710_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "footer"));
 
-        // line 304
+        // line 288
         echo "    <footer>
 
             <div class=\"container\">
                 <div class=\"widget row\">
                     <div class=\"col-lg-5 col-md-5 col-sm-5 col-xs-12\">
-                        <h4 class=\"title\">About GameForest</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pharetra mattis arcu, a congue leo malesuada eu. Nam nec mauris ut odio tristique varius et eu metus. Quisque massa purus, aliquet quis blandit et, <br /> <br />mollis sed lorem. Sed vel tincidunt elit. Phasellus at varius odio, sit amet fermentum mauris.</p>
+                        <h4 class=\"title\">About GameInjection</h4>
+                        <p>This Website is for gamers in which they can sell or exchange products,
+                        help others and share experience through the forum
+                        also check our last games and participate in our tournaments or others created by their own
+                        </p>
                     </div>
                     <div class=\"col-lg-3 col-md-3 col-sm-3 col-xs-12\">
-                        <h4 class=\"title\">Categories</h4>
+                        <h4 class=\"title\">Our website Provide</h4>
                         <div class=\"row\">
                             <div class=\"col-lg-6 col-md-6 col-sm-6 col-xs-12\">
                                 <ul class=\"nav\">
-                                    <li><a href=\"blank-page.html#\">Playstation 4</a></li>
-                                    <li><a href=\"blank-page.html#\">XBOX ONE</a></li>
-                                    <li><a href=\"blank-page.html#\">PC</a></li>
-                                    <li><a href=\"blank-page.html#\">PS3</a></li>
+                                    <li><a href=\"";
+        // line 304
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("tproduit_index", array("page" => 1));
+        echo "\">Shop</a></li>
+                                    <li><a href=\"";
+        // line 305
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("tevenement_index_front", array("page" => 1));
+        echo "\">Events</a></li>
+                                    <li><a href=\"";
+        // line 306
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("streaming_all");
+        echo "\">PC</a></li>
                                 </ul>
                             </div>
-                            <div class=\"col-lg-6 col-md-6 col-sm-6 col-xs-12\">
-                                <ul class=\"nav\">
-                                    <li><a href=\"blank-page.html#\">Gaming</a></li>
-                                    <li><a href=\"blank-page.html#\">Portfolio</a></li>
-                                    <li><a href=\"blank-page.html#\">Videos</a></li>
-                                    <li><a href=\"blank-page.html#\">Reviews</a></li>
-                                </ul>
-                            </div>
+
                         </div>
                     </div>
 
@@ -602,18 +602,12 @@ class __TwigTemplate_739ae83e8ecb0d8308ae4b03ec6daaa2e9ea276b555c04ef8dcf9b3410a
                 </div>
             </div>
         \"";
-        // line 344
+        // line 323
         echo $this->env->getExtension('Nomaya\SocialBundle\Twig\Extension\NomayaTwigSocialBar')->getSocialButtons();
         echo "\"
             <div class=\"footer-bottom\">
                 <div class=\"container\">
-                    <ul class=\"list-inline\">
-                        <li><a href=\"blank-page.html#\" class=\"btn btn-circle btn-social-icon\" data-toggle=\"tooltip\" title=\"Follow us on Twitter\"><i class=\"fa fa-twitter\"></i></a></li>
-                        <li><a href=\"blank-page.html#\" class=\"btn btn-circle btn-social-icon\" data-toggle=\"tooltip\" title=\"Follow us on Facebook\"><i class=\"fa fa-facebook\"></i></a></li>
-                        <li><a href=\"blank-page.html#\" class=\"btn btn-circle btn-social-icon\" data-toggle=\"tooltip\" title=\"Follow us on Google\"><i class=\"fa fa-google-plus\"></i></a></li>
-                        <li><a href=\"blank-page.html#\" class=\"btn btn-circle btn-social-icon\" data-toggle=\"tooltip\" title=\"Follow us on Steam\"><i class=\"fa fa-steam\"></i></a></li>
-                    </ul>
-                    &copy; 2016 Gameforest. All rights reserved.
+                    &copy; 2017 GameInjection. All rights reserved.
                 </div>
             </div>
 
@@ -624,16 +618,16 @@ class __TwigTemplate_739ae83e8ecb0d8308ae4b03ec6daaa2e9ea276b555c04ef8dcf9b3410a
 
 ";
         
-        $__internal_1d97cd1eac00e6201bac2ce8ad0c6a9f02453de4501c83619b550e5d3db9c283->leave($__internal_1d97cd1eac00e6201bac2ce8ad0c6a9f02453de4501c83619b550e5d3db9c283_prof);
+        $__internal_63fef1eafc07ef12430747585340c50f485aabf0c88180f37c0e799dae6b9710->leave($__internal_63fef1eafc07ef12430747585340c50f485aabf0c88180f37c0e799dae6b9710_prof);
 
         
-        $__internal_8a087f98cef9ce057bbc17a9259733a36ed4117752d437883dfa4bf5969f3e4d->leave($__internal_8a087f98cef9ce057bbc17a9259733a36ed4117752d437883dfa4bf5969f3e4d_prof);
+        $__internal_4540ef3ae93d8987e33ec63bac3d37c39cb5872b1729f90243e775cfb43c707f->leave($__internal_4540ef3ae93d8987e33ec63bac3d37c39cb5872b1729f90243e775cfb43c707f_prof);
 
     }
 
     public function getTemplateName()
     {
-        return "EloboostedFrontofficeBundle:Default:Layout.html.twig";
+        return "@EloboostedFrontoffice/Default/Layout.html.twig";
     }
 
     public function isTraitable()
@@ -643,7 +637,7 @@ class __TwigTemplate_739ae83e8ecb0d8308ae4b03ec6daaa2e9ea276b555c04ef8dcf9b3410a
 
     public function getDebugInfo()
     {
-        return array (  606 => 344,  564 => 304,  555 => 303,  537 => 290,  528 => 289,  514 => 280,  505 => 279,  493 => 272,  472 => 254,  467 => 252,  463 => 251,  459 => 250,  455 => 249,  446 => 247,  443 => 246,  433 => 241,  430 => 240,  428 => 239,  362 => 176,  283 => 100,  270 => 90,  257 => 80,  244 => 70,  240 => 69,  219 => 51,  214 => 48,  205 => 47,  195 => 303,  189 => 299,  187 => 289,  181 => 285,  179 => 279,  173 => 275,  171 => 47,  168 => 46,  159 => 45,  147 => 40,  141 => 37,  134 => 33,  130 => 32,  124 => 29,  112 => 19,  103 => 18,  91 => 364,  89 => 45,  84 => 42,  82 => 18,  77 => 16,  73 => 15,  69 => 14,  65 => 13,  61 => 12,  56 => 10,  52 => 9,  48 => 8,  44 => 7,  40 => 6,  36 => 5,  31 => 2,);
+        return array (  606 => 323,  586 => 306,  582 => 305,  578 => 304,  560 => 288,  551 => 287,  533 => 274,  524 => 273,  510 => 264,  501 => 263,  489 => 256,  468 => 238,  463 => 236,  459 => 235,  455 => 234,  451 => 233,  442 => 231,  439 => 230,  429 => 225,  426 => 224,  424 => 223,  415 => 217,  409 => 214,  405 => 213,  395 => 206,  391 => 205,  382 => 199,  303 => 123,  290 => 113,  277 => 103,  264 => 93,  242 => 74,  237 => 71,  228 => 70,  218 => 287,  212 => 283,  210 => 273,  204 => 269,  202 => 263,  196 => 259,  194 => 70,  191 => 69,  182 => 68,  170 => 63,  164 => 60,  157 => 56,  153 => 55,  147 => 52,  135 => 42,  126 => 41,  114 => 337,  112 => 68,  107 => 65,  105 => 41,  77 => 16,  73 => 15,  69 => 14,  65 => 13,  61 => 12,  56 => 10,  52 => 9,  48 => 8,  44 => 7,  40 => 6,  36 => 5,  31 => 2,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -672,6 +666,29 @@ class __TwigTemplate_739ae83e8ecb0d8308ae4b03ec6daaa2e9ea276b555c04ef8dcf9b3410a
     <link href=\"{{ asset('plugins/bootstrap/css/bootstrap-datetimepicker.css') }}\" rel=\"stylesheet\">
     <link href=\"{{ asset('plugins/bootstrap/css/font-awesome.min.css') }}\" rel=\"stylesheet\">
     <link href=\"{{ asset('plugins/bootstrap/css/prettify-1.0.css') }}\" rel=\"stylesheet\">
+    <style>
+
+        .custom {
+            background: #ff081b;
+            animation: myfirst 5s;
+            -webkit-animation: myfirst 1.25s infinite; /* Safari and Chrome */
+        }
+
+        @-webkit-keyframes myfirst /* Firefox */
+        {
+            0% {
+                background: red;
+            }
+            50% {
+                background: #e6023f;
+            }
+            100% {
+                background: #ff0079;
+            }
+        }
+
+
+    </style>
 
     {% block head %}
         <!-- META -->
@@ -721,10 +738,10 @@ class __TwigTemplate_739ae83e8ecb0d8308ae4b03ec6daaa2e9ea276b555c04ef8dcf9b3410a
                                 </ul>
                             </li>
                             <li class=\"dropdown mega-dropdown\">
-                                <a href=\"#\">Games</a>
+                                <a href=\"#\">games</a>
                                 <ul class=\"dropdown-menu mega-dropdown-menu category\">
                                     <li class=\"col-md-3\">
-                                        <a href=\"{{ path('tproduit_index', {'page': 1}) }}\">
+                                        <a href=\"\">
                                             <img src=\"{{ asset('img/game/menu-1.jpg') }}\" alt=\"\">
                                             <div class=\"caption\">
                                                 <span class=\"label label-warning\">PC</span>
@@ -766,10 +783,10 @@ class __TwigTemplate_739ae83e8ecb0d8308ae4b03ec6daaa2e9ea276b555c04ef8dcf9b3410a
                                 </ul>
                             </li>
                             <li class=\"dropdown\">
-                                <a href=\"blank-page.html#\" class=\"dropdown-toggle\">Blog</a>
+                                <a href=\"\" class=\"dropdown-toggle\">Blog</a>
                                 <ul class=\"dropdown-menu default\">
                                     <li class=\"dropdown-submenu\">
-                                        <a href=\"blog-large.html\"><i class=\"fa fa-align-justify\"></i> Blog Large</a>
+                                        <a href=\"\"><i class=\"fa fa-align-justify\"></i> blogs</a>
                                         <ul class=\"dropdown-menu\">
                                             <li><a href=\"blog-large.html\">Archive</a></li>
                                             <li><a href=\"blog-large-sidebar.html\">Sidebar</a></li>
@@ -828,68 +845,29 @@ class __TwigTemplate_739ae83e8ecb0d8308ae4b03ec6daaa2e9ea276b555c04ef8dcf9b3410a
                                         </ul>
                                     </li>
                                 </ul>
-                            </li>
-                            <li class=\"dropdown mega-dropdown\">
-                                <a href=\"blank-page.html#\">Elements</a>
-                                <ul class=\"dropdown-menu mega-dropdown-menu row\" style=\"background-image:url('{{ asset('img/content/menu.png') }}')\">
-                                    <li class=\"col-md-3\">
-                                        <ul>
-                                            <li class=\"dropdown-header\">Typography</li>
-                                            <li><a href=\"elements-typography.html\"><i class=\"fa fa-text-height\"></i> General Typography</a></li>
-                                            <li><a href=\"elements-blockquote.html\"><i class=\"fa fa-quote-left\"></i> Blockquote</a></li>
-                                            <li><a href=\"elements-helpers.html\"><i class=\"fa fa-square-o\"></i> Helper Classes</a></li>
-                                            <li><a href=\"elements-testimonials.html\"><i class=\"fa fa-bullhorn\"></i> Testimonials</a></li>
-                                            <li><a href=\"elements-grids.html\"><i class=\"fa fa-th-large\"></i> Grid Layouts</a></li>
-                                            <li><a href=\"elements-alerts.html\"><i class=\"fa fa-bell-o\"></i> Alert & Messages</a></li>
-                                            <li><a href=\"elements-labels.html\"><i class=\"fa fa-bookmark-o\"></i> Labels & Badges</a></li>
-                                            <li><a href=\"elements-media.html\"><i class=\"fa fa-image\"></i> Audio, Videos & Images</a></li>
-                                            <li><a href=\"elements-pagers.html\"><i class=\"fa fa-ellipsis-h\"></i> Pagination & Pagers</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class=\"col-md-3\">
-                                        <ul>
-                                            <li class=\"dropdown-header\">Button & Icons</li>
-                                            <li><a href=\"elements-buttons.html\"><i class=\"fa fa-flash\"></i> General Buttons</a></li>
-                                            <li><a href=\"elements-social-buttons.html\"><i class=\"fa fa-thumbs-o-up\"></i> Social Buttons</a></li>
-                                            <li><a href=\"elements-glyphicons.html\"><i class=\"fa fa-chevron-circle-right\"></i> Glyphicons</a></li>
-                                            <li><a href=\"elements-fontawesome.html\"><i class=\"fa fa-chevron-circle-right\"></i> FontAwesome</a></li>
-                                            <li><a href=\"elements-ionicons.html\"><i class=\"fa fa-chevron-circle-right\"></i> IonIcons</a></li>
-                                            <li class=\"dropdown-header\">Components</li>
-                                            <li><a href=\"elements-media-objects.html\"><i class=\"fa fa-align-justify\"></i> Media Objects</a></li>
-                                            <li><a href=\"elements-page-headers.html\"><i class=\"fa fa-align-justify\"></i> Page headers</a></li>
-                                            <li><a href=\"elements-wells.html\"><i class=\"fa fa-align-justify\"></i> Wells</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class=\"col-md-3\">
-                                        <ul>
-                                            <li class=\"dropdown-header\">Default Elements</li>
-                                            <li><a href=\"elements-widgets.html\"><i class=\"fa fa-th\"></i> Widgets</a></li>
-                                            <li><a href=\"elements-sections.html\"><i class=\"fa fa-th\"></i> Sections</a></li>
-                                            <li><a href=\"elements-thumbnails.html\"><i class=\"fa fa-file-o\"></i> Thumbnails</a></li>
-                                            <li><a href=\"elements-cards.html\"><i class=\"fa fa-sticky-note-o\"></i> Cards</a></li>
-                                            <li><a href=\"elements-tabs.html\"><i class=\"fa fa-external-link\"></i> Accordion & Tabs</a></li>
-                                            <li><a href=\"elements-timeline.html\"><i class=\"fa fa-th-large\"></i> Timeline</a></li>
-                                            <li><a href=\"elements-tables.html\"><i class=\"fa fa-th\"></i> Tables</a></li>
-                                            <li><a href=\"elements-progress.html\"><i class=\"fa fa-arrows-h\"></i> Progress Bars</a></li>
-                                            <li><a href=\"elements-panels.html\"><i class=\"fa fa-th\"></i> Panels</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class=\"col-md-3\">
-                                        <ul>
-                                            <li class=\"dropdown-header\">Forms & Info</li>
-                                            <li><a href=\"elements-forms.html\"><i class=\"fa fa-align-justify\"></i> Form Elements</a></li>
-                                            <li><a href=\"elements-form-layouts.html\"><i class=\"fa fa-align-justify\"></i> Form Layouts</a></li>
-                                            <li><a href=\"elements-modals.html\"><i class=\"fa fa-external-link\"></i> Modals</a></li>
-                                            <li><a href=\"elements-carousel.html\"><i class=\"fa fa-arrows\"></i> Carousel Examples</a></li>
-                                            <li><a href=\"elements-charts.html\"><i class=\"fa fa-bar-chart-o\"></i> Charts & Countdowns</a></li>
-                                            <li><a href=\"elements-google-maps.html\"><i class=\"fa fa-map-marker\"></i> Google Maps</a></li>
-                                        </ul>
-                                    </li>
+                            <li class=\"dropdown\">
+                                <a href=\"\" class=\"dropdown-toggle\">Tournaments</a>
+                                <ul class=\"dropdown-menu default\">
+                                    <li><a href=\"{{ path('tournoi_index', {'p': 1}) }}\">View All Tournaments</a></li>
                                 </ul>
                             </li>
-                            <li><a href=\"videos.html\">Videos</a></li>
-                            <li><a href=\"gallery.html\">Gallery</a></li>
-                            <li><a href=\"contact.html\">Contact</a></li>
+                            <li class=\"dropdown\">
+                                <a href=\"\" class=\"dropdown-toggle\">Events</a>
+                                <ul class=\"dropdown-menu default\">
+                                    <li><a href=\"{{ path('tevenement_index_front', {'page': 1}) }}\"><i class=\"fa fa-newspaper-o\"></i> Check Our Events</a></li>
+                                    <li><a href=\"{{ path('calender')}}\"><i class=\"fa fa-calendar\"></i> Calender</a></li>
+
+                                </ul>
+                            </li>
+                            <li class=\"dropdown\">
+                                <a href=\"\" class=\"dropdown-toggle\">Shop</a>
+                                <ul class=\"dropdown-menu default\">
+                                    <li><a href=\"{{ path('tproduit_index', {'page': 1}) }}\"><i class=\"fa fa-shopping-bag\"></i>View All Products</a></li>
+                                    <li><a href=\"{{ path('tproduit_new') }}\"><i class=\"fa fa-plus\"></i>Post You Product</a></li>
+                                </ul>
+                            </li>
+                            <li class=\"custom\"><a href=\"{{ path('streaming_all') }}\"><i class=\"fa fa-eye\" ></i>Streaming</a></li>
+                            <li><a href=\"\">Contact</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -964,28 +942,23 @@ class __TwigTemplate_739ae83e8ecb0d8308ae4b03ec6daaa2e9ea276b555c04ef8dcf9b3410a
             <div class=\"container\">
                 <div class=\"widget row\">
                     <div class=\"col-lg-5 col-md-5 col-sm-5 col-xs-12\">
-                        <h4 class=\"title\">About GameForest</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pharetra mattis arcu, a congue leo malesuada eu. Nam nec mauris ut odio tristique varius et eu metus. Quisque massa purus, aliquet quis blandit et, <br /> <br />mollis sed lorem. Sed vel tincidunt elit. Phasellus at varius odio, sit amet fermentum mauris.</p>
+                        <h4 class=\"title\">About GameInjection</h4>
+                        <p>This Website is for gamers in which they can sell or exchange products,
+                        help others and share experience through the forum
+                        also check our last games and participate in our tournaments or others created by their own
+                        </p>
                     </div>
                     <div class=\"col-lg-3 col-md-3 col-sm-3 col-xs-12\">
-                        <h4 class=\"title\">Categories</h4>
+                        <h4 class=\"title\">Our website Provide</h4>
                         <div class=\"row\">
                             <div class=\"col-lg-6 col-md-6 col-sm-6 col-xs-12\">
                                 <ul class=\"nav\">
-                                    <li><a href=\"blank-page.html#\">Playstation 4</a></li>
-                                    <li><a href=\"blank-page.html#\">XBOX ONE</a></li>
-                                    <li><a href=\"blank-page.html#\">PC</a></li>
-                                    <li><a href=\"blank-page.html#\">PS3</a></li>
+                                    <li><a href=\"{{ path('tproduit_index', {'page': 1}) }}\">Shop</a></li>
+                                    <li><a href=\"{{ path('tevenement_index_front', {'page': 1}) }}\">Events</a></li>
+                                    <li><a href=\"{{ path('streaming_all') }}\">PC</a></li>
                                 </ul>
                             </div>
-                            <div class=\"col-lg-6 col-md-6 col-sm-6 col-xs-12\">
-                                <ul class=\"nav\">
-                                    <li><a href=\"blank-page.html#\">Gaming</a></li>
-                                    <li><a href=\"blank-page.html#\">Portfolio</a></li>
-                                    <li><a href=\"blank-page.html#\">Videos</a></li>
-                                    <li><a href=\"blank-page.html#\">Reviews</a></li>
-                                </ul>
-                            </div>
+
                         </div>
                     </div>
 
@@ -1002,13 +975,7 @@ class __TwigTemplate_739ae83e8ecb0d8308ae4b03ec6daaa2e9ea276b555c04ef8dcf9b3410a
         \"{{ socialButtons() }}\"
             <div class=\"footer-bottom\">
                 <div class=\"container\">
-                    <ul class=\"list-inline\">
-                        <li><a href=\"blank-page.html#\" class=\"btn btn-circle btn-social-icon\" data-toggle=\"tooltip\" title=\"Follow us on Twitter\"><i class=\"fa fa-twitter\"></i></a></li>
-                        <li><a href=\"blank-page.html#\" class=\"btn btn-circle btn-social-icon\" data-toggle=\"tooltip\" title=\"Follow us on Facebook\"><i class=\"fa fa-facebook\"></i></a></li>
-                        <li><a href=\"blank-page.html#\" class=\"btn btn-circle btn-social-icon\" data-toggle=\"tooltip\" title=\"Follow us on Google\"><i class=\"fa fa-google-plus\"></i></a></li>
-                        <li><a href=\"blank-page.html#\" class=\"btn btn-circle btn-social-icon\" data-toggle=\"tooltip\" title=\"Follow us on Steam\"><i class=\"fa fa-steam\"></i></a></li>
-                    </ul>
-                    &copy; 2016 Gameforest. All rights reserved.
+                    &copy; 2017 GameInjection. All rights reserved.
                 </div>
             </div>
 
@@ -1021,6 +988,6 @@ class __TwigTemplate_739ae83e8ecb0d8308ae4b03ec6daaa2e9ea276b555c04ef8dcf9b3410a
 {% endblock %}
 
 </body>
-</html>", "EloboostedFrontofficeBundle:Default:Layout.html.twig", "C:\\wamp64\\www\\testmerge\\src\\Eloboosted\\FrontofficeBundle\\Resources\\views\\Default\\Layout.html.twig");
+</html>", "@EloboostedFrontoffice/Default/Layout.html.twig", "C:\\wamp64\\www\\testmerge\\src\\Eloboosted\\FrontofficeBundle\\Resources\\views\\Default\\Layout.html.twig");
     }
 }

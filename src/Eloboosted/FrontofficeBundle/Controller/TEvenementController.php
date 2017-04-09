@@ -54,7 +54,7 @@ class TEvenementController extends Controller
         $faker = $twitchApi->getChannel('faker');
         $timthetatman = $twitchApi->getChannel('timthetatman');
         $nl_kripp = $twitchApi->getChannel('nl_kripp');
-        $user = $twitchApi->getUsersFollowedChannels('urboyjared', 2);
+        $user = $twitchApi->getUsersFollowedChannels('urboyjared', 4);
         $channel = array();
         $user = $user['follows'];
         foreach ($user as $item)

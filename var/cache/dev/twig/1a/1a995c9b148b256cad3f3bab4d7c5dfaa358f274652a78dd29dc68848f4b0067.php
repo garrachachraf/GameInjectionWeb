@@ -1,6 +1,6 @@
 <?php
 
-/* GregwarCaptchaBundle::captcha.html.twig */
+/* @GregwarCaptcha/captcha.html.twig */
 class __TwigTemplate_f94d618ac7aa1e92d03d5f4f4d91d477df80e8842031f8ae47cd7be5e6f8e773 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
@@ -16,29 +16,29 @@ class __TwigTemplate_f94d618ac7aa1e92d03d5f4f4d91d477df80e8842031f8ae47cd7be5e6f
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_e661fe9b95121d17881d219c0463ab157c1bf2ae7a1db116b2d6ede42d1abc16 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_e661fe9b95121d17881d219c0463ab157c1bf2ae7a1db116b2d6ede42d1abc16->enter($__internal_e661fe9b95121d17881d219c0463ab157c1bf2ae7a1db116b2d6ede42d1abc16_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "GregwarCaptchaBundle::captcha.html.twig"));
+        $__internal_b82c83b8d29f46383c3c8fb0bae441797de6da6aa53e646e8d98f8edd82c3d33 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_b82c83b8d29f46383c3c8fb0bae441797de6da6aa53e646e8d98f8edd82c3d33->enter($__internal_b82c83b8d29f46383c3c8fb0bae441797de6da6aa53e646e8d98f8edd82c3d33_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@GregwarCaptcha/captcha.html.twig"));
 
-        $__internal_a86ad1d551dd03bfbc196c16ba2672e4a66c2c69f4cdafadb4296bb58d23f254 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_a86ad1d551dd03bfbc196c16ba2672e4a66c2c69f4cdafadb4296bb58d23f254->enter($__internal_a86ad1d551dd03bfbc196c16ba2672e4a66c2c69f4cdafadb4296bb58d23f254_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "GregwarCaptchaBundle::captcha.html.twig"));
+        $__internal_5bcb67a508b48b9224d2bfc54d10d2dd30f36ac423c5b5a6047d10388231fa78 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_5bcb67a508b48b9224d2bfc54d10d2dd30f36ac423c5b5a6047d10388231fa78->enter($__internal_5bcb67a508b48b9224d2bfc54d10d2dd30f36ac423c5b5a6047d10388231fa78_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@GregwarCaptcha/captcha.html.twig"));
 
         // line 1
         $this->displayBlock('captcha_widget', $context, $blocks);
         
-        $__internal_e661fe9b95121d17881d219c0463ab157c1bf2ae7a1db116b2d6ede42d1abc16->leave($__internal_e661fe9b95121d17881d219c0463ab157c1bf2ae7a1db116b2d6ede42d1abc16_prof);
+        $__internal_b82c83b8d29f46383c3c8fb0bae441797de6da6aa53e646e8d98f8edd82c3d33->leave($__internal_b82c83b8d29f46383c3c8fb0bae441797de6da6aa53e646e8d98f8edd82c3d33_prof);
 
         
-        $__internal_a86ad1d551dd03bfbc196c16ba2672e4a66c2c69f4cdafadb4296bb58d23f254->leave($__internal_a86ad1d551dd03bfbc196c16ba2672e4a66c2c69f4cdafadb4296bb58d23f254_prof);
+        $__internal_5bcb67a508b48b9224d2bfc54d10d2dd30f36ac423c5b5a6047d10388231fa78->leave($__internal_5bcb67a508b48b9224d2bfc54d10d2dd30f36ac423c5b5a6047d10388231fa78_prof);
 
     }
 
     public function block_captcha_widget($context, array $blocks = array())
     {
-        $__internal_b70a7e1e45028a301023518e1d24e0e9eebbc704608d2a5d1130b69af18e83c4 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_b70a7e1e45028a301023518e1d24e0e9eebbc704608d2a5d1130b69af18e83c4->enter($__internal_b70a7e1e45028a301023518e1d24e0e9eebbc704608d2a5d1130b69af18e83c4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "captcha_widget"));
+        $__internal_602912c50ba98014232b8a35c4c73d9198427057c95e894f68c381edc904c7a0 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_602912c50ba98014232b8a35c4c73d9198427057c95e894f68c381edc904c7a0->enter($__internal_602912c50ba98014232b8a35c4c73d9198427057c95e894f68c381edc904c7a0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "captcha_widget"));
 
-        $__internal_0ec486f4659a4393e934465040d6673fca46a98c574de749af4a14fb835217a2 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_0ec486f4659a4393e934465040d6673fca46a98c574de749af4a14fb835217a2->enter($__internal_0ec486f4659a4393e934465040d6673fca46a98c574de749af4a14fb835217a2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "captcha_widget"));
+        $__internal_d36428febab963bf0c7355ec1b027484c6167dc19059e07c5062a356b7cc8e0a = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_d36428febab963bf0c7355ec1b027484c6167dc19059e07c5062a356b7cc8e0a->enter($__internal_d36428febab963bf0c7355ec1b027484c6167dc19059e07c5062a356b7cc8e0a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "captcha_widget"));
 
         // line 2
         if ((isset($context["is_human"]) ? $context["is_human"] : $this->getContext($context, "is_human"))) {
@@ -93,16 +93,16 @@ class __TwigTemplate_f94d618ac7aa1e92d03d5f4f4d91d477df80e8842031f8ae47cd7be5e6f
             echo trim(preg_replace('/>\s+</', '><', ob_get_clean()));
         }
         
-        $__internal_0ec486f4659a4393e934465040d6673fca46a98c574de749af4a14fb835217a2->leave($__internal_0ec486f4659a4393e934465040d6673fca46a98c574de749af4a14fb835217a2_prof);
+        $__internal_d36428febab963bf0c7355ec1b027484c6167dc19059e07c5062a356b7cc8e0a->leave($__internal_d36428febab963bf0c7355ec1b027484c6167dc19059e07c5062a356b7cc8e0a_prof);
 
         
-        $__internal_b70a7e1e45028a301023518e1d24e0e9eebbc704608d2a5d1130b69af18e83c4->leave($__internal_b70a7e1e45028a301023518e1d24e0e9eebbc704608d2a5d1130b69af18e83c4_prof);
+        $__internal_602912c50ba98014232b8a35c4c73d9198427057c95e894f68c381edc904c7a0->leave($__internal_602912c50ba98014232b8a35c4c73d9198427057c95e894f68c381edc904c7a0_prof);
 
     }
 
     public function getTemplateName()
     {
-        return "GregwarCaptchaBundle::captcha.html.twig";
+        return "@GregwarCaptcha/captcha.html.twig";
     }
 
     public function getDebugInfo()
@@ -139,6 +139,6 @@ class __TwigTemplate_f94d618ac7aa1e92d03d5f4f4d91d477df80e8842031f8ae47cd7be5e6f
 {% endspaceless %}
 {% endif %}
 {% endblock %}
-", "GregwarCaptchaBundle::captcha.html.twig", "C:\\wamp64\\www\\testmerge\\vendor\\gregwar\\captcha-bundle\\Resources\\views\\captcha.html.twig");
+", "@GregwarCaptcha/captcha.html.twig", "C:\\wamp64\\www\\testmerge\\vendor\\gregwar\\captcha-bundle\\Resources\\views\\captcha.html.twig");
     }
 }

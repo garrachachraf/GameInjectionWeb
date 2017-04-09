@@ -21,29 +21,29 @@ class __TwigTemplate_fcd3b77a3ff7d3198bf3c13dfda9e69d00ae50b11a1542bce0557903976
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_054c27fdf07684ed06c5d345f634ef21adbce4cdb1d68774b8c3f108c0592db9 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_054c27fdf07684ed06c5d345f634ef21adbce4cdb1d68774b8c3f108c0592db9->enter($__internal_054c27fdf07684ed06c5d345f634ef21adbce4cdb1d68774b8c3f108c0592db9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EloboostedBackofficeBundle:tevenement:edit.html.twig"));
+        $__internal_dc494eb018bee5811030b68192077c762f18d22765d5554dc7598aa27ad0192b = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_dc494eb018bee5811030b68192077c762f18d22765d5554dc7598aa27ad0192b->enter($__internal_dc494eb018bee5811030b68192077c762f18d22765d5554dc7598aa27ad0192b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EloboostedBackofficeBundle:tevenement:edit.html.twig"));
 
-        $__internal_b691a2cd922d1cb80cbf13881d51b50798174ad242755fa359f69efdf2ed51b2 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_b691a2cd922d1cb80cbf13881d51b50798174ad242755fa359f69efdf2ed51b2->enter($__internal_b691a2cd922d1cb80cbf13881d51b50798174ad242755fa359f69efdf2ed51b2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EloboostedBackofficeBundle:tevenement:edit.html.twig"));
+        $__internal_211eab4376658f33aca34acaee885ac8ab600d45b840818177fa8a877c5b72e3 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_211eab4376658f33aca34acaee885ac8ab600d45b840818177fa8a877c5b72e3->enter($__internal_211eab4376658f33aca34acaee885ac8ab600d45b840818177fa8a877c5b72e3_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EloboostedBackofficeBundle:tevenement:edit.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_054c27fdf07684ed06c5d345f634ef21adbce4cdb1d68774b8c3f108c0592db9->leave($__internal_054c27fdf07684ed06c5d345f634ef21adbce4cdb1d68774b8c3f108c0592db9_prof);
+        $__internal_dc494eb018bee5811030b68192077c762f18d22765d5554dc7598aa27ad0192b->leave($__internal_dc494eb018bee5811030b68192077c762f18d22765d5554dc7598aa27ad0192b_prof);
 
         
-        $__internal_b691a2cd922d1cb80cbf13881d51b50798174ad242755fa359f69efdf2ed51b2->leave($__internal_b691a2cd922d1cb80cbf13881d51b50798174ad242755fa359f69efdf2ed51b2_prof);
+        $__internal_211eab4376658f33aca34acaee885ac8ab600d45b840818177fa8a877c5b72e3->leave($__internal_211eab4376658f33aca34acaee885ac8ab600d45b840818177fa8a877c5b72e3_prof);
 
     }
 
     // line 3
     public function block_insiderowbottom($context, array $blocks = array())
     {
-        $__internal_5873631002769910b3f6384aa1f1b72202798b44b6576934068eac4a1ebc0f4d = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_5873631002769910b3f6384aa1f1b72202798b44b6576934068eac4a1ebc0f4d->enter($__internal_5873631002769910b3f6384aa1f1b72202798b44b6576934068eac4a1ebc0f4d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "insiderowbottom"));
+        $__internal_c374efeaec741e7446cf45a9fd9d0a54db503fb7b92c1c1330424ddf66bdb2ee = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_c374efeaec741e7446cf45a9fd9d0a54db503fb7b92c1c1330424ddf66bdb2ee->enter($__internal_c374efeaec741e7446cf45a9fd9d0a54db503fb7b92c1c1330424ddf66bdb2ee_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "insiderowbottom"));
 
-        $__internal_da2af209e83bf779ecb646f6f9183824c5698797bbb5ebd6e09f6603cb432b3e = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_da2af209e83bf779ecb646f6f9183824c5698797bbb5ebd6e09f6603cb432b3e->enter($__internal_da2af209e83bf779ecb646f6f9183824c5698797bbb5ebd6e09f6603cb432b3e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "insiderowbottom"));
+        $__internal_23cb0de9615ab0b408d0b6dd811ca24789833619584684f72ab00282b923d144 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_23cb0de9615ab0b408d0b6dd811ca24789833619584684f72ab00282b923d144->enter($__internal_23cb0de9615ab0b408d0b6dd811ca24789833619584684f72ab00282b923d144_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "insiderowbottom"));
 
         // line 4
         echo "    <div class=\"col-md-12 col-sm-12 col-xs-12\">
@@ -145,23 +145,22 @@ class __TwigTemplate_fcd3b77a3ff7d3198bf3c13dfda9e69d00ae50b11a1542bce0557903976
         // line 60
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("tevenement_index");
         echo "\"><button class=\"btn btn-primary\" type=\"button\">Cancel</button></a>
-                            <button class=\"btn btn-primary\" type=\"reset\">Reset</button>
                             ";
-        // line 62
+        // line 61
         echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute((isset($context["edit_form"]) ? $context["edit_form"] : $this->getContext($context, "edit_form")), "Add", array()), 'widget');
         echo "
                             ";
-        // line 63
+        // line 62
         echo         $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->renderBlock((isset($context["edit_form"]) ? $context["edit_form"] : $this->getContext($context, "edit_form")), 'form_end');
         echo "
                         </div>
                         ";
-        // line 65
+        // line 64
         echo         $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->renderBlock((isset($context["delete_form"]) ? $context["delete_form"] : $this->getContext($context, "delete_form")), 'form_start');
         echo "
                         <input type=\"submit\" class=\"btn btn-danger\" value=\"Delete\"></input>
                         ";
-        // line 67
+        // line 66
         echo         $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->renderBlock((isset($context["delete_form"]) ? $context["delete_form"] : $this->getContext($context, "delete_form")), 'form_end');
         echo "
                     </div>
@@ -174,10 +173,10 @@ class __TwigTemplate_fcd3b77a3ff7d3198bf3c13dfda9e69d00ae50b11a1542bce0557903976
     </div>
 ";
         
-        $__internal_da2af209e83bf779ecb646f6f9183824c5698797bbb5ebd6e09f6603cb432b3e->leave($__internal_da2af209e83bf779ecb646f6f9183824c5698797bbb5ebd6e09f6603cb432b3e_prof);
+        $__internal_23cb0de9615ab0b408d0b6dd811ca24789833619584684f72ab00282b923d144->leave($__internal_23cb0de9615ab0b408d0b6dd811ca24789833619584684f72ab00282b923d144_prof);
 
         
-        $__internal_5873631002769910b3f6384aa1f1b72202798b44b6576934068eac4a1ebc0f4d->leave($__internal_5873631002769910b3f6384aa1f1b72202798b44b6576934068eac4a1ebc0f4d_prof);
+        $__internal_c374efeaec741e7446cf45a9fd9d0a54db503fb7b92c1c1330424ddf66bdb2ee->leave($__internal_c374efeaec741e7446cf45a9fd9d0a54db503fb7b92c1c1330424ddf66bdb2ee_prof);
 
     }
 
@@ -193,7 +192,7 @@ class __TwigTemplate_fcd3b77a3ff7d3198bf3c13dfda9e69d00ae50b11a1542bce0557903976
 
     public function getDebugInfo()
     {
-        return array (  165 => 67,  160 => 65,  155 => 63,  151 => 62,  146 => 60,  137 => 54,  131 => 51,  124 => 47,  118 => 44,  111 => 40,  105 => 37,  98 => 33,  92 => 30,  85 => 26,  79 => 23,  72 => 19,  66 => 16,  62 => 15,  49 => 4,  40 => 3,  11 => 1,);
+        return array (  164 => 66,  159 => 64,  154 => 62,  150 => 61,  146 => 60,  137 => 54,  131 => 51,  124 => 47,  118 => 44,  111 => 40,  105 => 37,  98 => 33,  92 => 30,  85 => 26,  79 => 23,  72 => 19,  66 => 16,  62 => 15,  49 => 4,  40 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -266,7 +265,6 @@ class __TwigTemplate_fcd3b77a3ff7d3198bf3c13dfda9e69d00ae50b11a1542bce0557903976
                     <div class=\"form-group\">
                         <div class=\"col-md-6 col-sm-6 col-xs-12 col-md-offset-3\">
                             <a href=\"{{ path('tevenement_index') }}\"><button class=\"btn btn-primary\" type=\"button\">Cancel</button></a>
-                            <button class=\"btn btn-primary\" type=\"reset\">Reset</button>
                             {{ form_widget(edit_form.Add) }}
                             {{ form_end(edit_form) }}
                         </div>

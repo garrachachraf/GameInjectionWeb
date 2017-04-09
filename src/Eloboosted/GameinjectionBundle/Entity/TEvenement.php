@@ -212,7 +212,15 @@ class TEvenement
     {
         $this->typeEvent = $typeEvent;
     }
-
+    public function __construct()
+    {
+        $this->dateEvent = new \DateTime('now');
+    }
+    public function __toString()
+    {
+        // TODO: Implement __toString() method.
+        return $this->titleevent;
+    }
 
 }
 

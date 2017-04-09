@@ -15,11 +15,11 @@ class __TwigTemplate_0ec0feb9f4707e945fe31b7807bbf57b159c73ac3f488255f6510862109
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_ad3e831126b9988e3e54c1412fb5ca2f4856bcb85e09c4a8d82d6b616080a8c0 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_ad3e831126b9988e3e54c1412fb5ca2f4856bcb85e09c4a8d82d6b616080a8c0->enter($__internal_ad3e831126b9988e3e54c1412fb5ca2f4856bcb85e09c4a8d82d6b616080a8c0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@KnpPaginator/Pagination/twitter_bootstrap_pagination.html.twig"));
+        $__internal_2b5988f44eb6582ac232900f6ff8221e9672656fbf4f80b9ab80e72a71b28630 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_2b5988f44eb6582ac232900f6ff8221e9672656fbf4f80b9ab80e72a71b28630->enter($__internal_2b5988f44eb6582ac232900f6ff8221e9672656fbf4f80b9ab80e72a71b28630_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@KnpPaginator/Pagination/twitter_bootstrap_pagination.html.twig"));
 
-        $__internal_d13eb2edd95a1713ee57b833efef7c643c287247558de7c18467f8b448178404 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_d13eb2edd95a1713ee57b833efef7c643c287247558de7c18467f8b448178404->enter($__internal_d13eb2edd95a1713ee57b833efef7c643c287247558de7c18467f8b448178404_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@KnpPaginator/Pagination/twitter_bootstrap_pagination.html.twig"));
+        $__internal_59bee092647a2fc66ef52655561399b66e341dfa55f2c566c56c1f9e6ea47cec = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_59bee092647a2fc66ef52655561399b66e341dfa55f2c566c56c1f9e6ea47cec->enter($__internal_59bee092647a2fc66ef52655561399b66e341dfa55f2c566c56c1f9e6ea47cec_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@KnpPaginator/Pagination/twitter_bootstrap_pagination.html.twig"));
 
         // line 19
         echo "
@@ -197,10 +197,10 @@ class __TwigTemplate_0ec0feb9f4707e945fe31b7807bbf57b159c73ac3f488255f6510862109
 ";
         }
         
-        $__internal_ad3e831126b9988e3e54c1412fb5ca2f4856bcb85e09c4a8d82d6b616080a8c0->leave($__internal_ad3e831126b9988e3e54c1412fb5ca2f4856bcb85e09c4a8d82d6b616080a8c0_prof);
+        $__internal_2b5988f44eb6582ac232900f6ff8221e9672656fbf4f80b9ab80e72a71b28630->leave($__internal_2b5988f44eb6582ac232900f6ff8221e9672656fbf4f80b9ab80e72a71b28630_prof);
 
         
-        $__internal_d13eb2edd95a1713ee57b833efef7c643c287247558de7c18467f8b448178404->leave($__internal_d13eb2edd95a1713ee57b833efef7c643c287247558de7c18467f8b448178404_prof);
+        $__internal_59bee092647a2fc66ef52655561399b66e341dfa55f2c566c56c1f9e6ea47cec->leave($__internal_59bee092647a2fc66ef52655561399b66e341dfa55f2c566c56c1f9e6ea47cec_prof);
 
     }
 

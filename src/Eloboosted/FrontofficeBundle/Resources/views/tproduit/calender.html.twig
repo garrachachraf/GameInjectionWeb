@@ -2,12 +2,33 @@
 {% block main %}
     <script src="{{ asset('plugins/ekko-lightbox/ekko-lightbox.min.js') }}"></script>
     <script src="{{ asset('js/core.min.js') }}"></script>
-<link rel="stylesheet" href="{{ asset('bundles/adesignscalendar/css/fullcalendar/fullcalendar.css') }}" />
-<script type="text/javascript" src="{{ asset('bundles/adesignscalendar/js/jquery/jquery-1.8.2.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('bundles/adesignscalendar/js/fullcalendar/jquery.fullcalendar.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('bundles/adesignscalendar/js/calendar-settings.js') }}"></script>
-<script src="{{ asset('bundles/fosjsrouting/js/router.js') }}"></script>
-<script src="{{ path('fos_js_routing_js', {"callback": "fos.Router.setData"}) }}"></script>
-{% include 'ADesignsCalendarBundle::calendar.html.twig' %}
+    <link rel="stylesheet" href="{{ asset('bundles/adesignscalendar/css/fullcalendar/fullcalendar.css') }}"/>
+    <script type="text/javascript" src="{{ asset('bundles/adesignscalendar/js/jquery/jquery-1.8.2.min.js') }}"></script>
+    <script type="text/javascript"
+            src="{{ asset('bundles/adesignscalendar/js/fullcalendar/jquery.fullcalendar.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('bundles/adesignscalendar/js/calendar-settings.js') }}"></script>
+    <script src="{{ asset('bundles/fosjsrouting/js/router.js') }}"></script>
+    <script src="{{ path('fos_js_routing_js', {"callback": "fos.Router.setData"}) }}"></script>
+    <section class="hero height-350 hero-game" style="background-image: url({{ asset('img/cover/cover-game.jpg') }});">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="page-header">
+                <div class="page-title">Game Injection | Our Events</div>
+                <ol class="breadcrumb">
+                    <li><a href="{{ path('tevenement_index_front', {'page': 1}) }}" class="no-padding-left">Events</a>
+                    </li>
+                    <li class="active">Show Event</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-grey-50 padding-top-30">
+        <div class="container">
+            <div class="row">
+                {% include 'ADesignsCalendarBundle::calendar.html.twig' %}
+            </div>
+        </div>
+    </section>
 
 {% endblock %}

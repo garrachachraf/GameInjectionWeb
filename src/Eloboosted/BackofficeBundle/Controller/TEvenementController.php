@@ -80,7 +80,7 @@ class TEvenementController extends Controller
         if ($editForm->isSubmitted() && $editForm->isValid()) {
             $this->getDoctrine()->getManager()->flush();
 
-            return $this->redirectToRoute('tevenement_edit', array('id' => $tEvenement->getIdEvenement()));
+            return $this->redirectToRoute('tevenement_index', array('id' => $tEvenement->getIdEvenement()));
         }
 
         return $this->render('EloboostedBackofficeBundle:tevenement:edit.html.twig', array(

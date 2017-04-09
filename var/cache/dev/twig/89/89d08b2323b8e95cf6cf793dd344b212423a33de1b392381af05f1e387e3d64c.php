@@ -1,6 +1,6 @@
 <?php
 
-/* NomayaSocialBundle:Buttons:linkedinButton.html.twig */
+/* @NomayaSocial/Buttons/linkedinButton.html.twig */
 class __TwigTemplate_dc4d2fed4621cb04d248300106b5a5d6f7f261b174d29c3c84b7961243ac67cd extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
@@ -15,11 +15,11 @@ class __TwigTemplate_dc4d2fed4621cb04d248300106b5a5d6f7f261b174d29c3c84b7961243a
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_cbdb8af5c09d6f33e34c8ace2c525e20152277931ae50e989d8d2be0106edd4f = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_cbdb8af5c09d6f33e34c8ace2c525e20152277931ae50e989d8d2be0106edd4f->enter($__internal_cbdb8af5c09d6f33e34c8ace2c525e20152277931ae50e989d8d2be0106edd4f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "NomayaSocialBundle:Buttons:linkedinButton.html.twig"));
+        $__internal_29d9be9d86c861b64fcba502a90ae2af2b6c317324cb697cf73847998053533f = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_29d9be9d86c861b64fcba502a90ae2af2b6c317324cb697cf73847998053533f->enter($__internal_29d9be9d86c861b64fcba502a90ae2af2b6c317324cb697cf73847998053533f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@NomayaSocial/Buttons/linkedinButton.html.twig"));
 
-        $__internal_21ad9c02f60c7f5dc6c390dba3061c3e901f647db6fb37ea48684bb05f4c0aa8 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_21ad9c02f60c7f5dc6c390dba3061c3e901f647db6fb37ea48684bb05f4c0aa8->enter($__internal_21ad9c02f60c7f5dc6c390dba3061c3e901f647db6fb37ea48684bb05f4c0aa8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "NomayaSocialBundle:Buttons:linkedinButton.html.twig"));
+        $__internal_381cc0f476f5e6a55d90fff5176ff50478654f51ce8805357adcce316ec7408a = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_381cc0f476f5e6a55d90fff5176ff50478654f51ce8805357adcce316ec7408a->enter($__internal_381cc0f476f5e6a55d90fff5176ff50478654f51ce8805357adcce316ec7408a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@NomayaSocial/Buttons/linkedinButton.html.twig"));
 
         // line 1
         if (( !array_key_exists("url", $context) || ((isset($context["url"]) ? $context["url"] : $this->getContext($context, "url")) == null))) {
@@ -50,16 +50,16 @@ class __TwigTemplate_dc4d2fed4621cb04d248300106b5a5d6f7f261b174d29c3c84b7961243a
 ";
         echo trim(preg_replace('/>\s+</', '><', ob_get_clean()));
         
-        $__internal_cbdb8af5c09d6f33e34c8ace2c525e20152277931ae50e989d8d2be0106edd4f->leave($__internal_cbdb8af5c09d6f33e34c8ace2c525e20152277931ae50e989d8d2be0106edd4f_prof);
+        $__internal_29d9be9d86c861b64fcba502a90ae2af2b6c317324cb697cf73847998053533f->leave($__internal_29d9be9d86c861b64fcba502a90ae2af2b6c317324cb697cf73847998053533f_prof);
 
         
-        $__internal_21ad9c02f60c7f5dc6c390dba3061c3e901f647db6fb37ea48684bb05f4c0aa8->leave($__internal_21ad9c02f60c7f5dc6c390dba3061c3e901f647db6fb37ea48684bb05f4c0aa8_prof);
+        $__internal_381cc0f476f5e6a55d90fff5176ff50478654f51ce8805357adcce316ec7408a->leave($__internal_381cc0f476f5e6a55d90fff5176ff50478654f51ce8805357adcce316ec7408a_prof);
 
     }
 
     public function getTemplateName()
     {
-        return "NomayaSocialBundle:Buttons:linkedinButton.html.twig";
+        return "@NomayaSocial/Buttons/linkedinButton.html.twig";
     }
 
     public function isTraitable()
@@ -94,6 +94,6 @@ class __TwigTemplate_dc4d2fed4621cb04d248300106b5a5d6f7f261b174d29c3c84b7961243a
 
  <script type=\"IN/Share\" data-url=\"{{ url }}\" data-counter=\"{{ counter }}\"></script>
 {% endspaceless %}
-", "NomayaSocialBundle:Buttons:linkedinButton.html.twig", "C:\\wamp64\\www\\testmerge\\vendor\\nomaya\\social-bundle\\Nomaya\\SocialBundle\\Resources\\views\\Buttons\\linkedinButton.html.twig");
+", "@NomayaSocial/Buttons/linkedinButton.html.twig", "C:\\wamp64\\www\\testmerge\\vendor\\nomaya\\social-bundle\\Nomaya\\SocialBundle\\Resources\\views\\Buttons\\linkedinButton.html.twig");
     }
 }

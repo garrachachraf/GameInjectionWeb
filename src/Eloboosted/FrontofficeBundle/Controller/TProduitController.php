@@ -111,7 +111,7 @@ class TProduitController extends Controller
         }
         $lasts =
             $em->getRepository('EloboostedGameinjectionBundle:TProduit')->findBy(
-                array('etat' => 'Sell'),        // $where
+                array(),        // $where
                 array('dateProduit' => 'DESC'),    // $orderBy
                 4,                        // $limit
                 0                          // $offset

@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>{% block title %} Gentelella Alela! | {% endblock %}</title>
+    <title>{% block title %} GameInjection Administration | {% endblock %}</title>
 
     <!-- Bootstrap -->
     <link href="{{ asset('BOassets/vendors/bootstrap/dist/css/bootstrap.min.css') }}" rel="stylesheet">
@@ -87,19 +87,16 @@
 
                                 </ul>
                             </li>
-                            <li><a><i class="fa fa-table"></i> Tables <span class="fa fa-chevron-down"></span></a>
+                            <li><a><i class="fa fa-table"></i> Product Categories <span class="fa fa-chevron-down"></span></a>
                                 <ul class="nav child_menu">
-                                    <li><a href="#">Tables</a></li>
-                                    <li><a href="#">Table Dynamic</a></li>
+                                    <li><a href="{{ path('tcategorie_index') }}">All Categories</a></li>
+                                    <li><a href="{{ path('tcategorie_new') }}">Add a new Category</a></li>
                                 </ul>
                             </li>
-                            <li><a><i class="fa fa-bar-chart-o"></i> Data Presentation <span class="fa fa-chevron-down"></span></a>
+                            <li><a><i class="fa fa-empire"></i> Events <span class="fa fa-chevron-down"></span></a>
                                 <ul class="nav child_menu">
-                                    <li><a href="#">Chart JS</a></li>
-                                    <li><a href="#">Chart JS2</a></li>
-                                    <li><a href="#">Moris JS</a></li>
-                                    <li><a href="#">ECharts</a></li>
-                                    <li><a href="#">Other Charts</a></li>
+                                    <li><a href="{{ path('tevenement_new') }}">Add a new Event</a></li>
+                                    <li><a href="{{ path('tevenement_index') }}">View all Events</a></li>
                                 </ul>
                             </li>
                             <li><a><i class="fa fa-clone"></i>Layouts <span class="fa fa-chevron-down"></span></a>
@@ -292,7 +289,7 @@
         <!-- footer content -->
         <footer>
             <div class="pull-right">
-                Gentelella - Bootstrap Admin Template by <a href="#">Colorlib</a>
+                Website Realised By EloBoosted Group :)
             </div>
             <div class="clearfix"></div>
         </footer>

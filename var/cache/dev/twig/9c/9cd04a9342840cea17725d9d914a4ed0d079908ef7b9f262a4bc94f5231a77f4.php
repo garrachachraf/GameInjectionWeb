@@ -1,6 +1,6 @@
 <?php
 
-/* NomayaSocialBundle:Buttons:pinterestButton.html.twig */
+/* @NomayaSocial/Buttons/pinterestButton.html.twig */
 class __TwigTemplate_e22041bfa7371d413c148e752f70df1eccbcc6c2028225b92f379d248bd10d4e extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
@@ -15,11 +15,11 @@ class __TwigTemplate_e22041bfa7371d413c148e752f70df1eccbcc6c2028225b92f379d248bd
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_2bd284013562c026d5403ad458753f1d237c328d801b458963a9047d2419bd1d = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_2bd284013562c026d5403ad458753f1d237c328d801b458963a9047d2419bd1d->enter($__internal_2bd284013562c026d5403ad458753f1d237c328d801b458963a9047d2419bd1d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "NomayaSocialBundle:Buttons:pinterestButton.html.twig"));
+        $__internal_3cb0f1cf50ad5199a316b6e86c904ea812f614da993b6ca3fa462d027c6da9c1 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_3cb0f1cf50ad5199a316b6e86c904ea812f614da993b6ca3fa462d027c6da9c1->enter($__internal_3cb0f1cf50ad5199a316b6e86c904ea812f614da993b6ca3fa462d027c6da9c1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@NomayaSocial/Buttons/pinterestButton.html.twig"));
 
-        $__internal_ec4519e5738bfc3a995e4fc82a63310981e82c30cd2beb5237deff7698659148 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_ec4519e5738bfc3a995e4fc82a63310981e82c30cd2beb5237deff7698659148->enter($__internal_ec4519e5738bfc3a995e4fc82a63310981e82c30cd2beb5237deff7698659148_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "NomayaSocialBundle:Buttons:pinterestButton.html.twig"));
+        $__internal_023667388161652d0a5a0961e725306116af1b0fc65cf0c2b2b7a254a0497f88 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_023667388161652d0a5a0961e725306116af1b0fc65cf0c2b2b7a254a0497f88->enter($__internal_023667388161652d0a5a0961e725306116af1b0fc65cf0c2b2b7a254a0497f88_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@NomayaSocial/Buttons/pinterestButton.html.twig"));
 
         // line 1
         ob_start();
@@ -30,16 +30,16 @@ class __TwigTemplate_e22041bfa7371d413c148e752f70df1eccbcc6c2028225b92f379d248bd
 ";
         echo trim(preg_replace('/>\s+</', '><', ob_get_clean()));
         
-        $__internal_2bd284013562c026d5403ad458753f1d237c328d801b458963a9047d2419bd1d->leave($__internal_2bd284013562c026d5403ad458753f1d237c328d801b458963a9047d2419bd1d_prof);
+        $__internal_3cb0f1cf50ad5199a316b6e86c904ea812f614da993b6ca3fa462d027c6da9c1->leave($__internal_3cb0f1cf50ad5199a316b6e86c904ea812f614da993b6ca3fa462d027c6da9c1_prof);
 
         
-        $__internal_ec4519e5738bfc3a995e4fc82a63310981e82c30cd2beb5237deff7698659148->leave($__internal_ec4519e5738bfc3a995e4fc82a63310981e82c30cd2beb5237deff7698659148_prof);
+        $__internal_023667388161652d0a5a0961e725306116af1b0fc65cf0c2b2b7a254a0497f88->leave($__internal_023667388161652d0a5a0961e725306116af1b0fc65cf0c2b2b7a254a0497f88_prof);
 
     }
 
     public function getTemplateName()
     {
-        return "NomayaSocialBundle:Buttons:pinterestButton.html.twig";
+        return "@NomayaSocial/Buttons/pinterestButton.html.twig";
     }
 
     public function getDebugInfo()
@@ -61,6 +61,6 @@ class __TwigTemplate_e22041bfa7371d413c148e752f70df1eccbcc6c2028225b92f379d248bd
 <a href=\"//fr.pinterest.com/pin/create/button/\" data-pin-do=\"buttonBookmark\"  data-pin-color=\"red\"><img src=\"//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_red_20.png\" /></a>
 <!-- Please call pinit.js only once per page -->
 <script type=\"text/javascript\" async src=\"//assets.pinterest.com/js/pinit.js\"></script>
-{% endspaceless %}", "NomayaSocialBundle:Buttons:pinterestButton.html.twig", "C:\\wamp64\\www\\testmerge\\vendor\\nomaya\\social-bundle\\Nomaya\\SocialBundle\\Resources\\views\\Buttons\\pinterestButton.html.twig");
+{% endspaceless %}", "@NomayaSocial/Buttons/pinterestButton.html.twig", "C:\\wamp64\\www\\testmerge\\vendor\\nomaya\\social-bundle\\Nomaya\\SocialBundle\\Resources\\views\\Buttons\\pinterestButton.html.twig");
     }
 }

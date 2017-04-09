@@ -1,6 +1,6 @@
 <?php
 
-/* NomayaSocialBundle:Buttons:facebookButton.html.twig */
+/* @NomayaSocial/Buttons/facebookButton.html.twig */
 class __TwigTemplate_72ad2e6d98e12ccd69385d3a75ce3dd81801946c9a8f8b058aabb74f71de6472 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
@@ -15,11 +15,11 @@ class __TwigTemplate_72ad2e6d98e12ccd69385d3a75ce3dd81801946c9a8f8b058aabb74f71d
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_2ed0d9386b3fe5426a027d92772123686ec25002d54cf32f3d09a944e3753d49 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_2ed0d9386b3fe5426a027d92772123686ec25002d54cf32f3d09a944e3753d49->enter($__internal_2ed0d9386b3fe5426a027d92772123686ec25002d54cf32f3d09a944e3753d49_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "NomayaSocialBundle:Buttons:facebookButton.html.twig"));
+        $__internal_15e4d69e2f697560e139bd04550912f65cb843b09bcc9ed0fbd72ee61e4924da = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_15e4d69e2f697560e139bd04550912f65cb843b09bcc9ed0fbd72ee61e4924da->enter($__internal_15e4d69e2f697560e139bd04550912f65cb843b09bcc9ed0fbd72ee61e4924da_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@NomayaSocial/Buttons/facebookButton.html.twig"));
 
-        $__internal_622a709ece5d1d21ba4dd017b77435c56881d0163448c5af47c87ec32f7cc810 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_622a709ece5d1d21ba4dd017b77435c56881d0163448c5af47c87ec32f7cc810->enter($__internal_622a709ece5d1d21ba4dd017b77435c56881d0163448c5af47c87ec32f7cc810_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "NomayaSocialBundle:Buttons:facebookButton.html.twig"));
+        $__internal_10b8d26fdaf2def952fc07a062e7f90c836117056e3328aef3e72494aa3d7337 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_10b8d26fdaf2def952fc07a062e7f90c836117056e3328aef3e72494aa3d7337->enter($__internal_10b8d26fdaf2def952fc07a062e7f90c836117056e3328aef3e72494aa3d7337_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@NomayaSocial/Buttons/facebookButton.html.twig"));
 
         // line 1
         if (( !array_key_exists("url", $context) || ((isset($context["url"]) ? $context["url"] : $this->getContext($context, "url")) == null))) {
@@ -64,16 +64,16 @@ class __TwigTemplate_72ad2e6d98e12ccd69385d3a75ce3dd81801946c9a8f8b058aabb74f71d
 ";
         echo trim(preg_replace('/>\s+</', '><', ob_get_clean()));
         
-        $__internal_2ed0d9386b3fe5426a027d92772123686ec25002d54cf32f3d09a944e3753d49->leave($__internal_2ed0d9386b3fe5426a027d92772123686ec25002d54cf32f3d09a944e3753d49_prof);
+        $__internal_15e4d69e2f697560e139bd04550912f65cb843b09bcc9ed0fbd72ee61e4924da->leave($__internal_15e4d69e2f697560e139bd04550912f65cb843b09bcc9ed0fbd72ee61e4924da_prof);
 
         
-        $__internal_622a709ece5d1d21ba4dd017b77435c56881d0163448c5af47c87ec32f7cc810->leave($__internal_622a709ece5d1d21ba4dd017b77435c56881d0163448c5af47c87ec32f7cc810_prof);
+        $__internal_10b8d26fdaf2def952fc07a062e7f90c836117056e3328aef3e72494aa3d7337->leave($__internal_10b8d26fdaf2def952fc07a062e7f90c836117056e3328aef3e72494aa3d7337_prof);
 
     }
 
     public function getTemplateName()
     {
-        return "NomayaSocialBundle:Buttons:facebookButton.html.twig";
+        return "@NomayaSocial/Buttons/facebookButton.html.twig";
     }
 
     public function isTraitable()
@@ -113,6 +113,6 @@ class __TwigTemplate_72ad2e6d98e12ccd69385d3a75ce3dd81801946c9a8f8b058aabb74f71d
 
  <div class=\"fb-like\" data-href=\"{{url}}\" data-send=\"{{send}}\" data-layout=\"{{layout}}\" data-width=\"{{width}}\" data-show-faces=\"{{showFaces}}\" data-share=\"{{share}}\"></div>
 {% endspaceless %}
-", "NomayaSocialBundle:Buttons:facebookButton.html.twig", "C:\\wamp64\\www\\testmerge\\vendor\\nomaya\\social-bundle\\Nomaya\\SocialBundle\\Resources\\views\\Buttons\\facebookButton.html.twig");
+", "@NomayaSocial/Buttons/facebookButton.html.twig", "C:\\wamp64\\www\\testmerge\\vendor\\nomaya\\social-bundle\\Nomaya\\SocialBundle\\Resources\\views\\Buttons\\facebookButton.html.twig");
     }
 }

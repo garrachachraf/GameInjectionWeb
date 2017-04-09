@@ -4,6 +4,7 @@ namespace Eloboosted\FrontofficeBundle\Form;
 
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\DateType;
 use Symfony\Component\Form\Extension\Core\Type\FileType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
@@ -22,7 +23,8 @@ class TEvenementType extends AbstractType
             ->add('titleevent',TextType::class,array('attr' => array('placeholder' => 'title',)))
             ->add('note',TextareaType::class,array('attr' => array('class' => 'form-control','rows'=>5)))
             ->add('lien',TextType::class,array('attr' => array('placeholder' => 'http://',)))
-            ->add('dateEvent')
+            ->add('dateEvent',DateType::class,array(
+                'years' => range(date('y') +10, date('y'))))
             ->add('typeEvent',EntityType::class,
                 array(
                     'class' => 'Eloboosted\GameinjectionBundle\Entity\TypeEvent',

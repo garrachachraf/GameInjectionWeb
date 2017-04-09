@@ -59,11 +59,6 @@ class TypeEvent
     {
         $this->nameEvent = $nameEvent;
     }
-    public function __toString()
-    {
-        return $this->nameEvent;
-
-    }
 
 
 }

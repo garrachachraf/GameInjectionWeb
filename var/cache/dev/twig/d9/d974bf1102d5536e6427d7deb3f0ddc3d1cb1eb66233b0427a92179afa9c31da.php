@@ -21,36 +21,38 @@ class __TwigTemplate_361c128c8dd8f75a033da056e1790ad86046c2264ba68e71f34b7f81f13
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_6790940d82faffa00dad07fe6f6e9ada14e85628792c114ab3d0ddfb780dbb83 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_6790940d82faffa00dad07fe6f6e9ada14e85628792c114ab3d0ddfb780dbb83->enter($__internal_6790940d82faffa00dad07fe6f6e9ada14e85628792c114ab3d0ddfb780dbb83_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EloboostedFrontofficeBundle:tproduit:index.html.twig"));
+        $__internal_8be375a8989791779a064f4f0c6686ea2250eaeaf2923d2611f037e0e3f60b40 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_8be375a8989791779a064f4f0c6686ea2250eaeaf2923d2611f037e0e3f60b40->enter($__internal_8be375a8989791779a064f4f0c6686ea2250eaeaf2923d2611f037e0e3f60b40_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EloboostedFrontofficeBundle:tproduit:index.html.twig"));
 
-        $__internal_72cca2ebf540d0a16db4d30b50fd077ba06d2705169783e362e0b0252ea1cd5f = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_72cca2ebf540d0a16db4d30b50fd077ba06d2705169783e362e0b0252ea1cd5f->enter($__internal_72cca2ebf540d0a16db4d30b50fd077ba06d2705169783e362e0b0252ea1cd5f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EloboostedFrontofficeBundle:tproduit:index.html.twig"));
+        $__internal_67485103535ffb93f1be3121ee93bb6c0ad0fdbf1c453a06aa366462f8985707 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_67485103535ffb93f1be3121ee93bb6c0ad0fdbf1c453a06aa366462f8985707->enter($__internal_67485103535ffb93f1be3121ee93bb6c0ad0fdbf1c453a06aa366462f8985707_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EloboostedFrontofficeBundle:tproduit:index.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_6790940d82faffa00dad07fe6f6e9ada14e85628792c114ab3d0ddfb780dbb83->leave($__internal_6790940d82faffa00dad07fe6f6e9ada14e85628792c114ab3d0ddfb780dbb83_prof);
+        $__internal_8be375a8989791779a064f4f0c6686ea2250eaeaf2923d2611f037e0e3f60b40->leave($__internal_8be375a8989791779a064f4f0c6686ea2250eaeaf2923d2611f037e0e3f60b40_prof);
 
         
-        $__internal_72cca2ebf540d0a16db4d30b50fd077ba06d2705169783e362e0b0252ea1cd5f->leave($__internal_72cca2ebf540d0a16db4d30b50fd077ba06d2705169783e362e0b0252ea1cd5f_prof);
+        $__internal_67485103535ffb93f1be3121ee93bb6c0ad0fdbf1c453a06aa366462f8985707->leave($__internal_67485103535ffb93f1be3121ee93bb6c0ad0fdbf1c453a06aa366462f8985707_prof);
 
     }
 
     // line 3
     public function block_main($context, array $blocks = array())
     {
-        $__internal_eafd2cea473e694ad9f782b349b949e608ef148c18953a63bf6e90c0ab478d28 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_eafd2cea473e694ad9f782b349b949e608ef148c18953a63bf6e90c0ab478d28->enter($__internal_eafd2cea473e694ad9f782b349b949e608ef148c18953a63bf6e90c0ab478d28_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "main"));
+        $__internal_29f6d71e50b42a5744fdde88e073ae90ae6f50db4f6f5a348cbc01d204d918ae = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_29f6d71e50b42a5744fdde88e073ae90ae6f50db4f6f5a348cbc01d204d918ae->enter($__internal_29f6d71e50b42a5744fdde88e073ae90ae6f50db4f6f5a348cbc01d204d918ae_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "main"));
 
-        $__internal_3961221ac7cb6abd16ab857dc2ab97e11275cf424e7e751a5d9cf08bf3ad41ba = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_3961221ac7cb6abd16ab857dc2ab97e11275cf424e7e751a5d9cf08bf3ad41ba->enter($__internal_3961221ac7cb6abd16ab857dc2ab97e11275cf424e7e751a5d9cf08bf3ad41ba_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "main"));
+        $__internal_8649853324e8f836dba3ec461a26e2a1dad37baa26a58553b816827f28a936cc = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_8649853324e8f836dba3ec461a26e2a1dad37baa26a58553b816827f28a936cc->enter($__internal_8649853324e8f836dba3ec461a26e2a1dad37baa26a58553b816827f28a936cc_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "main"));
 
         // line 4
-        echo "    <link href=\"";
+        echo "
+    <link href=\"";
+        // line 5
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("plugins/owl-carousel/owl.carousel.css"), "html", null, true);
         echo "\" rel=\"stylesheet\">
     <link href=\"";
-        // line 5
+        // line 6
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("plugins/ekko-lightbox/ekko-lightbox.min.css"), "html", null, true);
         echo "\" rel=\"stylesheet\">
     <script>
@@ -66,7 +68,7 @@ class __TwigTemplate_361c128c8dd8f75a033da056e1790ad86046c2264ba68e71f34b7f81f13
                     }
                 };
                 xmlhttp.open(\"GET\", \"";
-        // line 18
+        // line 19
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("tproduit_search");
         echo "?p=\" + str, true);
                 xmlhttp.send();
@@ -75,25 +77,37 @@ class __TwigTemplate_361c128c8dd8f75a033da056e1790ad86046c2264ba68e71f34b7f81f13
     </script>
 
     <section class=\"hero hero-games height-300\" style=\"background-image:url('";
-        // line 24
+        // line 25
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("img/cover/cover-game.jpg"), "html", null, true);
         echo "')\">
         <div class=\"hero-bg\"></div>
+
         <div class=\"container\">
             <div class=\"page-header\">
-                <div class=\"page-title bold\"><a href=\"games-single.html\">The Witcher 3: Wild Hunt</a></div>
-                <p>New battle mechanics, a fantastic storyline, and a gritty setting make The Witcher one of the most engrossing RPGs.</p>
+                <div class=\"page-title bold\"><a href=\"";
+        // line 30
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("tproduit_index", array("page" => 1));
+        echo "\">Gaming Injection Shop</a></div>
+                <p>Feel Free To sell or Exchange  Gaming Stuff but Remember no nudity,no Racism and do not harm the others</p>
+            </div>
+        </div>
+    </section>
+    <section class=\"border-bottom-1 border-grey-300 padding-top-10 padding-bottom-10\">
+        <div class=\"container\">
+            <div class=\"row\">
+                <div class=\"col-lg-12\">
+                    <ol class=\"breadcrumb\">
+                        <li><a href=\"/\">Home</a></li>
+                        <li><a href=\"#\">Store</a></li>
+                    </ol>
+                </div>
             </div>
         </div>
     </section>
     <section class=\"padding-top-25 no-padding-bottom border-bottom-1 border-grey-300\">
         <div class=\"container\">
             <div class=\"headline\">
-                <h4>Recent Games</h4>
-                <div class=\"btn-group pull-right\">
-                    <a href=\"games.html#\" class=\"btn btn-default\"><i class=\"fa fa-th-large no-margin\"></i></a>
-                    <a href=\"games.html#\" class=\"btn btn-default\"><i class=\"fa fa-bars no-margin\"></i></a>
-                </div>
+                <h4>Shop</h4>
                 <input type=\"text\" class=\"form-control hidden-xs\" placeholder=\"Search Game...\" onkeyup=\"showHint(this.value)\">
                 <div class=\"dropdown\">
                     <a href=\"games.html#\" class=\"btn btn-default btn-icon-left btn-icon-right dropdown-toggle\" data-toggle=\"dropdown\"><i class=\"fa fa-sort-amount-desc\"></i> Sort by <i class=\"fa fa-caret-down\"></i></a>
@@ -113,16 +127,6 @@ class __TwigTemplate_361c128c8dd8f75a033da056e1790ad86046c2264ba68e71f34b7f81f13
                     </ul>
                 </div>
 
-                <div class=\"dropdown\">
-                    <a href=\"games.html#\" class=\"btn btn-default btn-icon-left btn-icon-right dropdown-toggle\" data-toggle=\"dropdown\"><i class=\"fa fa-calendar-o\"></i> Release Date <i class=\"fa fa-caret-down\"></i></a>
-                    <ul class=\"dropdown-menu\">
-                        <li><a href=\"games.html#\">Released</a></li>
-                        <li><a href=\"games.html#\">Unreleased</a></li>
-                        <li><a href=\"games.html#\">2016</a></li>
-                        <li><a href=\"games.html#\">2015</a></li>
-                        <li><a href=\"games.html#\">2014</a></li>
-                    </ul>
-                </div>
             </div>
         </div>
         <section class=\"bg-grey-50\">
@@ -236,10 +240,10 @@ class __TwigTemplate_361c128c8dd8f75a033da056e1790ad86046c2264ba68e71f34b7f81f13
 
 ";
         
-        $__internal_3961221ac7cb6abd16ab857dc2ab97e11275cf424e7e751a5d9cf08bf3ad41ba->leave($__internal_3961221ac7cb6abd16ab857dc2ab97e11275cf424e7e751a5d9cf08bf3ad41ba_prof);
+        $__internal_8649853324e8f836dba3ec461a26e2a1dad37baa26a58553b816827f28a936cc->leave($__internal_8649853324e8f836dba3ec461a26e2a1dad37baa26a58553b816827f28a936cc_prof);
 
         
-        $__internal_eafd2cea473e694ad9f782b349b949e608ef148c18953a63bf6e90c0ab478d28->leave($__internal_eafd2cea473e694ad9f782b349b949e608ef148c18953a63bf6e90c0ab478d28_prof);
+        $__internal_29f6d71e50b42a5744fdde88e073ae90ae6f50db4f6f5a348cbc01d204d918ae->leave($__internal_29f6d71e50b42a5744fdde88e073ae90ae6f50db4f6f5a348cbc01d204d918ae_prof);
 
     }
 
@@ -255,7 +259,7 @@ class __TwigTemplate_361c128c8dd8f75a033da056e1790ad86046c2264ba68e71f34b7f81f13
 
     public function getDebugInfo()
     {
-        return array (  232 => 107,  229 => 106,  220 => 102,  217 => 101,  199 => 98,  195 => 97,  189 => 96,  185 => 94,  183 => 93,  180 => 92,  168 => 86,  164 => 85,  158 => 84,  152 => 81,  148 => 80,  142 => 79,  137 => 76,  133 => 75,  79 => 24,  70 => 18,  54 => 5,  49 => 4,  40 => 3,  11 => 1,);
+        return array (  236 => 107,  233 => 106,  224 => 102,  221 => 101,  203 => 98,  199 => 97,  193 => 96,  189 => 94,  187 => 93,  184 => 92,  172 => 86,  168 => 85,  162 => 84,  156 => 81,  152 => 80,  146 => 79,  141 => 76,  137 => 75,  89 => 30,  81 => 25,  72 => 19,  56 => 6,  52 => 5,  49 => 4,  40 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -271,6 +275,7 @@ class __TwigTemplate_361c128c8dd8f75a033da056e1790ad86046c2264ba68e71f34b7f81f13
         return new Twig_Source("{% extends 'EloboostedFrontofficeBundle:Default:Layout.html.twig' %}
 
 {% block main %}
+
     <link href=\"{{ asset('plugins/owl-carousel/owl.carousel.css') }}\" rel=\"stylesheet\">
     <link href=\"{{ asset('plugins/ekko-lightbox/ekko-lightbox.min.css') }}\" rel=\"stylesheet\">
     <script>
@@ -293,21 +298,30 @@ class __TwigTemplate_361c128c8dd8f75a033da056e1790ad86046c2264ba68e71f34b7f81f13
 
     <section class=\"hero hero-games height-300\" style=\"background-image:url('{{ asset('img/cover/cover-game.jpg') }}')\">
         <div class=\"hero-bg\"></div>
+
         <div class=\"container\">
             <div class=\"page-header\">
-                <div class=\"page-title bold\"><a href=\"games-single.html\">The Witcher 3: Wild Hunt</a></div>
-                <p>New battle mechanics, a fantastic storyline, and a gritty setting make The Witcher one of the most engrossing RPGs.</p>
+                <div class=\"page-title bold\"><a href=\"{{ path('tproduit_index', {'page': 1}) }}\">Gaming Injection Shop</a></div>
+                <p>Feel Free To sell or Exchange  Gaming Stuff but Remember no nudity,no Racism and do not harm the others</p>
+            </div>
+        </div>
+    </section>
+    <section class=\"border-bottom-1 border-grey-300 padding-top-10 padding-bottom-10\">
+        <div class=\"container\">
+            <div class=\"row\">
+                <div class=\"col-lg-12\">
+                    <ol class=\"breadcrumb\">
+                        <li><a href=\"/\">Home</a></li>
+                        <li><a href=\"#\">Store</a></li>
+                    </ol>
+                </div>
             </div>
         </div>
     </section>
     <section class=\"padding-top-25 no-padding-bottom border-bottom-1 border-grey-300\">
         <div class=\"container\">
             <div class=\"headline\">
-                <h4>Recent Games</h4>
-                <div class=\"btn-group pull-right\">
-                    <a href=\"games.html#\" class=\"btn btn-default\"><i class=\"fa fa-th-large no-margin\"></i></a>
-                    <a href=\"games.html#\" class=\"btn btn-default\"><i class=\"fa fa-bars no-margin\"></i></a>
-                </div>
+                <h4>Shop</h4>
                 <input type=\"text\" class=\"form-control hidden-xs\" placeholder=\"Search Game...\" onkeyup=\"showHint(this.value)\">
                 <div class=\"dropdown\">
                     <a href=\"games.html#\" class=\"btn btn-default btn-icon-left btn-icon-right dropdown-toggle\" data-toggle=\"dropdown\"><i class=\"fa fa-sort-amount-desc\"></i> Sort by <i class=\"fa fa-caret-down\"></i></a>
@@ -327,16 +341,6 @@ class __TwigTemplate_361c128c8dd8f75a033da056e1790ad86046c2264ba68e71f34b7f81f13
                     </ul>
                 </div>
 
-                <div class=\"dropdown\">
-                    <a href=\"games.html#\" class=\"btn btn-default btn-icon-left btn-icon-right dropdown-toggle\" data-toggle=\"dropdown\"><i class=\"fa fa-calendar-o\"></i> Release Date <i class=\"fa fa-caret-down\"></i></a>
-                    <ul class=\"dropdown-menu\">
-                        <li><a href=\"games.html#\">Released</a></li>
-                        <li><a href=\"games.html#\">Unreleased</a></li>
-                        <li><a href=\"games.html#\">2016</a></li>
-                        <li><a href=\"games.html#\">2015</a></li>
-                        <li><a href=\"games.html#\">2014</a></li>
-                    </ul>
-                </div>
             </div>
         </div>
         <section class=\"bg-grey-50\">

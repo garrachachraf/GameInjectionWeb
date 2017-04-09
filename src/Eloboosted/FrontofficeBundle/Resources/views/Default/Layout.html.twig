@@ -14,6 +14,29 @@
     <link href="{{ asset('plugins/bootstrap/css/bootstrap-datetimepicker.css') }}" rel="stylesheet">
     <link href="{{ asset('plugins/bootstrap/css/font-awesome.min.css') }}" rel="stylesheet">
     <link href="{{ asset('plugins/bootstrap/css/prettify-1.0.css') }}" rel="stylesheet">
+    <style>
+
+        .custom {
+            background: #ff081b;
+            animation: myfirst 5s;
+            -webkit-animation: myfirst 1.25s infinite; /* Safari and Chrome */
+        }
+
+        @-webkit-keyframes myfirst /* Firefox */
+        {
+            0% {
+                background: red;
+            }
+            50% {
+                background: #e6023f;
+            }
+            100% {
+                background: #ff0079;
+            }
+        }
+
+
+    </style>
 
     {% block head %}
         <!-- META -->
@@ -63,10 +86,10 @@
                                 </ul>
                             </li>
                             <li class="dropdown mega-dropdown">
-                                <a href="#">Games</a>
+                                <a href="#">games</a>
                                 <ul class="dropdown-menu mega-dropdown-menu category">
                                     <li class="col-md-3">
-                                        <a href="{{ path('tproduit_index', {'page': 1}) }}">
+                                        <a href="">
                                             <img src="{{ asset('img/game/menu-1.jpg') }}" alt="">
                                             <div class="caption">
                                                 <span class="label label-warning">PC</span>
@@ -108,10 +131,10 @@
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="blank-page.html#" class="dropdown-toggle">Blog</a>
+                                <a href="" class="dropdown-toggle">Blog</a>
                                 <ul class="dropdown-menu default">
                                     <li class="dropdown-submenu">
-                                        <a href="blog-large.html"><i class="fa fa-align-justify"></i> Blog Large</a>
+                                        <a href=""><i class="fa fa-align-justify"></i> blogs</a>
                                         <ul class="dropdown-menu">
                                             <li><a href="blog-large.html">Archive</a></li>
                                             <li><a href="blog-large-sidebar.html">Sidebar</a></li>
@@ -170,68 +193,29 @@
                                         </ul>
                                     </li>
                                 </ul>
-                            </li>
-                            <li class="dropdown mega-dropdown">
-                                <a href="blank-page.html#">Elements</a>
-                                <ul class="dropdown-menu mega-dropdown-menu row" style="background-image:url('{{ asset('img/content/menu.png') }}')">
-                                    <li class="col-md-3">
-                                        <ul>
-                                            <li class="dropdown-header">Typography</li>
-                                            <li><a href="elements-typography.html"><i class="fa fa-text-height"></i> General Typography</a></li>
-                                            <li><a href="elements-blockquote.html"><i class="fa fa-quote-left"></i> Blockquote</a></li>
-                                            <li><a href="elements-helpers.html"><i class="fa fa-square-o"></i> Helper Classes</a></li>
-                                            <li><a href="elements-testimonials.html"><i class="fa fa-bullhorn"></i> Testimonials</a></li>
-                                            <li><a href="elements-grids.html"><i class="fa fa-th-large"></i> Grid Layouts</a></li>
-                                            <li><a href="elements-alerts.html"><i class="fa fa-bell-o"></i> Alert & Messages</a></li>
-                                            <li><a href="elements-labels.html"><i class="fa fa-bookmark-o"></i> Labels & Badges</a></li>
-                                            <li><a href="elements-media.html"><i class="fa fa-image"></i> Audio, Videos & Images</a></li>
-                                            <li><a href="elements-pagers.html"><i class="fa fa-ellipsis-h"></i> Pagination & Pagers</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="col-md-3">
-                                        <ul>
-                                            <li class="dropdown-header">Button & Icons</li>
-                                            <li><a href="elements-buttons.html"><i class="fa fa-flash"></i> General Buttons</a></li>
-                                            <li><a href="elements-social-buttons.html"><i class="fa fa-thumbs-o-up"></i> Social Buttons</a></li>
-                                            <li><a href="elements-glyphicons.html"><i class="fa fa-chevron-circle-right"></i> Glyphicons</a></li>
-                                            <li><a href="elements-fontawesome.html"><i class="fa fa-chevron-circle-right"></i> FontAwesome</a></li>
-                                            <li><a href="elements-ionicons.html"><i class="fa fa-chevron-circle-right"></i> IonIcons</a></li>
-                                            <li class="dropdown-header">Components</li>
-                                            <li><a href="elements-media-objects.html"><i class="fa fa-align-justify"></i> Media Objects</a></li>
-                                            <li><a href="elements-page-headers.html"><i class="fa fa-align-justify"></i> Page headers</a></li>
-                                            <li><a href="elements-wells.html"><i class="fa fa-align-justify"></i> Wells</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="col-md-3">
-                                        <ul>
-                                            <li class="dropdown-header">Default Elements</li>
-                                            <li><a href="elements-widgets.html"><i class="fa fa-th"></i> Widgets</a></li>
-                                            <li><a href="elements-sections.html"><i class="fa fa-th"></i> Sections</a></li>
-                                            <li><a href="elements-thumbnails.html"><i class="fa fa-file-o"></i> Thumbnails</a></li>
-                                            <li><a href="elements-cards.html"><i class="fa fa-sticky-note-o"></i> Cards</a></li>
-                                            <li><a href="elements-tabs.html"><i class="fa fa-external-link"></i> Accordion & Tabs</a></li>
-                                            <li><a href="elements-timeline.html"><i class="fa fa-th-large"></i> Timeline</a></li>
-                                            <li><a href="elements-tables.html"><i class="fa fa-th"></i> Tables</a></li>
-                                            <li><a href="elements-progress.html"><i class="fa fa-arrows-h"></i> Progress Bars</a></li>
-                                            <li><a href="elements-panels.html"><i class="fa fa-th"></i> Panels</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="col-md-3">
-                                        <ul>
-                                            <li class="dropdown-header">Forms & Info</li>
-                                            <li><a href="elements-forms.html"><i class="fa fa-align-justify"></i> Form Elements</a></li>
-                                            <li><a href="elements-form-layouts.html"><i class="fa fa-align-justify"></i> Form Layouts</a></li>
-                                            <li><a href="elements-modals.html"><i class="fa fa-external-link"></i> Modals</a></li>
-                                            <li><a href="elements-carousel.html"><i class="fa fa-arrows"></i> Carousel Examples</a></li>
-                                            <li><a href="elements-charts.html"><i class="fa fa-bar-chart-o"></i> Charts & Countdowns</a></li>
-                                            <li><a href="elements-google-maps.html"><i class="fa fa-map-marker"></i> Google Maps</a></li>
-                                        </ul>
-                                    </li>
+                            <li class="dropdown">
+                                <a href="" class="dropdown-toggle">Tournaments</a>
+                                <ul class="dropdown-menu default">
+                                    <li><a href="{{ path('tournoi_index', {'p': 1}) }}">View All Tournaments</a></li>
                                 </ul>
                             </li>
-                            <li><a href="videos.html">Videos</a></li>
-                            <li><a href="gallery.html">Gallery</a></li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li class="dropdown">
+                                <a href="" class="dropdown-toggle">Events</a>
+                                <ul class="dropdown-menu default">
+                                    <li><a href="{{ path('tevenement_index_front', {'page': 1}) }}"><i class="fa fa-newspaper-o"></i> Check Our Events</a></li>
+                                    <li><a href="{{ path('calender')}}"><i class="fa fa-calendar"></i> Calender</a></li>
+
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="" class="dropdown-toggle">Shop</a>
+                                <ul class="dropdown-menu default">
+                                    <li><a href="{{ path('tproduit_index', {'page': 1}) }}"><i class="fa fa-shopping-bag"></i>View All Products</a></li>
+                                    <li><a href="{{ path('tproduit_new') }}"><i class="fa fa-plus"></i>Post You Product</a></li>
+                                </ul>
+                            </li>
+                            <li class="custom"><a href="{{ path('streaming_all') }}"><i class="fa fa-eye" ></i>Streaming</a></li>
+                            <li><a href="">Contact</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -306,28 +290,23 @@
             <div class="container">
                 <div class="widget row">
                     <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
-                        <h4 class="title">About GameForest</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pharetra mattis arcu, a congue leo malesuada eu. Nam nec mauris ut odio tristique varius et eu metus. Quisque massa purus, aliquet quis blandit et, <br /> <br />mollis sed lorem. Sed vel tincidunt elit. Phasellus at varius odio, sit amet fermentum mauris.</p>
+                        <h4 class="title">About GameInjection</h4>
+                        <p>This Website is for gamers in which they can sell or exchange products,
+                        help others and share experience through the forum
+                        also check our last games and participate in our tournaments or others created by their own
+                        </p>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                        <h4 class="title">Categories</h4>
+                        <h4 class="title">Our website Provide</h4>
                         <div class="row">
                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                 <ul class="nav">
-                                    <li><a href="blank-page.html#">Playstation 4</a></li>
-                                    <li><a href="blank-page.html#">XBOX ONE</a></li>
-                                    <li><a href="blank-page.html#">PC</a></li>
-                                    <li><a href="blank-page.html#">PS3</a></li>
+                                    <li><a href="{{ path('tproduit_index', {'page': 1}) }}">Shop</a></li>
+                                    <li><a href="{{ path('tevenement_index_front', {'page': 1}) }}">Events</a></li>
+                                    <li><a href="{{ path('streaming_all') }}">PC</a></li>
                                 </ul>
                             </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                <ul class="nav">
-                                    <li><a href="blank-page.html#">Gaming</a></li>
-                                    <li><a href="blank-page.html#">Portfolio</a></li>
-                                    <li><a href="blank-page.html#">Videos</a></li>
-                                    <li><a href="blank-page.html#">Reviews</a></li>
-                                </ul>
-                            </div>
+
                         </div>
                     </div>
 
@@ -344,13 +323,7 @@
         "{{ socialButtons() }}"
             <div class="footer-bottom">
                 <div class="container">
-                    <ul class="list-inline">
-                        <li><a href="blank-page.html#" class="btn btn-circle btn-social-icon" data-toggle="tooltip" title="Follow us on Twitter"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="blank-page.html#" class="btn btn-circle btn-social-icon" data-toggle="tooltip" title="Follow us on Facebook"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="blank-page.html#" class="btn btn-circle btn-social-icon" data-toggle="tooltip" title="Follow us on Google"><i class="fa fa-google-plus"></i></a></li>
-                        <li><a href="blank-page.html#" class="btn btn-circle btn-social-icon" data-toggle="tooltip" title="Follow us on Steam"><i class="fa fa-steam"></i></a></li>
-                    </ul>
-                    &copy; 2016 Gameforest. All rights reserved.
+                    &copy; 2017 GameInjection. All rights reserved.
                 </div>
             </div>
 

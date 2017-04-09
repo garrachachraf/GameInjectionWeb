@@ -1,6 +1,6 @@
 <?php
 
-/* EloboostedBackofficeBundle:tevenement:edit.html.twig */
+/* @EloboostedBackoffice/tevenement/edit.html.twig */
 class __TwigTemplate_aa92905ad9acaea500dbc9acf39bcb78c65d4f33653e56759fd8230e71fc8d15 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
@@ -8,7 +8,7 @@ class __TwigTemplate_aa92905ad9acaea500dbc9acf39bcb78c65d4f33653e56759fd8230e71f
         parent::__construct($env);
 
         // line 1
-        $this->parent = $this->loadTemplate("EloboostedBackofficeBundle:Default:Layout.html.twig", "EloboostedBackofficeBundle:tevenement:edit.html.twig", 1);
+        $this->parent = $this->loadTemplate("EloboostedBackofficeBundle:Default:Layout.html.twig", "@EloboostedBackoffice/tevenement/edit.html.twig", 1);
         $this->blocks = array(
             'insiderowbottom' => array($this, 'block_insiderowbottom'),
         );
@@ -21,29 +21,29 @@ class __TwigTemplate_aa92905ad9acaea500dbc9acf39bcb78c65d4f33653e56759fd8230e71f
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_29375b4149b1f4c6ae196e7641a088f301b81af28520ff2795f6a4383ed0c377 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_29375b4149b1f4c6ae196e7641a088f301b81af28520ff2795f6a4383ed0c377->enter($__internal_29375b4149b1f4c6ae196e7641a088f301b81af28520ff2795f6a4383ed0c377_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EloboostedBackofficeBundle:tevenement:edit.html.twig"));
+        $__internal_489bcce0e5f99be2676cf529227fa70de8ea42e3b8321b94bbd74fc52a38469a = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_489bcce0e5f99be2676cf529227fa70de8ea42e3b8321b94bbd74fc52a38469a->enter($__internal_489bcce0e5f99be2676cf529227fa70de8ea42e3b8321b94bbd74fc52a38469a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@EloboostedBackoffice/tevenement/edit.html.twig"));
 
-        $__internal_364a3941f542284090a8a3b483825308befbc672bfe9b487425377d23d47fa3a = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_364a3941f542284090a8a3b483825308befbc672bfe9b487425377d23d47fa3a->enter($__internal_364a3941f542284090a8a3b483825308befbc672bfe9b487425377d23d47fa3a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EloboostedBackofficeBundle:tevenement:edit.html.twig"));
+        $__internal_d6902b263f1665bc21a061f95efaae1936c7d09ecac8f1bca825fb1a4c51befb = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_d6902b263f1665bc21a061f95efaae1936c7d09ecac8f1bca825fb1a4c51befb->enter($__internal_d6902b263f1665bc21a061f95efaae1936c7d09ecac8f1bca825fb1a4c51befb_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@EloboostedBackoffice/tevenement/edit.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_29375b4149b1f4c6ae196e7641a088f301b81af28520ff2795f6a4383ed0c377->leave($__internal_29375b4149b1f4c6ae196e7641a088f301b81af28520ff2795f6a4383ed0c377_prof);
+        $__internal_489bcce0e5f99be2676cf529227fa70de8ea42e3b8321b94bbd74fc52a38469a->leave($__internal_489bcce0e5f99be2676cf529227fa70de8ea42e3b8321b94bbd74fc52a38469a_prof);
 
         
-        $__internal_364a3941f542284090a8a3b483825308befbc672bfe9b487425377d23d47fa3a->leave($__internal_364a3941f542284090a8a3b483825308befbc672bfe9b487425377d23d47fa3a_prof);
+        $__internal_d6902b263f1665bc21a061f95efaae1936c7d09ecac8f1bca825fb1a4c51befb->leave($__internal_d6902b263f1665bc21a061f95efaae1936c7d09ecac8f1bca825fb1a4c51befb_prof);
 
     }
 
     // line 3
     public function block_insiderowbottom($context, array $blocks = array())
     {
-        $__internal_b72f0290726d3c371bceee979f677b1f1ff44543d62843ce200803310a47fb8a = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_b72f0290726d3c371bceee979f677b1f1ff44543d62843ce200803310a47fb8a->enter($__internal_b72f0290726d3c371bceee979f677b1f1ff44543d62843ce200803310a47fb8a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "insiderowbottom"));
+        $__internal_7c48354b267d404b75aa0264860cc667dc3e2c7d6a669eaa7e0651759473a728 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_7c48354b267d404b75aa0264860cc667dc3e2c7d6a669eaa7e0651759473a728->enter($__internal_7c48354b267d404b75aa0264860cc667dc3e2c7d6a669eaa7e0651759473a728_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "insiderowbottom"));
 
-        $__internal_a3a39b9f11615cafa746433e453b17ead841027b7164204f44249339334956f8 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_a3a39b9f11615cafa746433e453b17ead841027b7164204f44249339334956f8->enter($__internal_a3a39b9f11615cafa746433e453b17ead841027b7164204f44249339334956f8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "insiderowbottom"));
+        $__internal_ff664afbd3e7c6d899493e4650c9664c84bee85b28e80fab8aa27f7cb2cf6c08 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_ff664afbd3e7c6d899493e4650c9664c84bee85b28e80fab8aa27f7cb2cf6c08->enter($__internal_ff664afbd3e7c6d899493e4650c9664c84bee85b28e80fab8aa27f7cb2cf6c08_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "insiderowbottom"));
 
         // line 4
         echo "    <div class=\"col-md-12 col-sm-12 col-xs-12\">
@@ -145,23 +145,22 @@ class __TwigTemplate_aa92905ad9acaea500dbc9acf39bcb78c65d4f33653e56759fd8230e71f
         // line 60
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("tevenement_index");
         echo "\"><button class=\"btn btn-primary\" type=\"button\">Cancel</button></a>
-                            <button class=\"btn btn-primary\" type=\"reset\">Reset</button>
                             ";
-        // line 62
+        // line 61
         echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute((isset($context["edit_form"]) ? $context["edit_form"] : $this->getContext($context, "edit_form")), "Add", array()), 'widget');
         echo "
                             ";
-        // line 63
+        // line 62
         echo         $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->renderBlock((isset($context["edit_form"]) ? $context["edit_form"] : $this->getContext($context, "edit_form")), 'form_end');
         echo "
                         </div>
                         ";
-        // line 65
+        // line 64
         echo         $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->renderBlock((isset($context["delete_form"]) ? $context["delete_form"] : $this->getContext($context, "delete_form")), 'form_start');
         echo "
                         <input type=\"submit\" class=\"btn btn-danger\" value=\"Delete\"></input>
                         ";
-        // line 67
+        // line 66
         echo         $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->renderBlock((isset($context["delete_form"]) ? $context["delete_form"] : $this->getContext($context, "delete_form")), 'form_end');
         echo "
                     </div>
@@ -174,16 +173,16 @@ class __TwigTemplate_aa92905ad9acaea500dbc9acf39bcb78c65d4f33653e56759fd8230e71f
     </div>
 ";
         
-        $__internal_a3a39b9f11615cafa746433e453b17ead841027b7164204f44249339334956f8->leave($__internal_a3a39b9f11615cafa746433e453b17ead841027b7164204f44249339334956f8_prof);
+        $__internal_ff664afbd3e7c6d899493e4650c9664c84bee85b28e80fab8aa27f7cb2cf6c08->leave($__internal_ff664afbd3e7c6d899493e4650c9664c84bee85b28e80fab8aa27f7cb2cf6c08_prof);
 
         
-        $__internal_b72f0290726d3c371bceee979f677b1f1ff44543d62843ce200803310a47fb8a->leave($__internal_b72f0290726d3c371bceee979f677b1f1ff44543d62843ce200803310a47fb8a_prof);
+        $__internal_7c48354b267d404b75aa0264860cc667dc3e2c7d6a669eaa7e0651759473a728->leave($__internal_7c48354b267d404b75aa0264860cc667dc3e2c7d6a669eaa7e0651759473a728_prof);
 
     }
 
     public function getTemplateName()
     {
-        return "EloboostedBackofficeBundle:tevenement:edit.html.twig";
+        return "@EloboostedBackoffice/tevenement/edit.html.twig";
     }
 
     public function isTraitable()
@@ -193,7 +192,7 @@ class __TwigTemplate_aa92905ad9acaea500dbc9acf39bcb78c65d4f33653e56759fd8230e71f
 
     public function getDebugInfo()
     {
-        return array (  165 => 67,  160 => 65,  155 => 63,  151 => 62,  146 => 60,  137 => 54,  131 => 51,  124 => 47,  118 => 44,  111 => 40,  105 => 37,  98 => 33,  92 => 30,  85 => 26,  79 => 23,  72 => 19,  66 => 16,  62 => 15,  49 => 4,  40 => 3,  11 => 1,);
+        return array (  164 => 66,  159 => 64,  154 => 62,  150 => 61,  146 => 60,  137 => 54,  131 => 51,  124 => 47,  118 => 44,  111 => 40,  105 => 37,  98 => 33,  92 => 30,  85 => 26,  79 => 23,  72 => 19,  66 => 16,  62 => 15,  49 => 4,  40 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -266,7 +265,6 @@ class __TwigTemplate_aa92905ad9acaea500dbc9acf39bcb78c65d4f33653e56759fd8230e71f
                     <div class=\"form-group\">
                         <div class=\"col-md-6 col-sm-6 col-xs-12 col-md-offset-3\">
                             <a href=\"{{ path('tevenement_index') }}\"><button class=\"btn btn-primary\" type=\"button\">Cancel</button></a>
-                            <button class=\"btn btn-primary\" type=\"reset\">Reset</button>
                             {{ form_widget(edit_form.Add) }}
                             {{ form_end(edit_form) }}
                         </div>
@@ -283,6 +281,6 @@ class __TwigTemplate_aa92905ad9acaea500dbc9acf39bcb78c65d4f33653e56759fd8230e71f
     </div>
 {% endblock %}
 
-", "EloboostedBackofficeBundle:tevenement:edit.html.twig", "C:\\wamp64\\www\\testmerge\\src\\Eloboosted\\BackofficeBundle\\Resources\\views\\tevenement\\edit.html.twig");
+", "@EloboostedBackoffice/tevenement/edit.html.twig", "C:\\wamp64\\www\\testmerge\\src\\Eloboosted\\BackofficeBundle\\Resources\\views\\tevenement\\edit.html.twig");
     }
 }

@@ -1,6 +1,6 @@
 <?php
 
-/* NomayaSocialBundle:Buttons:twitterButton.html.twig */
+/* @NomayaSocial/Buttons/twitterButton.html.twig */
 class __TwigTemplate_cb345dcdca69b91816949f5c0ad35ceb6907bfb0ab82ba02f88559437126ddea extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
@@ -15,11 +15,11 @@ class __TwigTemplate_cb345dcdca69b91816949f5c0ad35ceb6907bfb0ab82ba02f8855943712
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_a8d7c45989d6c27abaa2dc26836b5323e19a2a4e6ad7169a2aab150183d4c535 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_a8d7c45989d6c27abaa2dc26836b5323e19a2a4e6ad7169a2aab150183d4c535->enter($__internal_a8d7c45989d6c27abaa2dc26836b5323e19a2a4e6ad7169a2aab150183d4c535_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "NomayaSocialBundle:Buttons:twitterButton.html.twig"));
+        $__internal_fcd99dd598840180bf233b16a3d34cbaf9f636cac94154556fa32378c4cefe91 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_fcd99dd598840180bf233b16a3d34cbaf9f636cac94154556fa32378c4cefe91->enter($__internal_fcd99dd598840180bf233b16a3d34cbaf9f636cac94154556fa32378c4cefe91_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@NomayaSocial/Buttons/twitterButton.html.twig"));
 
-        $__internal_06a35403e663c7f06a390b070d22e4aa3770b22c2dd48fd25050b7945016d7de = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_06a35403e663c7f06a390b070d22e4aa3770b22c2dd48fd25050b7945016d7de->enter($__internal_06a35403e663c7f06a390b070d22e4aa3770b22c2dd48fd25050b7945016d7de_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "NomayaSocialBundle:Buttons:twitterButton.html.twig"));
+        $__internal_e1b82bab1b597981991d1f08bad1999b8086dc1eed1aed4529506bcbd23f0774 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_e1b82bab1b597981991d1f08bad1999b8086dc1eed1aed4529506bcbd23f0774->enter($__internal_e1b82bab1b597981991d1f08bad1999b8086dc1eed1aed4529506bcbd23f0774_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@NomayaSocial/Buttons/twitterButton.html.twig"));
 
         // line 1
         if (( !array_key_exists("url", $context) || ((isset($context["url"]) ? $context["url"] : $this->getContext($context, "url")) == null))) {
@@ -77,16 +77,16 @@ class __TwigTemplate_cb345dcdca69b91816949f5c0ad35ceb6907bfb0ab82ba02f8855943712
 ";
         echo trim(preg_replace('/>\s+</', '><', ob_get_clean()));
         
-        $__internal_a8d7c45989d6c27abaa2dc26836b5323e19a2a4e6ad7169a2aab150183d4c535->leave($__internal_a8d7c45989d6c27abaa2dc26836b5323e19a2a4e6ad7169a2aab150183d4c535_prof);
+        $__internal_fcd99dd598840180bf233b16a3d34cbaf9f636cac94154556fa32378c4cefe91->leave($__internal_fcd99dd598840180bf233b16a3d34cbaf9f636cac94154556fa32378c4cefe91_prof);
 
         
-        $__internal_06a35403e663c7f06a390b070d22e4aa3770b22c2dd48fd25050b7945016d7de->leave($__internal_06a35403e663c7f06a390b070d22e4aa3770b22c2dd48fd25050b7945016d7de_prof);
+        $__internal_e1b82bab1b597981991d1f08bad1999b8086dc1eed1aed4529506bcbd23f0774->leave($__internal_e1b82bab1b597981991d1f08bad1999b8086dc1eed1aed4529506bcbd23f0774_prof);
 
     }
 
     public function getTemplateName()
     {
-        return "NomayaSocialBundle:Buttons:twitterButton.html.twig";
+        return "@NomayaSocial/Buttons/twitterButton.html.twig";
     }
 
     public function isTraitable()
@@ -130,6 +130,6 @@ class __TwigTemplate_cb345dcdca69b91816949f5c0ad35ceb6907bfb0ab82ba02f8855943712
  >{{text}}</a>
 
  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=\"//platform.twitter.com/widgets.js\";fjs.parentNode.insertBefore(js,fjs);}}(document,\"script\",\"twitter-wjs\");</script>
-{% endspaceless %}", "NomayaSocialBundle:Buttons:twitterButton.html.twig", "C:\\wamp64\\www\\testmerge\\vendor\\nomaya\\social-bundle\\Nomaya\\SocialBundle\\Resources\\views\\Buttons\\twitterButton.html.twig");
+{% endspaceless %}", "@NomayaSocial/Buttons/twitterButton.html.twig", "C:\\wamp64\\www\\testmerge\\vendor\\nomaya\\social-bundle\\Nomaya\\SocialBundle\\Resources\\views\\Buttons\\twitterButton.html.twig");
     }
 }

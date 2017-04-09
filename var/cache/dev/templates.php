@@ -102,7 +102,6 @@
   'EloboostedFrontofficeBundle:participation:ticket.html.twig' => __DIR__.'/../../../src/Eloboosted/FrontofficeBundle/Resources/views/participation/ticket.html.twig',
   'EloboostedFrontofficeBundle:Post:addPost.html.twig' => __DIR__.'/../../../src/Eloboosted/FrontofficeBundle/Resources/views/Post/addPost.html.twig',
   'EloboostedFrontofficeBundle:Post:commentaire.html.twig' => __DIR__.'/../../../src/Eloboosted/FrontofficeBundle/Resources/views/Post/commentaire.html.twig',
-  'EloboostedFrontofficeBundle:Post:jquery.min.js' => __DIR__.'/../../../src/Eloboosted/FrontofficeBundle/Resources/views/Post/jquery.min.js',
   'EloboostedFrontofficeBundle:Post:readPost.html.twig' => __DIR__.'/../../../src/Eloboosted/FrontofficeBundle/Resources/views/Post/readPost.html.twig',
   'EloboostedFrontofficeBundle:Post:showAllPosts.html.twig' => __DIR__.'/../../../src/Eloboosted/FrontofficeBundle/Resources/views/Post/showAllPosts.html.twig',
   'EloboostedFrontofficeBundle:Products:addProduct.html.twig' => __DIR__.'/../../../src/Eloboosted/FrontofficeBundle/Resources/views/Products/addProduct.html.twig',
