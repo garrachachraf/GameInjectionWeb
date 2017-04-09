@@ -4,6 +4,7 @@ namespace Eloboosted\FrontofficeBundle\Controller;
 
 use Eloboosted\GameinjectionBundle\Entity\Compte;
 use Eloboosted\GameinjectionBundle\Entity\Participation;
+use Eloboosted\GameinjectionBundle\Entity\Tournoi;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
 use Symfony\Component\HttpFoundation\Request;
@@ -101,6 +102,39 @@ class ParticipationController extends Controller
     public function tickethtmlAction(Participation $participation)
     {
         return $this->render('EloboostedFrontofficeBundle:participation:ticket.html.twig', array('p' => $participation));
+    }
+
+    public function setwinnersAction(Request $request ,Tournoi $tournoi)
+    {
+        $em = $this->getDoctrine()->getManager();
+        $participates = $em->getRepository('EloboostedGameinjectionBundle:Participation')->findBy(array('idTournoiPart'=>$tournoi));
+        if ($request->isMethod('POST'))
+        {
+            $win1 =$em->getRepository('EloboostedGameinjectionBundle:Participation')->find($request->get('winner1'));
+            $win2 =$em->getRepository('EloboostedGameinjectionBundle:Participation')->find($request->get('winner2'));
+            $win3 =$em->getRepository('EloboostedGameinjectionBundle:Participation')->find($request->get('winner3'));
+            $win1->setPositionWin(1);
+            $win2->setPositionWin(2);
+            $win3->setPositionWin(3);
+            $winner1 = $win1->getIdComptePart();
+            $winner2 = $win2->getIdComptePart();
+            $winner3 = $win3->getIdComptePart();
+            $winner1->setPoints($winner1->getPoints()+ $tournoi->getReward1());
+            $winner2->setPoints($winner2->getPoints()+ $tournoi->getReward2());
+            $winner3->setPoints($winner3->getPoints()+ $tournoi->getReward3());
+            $em->persist($winner1);
+            $em->persist($winner2);
+            $em->persist($winner3);
+
+            $em->persist($win1);
+            $em->persist($win2);
+            $em->persist($win3);
+            $em->flush();
+            return $this->redirectToRoute('tournoi_show',array('id'=>$tournoi->getIdTournoi()));
+
+        }
+        return $this->render('EloboostedFrontofficeBundle:participation:winners.html.twig',array('participations'=>$participates));
+
     }
 
 

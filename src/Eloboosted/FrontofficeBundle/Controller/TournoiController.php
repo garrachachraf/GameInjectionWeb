@@ -12,17 +12,51 @@ class TournoiController extends Controller
      * Lists all tournoi entities.
      *
      */
-    public function indexAction($p)
+    public function indexAction($p, Request $request)
     {
         $em = $this->getDoctrine()->getManager();
-
-        $tournois = $em->getRepository('EloboostedGameinjectionBundle:Tournoi')->findAll();
+        $game = $request->get('games');
+        $sortby = $request->get('sortedBy');
+        $sort = array();
+        if ($sortby !=null)
+        {
+            if ($sortby=='Date')
+            {
+                $sort = array('startDate'=>'asc');
+            }
+            elseif ($sortby=='Name')
+            {
+                $sort = array('nom'=>'asc');
+            }
+            elseif ($sortby=='Fees')
+            {
+                $sort = array('prixParJoueur'=>'asc');
+            }
+        }
+        if ($game != null)
+        {
+            $thegame = $em->getRepository('EloboostedGameinjectionBundle:Gamelist')->find($game);
+            $tournois = $em->getRepository('EloboostedGameinjectionBundle:Tournoi')->findBy(array('idGameTrn'=>$thegame),$sort);
+        }
+        else
+        {
+            $tournois = $em->getRepository('EloboostedGameinjectionBundle:Tournoi')->findBy(array(),$sort);
+        }
         $countt = count($tournois);
+        $start = 3 * ($p - 1);
+        if ($p == 1) {
+            $start = 0;
+        }
+        $end = 3 * $p;
+        $nb = ceil($countt / 3);
+        $tournois = array_slice($tournois, $start, $end);
+        $games = $em->getRepository('EloboostedGameinjectionBundle:Gamelist')->findAll();
 
-        $tournois = array_slice($tournois, $p - 1, $p + 12);
         return $this->render('EloboostedFrontofficeBundle:tournoi:index.html.twig', array(
             'tournois' => $tournois,
-            'pages' => $countt
+            'pages' => $nb,
+            'p' => $p,
+            'games' => $games
         ));
     }
 
@@ -34,7 +68,7 @@ class TournoiController extends Controller
             'SELECT t
     FROM EloboostedGameinjectionBundle:Tournoi t
     WHERE t.nom LIKE :word'
-        )->setParameter('word', '%'.$word.'%');
+        )->setParameter('word', '%' . $word . '%');
 
         $tournois = $query->getResult();
 
@@ -79,23 +113,37 @@ class TournoiController extends Controller
         $deleteForm = $this->createDeleteForm($tournoi);
         $em = $this->getDoctrine()->getManager();
         $user = $this->get('security.token_storage')->getToken()->getUser();
-        $participation = $em->getRepository('EloboostedGameinjectionBundle:Participation')->findOneBy(array('idComptePart'=>$user,'idTournoiPart'=>$tournoi));
-        $isParticipated = 0 ;
-        if ($participation)
-        {
-            $isParticipated = 1 ;
+        $participation = $em->getRepository('EloboostedGameinjectionBundle:Participation')->findOneBy(array('idComptePart' => $user, 'idTournoiPart' => $tournoi));
+        $isParticipated = 0;
+        if ($participation) {
+            $isParticipated = 1;
         }
-        $participations = $em->getRepository('EloboostedGameinjectionBundle:Participation')->findBy(array('idTournoiPart'=>$tournoi));
-        $nbp = count($participation);
+        $participations = $em->getRepository('EloboostedGameinjectionBundle:Participation')->findBy(array('idTournoiPart' => $tournoi));
+        $nbp = count($participations);
         $comments = $em->getRepository('EloboostedGameinjectionBundle:CommentaireTournoi')->findBy(array('idTournoiCt' => $tournoi));
         return $this->render('EloboostedFrontofficeBundle:tournoi:show.html.twig', array(
             'tournoi' => $tournoi,
             'delete_form' => $deleteForm->createView(),
             'comments' => $comments,
-            'isparticipated'=>$isParticipated,
-            'participation'=>$participation,
-            'nbp'=>$nbp,
+            'isparticipated' => $isParticipated,
+            'participation' => $participation,
+            'nbp' => $nbp,
         ));
+    }
+
+    /**
+     * Creates a form to delete a tournoi entity.
+     *
+     * @param Tournoi $tournoi The tournoi entity
+     *
+     * @return \Symfony\Component\Form\Form The form
+     */
+    private function createDeleteForm(Tournoi $tournoi)
+    {
+        return $this->createFormBuilder()
+            ->setAction($this->generateUrl('tournoi_delete', array('id' => $tournoi->getIdTournoi())))
+            ->setMethod('DELETE')
+            ->getForm();
     }
 
     /**
@@ -136,33 +184,17 @@ class TournoiController extends Controller
      * Deletes a tournoi entity.
      *
      */
-    public function deleteAction(Request $request, Tournoi $tournoi)
+    public function deleteAction( Tournoi $tournoi)
     {
-        $form = $this->createDeleteForm($tournoi);
-        $form->handleRequest($request);
 
-        if ($form->isSubmitted() && $form->isValid()) {
+
+
             $em = $this->getDoctrine()->getManager();
             $em->remove($tournoi);
             $em->flush($tournoi);
-        }
+
 
         return $this->redirectToRoute('tournoi_index');
-    }
-
-    /**
-     * Creates a form to delete a tournoi entity.
-     *
-     * @param Tournoi $tournoi The tournoi entity
-     *
-     * @return \Symfony\Component\Form\Form The form
-     */
-    private function createDeleteForm(Tournoi $tournoi)
-    {
-        return $this->createFormBuilder()
-            ->setAction($this->generateUrl('tournoi_delete', array('id' => $tournoi->getIdTournoi())))
-            ->setMethod('DELETE')
-            ->getForm();
     }
 
 

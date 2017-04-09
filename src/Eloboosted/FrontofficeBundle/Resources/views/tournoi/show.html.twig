@@ -16,7 +16,7 @@
                     <li><a href="{{ path('tournoi_index') }}">Tournaments</a></li>
                     <li class="active">Details</li>
                 </ol>
-                <a href="#" class="btn btn-success margin-top-30 text-initial" data-toggle="lightbox" data-width="1280">Participate</a>
+                <a href="{{ path('participation_new',{ 'tournament':tournoi.idTournoi }) }}" class="btn btn-success margin-top-30 text-initial {% if  (not(is_granted('ROLE_USER')) or (app.user.points < tournoi.prixParJoueur) or isparticipated ==1)  %} disabled {% endif %}" data-toggle="lightbox" data-width="1280">Participate</a>
             </div>
         </div>
     </section>
@@ -26,14 +26,13 @@
         <div class="tab-select sticky text-center">
             <div class="container">
                 <ul class="nav nav-tabs">
-                    <li><a href="#">{{ tournoi.nom }}</a></li>
+                    <li><a href="#">{{ tournoi.nom  }}</a></li>
                     <li class="active"><a href="#"><i class="fa fa-star"></i> Review</a></li>
-                    <li><a href="{{ path('tournoi_edit', { 'id': tournoi.idTournoi }) }}"><i class="fa fa-pencil"></i> Edit</a></li>
+                    {% if app.user == tournoi.idCompteTrn %} }<li><a href="{{ path('tournoi_edit', { 'id': tournoi.idTournoi }) }}"><i class="fa fa-pencil"></i> Edit</a></li>{% endif %}
+                    {% if app.user == tournoi.idCompteTrn %} }<li><a href="{{ path('tournoi_edit', { 'id': tournoi.idTournoi }) }}"><i class="fa fa-pencil"></i>Select Winners</a></li>{% endif %}
+
                     <li><a href="#comments"><i class="fa fa-comments"></i> Comments</a></li>
-                    <li><a href="#"><i class="fa fa-video-camera"></i> Videos</a></li>
-                    <li><a href="#"><i class="glyphicon glyphicon-floppy-remove"></i>Delete  {{ form_start(delete_form) }}
-                             <input name="del" id="del" type="submit" class="hidden" value="Delete">
-                            {{ form_end(delete_form) }}</a></li>
+                    <li><a href="{{ path('tournoi_delete',{'id':tournoi.idTournoi}) }}"><i class="glyphicon glyphicon-floppy-remove"></i>Delete</a></li>
                 </ul>
             </div>
         </div>
@@ -235,7 +234,7 @@
 
                             <div class="description">
                                 {{ tournoi.nom | upper }}: A Tournament for {{ tournoi.idGameTrn.Name }} players ans lovers . <br> Participation fee : {{ tournoi.prixParJoueur }}
-                                <a href="{{ path('participation_new',{ 'tournament':tournoi.idTournoi }) }}" class="btn btn-block btn-primary margin-top-40 {% if  (not(is_granted('ROLE_USER')) or (app.user.points < tournoi.prixParJoueur) or isparticipated ==1)  %} disabled {% endif %} }">Participate <i class="fa fa-heart-o margin-left-10"></i></a>
+                                <a href="{{ path('participation_new',{ 'tournament':tournoi.idTournoi }) }}" class="btn btn-block btn-primary margin-top-40 {% if  (not(is_granted('ROLE_USER')) or (app.user.points < tournoi.prixParJoueur) or isparticipated ==1)  %} disabled {% endif %} ">Participate <i class="fa fa-heart-o margin-left-10"></i></a>
                                 {% if  (is_granted('ROLE_USER') and isparticipated ==1)  %}
                                 <a href="{{ path('participation_tiket',{ 'participation':participation.IdParticipation}) }}" class="btn btn-block btn-primary margin-top-40 ">Get Ticket <i class="fa fa-ticket-o margin-left-10"></i></a>
                                 {% endif %}

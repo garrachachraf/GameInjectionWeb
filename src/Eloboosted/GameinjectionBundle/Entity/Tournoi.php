@@ -301,7 +301,6 @@ class Tournoi
     public function setImageTournoi($imageTournoi)
     {
         if ($imageTournoi != null) {
-
             $this->imageTournoi = @file_get_contents($imageTournoi);
         }
 

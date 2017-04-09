@@ -26,7 +26,7 @@ tournoi_edit:
 tournoi_delete:
     path:     /{id}/deleteTournament
     defaults: { _controller: "EloboostedFrontofficeBundle:Tournoi:delete" }
-    methods:  DELETE
+    methods:  [GET, POST]
 trournoi_commentaire_new:
     path:     /{tournoi}/newcommenttr
     defaults: { _controller: "EloboostedFrontofficeBundle:TournamentsComments:New" }
@@ -205,3 +205,6 @@ get_product_img:
 get_event_img:
     path:     /eventimg/{id}
     defaults: { _controller: EloboostedFrontofficeBundle:Images:Eventsimg }
+tournamet_participation_winners:
+    path:     /{id}/SelectWinners
+    defaults: { _controller: EloboostedFrontofficeBundle:Participation:setwinners }

@@ -45,7 +45,7 @@ class TournoiType extends AbstractType
             ->add('prixParJoueur', NumberType::class, array('attr' => array('class' => 'form-control', 'placeholder' => "Participation fees"), 'label' => false))
             ->add('nbrJoueur', NumberType::class, array('attr' => array('class' => 'form-control', 'placeholder' => "Players Number"), 'label' => false))
             ->add('imageTournoi', FileType::class, array(
-                'attr' => array('class' => 'form-control', 'placeholder' => "etat"),
+                'attr' => array('class' => 'form-control', 'placeholder' => " "),
 
                 'label' => false,
                 'required' => false,
