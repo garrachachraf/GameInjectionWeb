@@ -1,0 +1,21 @@
+
+{% for game in games %}
+
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <div class="card">
+            <div class="card-img">
+
+                <a href= "{{ path('yes_show',{ 'id':game.idGames  }) }}" >
+                    <img src="data:image/png;base64,{{ game.imageGames  }}" style="height: 365px" alt=""></a>
+
+                <div class="category"><span class="label label-success">{{ game.supported }}</span></div>
+                <div class="meta"><a href="{{ path('yes_show',{ 'id':game.idGames  })}}"><i class="fa fa-heart-o"></i> <span>15</span></a></div>
+            </div>
+            <div class="caption">
+                <h3 class="card-title"><a href="{{ path('yes_show',{ 'id':game.idGames  })}}">{{ game.nomGames }}</a></h3>
+                <ul><li>{{ game.idCathegorieg.nom }}</li></ul>
+                <p>{{ game.description }}</p>
+            </div>
+        </div>
+    </div>
+{% endfor %}

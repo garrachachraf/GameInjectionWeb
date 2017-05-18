@@ -64,14 +64,16 @@
 
                     <div class="form-group ">
                             {{ form_row(form.idCathegorieg) }}
-
                     </div>
 
                     <div class="text-center margin-top-30">
                     <input type="submit" name="btn" id="btn" class="btn btn-primary btn-lg btn-rounded btn-shadow"
                            value="Add Game"/>
-                    </div>
 
+                        <a href="{{ path('yes_index') }}"><button class="btn btn-default btn-lg btn-rounded btn-shadow"> Back to the list</button></a>
+
+                    </div>
+                    <div class="hidden">{{ form_row(form.submit) }}</div>
                 </div>
 
 
@@ -85,9 +87,6 @@
     {{ form_end(form) }}
 
 
-    <ul>
-        <li>
-            <a href="{{ path('yes_index') }}">Back to the list</a>
-        </li>
-    </ul>
+
+
 {% endblock %}

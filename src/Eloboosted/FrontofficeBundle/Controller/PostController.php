@@ -69,7 +69,7 @@ class PostController extends Controller
 
 
 
-        return $this->render('@EloboostedFrontoffice/Post/showAllPosts.html.twig.',array("post" => $post,"post" => $result,"comments" => $comments));
+        return $this->render('@EloboostedFrontoffice/Post/showAllPosts.html.twig',array("post" => $post,"post" => $result,"comments" => $comments));
 
     }
 

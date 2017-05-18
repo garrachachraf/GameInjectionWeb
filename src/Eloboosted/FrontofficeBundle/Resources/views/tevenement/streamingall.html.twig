@@ -23,6 +23,66 @@
 
 
     </style>
+    <script>
+        var should = chai.should();
+        chai.Assertion.includeStack = true;
+        mocha.setup({
+            ui: 'bdd',
+            globals: ['Twitch'],
+            ignoreLeaks: true
+        });
+    </script>
+
+    <script src="{{ asset('js/twitch.js') }}"></script>
+    <script src="{{ asset('js/test.integration.api.js') }}"></script>
+
+    <script>
+        window.CLIENT_ID = 'wd54hhxdz79qajdijaofha1zb0dk3g';
+        window.REDIRECT_URI = 'https://www.twitch.tv/imaqtpie'
+        $(function () {
+            Twitch.init({clientId: CLIENT_ID});
+
+            $('.twitch-connect').click(function () {
+                Twitch.login({
+                    redirect_uri: REDIRECT_URI,
+                    popup: true,
+                    scope: ['user_read', 'channel_read', 'channel_commercial']
+                });
+                $('.fragment-entry').removeClass('hidden')
+            })
+
+            $('.fragment-entry button').click(function () {
+                document.location.hash = $('#fragment').val()
+
+                Twitch._initSession();
+                mocha.run();
+            })
+        });
+    </script>
+
+    <style type="text/css">
+        .hidden {
+            display: none;
+        }
+
+        .test.pass::before {
+            content: '✓';
+            font-size: 12px;
+            display: block;
+            float: left;
+            margin-right: 5px;
+            color: #00c41c;
+        }
+
+        .test.fail::before {
+            content: '✖';
+            font-size: 12px;
+            display: block;
+            float: left;
+            margin-right: 5px;
+            color: #c00;
+        }
+    </style>
 
     <section>
         <div class="container">
@@ -52,7 +112,6 @@
                             </div>
                         </div>
                     {% endfor %}
-
 
                 </div>
 
@@ -108,6 +167,8 @@
                                 </a>
                             </li>
                         </ul>
+                        <img id="image" src="http://ttv-api.s3.amazonaws.com/assets/connect_dark.png"
+                             class="twitch-connect" href="#"/>
                     </div>
 
 

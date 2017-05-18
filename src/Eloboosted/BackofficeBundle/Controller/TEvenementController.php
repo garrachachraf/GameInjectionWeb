@@ -44,7 +44,7 @@ class TEvenementController extends Controller
         if ($form->isSubmitted()) {
             $em = $this->getDoctrine()->getManager();
             $link1 = $this->getidvid($tEvenement->getLien());
-            $tEvenement->setLien('https://www.youtube.com/embed/'.$link1);
+            $tEvenement->setLien($link1);
             $tEvenement->setDureeevent($this->getyoutubeduration($link1));
             if ($form->isValid())
             {

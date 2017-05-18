@@ -40,7 +40,7 @@
         <div class="col-md-3 left_col">
             <div class="left_col scroll-view">
                 <div class="navbar nav_title" style="border: 0;">
-                    <a href="#" class="site_title"><i class="fa fa-paw"></i> <span>GameInjection !</span></a>
+                    <a href="{{ path('eloboosted_backoffice_homepage') }}" class="site_title"><i class="fa fa-paw"></i> <span>GameInjection !</span></a>
                 </div>
 
                 <div class="clearfix"></div>
@@ -73,17 +73,15 @@
                             <li><a><i class="fa fa-edit"></i> Tournaments <span class="fa fa-chevron-down"></span></a>
                                 <ul class="nav child_menu">
                                     <li><a href="{{ path('eloboosted_backoffice_tournoi') }}">Tournaments List</a></li>
-                                    <li><a href="#">Advanced Components</a></li>
-                                    <li><a href="#">Form Validation</a></li>
-                                    <li><a href="#">Form Wizard</a></li>
-                                    <li><a href="#">Form Upload</a></li>
-                                    <li><a href="#">Form Buttons</a></li>
+                                    <li><a href="{{ path('eloboosted_backoffice_tournoi_new') }}">New Tournament</a></li>
+                                    <li><a href="{{ path('eloboosted_gamelist_index') }}">Supported Game List</a></li>
+                                    <li><a href="{{ path('eloboosted_gamelist_new') }}">Add Supported Game </a></li>
+
                                 </ul>
                             </li>
                             <li><a><i class="fa fa-desktop"></i> Forum <span class="fa fa-chevron-down"></span></a>
                                 <ul class="nav child_menu">
                                     <li><a href="{{ path('addcategorypost') }}">Add new category</a></li>
-                                    <li><a href="#">Media Gallery</a></li>
 
                                 </ul>
                             </li>
@@ -99,12 +97,15 @@
                                     <li><a href="{{ path('tevenement_index') }}">View all Events</a></li>
                                 </ul>
                             </li>
-                            <li><a><i class="fa fa-clone"></i>Layouts <span class="fa fa-chevron-down"></span></a>
+                            <li><a><i class="fa fa-gamepad"></i> Games <span class="fa fa-chevron-down"></span></a>
                                 <ul class="nav child_menu">
-                                    <li><a href="#">Fixed Sidebar</a></li>
-                                    <li><a href="#">Fixed Footer</a></li>
+                                    <li><a href="{{ path('eloboosted_backoffice_NewGame') }}">Add New Game</a></li>
+                                    <li><a href="{{ path('eloboosted_backoffice_games') }}">Games List</a></li>
+                                    <li><a href="{{ path('eloboosted_backoffice_addCathegorie') }}">Add Cathegory</a></li>
+                                    <li><a href="{{ path('eloboosted_backoffice_cathegorieList') }}">Cathegory List</a></li>
                                 </ul>
                             </li>
+                            
                         </ul>
                     </div>
 

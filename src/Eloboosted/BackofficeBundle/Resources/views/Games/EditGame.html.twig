@@ -1,0 +1,164 @@
+{% extends "EloboostedBackofficeBundle:Default:Layout.html.twig" %}
+
+{% block extrastyles %}
+    <link href="{{ asset('/BOassets/vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('/BOassets/vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('/BOassets/vendors/datatables.net-bs/css/dataTables.bootstrap.css') }}" rel="stylesheet">
+    <link href="{{ asset('/BOassets/vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('/BOassets/vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block extrascript %}
+
+
+    <script src="{{ asset('/BOassets/vendors/datatables.net/js/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('/BOassets/vendors/datatables.net-bs/js/dataTables.bootstrap.min.js') }}"></script>
+    <script src="{{ asset('/BOassets/vendors/datatables.net-buttons/js/dataTables.buttons.min.js') }}"></script>
+    <script src="{{ asset('/BOassets/vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js') }}"></script>
+    <script src="{{ asset('/BOassets/vendors/datatables.net-buttons/js/buttons.flash.min.js') }}"></script>
+    <script src="{{ asset('/BOassets/vendors/datatables.net-buttons/js/buttons.html5.min.js') }}"></script>
+    <script src="{{ asset('/BOassets/vendors/datatables.net-buttons/js/buttons.print.min.js') }}"></script>
+    <script src="{{ asset('/BOassets/vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js') }}"></script>
+    <script src="{{ asset('/BOassets/vendors/datatables.net-keytable/js/dataTables.keyTable.min.js') }}"></script>
+    <script src="{{ asset('/BOassets/vendors/datatables.net-responsive/js/dataTables.responsive.min.js') }}"></script>
+    <script src="{{ asset('/BOassets/vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js') }}"></script>
+    <script src="{{ asset('/BOassets/vendors/datatables.net-scroller/js/dataTables.scroller.min.js') }}"></script>
+    <script src="{{ asset('/BOassets/vendors/jszip/dist/jszip.min.js') }}"></script>
+    <script src="{{ asset('/BOassets/vendors/pdfmake/build/pdfmake.min.js') }}"></script>
+    <script src="{{ asset('/BOassets/vendors/pdfmake/build/vfs_fonts.js') }}"></script>
+{% endblock %}
+{% block insiderowbottom %}
+
+
+<div class="col-md-12 col-sm-12 col-xs-12">
+    <div class="x_panel">
+        <div class="x_title">
+            <h2>Edit Game</h2>
+
+            <ul class="nav navbar-right panel_toolbox">
+                <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                       aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Settings 1</a>
+                        </li>
+                        <li><a href="#">Settings 2</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a class="close-link"><i class="fa fa-close"></i></a>
+                </li>
+            </ul>
+            <div class="clearfix"></div>
+        </div>
+        <div class="x_content">
+
+
+             <div class="row">
+
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                     <div class="x_panel">
+                         <div class="x_content">
+
+
+                               {{ form_start(edit_form,{'attr':{'class':'form-horizontal form-label-left'}}) }}
+
+                             <span class="section">Game Info</span>
+                             <div class="item form-group">
+                                 <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Name <span class="required">*</span>
+                                 </label>
+                                 <div class="col-md-6 col-sm-6 col-xs-12">
+                                     {{ form_row(edit_form.nomGames) }}
+                                 </div>
+                             </div>
+
+                             <div class="item form-group">
+                                 <label class="control-label col-md-3 col-sm-3 col-xs-12" for="image">Image <span class="required">*</span>
+                                 </label>
+                                 <div class="col-md-6 col-sm-6 col-xs-12">
+                                     <i class="fa fa-image note-placeholder" data-original-title="Select Game image"
+                                        title="Select Game image"></i>
+                                     {{ form_row(edit_form.imageGames) }}
+                                 </div>
+                             </div>
+
+                             <div class="item form-group">
+                                 <label class="control-label col-md-3 col-sm-3 col-xs-12" for="price">Price <span class="required">*</span>
+                                 </label>
+                                 <div class="col-md-6 col-sm-6 col-xs-12">
+                                     {{ form_row(edit_form.prix) }}
+                                 </div>
+                             </div>
+
+                             <div class="item form-group">
+                                 <label class="control-label col-md-3 col-sm-3 col-xs-12" for="supportedby">Supported by <span class="required">*</span>
+                                 </label>
+                                 <div class="col-md-6 col-sm-6 col-xs-12">
+                                     {{ form_row(edit_form.supported) }}
+                                 </div>
+                             </div>
+
+                             <div class="item form-group">
+                                 <label class="control-label col-md-3 col-sm-3 col-xs-12" for="description">Description <span class="required">*</span>
+                                 </label>
+                                 <div class="col-md-6 col-sm-6 col-xs-12">
+                                     {{ form_row(edit_form.description) }}
+                                 </div>
+                             </div>
+
+                             <div class="item form-group">
+                                 <label class="control-label col-md-3 col-sm-3 col-xs-12" for="cathegory">Cathegory <span class="required">*</span>
+                                 </label>
+                                 <div class="col-md-6 col-sm-6 col-xs-12">
+                                     {{ form_row(edit_form.idCathegorieg) }}
+                                 </div>
+                             </div>
+                             <div class="item form-group">
+                                 <label class="control-label col-md-3 col-sm-3 col-xs-12" for="supportedby">State <span class="required">*</span>
+                                 </label>
+                                 <div class="col-md-6 col-sm-6 col-xs-12">
+                                     {{ form_row(edit_form.etat) }}
+                                 </div>
+                             </div>
+                             <div class="text-center margin-top-30">
+                                 <input type="submit" name="btn" id="btn" class="btn btn-round btn-primary"
+                                        value="Edit"/>
+                             </div>
+
+                         </div>
+
+                         {{ form_end(edit_form) }}
+                         <div>
+                                 <div class="text-center margin-top-30  ">
+
+                                     <a href="{{ path('eloboosted_backoffice_games') }}" > <button class="btn btn-round btn-default"> Back to the list</button>  </a>
+                                 </div>
+
+
+                                 {{ form_start(delete_form) }}
+                                 <div class="text-center margin-top-30  ">
+                                 <input type="submit" value="Delete" class="btn btn-round btn-default">
+                                 {{ form_end(delete_form) }}
+                                 </div>
+
+
+                         </div>
+                     </div>
+
+                         </div>
+                     </div>
+                 </div>
+             </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+{% endblock %}

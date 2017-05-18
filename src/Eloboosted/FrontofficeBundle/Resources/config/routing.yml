@@ -3,7 +3,7 @@ AddProduct_page:
     defaults: { _controller: EloboostedFrontofficeBundle:Products:AddProduct }
 frontoffice_index:
     path:     /
-    defaults: { _controller: EloboostedFrontofficeBundle:Default:index }
+    defaults: { _controller: EloboostedFrontofficeBundle:TEvenement:stream }
     methods:  GET
 tournoi_index:
     path:     /Tournaments/{p}
@@ -26,7 +26,7 @@ tournoi_edit:
 tournoi_delete:
     path:     /{id}/deleteTournament
     defaults: { _controller: "EloboostedFrontofficeBundle:Tournoi:delete" }
-    methods:  DELETE
+    methods:  [GET, POST]
 trournoi_commentaire_new:
     path:     /{tournoi}/newcommenttr
     defaults: { _controller: "EloboostedFrontofficeBundle:TournamentsComments:New" }
@@ -35,7 +35,7 @@ get_user_img:
     defaults: { _controller: EloboostedFrontofficeBundle:Images:img }
 home:
     path:     /home
-    defaults: { _controller: EloboostedFrontofficeBundle:Default:index }
+    defaults: { _controller: EloboostedFrontofficeBundle:TEvenement:stream }
 AddPost:
     path:     /addPost
     defaults: { _controller: EloboostedFrontofficeBundle:Post:addPost}
@@ -95,6 +95,12 @@ myInbox:
     path: /myInbox
     defaults: { _controller:  EloboostedFrontofficeBundle:Compte:myInbox }
 
+emailVerif:
+    path: /emailVerif
+    defaults: { _controller:  EloboostedFrontofficeBundle:Compte:emailVerif }
+myFriends:
+    path: /myFriends
+    defaults: { _controller:  EloboostedFrontofficeBundle:Compte:myFriends }
 editAccount:
     path:     /editAccount
     defaults: { _controller: EloboostedFrontofficeBundle:Compte:editAccount}
@@ -104,9 +110,16 @@ accountEdit:
 sendMessage:
     path: /sendMessage
     defaults: { _controller:  EloboostedFrontofficeBundle:Message:sendMessage }
-myProfile:
-    path: /myProfile
-    defaults: { _controller:  EloboostedFrontofficeBundle:Compte:myProfile }
+postmsg:
+    path: /post
+    defaults: { _controller:  EloboostedFrontofficeBundle:Compte:post }
+lstmsg:
+    path: /lst
+    defaults: { _controller:  EloboostedFrontofficeBundle:Compte:listRender }
+
+myInboxFromNotif:
+    path: /myInboxFromNotif
+    defaults: { _controller:  EloboostedFrontofficeBundle:Notification:myInboxFromNotif }
 userProfile:
     path: /userProfile/{id}
     defaults: { _controller:  EloboostedFrontofficeBundle:Compte:userProfile }
@@ -171,12 +184,12 @@ tproduit_search:
     methods:  [GET, POST]
 
 tproduit_edit:
-    path:     /{id}/editProd
+    path:     /editProd/{id}
     defaults: { _controller: "EloboostedFrontofficeBundle:TProduit:edit" }
     methods:  [GET, POST]
 
 tproduit_delete:
-    path:     /{id}/deleteProd
+    path:     /deleteProd/{id}
     defaults: { _controller: "EloboostedFrontofficeBundle:TProduit:delete" }
     methods:  DELETE
 
@@ -205,3 +218,9 @@ get_product_img:
 get_event_img:
     path:     /eventimg/{id}
     defaults: { _controller: EloboostedFrontofficeBundle:Images:Eventsimg }
+tournamet_participation_winners:
+    path:     /SelectWinners/{id}
+    defaults: { _controller: EloboostedFrontofficeBundle:Participation:setwinners }
+searchGames:
+    path:     /searchGames
+    defaults: { _controller: "EloboostedFrontofficeBundle:Games:searchGames" }

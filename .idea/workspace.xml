@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d73e6a33-b9cb-404e-b7d4-77be369b3955" name="Default" comment="">
+    <list default="true" id="d73e6a33-b9cb-404e-b7d4-77be369b3955" name="Default" comment="Final Version">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/pools/gtYdpDlkrB/O/K/gUtTL58NU7uoM1pqkNdz" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/pools/gtYdpDlkrB/W/O/2i8531TWP1DVwTajxI4K" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/18/33/2c3318" />
@@ -16,37 +16,12 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/ed/37/1e37ed" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/sessions/dev/sess_7f49e3484d3fc19f2fdf2a031fc5da85" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/sessions/dev/sess_8a757d1e9f12c52259ebfc0ac96ac6ff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FOassets/img/cover/cover-register.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FOassets/img/login.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/bundles/adesignscalendar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/bundles/fosjsrouting" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/bundles/nomayasocial" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/bundles/starrating" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/Adventure.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/Shooter.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/other.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/sport.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/strategy.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/commandlinetools/Composer_17_05_17_23_59_c.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/commandlinetools/Symfony_18_05_17_00_00_s.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Eloboosted/BackofficeBundle/Controller/CathegorieController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Eloboosted/BackofficeBundle/Controller/GamelistController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Eloboosted/BackofficeBundle/Form/CathegorieType.php" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Eloboosted/BackofficeBundle/Form/GamelistType.php" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Eloboosted/BackofficeBundle/Form/GamesType.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Eloboosted/BackofficeBundle/Form/TournoiType.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Eloboosted/BackofficeBundle/Resources/views/Cathegorie/EditCath.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Eloboosted/BackofficeBundle/Resources/views/Cathegorie/addCathegorie.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Eloboosted/BackofficeBundle/Resources/views/Cathegorie/cathegorieList.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Eloboosted/BackofficeBundle/Resources/views/Gamelist/index.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Eloboosted/BackofficeBundle/Resources/views/Gamelist/new.html.twig" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Eloboosted/BackofficeBundle/Resources/views/Games/EditGame.html.twig" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Eloboosted/BackofficeBundle/Resources/views/Games/NewGame.html.twig" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Resources/views/Compte/listMsg.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Resources/views/Compte/myFriends.html.twig" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Resources/views/games/searchGames.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Resources/views/participation/winners.html.twig" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/classes.php.meta" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/doctrine/orm/Proxies/__CG__EloboostedGameinjectionBundleEntityCompte.php" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/doctrine/orm/Proxies/__CG__EloboostedGameinjectionBundleEntityGamelist.php" />
@@ -664,81 +639,25 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/twig/f7/f7db3dd267776129a05596c7dc3646b14e46229671debf27cf3a056d778db5e2.php" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/twig/f9/f939b663bbd1681c4d8f007b61ca3776ebbaa0038a358b74aea1bff60a81d55c.php" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/twig/fd/fd6132892f3a471973a3390695c6328c934178ea504687ec8dea331642508bc0.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ob/highcharts-bundle/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ob/highcharts-bundle/.scrutinizer.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ob/highcharts-bundle/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ob/highcharts-bundle/CHANGELOG.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ob/highcharts-bundle/CONTRIBUTING.md" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ob/highcharts-bundle/DependencyInjection/ObHighchartsExtension.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ob/highcharts-bundle/Highcharts/AbstractChart.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ob/highcharts-bundle/Highcharts/ChartInterface.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ob/highcharts-bundle/Highcharts/ChartOption.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ob/highcharts-bundle/Highcharts/Highchart.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ob/highcharts-bundle/Highcharts/Highstock.php" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ob/highcharts-bundle/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ob/highcharts-bundle/ObHighchartsBundle.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ob/highcharts-bundle/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ob/highcharts-bundle/Resources/config/services.yml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ob/highcharts-bundle/Resources/doc/cookbook.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ob/highcharts-bundle/Resources/doc/installation.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ob/highcharts-bundle/Resources/doc/usage.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ob/highcharts-bundle/Tests/Highcharts/ColorsTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ob/highcharts-bundle/Tests/Highcharts/ExportingTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ob/highcharts-bundle/Tests/Highcharts/GlobalTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ob/highcharts-bundle/Tests/Highcharts/HighchartTest.php" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ob/highcharts-bundle/Tests/Highcharts/LangTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ob/highcharts-bundle/Tests/Highcharts/LegendTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ob/highcharts-bundle/Tests/Highcharts/PaneTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ob/highcharts-bundle/Tests/Highcharts/ScrollbarTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ob/highcharts-bundle/Tests/Highcharts/SeriesTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ob/highcharts-bundle/Tests/Highcharts/TooltipTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ob/highcharts-bundle/Tests/Highcharts/TwigTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ob/highcharts-bundle/Tests/Highstock/ChartTest.php" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ob/highcharts-bundle/Tests/Highstock/ColorsTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ob/highcharts-bundle/Tests/Highstock/CreditsTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ob/highcharts-bundle/Tests/Highstock/RangeSelectorTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ob/highcharts-bundle/Tests/bootstrap.php" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ob/highcharts-bundle/Twig/HighchartsExtension.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ob/highcharts-bundle/composer.json" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/ob/highcharts-bundle/phpunit.xml.dist" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-json/CHANGELOG.md" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-json/CONDUCT.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-json/CONTRIBUTING.md" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-json/LICENSE.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-json/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-json/composer.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-json/doc/book/advanced.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-json/doc/book/basics.md" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-json/doc/book/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-json/doc/book/index.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-json/doc/book/intro.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-json/doc/book/migration/v2-to-v3.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-json/mkdocs.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-json/src/Decoder.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-json/src/Encoder.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-json/src/Exception/BadMethodCallException.php" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-json/src/Exception/ExceptionInterface.php" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-json/src/Exception/InvalidArgumentException.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-json/src/Exception/RecursionException.php" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-json/src/Exception/RuntimeException.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-json/src/Expr.php" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/zendframework/zend-json/src/Json.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FOassets/css/SideNav.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FOassets/css/chat.css" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/exporting.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/highcharts.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/server.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/test.auth.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/test.core.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/test.init.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/test.integration.api.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/twitch.auth.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/twitch.core.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/twitch.events.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/twitch.init.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/twitch.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/twitch.storage.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/commandlinetools/Symfony_08_04_17_16_37_s.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/pools/8u-YtI78vl/+/E/9aHLZeUtrbF33tGJbTdQ" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/pools/8u-YtI78vl/+/T/OR+MdP55H6Unvn1yV7Xf" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/pools/8u-YtI78vl/-/2/ByxS9ZErd+vcJAnAsMlp" afterPath="" />
@@ -1369,100 +1288,40 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/dev/twig/ff/ffc8adebf3d04e385443932e6fb83aac861ad825bdedb55ef9600ea42a433bd1.php" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/var/sessions/dev/sess_3strsr8all3gbmdgv0ie661210" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/var/sessions/dev/sess_ntdj8t4dsvijcacuqafjv57fb4" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bundles/adesignscalendar/css/fullcalendar/calendar.css" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/web/bundles/adesignscalendar/css/fullcalendar/fullcalendar.css" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/web/bundles/adesignscalendar/js/calendar-settings.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/web/bundles/adesignscalendar/js/fullcalendar/fullcalendar.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bundles/adesignscalendar/js/fullcalendar/jquery.fullcalendar.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bundles/adesignscalendar/js/jquery/jquery-1.8.2.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bundles/fosjsrouting/js/router.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bundles/nomayasocial/css/social.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bundles/nomayasocial/images/default/behance.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/web/bundles/nomayasocial/images/default/blogger.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/web/bundles/nomayasocial/images/default/deviantart.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/web/bundles/nomayasocial/images/default/digg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bundles/nomayasocial/images/default/dribbble.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bundles/nomayasocial/images/default/dropbox.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/web/bundles/nomayasocial/images/default/facebook.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bundles/nomayasocial/images/default/flickr.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/web/bundles/nomayasocial/images/default/googleplus.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/web/bundles/nomayasocial/images/default/instagram.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/web/bundles/nomayasocial/images/default/linkedin.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bundles/nomayasocial/images/default/myspace.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/web/bundles/nomayasocial/images/default/paypal.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/web/bundles/nomayasocial/images/default/pinterest.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/web/bundles/nomayasocial/images/default/rss.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bundles/nomayasocial/images/default/skype.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bundles/nomayasocial/images/default/stumbleupon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bundles/nomayasocial/images/default/tumblr.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bundles/nomayasocial/images/default/twitter.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/web/bundles/nomayasocial/images/default/vimeo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bundles/nomayasocial/images/default/wordpress.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/web/bundles/nomayasocial/images/default/yahoo.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/web/bundles/nomayasocial/images/default/youtube.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/web/bundles/starrating/css/rating.css" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/web/bundles/starrating/js/rating.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/FOassets/img/logo.png" afterPath="$PROJECT_DIR$/web/FOassets/img/logo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sprintweb3.iml" afterPath="$PROJECT_DIR$/.idea/sprintweb3.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AppKernel.php" afterPath="$PROJECT_DIR$/app/AppKernel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/parameters.yml" afterPath="$PROJECT_DIR$/app/config/parameters.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/security.yml" afterPath="$PROJECT_DIR$/app/config/security.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/services.yml" afterPath="$PROJECT_DIR$/app/config/services.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Eloboosted/BackofficeBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/Eloboosted/BackofficeBundle/Controller/DefaultController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Eloboosted/BackofficeBundle/Controller/GamesController.php" afterPath="$PROJECT_DIR$/src/Eloboosted/BackofficeBundle/Controller/GamesController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Eloboosted/BackofficeBundle/Controller/TEvenementController.php" afterPath="$PROJECT_DIR$/src/Eloboosted/BackofficeBundle/Controller/TEvenementController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Eloboosted/BackofficeBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/Eloboosted/BackofficeBundle/Resources/config/routing.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Eloboosted/BackofficeBundle/Resources/views/Default/Layout.html.twig" afterPath="$PROJECT_DIR$/src/Eloboosted/BackofficeBundle/Resources/views/Default/Layout.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Eloboosted/BackofficeBundle/Resources/views/Default/index.html.twig" afterPath="$PROJECT_DIR$/src/Eloboosted/BackofficeBundle/Resources/views/Default/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Eloboosted/BackofficeBundle/Resources/views/Games/index.html.twig" afterPath="$PROJECT_DIR$/src/Eloboosted/BackofficeBundle/Resources/views/Games/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Eloboosted/BackofficeBundle/Resources/views/Post/Addcategory.html.twig" afterPath="$PROJECT_DIR$/src/Eloboosted/BackofficeBundle/Resources/views/Post/Addcategory.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Eloboosted/BackofficeBundle/Resources/views/Tournoi/index.html.twig" afterPath="$PROJECT_DIR$/src/Eloboosted/BackofficeBundle/Resources/views/Tournoi/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Eloboosted/BackofficeBundle/Resources/views/Tournoi/new.html.twig" afterPath="$PROJECT_DIR$/src/Eloboosted/BackofficeBundle/Resources/views/Tournoi/new.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Eloboosted/BackofficeBundle/Resources/views/tcategorie/edit.html.twig" afterPath="$PROJECT_DIR$/src/Eloboosted/BackofficeBundle/Resources/views/tcategorie/edit.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Eloboosted/BackofficeBundle/Resources/views/tcategorie/new.html.twig" afterPath="$PROJECT_DIR$/src/Eloboosted/BackofficeBundle/Resources/views/tcategorie/new.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Eloboosted/BackofficeBundle/Resources/views/tevenement/edit.html.twig" afterPath="$PROJECT_DIR$/src/Eloboosted/BackofficeBundle/Resources/views/tevenement/edit.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Eloboosted/BackofficeBundle/Resources/views/tevenement/new.html.twig" afterPath="$PROJECT_DIR$/src/Eloboosted/BackofficeBundle/Resources/views/tevenement/new.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Controller/CompteController.php" afterPath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Controller/CompteController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Controller/GamesController.php" afterPath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Controller/GamesController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Controller/NotificationController.php" afterPath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Controller/NotificationController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Controller/ParticipationController.php" afterPath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Controller/ParticipationController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Controller/PostController.php" afterPath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Controller/PostController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Controller/TEvenementController.php" afterPath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Controller/TEvenementController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Controller/TProduitController.php" afterPath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Controller/TProduitController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Controller/TournoiController.php" afterPath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Controller/TournoiController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Form/TEvenementType.php" afterPath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Form/TEvenementType.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Form/TProduitType.php" afterPath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Form/TProduitType.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Resources/config/routing.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Resources/views/Compte/addCompte.html.twig" afterPath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Resources/views/Compte/addCompte.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Resources/views/Compte/editCompte.html.twig" afterPath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Resources/views/Compte/editCompte.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Resources/views/Compte/myInbox.html.twig" afterPath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Resources/views/Compte/myInbox.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Resources/views/Compte/myProfile.html.twig" afterPath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Resources/views/Compte/myProfile.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Resources/views/Compte/userProfile.html.twig" afterPath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Resources/views/Compte/userProfile.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Resources/views/Default/Layout.html.twig" afterPath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Resources/views/Default/Layout.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Resources/views/Notification/listNots.html.twig" afterPath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Resources/views/Notification/listNots.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Resources/views/Post/addPost.html.twig" afterPath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Resources/views/Post/addPost.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Resources/views/Post/showAllPosts.html.twig" afterPath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Resources/views/Post/showAllPosts.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Resources/views/games/index.html.twig" afterPath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Resources/views/games/index.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Resources/views/games/new.html.twig" afterPath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Resources/views/games/new.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Resources/views/games/show.html.twig" afterPath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Resources/views/games/show.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Resources/views/participation/ticket.html.twig" afterPath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Resources/views/participation/ticket.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Resources/views/tevenement/show.html.twig" afterPath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Resources/views/tevenement/show.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Resources/views/tevenement/streamingall.html.twig" afterPath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Resources/views/tevenement/streamingall.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Resources/views/tournoi/edit.html.twig" afterPath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Resources/views/tournoi/edit.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Resources/views/tournoi/index.html.twig" afterPath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Resources/views/tournoi/index.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Resources/views/tournoi/show.html.twig" afterPath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Resources/views/tournoi/show.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Resources/views/tproduit/calender.html.twig" afterPath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Resources/views/tproduit/calender.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Resources/views/tproduit/new.html.twig" afterPath="$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Resources/views/tproduit/new.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Eloboosted/GameinjectionBundle/Entity/Compte.php" afterPath="$PROJECT_DIR$/src/Eloboosted/GameinjectionBundle/Entity/Compte.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Eloboosted/GameinjectionBundle/Entity/Games.php" afterPath="$PROJECT_DIR$/src/Eloboosted/GameinjectionBundle/Entity/Games.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Eloboosted/GameinjectionBundle/Entity/Tournoi.php" afterPath="$PROJECT_DIR$/src/Eloboosted/GameinjectionBundle/Entity/Tournoi.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Eloboosted/GameinjectionBundle/Entity/TypeEvent.php" afterPath="$PROJECT_DIR$/src/Eloboosted/GameinjectionBundle/Entity/TypeEvent.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Eloboosted/GameinjectionBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/Eloboosted/GameinjectionBundle/Resources/config/routing.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Eloboosted/LoginBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/Eloboosted/LoginBundle/Controller/DefaultController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Eloboosted/LoginBundle/Resources/views/Default/loginform.html.twig" afterPath="$PROJECT_DIR$/src/Eloboosted/LoginBundle/Resources/views/Default/loginform.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.php" afterPath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.php.meta" afterPath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.php.meta" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.xml" afterPath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.xml" />
@@ -1537,12 +1396,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.zh_TW.1cd7e874b24ab41081c7781e4161053bf515fc91.php.meta" afterPath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.zh_TW.1cd7e874b24ab41081c7781e4161053bf515fc91.php.meta" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/logs/dev.log" afterPath="$PROJECT_DIR$/var/logs/dev.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/logs/prod.log" afterPath="$PROJECT_DIR$/var/logs/prod.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" afterPath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/LICENSE" afterPath="$PROJECT_DIR$/vendor/composer/LICENSE" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/installed.json" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" />
     </list>
     <ignored path="C:\wamp\www\sprintweb1\.idea\shelf/" />
     <ignored path="C:\wamp\www\sprintweb\.idea\shelf/" />
@@ -2219,7 +2074,7 @@
       <workItem from="1495056024221" duration="6874000" />
       <workItem from="1495065447715" duration="1755000" />
       <workItem from="1495098582473" duration="7162000" />
-      <workItem from="1495136736521" duration="2074000" />
+      <workItem from="1495136736521" duration="2166000" />
     </task>
     <task id="LOCAL-00001" summary="add tournament controller + products controller">
       <created>1489284724008</created>
@@ -2442,7 +2297,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="270752000" />
+    <option name="totallyTimeSpent" value="270844000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -2455,17 +2310,19 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="823" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2725322" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281787" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3269494" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4707904" sideWeight="0.5060698" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="GitLabIntegration" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292517" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46922025" sideWeight="0.4939302" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32646048" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2872777" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2725322" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32831737" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -2473,7 +2330,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32831737" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -2524,7 +2380,8 @@
     <MESSAGE value="update commentaire post" />
     <MESSAGE value="Taha Push : All" />
     <MESSAGE value="Taha Push : fix layout" />
-    <option name="LAST_COMMIT_MESSAGE" value="Taha Push : fix layout" />
+    <MESSAGE value="Final Version" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final Version" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2551,6 +2408,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="34" column="8" lean-forward="false" selection-start-line="34" selection-start-column="8" selection-end-line="46" selection-end-column="29" />
+          <folding>
+            <element signature="e#58#103#0#PHP" expanded="false" />
+            <marker date="1495065251000" expanded="true" signature="1916:2025" ph="SELECT t , s... EloboostedGameinjectionBundle" />
+            <marker date="1495065251000" expanded="true" signature="2137:2206" ph="SELECT t FRO... EloboostedGameinjectionBundle" />
+            <marker date="1495065251000" expanded="true" signature="2137:2227" ph="SELECT t.sta... EloboostedGameinjectionBundle" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2558,6 +2421,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="4" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="27" selection-end-column="114" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2573,6 +2437,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="134" column="109" lean-forward="false" selection-start-line="134" selection-start-column="109" selection-end-line="134" selection-end-column="109" />
+          <folding>
+            <element signature="e#12#63#0#Twig" expanded="false" />
+            <element signature="e#8427#8439#0#Twig" expanded="false" />
+            <marker date="1495066343000" expanded="false" signature="8301:8313" ph="/{id}/showTournament" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2580,6 +2449,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2587,6 +2457,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="136" lean-forward="false" selection-start-line="15" selection-start-column="136" selection-end-line="15" selection-end-column="136" />
+          <folding>
+            <element signature="e#12#63#0#Twig" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2608,6 +2481,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
           <caret line="43" column="125" lean-forward="false" selection-start-line="43" selection-start-column="125" selection-end-line="43" selection-end-column="125" />
+          <folding>
+            <element signature="e#12#63#0#Twig" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2615,6 +2491,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="443">
           <caret line="124" column="103" lean-forward="false" selection-start-line="124" selection-start-column="103" selection-end-line="124" selection-end-column="103" />
+          <folding>
+            <element signature="e#12#63#0#Twig" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2622,6 +2501,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="466">
           <caret line="49" column="116" lean-forward="false" selection-start-line="49" selection-start-column="116" selection-end-line="49" selection-end-column="116" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2639,6 +2519,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="636">
           <caret line="132" column="18" lean-forward="false" selection-start-line="132" selection-start-column="18" selection-end-line="132" selection-end-column="18" />
+          <folding>
+            <element signature="n#nav#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2677,6 +2561,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-27">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2684,6 +2569,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="438">
           <caret line="31" column="12" lean-forward="false" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
+          <folding>
+            <element signature="n#nav#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2691,6 +2580,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="471">
           <caret line="60" column="6" lean-forward="false" selection-start-line="60" selection-start-column="4" selection-end-line="61" selection-end-column="74" />
+          <folding>
+            <element signature="n#nav#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2698,6 +2592,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="591">
           <caret line="64" column="12" lean-forward="false" selection-start-line="64" selection-start-column="12" selection-end-line="64" selection-end-column="12" />
+          <folding>
+            <element signature="n#nav#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2725,6 +2623,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="546">
           <caret line="56" column="64" lean-forward="false" selection-start-line="56" selection-start-column="64" selection-end-line="56" selection-end-column="64" />
+          <folding>
+            <element signature="e#1254#1265#1#PHP" expanded="true" />
+            <element signature="e#2129#2156#1#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2798,6 +2700,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="186">
           <caret line="40" column="59" lean-forward="false" selection-start-line="40" selection-start-column="59" selection-end-line="40" selection-end-column="59" />
+          <folding>
+            <element signature="e#12#63#0#Twig" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2805,6 +2710,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
           <caret line="33" column="10" lean-forward="false" selection-start-line="2" selection-start-column="4" selection-end-line="33" selection-end-column="10" />
+          <folding>
+            <element signature="e#12#63#0#Twig" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

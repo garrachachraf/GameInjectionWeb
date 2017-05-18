@@ -39,7 +39,8 @@
         "gregwar/captcha-bundle": "^2.0",
         "nicklaw5/twitch-api-php": "^0.1.4",
         "snilius/twig-sort-by-field": "^0.1.5",
-        "endroid/qrcode-bundle": "^2.0"
+        "endroid/qrcode-bundle": "^2.0",
+        "ob/highcharts-bundle": "^1.5"
 
     },
     "require-dev": {
