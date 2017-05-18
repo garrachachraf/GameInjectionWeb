@@ -49,7 +49,7 @@
         <entry file="file://$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Resources/views/games/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="575">
-              <caret line="123" column="0" lean-forward="true" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
+              <caret line="123" column="0" lean-forward="false" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -178,7 +178,10 @@
     <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="PUSH_TAGS">
-      <GitPushTagMode />
+      <GitPushTagMode>
+        <option name="argument" value="--follow-tags" />
+        <option name="title" value="Current Branch" />
+      </GitPushTagMode>
     </option>
     <option name="SIGN_OFF_COMMIT" value="true" />
     <push-targets>
@@ -700,7 +703,7 @@
       <workItem from="1495056024221" duration="6874000" />
       <workItem from="1495065447715" duration="1755000" />
       <workItem from="1495098582473" duration="7162000" />
-      <workItem from="1495136736521" duration="2265000" />
+      <workItem from="1495136736521" duration="2357000" />
     </task>
     <task id="LOCAL-00001" summary="add tournament controller + products controller">
       <created>1489284724008</created>
@@ -926,11 +929,18 @@
       <option name="project" value="LOCAL" />
       <updated>1495139071723</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Final Version">
+      <created>1495139142707</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1495139142707</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="270943000" />
+    <option name="totallyTimeSpent" value="271035000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -1491,7 +1501,7 @@
     <entry file="file://$PROJECT_DIR$/src/Eloboosted/FrontofficeBundle/Resources/views/games/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="575">
-          <caret line="123" column="0" lean-forward="true" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
+          <caret line="123" column="0" lean-forward="false" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
           <folding />
         </state>
       </provider>
