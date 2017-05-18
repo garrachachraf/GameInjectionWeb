@@ -42,7 +42,7 @@
                                 </div>
 
                                 <div class="embed-responsive embed-responsive-16by9 post-thumbnail">
-                                    <iframe class="embed-responsive-item" src="{{ tEvenement.lien }}"
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{{ tEvenement.lien }}"
                                             allowfullscreen=""></iframe>
                                 </div>
                                 <p>
@@ -61,7 +61,7 @@
                             <div class="title">{{ tEvenement.titleevent }}</div>
 
                             <div class="bold text-uppercase">Type</div>
-                            <span class="label label-warning">{{ tEvenement.idEvenement }}</span>
+                            <span class="label label-warning">{{ tEvenement.typeEvent }}</span>
 
                             <div class="bold text-uppercase margin-top-35">Release Date:</div>
                             <span class="font-size-13">{{ tEvenement.dateEvent|date }}</span>

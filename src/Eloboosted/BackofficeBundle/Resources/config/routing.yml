@@ -27,7 +27,7 @@ eloboosted_backoffice_tournoi_edit:
 eloboosted_backoffice_tournoi_delete:
     path:     /{id}/deleteTournament
     defaults: { _controller: "EloboostedBacktofficeBundle:Tournoi:delete" }
-    methods:  DELETE
+    methods:  [GET, POST]
 
 AccountReports:
     path:     /AccountReports
@@ -95,3 +95,47 @@ tevenement_delete:
     path:     /{id}/deleteevent
     defaults: { _controller: "EloboostedBackofficeBundle:TEvenement:delete" }
     methods:  DELETE
+eloboosted_gamelist_index:
+    path:     /gamelist
+    defaults: { _controller: EloboostedBackofficeBundle:Gamelist:index }
+
+eloboosted_gamelist_new:
+    path:     /gamelistnew
+    defaults: { _controller: EloboostedBackofficeBundle:Gamelist:newGamelist }
+eloboosted_gamelist_delete:
+    path:     /gamelistdel/{id}
+    defaults: { _controller: EloboostedBackofficeBundle:Gamelist:delete }
+
+eloboosted_backoffice_NewGame:
+    path:     /NewGame
+    defaults: { _controller: EloboostedBackofficeBundle:Games:NewGame }
+
+eloboosted_backoffice_DeleteGame:
+    path:     /DeleteGame/{id}
+    defaults: { _controller: EloboostedBackofficeBundle:Games:DeleteGame }
+
+eloboosted_backoffice_EditGame:
+    path:     /{id}/EditGame
+    defaults: { _controller: EloboostedBackofficeBundle:Games:EditGame }
+    methods:  [GET, POST]
+
+eloboosted_backoffice_addCathegorie:
+    path:     /addCathegorie
+    defaults: { _controller: EloboostedBackofficeBundle:Cathegorie:addCathegorie }
+
+eloboosted_backoffice_cathegorieList:
+    path:     /cathegorieList
+    defaults: { _controller: EloboostedBackofficeBundle:Cathegorie:cathegorieList }
+
+eloboosted_backoffice_deleteCath:
+    path:     /deleteCath/{id}
+    defaults: { _controller: EloboostedBackofficeBundle:Cathegorie:deleteCath }
+
+eloboosted_backoffice_EditCath:
+    path:     /EditCath/{id}
+    defaults: { _controller: EloboostedBackofficeBundle:Cathegorie:EditCath }
+
+eloboosted_backoffice_accepted:
+    path:     /accepted/{id}
+    defaults: { _controller: EloboostedBackofficeBundle:Games:accecpted }
+

@@ -14,9 +14,9 @@
             <div class="row">
                 <div class="col-lg-12">
                     <ol class="breadcrumb">
-                        <li><a href="/">Home</a></li>
-                        <li><a href="#">Games</a></li>
-                        <li><a href="#">Game List</a></li>
+                        <li><a href="{{ path('home') }}">Home</a></li>
+                        <li><a href="{{ path('yes_index') }}">Games</a></li>
+
                         <li class="active">Game Details</li>
                     </ol>
                 </div>
@@ -24,24 +24,7 @@
         </div>
     </section>
 
-    <section class="bg-white no-padding hidden-xs border-bottom-1 border-grey-300" style="height: 54px">
-        <div class="tab-select text-center sticky">
 
-            <div class="container">
-
-                <ul class="nav nav-tabs">
-                    <li class="active"><a href="games-single.html#">The Witcher 3: Wild Hunt</a></li>
-                    <li><a href="games-single.html#"><i class="fa fa-star"></i> Review</a></li>
-                    <li><a href="games-single.html#"><i class="fa fa-pencil"></i> News</a></li>
-                    <li><a href="games-single.html#"><i class="fa fa-image"></i> Images</a></li>
-                    <li><a href="games-single.html#"><i class="fa fa-video-camera"></i> Videos</a></li>
-                    <li><a href="games-single-shop.html"><i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;Buy game</a></li>
-                </ul>
-            </div>
-        </div>
-
-
-    </section>
 
     <section class="bg-grey-50 padding-top-30 ">
 
@@ -55,10 +38,9 @@
                                 <div class="post-header post-author">
                                     <a href="games-single.html#" class="author" data-toggle="tooltip" title="{{ game.idCathegorieg.nom }}"><img src="{{ asset("img/" ) ~ game.idCathegorieg.nom  ~".png"}}" alt=""></a>
                                     <div class="post-title">
-                                        <h3><a href="games-single.html#">{{ game.nomGames }}</a></h3>
+                                        <h3><a href="#">{{ game.nomGames }}</a></h3>
                                         <ul class="post-meta">
                                             <li><span class="label label-info">{{ game.supported | upper }}</span> </li>
-                                            <li><a href="games-single.html#"><i class="fa fa-comments"></i> 0 <span class="hidden-xs">Comments</span></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -70,34 +52,10 @@
                                 <p>{{ game.description }}</p>
                             </div>
                         </div>
-                        <div class="panel-footer">
-                            <ul class="post-action">
-                                <li><a href="games-single.html#"><i class="fa fa-heart"></i> like (5)</a></li>
-                                <li><a href="games-single.html#"><i class="fa fa-comments"></i> Comments</a></li>
-                                <li><a href="games-single.html#"><i class="fa fa-reply"></i> share</a></li>
-                            </ul>
-                        </div>
+
                     </div>
 
-                    <h2><span>Follows this game (202)</span></h2>
-                    <div class="content-padding">
-                        <ul class="profile-friends-list">
-                            <li>
-                                <a href="user-single.html" class="avatar online user-tooltip">
-                                    <img src="images/photos/avatar-1.jpg" class="setborder" title="" alt="" />
-                                </a>
-                            </li>
-                            <li>
-                                <a href="user-single.html" class="avatar online user-tooltip">
-                                    <img src="images/photos/avatar-2.jpg" class="setborder" title="" alt="" />
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="users-more">+160</a>
-                            </li>
-                        </ul>
-                        <div class="clear-float"></div>
-                    </div>
+
 
                 </div>
             </div>

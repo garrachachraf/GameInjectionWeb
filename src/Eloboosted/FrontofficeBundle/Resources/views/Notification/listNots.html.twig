@@ -75,22 +75,24 @@
 
 <ul  class="dropdown-menu">
     {% for notification in notifications %}
-        {% if notification.forum != null and notification.message == null and notification.invite == null  %}
-            <li><a href="{{ path('readPost',{idPost : notification.forum}) }}">{{ notification.contenu }}</a></li>
-        {% endif %}
-
-        {% if notification.forum == null and notification.message != null and notification.invite == null  %}
-            <li><a href="{{ path('myInbox') }}">{{ notification.contenu }}</a></li>
-        {% endif %}
-
-        {% if notification.invite != null %}
+        {% if notification.invite != null and notification.message == null and notification.forum == null %}
             <li> <a>{{ notification.contenu }}</a>
                 <button type="button" onclick="accept({{ notification.idNotification }})" class="btn btn-success btn-xs">Accept</button>
                 <button type="button" onclick="refuse({{ notification.idNotification }})"  class="btn btn-success btn-xs">Refuse</button>
             </li>
         {% endif %}
 
+        {% if notification.forum != null and notification.message == null and notification.invite == null  %}
+            <li><a href="{{ path('readPostFromNotif',{idPost : notification.forum ,idNot : notification.idNotification }) }}">{{ notification.contenu }}</a></li>
+        {% endif %}
+
+        {% if notification.forum == null and notification.message != null and notification.invite == null  %}
+            <li><a href="{{ path('myInboxFromNotif',{idNot : notification.idNotification }) }}">{{ notification.contenu }}</a></li>
+        {% endif %}
+
+
+
         {% if (notification.forum == null and notification.message == null and notification.invite == null  )   %}
-            <li><a href="#">{{ notification.contenu }}</a></li>
+            <li><div onclick="refuse({{ notification.idNotification }})"><a>{{ notification.contenu }}</a></div></li>
         {% endif %}
     {% endfor %}

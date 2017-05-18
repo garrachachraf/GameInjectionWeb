@@ -15,3 +15,8 @@ services:
             class:        Snilius\Twig\SortByFieldExtension
             tags:
                  - { name: 'twig.extension' }
+
+    twig.extension.sortbyfield:
+        class: Snilius\Twig\SortByFieldExtension
+        tags:
+            - { name: twig.extension }

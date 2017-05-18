@@ -1,6 +1,24 @@
 {% extends 'EloboostedFrontofficeBundle:Default:Layout.html.twig' %}
 {% block main %}
 
+    <script>
+        function showHint(str) {
+            if (str.length == 0) {
+                document.getElementById("txtHint").innerHTML = "";
+                return;
+            } else {
+                var xmlhttp = new XMLHttpRequest();
+                xmlhttp.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+                        document.getElementById("gameee").innerHTML = this.responseText;
+                    }
+                };
+                xmlhttp.open("GET", "{{ path('searchGames') }}?w=" + str, true);
+                xmlhttp.send();
+            }
+        }
+    </script>
+
     <section class="bg-transparent" style="padding: 0%">
         <div class="background-image" style="background-image: url({{ asset('img/cover/cover.jpg') }});">
             <span class="background-overlay"></span>
@@ -31,44 +49,38 @@
                     <a href="games.html#" class="btn btn-default"><i class="fa fa-bars no-margin"></i></a>
                 </div>
 
-                <input type="text" class="form-control hidden-xs" placeholder="Search Game...">
+
+                    <input type="text" class="form-control hidden-xs" placeholder="Search Game..." onkeyup="showHint(this.value)">
+
+
 
                 <div class="dropdown">
                     <a href="games.html#" class="btn btn-default btn-icon-left btn-icon-right dropdown-toggle" data-toggle="dropdown"><i class="fa fa-sort-amount-desc"></i> Sort by <i class="fa fa-caret-down"></i></a>
                     <ul class="dropdown-menu">
-                        <li><a href="games.html#">Date</a></li>
-                        <li><a href="games.html#">Score</a></li>
-                        <li><a href="games.html#">A-Z</a></li>
+                        <li><a href="?sort=Cathegorie">Cathegorie</a></li>
+                        <li><a href="?sort=Name">Name</a></li>
+
                     </ul>
                 </div>
 
                 <div class="dropdown">
                     <a href="games.html#" class="btn btn-default btn-icon-left btn-icon-right dropdown-toggle" data-toggle="dropdown"><i class="fa fa-gamepad"></i> Platform <i class="fa fa-caret-down"></i></a>
                     <ul class="dropdown-menu">
-                        <li><a href="games.html#">Playstation 4</a></li>
-                        <li><a href="games.html#">Steam</a></li>
-                        <li><a href="games.html#">Xbox One</a></li>
-                        <li><a href="games.html#">PC</a></li>
+                        <li><a href="?Platform=Playstation">Playstation </a></li>
+                        <li><a href="?Platform=Steam">Steam</a></li>
+                        <li><a href="?Platform=Xbox">Xbox </a></li>
+                        <li><a href="?Platform=PC">PC</a></li>
                     </ul>
                 </div>
 
-                <div class="dropdown">
-                    <a href="games.html#" class="btn btn-default btn-icon-left btn-icon-right dropdown-toggle" data-toggle="dropdown"><i class="fa fa-calendar-o"></i> Release Date <i class="fa fa-caret-down"></i></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="games.html#">Released</a></li>
-                        <li><a href="games.html#">Unreleased</a></li>
-                        <li><a href="games.html#">2016</a></li>
-                        <li><a href="games.html#">2015</a></li>
-                        <li><a href="games.html#">2014</a></li>
-                    </ul>
-                </div>
+
 
             </div>
         </div>
     </section>
 <section class="bg-grey-50">
     <div class="container">
-        <div class="row">
+        <div class="row" id="gameee" name="gameee">
 
             {% for game in games %}
 
@@ -93,24 +105,19 @@
         </div>
 
 
-            <ul class="pagination margin-top-20">
-                <li class="disabled"><a href="games.html#">Previous</a></li>
-                <li class="disabled"><a href="games.html#">1</a></li>
-                <li><a href="games.html#">2</a></li>
-                <li><a href="games.html#">...</a></li>
-                <li><a href="games.html#">Next</a></li>
-            </ul>
+
     </div>
 
 </section>
     </div>
 
+    <script src="{{ asset('plugins/ekko-lightbox/ekko-lightbox.min.js') }}"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.js"></script>
+    <script src="{{ asset('js/core.min.js') }}"></script>
 
 
 
-    <ul>
-        <li>
-            <a href="{{ path('yes_new') }}">Create a new game</a>
-        </li>
-    </ul>
-{% endblock %}
+
+
+
+    {% endblock %}

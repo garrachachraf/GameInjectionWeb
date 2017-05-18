@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Zend\\Json\\' => array($vendorDir . '/zendframework/zend-json/src'),
     'TwitchApi\\' => array($vendorDir . '/nicklaw5/twitch-api-php/src'),
     'Tests\\' => array($baseDir . '/tests'),
     'Symfony\\Polyfill\\Util\\' => array($vendorDir . '/symfony/polyfill-util'),
@@ -29,6 +30,7 @@ return array(
     'Psr\\Log\\' => array($vendorDir . '/psr/log/Psr/Log'),
     'Psr\\Http\\Message\\' => array($vendorDir . '/psr/http-message/src'),
     'Psr\\Cache\\' => array($vendorDir . '/psr/cache/src'),
+    'Ob\\HighchartsBundle\\' => array($vendorDir . '/ob/highcharts-bundle'),
     'Monolog\\' => array($vendorDir . '/monolog/monolog/src/Monolog'),
     'Knp\\Bundle\\PaginatorBundle\\' => array($vendorDir . '/knplabs/knp-paginator-bundle'),
     'Incenteev\\ParameterHandler\\' => array($vendorDir . '/incenteev/composer-parameter-handler'),

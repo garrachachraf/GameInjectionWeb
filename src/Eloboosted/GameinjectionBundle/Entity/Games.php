@@ -67,6 +67,11 @@ class Games
     private $idCathegorieg;
 
     /**
+     * @ORM\Column(type="integer")
+     */
+    private $etat;
+
+    /**
      * @return int
      */
     public function getIdGames()
@@ -111,7 +116,11 @@ class Games
      */
     public function setImageGames($imageGames)
     {
-        $this->imageGames = @file_get_contents($imageGames);
+        if($imageGames != null)
+        {
+            $this->imageGames = @file_get_contents($imageGames);
+
+        }
     }
 
     /**
@@ -176,6 +185,22 @@ class Games
     public function setIdCathegorieg($idCathegorieg)
     {
         $this->idCathegorieg = $idCathegorieg;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getEtat()
+    {
+        return $this->etat;
+    }
+
+    /**
+     * @param mixed $etat
+     */
+    public function setEtat($etat)
+    {
+        $this->etat = $etat;
     }
 
 

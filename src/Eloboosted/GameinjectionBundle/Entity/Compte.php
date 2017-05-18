@@ -367,7 +367,7 @@ class Compte  implements UserInterface,AuthorInterface
          */
     function getImage()
     {
-        $images= base64_encode(stream_get_contents($this->image,-1,0));
+        $images= base64_encode(@stream_get_contents($this->image,-1,0));
         return "data:image/png;base64,".$images;
     }
 

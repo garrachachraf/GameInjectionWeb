@@ -1,25 +1,146 @@
 {% extends 'EloboostedFrontofficeBundle:Default:Layout.html.twig' %}
 
 {% block main %}
-    <h1>Tournoi edit</h1>
-    {% if erreur is not null %}
-    {{ erreur }}
-    {% endif %}
-    {{ form_start(edit_form) }}
+    <section class="bg-transparent" style="padding: 0%">
+        <div class="background-image"
+             style="background-image: url(http://images.glaciermedia.ca/polopoly_fs/1.2194455.1457585013!/fileImage/httpImage/image.jpg_gen/derivatives/landscape_804/enter-vid-jpg.jpg);">
+            <span class="background-overlay"></span>
+            <div class="container">
+                <h3 class="color-white font-weight-300">Add Tournament</h3>
+            </div>
+        </div>
+    </section>
+    <section class="border-bottom-1 border-grey-300 padding-top-10 padding-bottom-10">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ol class="breadcrumb">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="{{ path('tournoi_index') }}">Tournaments</a></li>
+                        <li class="active">Edit Tournament</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="elements bg-white padding-top-10 padding-bottom-50">
+        {{ form_start(edit_form) }}
 
-        {{ form_widget(edit_form) }}
+        <div class="container">
 
-        <input type="submit" value="Edit" />
+            <div class="row">
+                <div class="col-md-7 col-md-offset-2">
+                    <div class="title">
+                        <h3> Add New Tournament</h3>
+                        <p></p>
+                    </div>
+                    {% if erreur is not null %}
+                        {{ erreur }}
+                    {% endif %}
+                    <div class="form-group">
+                        {{ form_row(edit_form.nom) }}
+                    </div>
+
+
+                    <div class="form-group">
+                        <div class='input-group date' id='datetimepicker6'>
+                            {{ form_row(edit_form.startDate)}}
+                            <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+                        </div>
+
+
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <div class='input-group date' id='datetimepicker7'>
+                            {{ form_row(edit_form.endDate)}}
+                            <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+
+                        </div>
+                        <script>
+                            $(function () {
+                                $('#datetimepicker6').datetimepicker();
+                                $('#datetimepicker6').data("DateTimePicker").minDate(new Date());
+                                $('#datetimepicker7').datetimepicker();
+                                $("#datetimepicker6").on("dp.change", function (e) {
+                                    var dd = new Date(e.date);
+                                    dd.setDate(dd.getDate()+1);
+                                    $('#datetimepicker7').data("DateTimePicker").minDate(dd);
+                                });
+                            });</script>
+                        <div class="form-group">
+                            <div class="row margin-top-30">
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                    <div class="form-group input-icon-left">
+                                        <i class="fa fa-trophy"></i>
+                                        {{ form_row(edit_form.reward1) }}
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                    <div class="form-group input-icon-left">
+                                        <i class="fa fa-trophy"></i>
+                                        {{ form_row(edit_form.reward2) }}
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                    <div class="form-group input-icon-left">
+                                        <i class="fa fa-trophy" data-original-title="" title=""></i>
+                                        {{ form_row(edit_form.reward3) }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+
+                            <div class="form-group input-icon-left">
+                                <i class="fa fa-dollar" data-original-title="" title=""></i>
+                                {{ form_row(edit_form.prixParJoueur) }}
+                            </div>
+
+                        </div>
+                        <div class="form-group">
+
+                            <div class="form-group input-icon-left">
+                                <i class="fa fa-image note-placeholder" data-original-title="Select Tournament image"
+                                   title="Select Tournament image"></i>
+
+                                {{ form_row(edit_form.imageTournoi) }}
+                            </div>
+
+                        </div>
+                        <div class="form-group">
+                            {{ form_row(edit_form.nbrJoueur) }}
+                        </div>
+                        <div class="form-group">
+                            {{ form_row(edit_form.idGameTrn) }}
+                        </div>
+                        <div class="form-group">
+                            <div class="form-group margin-top-15">
+
+                                <input type="submit" name="btn" id="btn" class="btn btn-primary pull-right"
+                                       value="Edit"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
     {{ form_end(edit_form) }}
+
 
     <ul>
         <li>
             <a href="{{ path('tournoi_index') }}">Back to the list</a>
         </li>
         <li>
-            {{ form_start(delete_form) }}
-                <input type="submit" value="Delete">
-            {{ form_end(delete_form) }}
+
         </li>
     </ul>
 {% endblock %}

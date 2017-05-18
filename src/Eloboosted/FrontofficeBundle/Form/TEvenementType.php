@@ -20,9 +20,9 @@ class TEvenementType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('titleevent',TextType::class,array('attr' => array('placeholder' => 'title',)))
+            ->add('titleevent',TextType::class,array('attr' => array('placeholder' => 'title','autocomplete'=>'off')))
             ->add('note',TextareaType::class,array('attr' => array('class' => 'form-control','rows'=>5)))
-            ->add('lien',TextType::class,array('attr' => array('placeholder' => 'http://',)))
+            ->add('lien',TextType::class,array('attr' => array('placeholder' => 'http://','autocomplete'=>'off')))
             ->add('dateEvent',DateType::class,array(
                 'years' => range(date('y') +10, date('y'))))
             ->add('typeEvent',EntityType::class,

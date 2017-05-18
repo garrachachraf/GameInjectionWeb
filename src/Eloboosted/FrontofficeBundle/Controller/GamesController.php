@@ -16,15 +16,56 @@ class GamesController extends Controller
      * Lists all game entities.
      *
      */
-    public function indexAction()
+    public function indexAction(Request $request)
     {
         $em = $this->getDoctrine()->getManager();
 
-        $games = $em->getRepository('EloboostedGameinjectionBundle:Games')->findAll();
+        $games = $em->getRepository('EloboostedGameinjectionBundle:Games')->findBy(array('etat' =>0));
+        $crit=$request->get('sort');
+        $platf=$request->get('Platform');
+
+        if ($crit=="Cathegorie")
+        {
+            $games = $em->getRepository('EloboostedGameinjectionBundle:Games')->findBy(array('etat' =>0),array("idCathegorieg"=>"desc"));
+
+        }
+        elseif ($crit=="Name")
+        {
+            $games = $em->getRepository('EloboostedGameinjectionBundle:Games')->findBy(array('etat' =>0),array("nomGames"=>"desc"));
+
+        }
+
+       elseif($platf=="PC")
+        {
+            $games = $em->getRepository('EloboostedGameinjectionBundle:Games')->findBy(array('etat' =>0,"supported"=>strtolower($platf)));
+        }
+        elseif ($platf=="Playstation")
+        {
+            $games = $em->getRepository('EloboostedGameinjectionBundle:Games')->findBy(array('etat' =>0,"supported"=>($platf)));
+
+        }
+        elseif ($platf=="Steam")
+        {
+            $games = $em->getRepository('EloboostedGameinjectionBundle:Games')->findBy(array('etat' =>0,"supported"=>($platf)));
+
+        }
+        elseif($platf=="Xbox")
+        {
+            $games = $em->getRepository('EloboostedGameinjectionBundle:Games')->findBy(array('etat' =>0,"supported"=>($platf)));
+
+        }
+        else
+        {
+            $games = $em->getRepository('EloboostedGameinjectionBundle:Games')->findBy(array('etat' =>0));
+
+        }
 
         return $this->render('EloboostedFrontofficeBundle:games:index.html.twig', array(
             'games' => $games,
         ));
+
+
+
     }
 
     /**
@@ -39,7 +80,7 @@ class GamesController extends Controller
 
         if ($form->isSubmitted() && $form->isValid()) {
             $em = $this->getDoctrine()->getManager();
-
+            $game->setEtat(1);
             $em->persist($game);
             $em->flush();
 
@@ -49,6 +90,7 @@ class GamesController extends Controller
         return $this->render('EloboostedFrontofficeBundle:games:new.html.twig', array(
             'game' => $game,
             'form' => $form->createView(),
+
         ));
     }
 
@@ -123,4 +165,24 @@ class GamesController extends Controller
             ->getForm()
             ;
     }
+
+    public function searchGamesAction(Request $request)
+    {
+        $w = $request->get('w');
+        $em = $this->getDoctrine()->getManager();
+        $query = $em->createQuery(
+            'SELECT game
+    FROM EloboostedGameinjectionBundle:Games game
+    WHERE game.nomGames LIKE :w'
+        )->setParameter('w', '%'.$w.'%');
+
+        $games = $query->getResult();
+
+        return $this->render('EloboostedFrontofficeBundle:Games:searchGames.html.twig', array(
+            'games' => $games,
+
+        ));
+
+    }
+
 }

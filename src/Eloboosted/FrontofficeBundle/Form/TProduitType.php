@@ -21,9 +21,9 @@ class TProduitType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('libelleProduit', TextType::class, array('attr' => array('class' => 'form-control', 'placeholder' => 'Libelle')))
-            ->add('marqueProduit', TextType::class, array('attr' => array('class' => 'form-control', 'placeholder' => 'Marque')))
-            ->add('prixProduit', TextType::class, array('attr' => array('class' => 'form-control', 'placeholder' => 'Price','onkeypress'=>'return isNumber(event)')))
+            ->add('libelleProduit', TextType::class, array('attr' => array('class' => 'form-control', 'placeholder' => 'Libelle','autocomplete'=>'off')))
+            ->add('marqueProduit', TextType::class, array('attr' => array('class' => 'form-control', 'placeholder' => 'Marque','autocomplete'=>'off')))
+            ->add('prixProduit', TextType::class, array('attr' => array('class' => 'form-control', 'placeholder' => 'Price','onkeypress'=>'return isNumber(event)','autocomplete'=>'off')))
             //->add('dateProduit')
             ->add('etat', ChoiceType::class, array('attr' => array('class' => 'form-control'), 'choices' => array(
                 'Exchange' => 'Exchange',

@@ -13,15 +13,15 @@ class TProduitController extends Controller
      * Lists all tProduit entities.
      *
      */
-    public function indexAction(Request $request ,$page)
+    public function indexAction(Request $request ,$page)//$page par defaut on commence par la 1er
     {
         $em = $this->getDoctrine()->getManager();
 
-        $start = 3 * ($page - 1);
+        $start = 3 * ($page - 1);//$start page ou on va commence
         if ($page == 1) {
             $start = 0;
         }
-        $end = 3 * $page;
+        $end = 3 * $page;//combien on va prendre
         $tproducts = $em->getRepository('EloboostedGameinjectionBundle:TProduit')->findBy(array(), array(), $end, $start);
         $pages = ceil(count($em->getRepository('EloboostedGameinjectionBundle:TProduit')->findAll()) / 3);
         $a = $request->get('a');
@@ -104,10 +104,11 @@ class TProduitController extends Controller
         $em = $this->getDoctrine()->getManager();
         $user = $this->get('security.token_storage')->getToken()->getUser();
         $votes = $em->getRepository('EloboostedGameinjectionBundle:VoteProduct')->findBy(array('idCompteVp' => $user, 'idProduitVp' => $tProduit));
-        $voted = 0;
-        if ($votes)
+        //on va chercher si {la combinaison de idproduitvoté + idcompte } possédent un vote (pour l'aide de tester au twig)
+        $voted = 0;//par defaut voted prend0
+        if ($votes)//si  $votes existe donc idprodvote et idcompte possédent un vote
         {
-            $voted = 1;
+            $voted = 1; //et on change voted = 1
         }
         $lasts =
             $em->getRepository('EloboostedGameinjectionBundle:TProduit')->findBy(
@@ -189,7 +190,7 @@ class TProduitController extends Controller
 
     public function SearchProductAction(Request $request)
     {
-        $p = $request->get('p');
+        $p = $request->get( 'p');
         $em = $this->getDoctrine()->getManager();
         $query = $em->createQuery(
             'SELECT t

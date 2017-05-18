@@ -1,4 +1,5 @@
 {% extends "EloboostedBackofficeBundle:Default:Layout.html.twig" %}
+
 {% block extrastyles %}
 
     <link href="{{ asset('/BOassets/vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css') }}" rel="stylesheet">
@@ -101,6 +102,18 @@
                                         colspan="1" style="width: 162px;"
                                         aria-label="E-mail: activate to sort column ascending">Categorie
                                     </th>
+                                    <th class="sorting" tabindex="0" aria-controls="datatable-responsive" rowspan="1"
+                                        colspan="1" style="width: 56px;"
+                                        aria-label="E-mail: activate to sort column ascending">Delete
+                                    </th>
+                                    <th class="sorting" tabindex="0" aria-controls="datatable-responsive" rowspan="1"
+                                              colspan="1" style="width: 56px;"
+                                              aria-label="E-mail: activate to sort column ascending">Update
+                                    </th>
+                                    <th class="sorting" tabindex="0" aria-controls="datatable-responsive" rowspan="1"
+                                        colspan="1" style="width: 56px;"
+                                        aria-label="E-mail: activate to sort column ascending">Acceptation
+                                    </th>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -111,12 +124,20 @@
                                         <td>{{ gs.description }}</td>
                                         <td>{{ gs.prix }}</td>
                                         <td>{{ gs.supported }}</td>
-                                        <td><img src="data:image/png;base64,{{ gs.imageGames  }}" style="height: 10px; width: 150px" alt=""></td>
+                                        <td><img src="data:image/png;base64,{{ gs.imageGames  }}" style="height: 50px; width: 100px" alt=""></td>
                                         <td><img src="{{ asset("img/" ) ~ gs.idCathegorieg.nom  ~".png"}}" alt=""></td>
+                                        <td><a href="{{ path("eloboosted_backoffice_DeleteGame",{'id': gs.idGames}) }}"> Delete </a> </td>
+                                        <td><a href="{{ path("eloboosted_backoffice_EditGame",{'id': gs.idGames}) }}"> Edit </a> </td>
+
+                                        <td>
+                                            <div class="text-center margin-top-30">
+                                               <a href="{{ path('eloboosted_backoffice_accepted',{ 'id':gs.idGames }) }}"> <input type="submit" name="bttn" id="bttn" class="btn btn-round btn-primary"
+                                                       value="{{ gs.etat }}  " /></a>
+                                            </div>
+                                        </td>
 
 
-
-                                {% endfor %}
+                                        {% endfor %}
                                 </tbody>
                             </table>
                         </div>

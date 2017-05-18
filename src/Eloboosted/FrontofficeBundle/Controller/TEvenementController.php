@@ -49,7 +49,7 @@ class TEvenementController extends Controller
         $options = array('client_id'=>'wd54hhxdz79qajdijaofha1zb0dk3g'); //initialize my api key
         $twitchApi = new \TwitchApi\TwitchApi($options); //instance the class twitchapi and insert ur key api into
         $twitchApi->setApiVersion(3); //set version3 'stable'
-        $qt = $twitchApi->getChannel('imaqtpie');
+        $qt = $twitchApi->getChannel('c9sneaky');
         $nb3 = $twitchApi->getChannel('nightblue3');
         $faker = $twitchApi->getChannel('faker');
         $timthetatman = $twitchApi->getChannel('timthetatman');

@@ -26,9 +26,12 @@
     <section class="bg-grey-50 padding-top-30">
         <div class="container">
             <div class="row">
+
                 {% include 'ADesignsCalendarBundle::calendar.html.twig' %}
             </div>
         </div>
     </section>
-
+    <script src="{{ asset('plugins/ekko-lightbox/ekko-lightbox.min.js') }}"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.js"></script>
+    <script src="{{ asset('js/core.min.js') }}"></script>
 {% endblock %}

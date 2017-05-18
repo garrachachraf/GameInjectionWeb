@@ -52,6 +52,8 @@
         <link rel="shortcut icon" href="{{ asset('img/favicon.ico') }}">
 
         <!-- CORE CSS -->
+        <link href="{{ asset('FOassets/css/chat.css') }}" rel="stylesheet">
+        <link href="{{ asset('FOassets/css/SideNav.css') }}" rel="stylesheet">
         <link href="{{ asset('plugins/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
         <link href="{{ asset('plugins/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet">
         <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
@@ -75,128 +77,19 @@
                 <nav>
                     <div class="nav-control">
                         <ul>
-                            <li class="dropdown">
-                                <a href="blank-page.html#" class="dropdown-toggle">Home</a>
-                                <ul class="dropdown-menu default">
-                                    <li><a href="home-magazine.html">Home - Magazine</a></li>
-                                    <li><a href="home-magazine-2.html">Home - Magazine 2</a></li>
-                                    <li><a href="home-magazine-3.html">Home - Magazine 3</a></li>
-                                    <li><a href="index.html">Home - Games</a></li>
-                                    <li><a href="home-videos.html">Home - Videos</a></li>
-                                </ul>
+                            <li class="">
+                                <a href="{{ path('showAllPosts') }}" class="">Forum</a>
+                                <!--<ul class="dropdown-menu default">
+                                    <li><a href="{{ path('showAllPosts') }}">View All Tournaments</a></li>
+                                </ul>-->
                             </li>
-                            <li class="dropdown mega-dropdown">
-                                <a href="#">games</a>
-                                <ul class="dropdown-menu mega-dropdown-menu category">
-                                    <li class="col-md-3">
-                                        <a href="">
-                                            <img src="{{ asset('img/game/menu-1.jpg') }}" alt="">
-                                            <div class="caption">
-                                                <span class="label label-warning">PC</span>
-                                                <h3>Assassin's Creedsss Syndicate</h3>
-                                                <p>Lorem ipsum dolor sit amet, adipise elit.</p>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class="col-md-3">
-                                        <a href="games-single.html">
-                                            <img src="{{ asset('img/game/menu-2.jpg') }}" alt="">
-                                            <div class="caption">
-                                                <span class="label label-primary">PS4</span>
-                                                <h3>Last of Us Remastered</h3>
-                                                <p>Lorem ipsum dolor sit amet, adipise elit.</p>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class="col-md-3">
-                                        <a href="games-single.html">
-                                            <img src="{{ asset('img/game/menu-3.jpg') }}" alt="">
-                                            <div class="caption">
-                                                <span class="label label-success">Xbox</span>
-                                                <h3>Max Payne 3</h3>
-                                                <p>Lorem ipsum dolor sit amet, adipise elit.</p>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class="col-md-3">
-                                        <a href="games-single.html">
-                                            <img src="{{ asset('img/game/menu-4.jpg') }}" alt="">
-                                            <div class="caption">
-                                                <span class="label label-danger">Steam</span>
-                                                <h3>Hitman Absolution</h3>
-                                                <p>Lorem ipsum dolor sit amet, adipise elit.</p>
-                                            </div>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="" class="dropdown-toggle">Blog</a>
-                                <ul class="dropdown-menu default">
-                                    <li class="dropdown-submenu">
-                                        <a href=""><i class="fa fa-align-justify"></i> blogs</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="blog-large.html">Archive</a></li>
-                                            <li><a href="blog-large-sidebar.html">Sidebar</a></li>
-                                            <li><a href="blog-large-post.html">Single Post</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a href="blog-medium.html"><i class="fa fa-list-ul"></i> Blog Medium</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="blog-medium.html">Archive</a></li>
-                                            <li><a href="blog-medium-sidebar.html">Sidebar</a></li>
-                                            <li><a href="blog-medium-post.html">Single Post</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a href="blog-post.html"><i class="fa fa-file-o"></i> Single Post</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="blog-post.html">Blog Image Post</a></li>
-                                            <li><a href="blog-post-slideshow.html">Blog Slideshow Post</a></li>
-                                            <li><a href="blog-post-video.html">Blog Video Post</a></li>
-                                            <li><a href="blog-post-music.html">Blog Music Post</a></li>
-                                            <li><a href="blog-post-disqus.html">Blog Disqus Post</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="divider"></li>
-                                    <li><a href="blog-masonry.html"><i class="fa fa-th-large"></i>Blog Masonry</a></li>
-                                    <li><a href="blog-thumbnail.html"><i class="fa fa-clone"></i>Blog Thumbnail</a></li>
-                                    <li><a href="blog-timeline.html"><i class="fa fa-clock-o"></i>Blog Timeline</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown mega-dropdown mega-dropdown-sm">
-                                <a href="blank-page.html#">Pages</a>
-                                <ul class="dropdown-menu mega-dropdown-menu row">
-                                    <li class="col-md-6">
-                                        <ul>
-                                            <li class="dropdown-header">Default Examples</li>
-                                            <li><a href="games.html">Games</a></li>
-                                            <li><a href="games-single.html">Game Post</a></li>
-                                            <li><a href="reviews.html">Reviews</a></li>
-                                            <li><a href="reviews-single.html">Review Post</a></li>
-                                            <li><a href="videos.html">Videos</a></li>
-                                            <li><a href="videos-single.html">Videos Post</a></li>
-                                            <li><a href="contact.html">Contact</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="col-md-6">
-                                        <ul>
-                                            <li class="dropdown-header">Initial Examples</li>
-                                            <li><a href="login.html">Login</a></li>
-                                            <li><a href="register.html">Register</a></li>
-                                            <li><a href="profile.html">Profile Page</a></li>
-                                            <li><a href="forum.html">Forums</a></li>
-                                            <li><a href="fullwidth.html">Full Width</a></li>
-                                            <li><a href="blank-page.html">Blank Page</a></li>
-                                            <li><a href="">404 Error</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
                             <li class="dropdown">
                                 <a href="" class="dropdown-toggle">Tournaments</a>
                                 <ul class="dropdown-menu default">
                                     <li><a href="{{ path('tournoi_index', {'p': 1}) }}">View All Tournaments</a></li>
+                                    {% if is_granted('ROLE_USER') %}
+                                        <li><a href="{{ path('tournoi_new') }}">Create Tournament</a> </li>
+                                    {% endif %}
                                 </ul>
                             </li>
                             <li class="dropdown">
@@ -208,51 +101,64 @@
                                 </ul>
                             </li>
                             <li class="dropdown">
+                                <a href="" class="dropdown-toggle">Games</a>
+                                <ul class="dropdown-menu default">
+                                    <li><a href="{{ path('yes_index') }}"><i class="fa fa-shopping-bag"></i>View All Games</a></li>
+                                    {% if is_granted('ROLE_USER') %}
+                                    <li><a href="{{ path('yes_new') }}"><i class="fa fa-plus"></i>Add New Game</a></li>
+                                    {% endif %}
+                                </ul>
+                            </li>
+                            <li class="dropdown">
                                 <a href="" class="dropdown-toggle">Shop</a>
                                 <ul class="dropdown-menu default">
                                     <li><a href="{{ path('tproduit_index', {'page': 1}) }}"><i class="fa fa-shopping-bag"></i>View All Products</a></li>
+                                    {% if is_granted('ROLE_USER') %}
                                     <li><a href="{{ path('tproduit_new') }}"><i class="fa fa-plus"></i>Post You Product</a></li>
+                                    {% endif %}
                                 </ul>
                             </li>
                             <li class="custom"><a href="{{ path('streaming_all') }}"><i class="fa fa-eye" ></i>Streaming</a></li>
-                            <li><a href="">Contact</a></li>
+                            <!-- <li><a href="">Contact</a></li>-->
                         </ul>
                     </div>
                 </nav>
                 <div class="nav-right">
                     {% if app.user  == null %}
                         <div class="nav-profile dropdown">
-                            <a href="{{ path('eloboosted_login_homepage') }}" ><img src="{{ asset('FOassets/img/user/avatar2.jpg') }}" alt=""> <span>Connect to you account</span></a>
+                            <a href="{{ path('eloboosted_login_homepage') }}" ><img src="{{ asset('FOassets/img/login.png') }}" alt=""> <span>Connect to you account</span></a>
 
                         </div>
 
                     {% else %}
+                        {% set foo = app.user.image  %}
                         <div class="nav-profile dropdown">
-                            <a href="{{ path('AddProduct_page') }}" class="dropdown-toggle" data-toggle="dropdown"><img src="{{ asset('FOassets/img/user/avatar.jpg') }}" alt=""> <span>{{ app.user.pseudo }}</span></a>
+                            <a href="{{ path('AddProduct_page') }}" class="dropdown-toggle" data-toggle="dropdown"><img src="{{ foo }}" alt=""> <span>{{ app.user.pseudo }}</span></a>
+
                             <ul class="dropdown-menu">
-                                <li><a href="{{ path('home') }}"><i class="fa fa-user"></i> Profile</a></li>
-                                <li><a href="{{ path('home') }}"><i class="fa fa-heart"></i> Likes <span class="label label-info">32</span></a></li>
-                                <li><a href="{{ path('home') }}"><i class="fa fa-gamepad"></i> Games</a></li>
-                                <li><a href="{{ path('home') }}"><i class="fa fa-gear"></i> Settings</a></li>
+                                <li><a href="{{ path('myProfile') }}"><i class="fa fa-user"></i> Profile</a></li>
+                                <li><a href="{{ path('editAccount') }}"><i class="fa fa-gear"></i> Settings</a></li>
                                 <li class="divider"></li>
                                 <li><a href="{{ path('SignOut') }}"><i class="fa fa-power-off"></i> Sign Out</a></li>
                             </ul>
+
                         </div>
-                        <div class="nav-dropdown dropdown">
-                            <a href="index.html#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> <span class="label label-danger">3</span></a>
-                            <ul class="dropdown-menu">
-                                <li class="dropdown-header"><i class="fa fa-bell"></i> You have 5 new games</li>
-                                <li><a href="index.html#">Alien Isolation</a></li>
-                                <li><a href="index.html#">Witcher 3 <span class="label label-success">XBOX</span></a></li>
-                                <li><a href="index.html#">Last of Us</a></li>
-                                <li><a href="index.html#">Uncharted 4 <span class="label label-primary">PS4</span></a></li>
-                                <li><a href="index.html#">GTA 5 <span class="label label-warning">PC</span></a></li>
-                                <li class="dropdown-footer"><a href="index.html#">View all games</a></li>
+                        <div id="nots2" class="nav-dropdown dropdown">
+
+                            {{ render(controller('EloboostedFrontofficeBundle:Notification:NotificationlistRender')) }}
+                            {#<li class="dropdown-header"><i class="fa fa-bell"></i> You have 5 new games</li>
+                            <li><a href="index.html#">Alien Isolation</a></li>
+                            <li><a href="index.html#">Witcher 3 <span class="label label-success">XBOX</span></a></li>
+                            <li><a href="index.html#">Last of Us</a></li>
+                            <li><a href="index.html#">Uncharted 4 <span class="label label-primary">PS4</span></a></li>
+                            <li><a href="index.html#">GTA 5 <span class="label label-warning">PC</span></a></li>
+                            <li class="dropdown-footer"><a href="index.html#">View all games</a></li>#}
                             </ul>
                         </div>
-                        <a href="index.html#" data-toggle="modal-search"><i class="fa fa-search"></i></a>
 
                     {% endif %}
+                    <span id="OpenNav" style="font-size:15px;color:White;cursor:pointer">&#9776; Open Chat</span>
+
                 </div>
             </div>
         {% endblock %}
@@ -260,17 +166,109 @@
     <!-- /header -->
 
     <div class="modal-search">
-        {% block search %}
-            <div class="container">
-                <input type="text" class="form-control" placeholder="Type to search...">
-                <i class="fa fa-times close"></i>
+
+        <div id="mySidenav" class="sidenav">
+            <script>
+                $(document).ready(function() {
+
+                    $('#OpenNav').on('click',function () {
+
+                        if($('#mySidenav').width()==0)
+                        {
+                            $('#mySidenav').width(380);
+                        }
+                        else
+                        {
+                            $('#mySidenav').width(0);
+                        }
+                    });
+
+
+
+
+
+                    // Update messages section
+                    window.setInterval(
+
+                        function()
+                        {
+                            $.post('{{ path('lstmsg') }}', function(data) {
+                                $('#renderedChat').html(data);
+                            });
+
+                        }
+
+                        , 500);
+
+                    $('#msg').on('submit', function(e) {
+                        e.preventDefault(); // J'empêche le comportement par défaut du navigateur, c-à-d de soumettre le formulaire
+
+                        var $this = $(this);
+
+                        $.ajax({
+                            url: $this.attr('action'),
+                            type: 'post',
+                            data: $this.serialize(),
+                            dataType: 'json', // JSON
+                            success: function(json) {
+                                console.log(json);
+                            }
+
+                        });
+                        $('#chatMessage').val('');
+
+
+
+                        $("#chatMessage").focus();
+
+
+
+                    });
+                });
+
+            </script>
+
+            <div style="position: fixed;top: 56px;width: 368px">
+                {% if app.user != null %}
+                    <div style="max-width: 380px; overflow-wrap: break-word;background-color: #1e347b;z-index: 99999">
+                        <div style="margin: 3px;font-size: 14px;padding: 5px">
+                            <form id="msg" action="{{ path('postmsg') }}" method="post">
+                                <label for="chatMessage" style="color: ghostwhite;">Type message</label>
+                                <input type="text" autocomplete="off" name="message" id="chatMessage" />
+                                <input type="submit" value="submit" class="btn-primary" />
+                            </form>
+                        </div>
+                    </div>
+
+                    {#<form id="msg" action="{{ path('postmsg') }}" method="post">
+                        <label for="chatMessage">Type messaga </label>
+                        <input type="text" name="message" id="chatMessage" />
+                        <input type="submit" value="submit" />
+                    </form>#}
+
+
+                {% else %}
+                    <div style="max-width: 380px; overflow-wrap: break-word;background-color: #1e347b;z-index: 99999">
+                        <div style="margin: 3px;font-size: 15px;padding: 5px">
+                            <h5 style="display: inline;color: #9fbfdf">If you want to contribute to the chat and help interract with our members please login <a  href="{{ path('eloboosted_login_homepage') }}" style="display: inline-block;font-size: 15px"> here </a></h5>
+                        </div>
+                    </div>
+
+                {% endif %}
             </div>
-        {% endblock %}
+            <div id="renderedChat" style="position: relative;width: 350px;z-index: -1" >
+                {{ render(controller('EloboostedFrontofficeBundle:Compte:listRender')) }}
+            </div>
+
+
+        </div>
+
     </div><!-- /.modal-search -->
 
           <!-- wrapper -->
     <div id="wrapper">
-        {% block main %}
+
+    {% block main %}
             <section>
                 <div class="container">
                     <div class="row">
@@ -280,7 +278,11 @@
                 </div>
             </section>
         {% endblock %}
-    </div>
+    <script src="{{ asset('plugins/ekko-lightbox/ekko-lightbox.min.js') }}"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.js"></script>
+    <script src="{{ asset('js/core.min.js') }}"></script>
+
+</div>
     <!-- /#wrapper -->
 
     <!-- footer -->

@@ -10,12 +10,56 @@
             $('#SubmitBtn').hide();
             $('#SubmitBtn').prop('disabled', true);
 
+            function validateEmail(email)
+            {
+                var re = /\S+@\S+\.\S+/;
+                return re.test(email);
+            }
+
             //////////////////////
             //////////////////////
            // $('.class1').add('.class2').on('click', some_function);
 
             //////////////////////
             //////////////////////
+
+            $('#Email').keyup(function() {
+                var Addressmail=$('#Email').val();
+
+                if(Addressmail != '' && validateEmail(Addressmail))
+                {
+                    $.ajax({
+                        url: "{{ path('emailVerif') }}",
+                        method: "post",
+                        data : { email : Addressmail },
+                        type : 'json',
+                        success: function (data) {
+
+                            console.log(data);
+                            if(data['data']=="noexist")
+                            {
+                                console.log(1);
+                                $('#emailError').css('color', 'green');
+                                $('#emailError').html('This email is available');
+                            }
+                            else
+                            {
+                                console.log(2);
+                                $('#emailError').css('color', 'red');
+                                $('#emailError').html('This email is aleady in use');
+                            }
+
+
+
+                        }
+
+                    })
+                }
+                else
+                {
+                    $('#emailError').html('');
+                }
+            });
 
             $('#dateInput').change(function() {
                 var today =new Date();
@@ -35,23 +79,42 @@
                     $('#code').html(RandomCode);
                     console.log(Addressmail+" "+RandomCode);
 
-                    $.ajax({
-                        url: "{{ path('SendMail') }}",
-                        method: "post",
-                        data : { code : RandomCode, mail : Addressmail },
-                        type : 'json',
-                        success: function (data) {
+                    var nom=$('#Nom').val();
+                    var prenom=$('#Prenom').val();
+                    var telnum=$('#TelNum').val();
+                    var datedenaissance=$('#dateInput').val();
+                    var pseudo=$('#Pseudo').val();
+                    var motdepasse=$('#MotDePasse').val();
+                    var email=$('#Email').val();
+                    var image=$('#BSbtnsuccess').val().length;
+                    var emailError=$('#emailError').html();
 
-                            console.log(data['data']);
-                            $('#Part1').fadeOut();
-                            $('#Part2').fadeIn();
-                            $('#SubmitBtn').show();
-                            $('#firstCheck').hide();
+                    if(nom == '' || prenom == '' || telnum == '' || !Date.parse(datedenaissance) ||  pseudo == '' || motdepasse == '' || validateEmail(email)==false || image==0 || emailError=='This email is aleady in use' )
+                    {
+                        alert("Please input valid information");
+                    }
+                    else {
 
 
-                        }
 
-                    })
+                        $.ajax({
+                            url: "{{ path('SendMail') }}",
+                            method: "post",
+                            data : { code : RandomCode, mail : Addressmail },
+                            type : 'json',
+                            success: function (data) {
+
+                                console.log(data['data']);
+                                $('#Part1').fadeOut();
+                                $('#Part2').fadeIn();
+                                $('#SubmitBtn').show();
+                                $('#firstCheck').hide();
+
+
+                            }
+
+                        })
+                    }
 
 
                 });
@@ -86,7 +149,7 @@
                 <div class="col-lg-12">
                     <ol class="breadcrumb">
                         <li><a href="/">Home</a></li>
-                        <li><a href="{{ path('check_logins') }}">Sign up</a></li>
+                        <li><a href="{{ path('eloboosted_login_homepage') }}">Sign up</a></li>
                         <li class="active">Create new account</li>
                     </ol>
                 </div>
@@ -125,7 +188,8 @@
 
                         <div class="form-group input-icon-left">
                             <i class="fa fa-at" data-original-title="" title=""></i>
-                            <input type="email" class="form-control" id="Email" required name="Email" placeholder="E-mail">
+                            <input type="email" class="form-control" autocomplete="off" id="Email" required name="Email" placeholder="E-mail">
+                            <p id="emailError" style="color: red"></p>
                         </div>
 
                         <div class="form-group ">

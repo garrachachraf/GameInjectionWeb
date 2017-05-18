@@ -50,3 +50,15 @@ security:
         - { path: '^/admin/', roles: ROLE_ADMIN }
         - { path: '^/login/user', roles: ROLE_USER }
         - { path: '^/login/', roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: '^/newTournament', roles: ROLE_USER }
+        - { path: '^/addPost', roles: ROLE_USER }
+        - { path: '^/myProfile', roles: ROLE_USER }
+        - { path: '^/userProfile', roles: ROLE_USER }
+        - { path: '^/myFriends', roles: ROLE_USER }
+        - { path: '^/myInbox', roles: ROLE_USER }
+        - { path: '^/editAccount', roles: ROLE_USER }
+        - { path: '^/newGames', roles: ROLE_USER }
+        - { path: '^/newProd', roles: ROLE_USER }
+        - { path: '^/editProd', roles: ROLE_USER }
+        - { path: '^/deleteProd', roles: ROLE_USER }
+

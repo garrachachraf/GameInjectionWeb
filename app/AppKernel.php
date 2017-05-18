@@ -29,6 +29,8 @@ class AppKernel extends Kernel
             new FOS\JsRoutingBundle\FOSJsRoutingBundle(),
             new ADesigns\CalendarBundle\ADesignsCalendarBundle(),
             new Gregwar\CaptchaBundle\GregwarCaptchaBundle(),
+            new Ob\HighchartsBundle\ObHighchartsBundle(),
+            new Cunningsoft\ChatBundle\CunningsoftChatBundle()
 
 
 

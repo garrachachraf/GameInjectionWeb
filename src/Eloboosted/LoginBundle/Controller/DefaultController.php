@@ -27,7 +27,7 @@ class DefaultController extends Controller
                 return $this->redirectToRoute("eloboosted_backoffice_homepage");
             }
             else{
-                return $this->redirectToRoute("home");
+                return $this->redirectToRoute("myProfile");
             }
         }
 
@@ -54,6 +54,6 @@ class DefaultController extends Controller
     public function SignOutAction(Request $request)
     {
         $this->container->get('security.token_storage')->setToken(null);
-        return $this->redirectToRoute("home");
+        return $this->redirectToRoute("eloboosted_login_homepage");
     }
 }
